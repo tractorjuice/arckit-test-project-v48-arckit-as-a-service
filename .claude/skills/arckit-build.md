@@ -1,6 +1,10 @@
 ---
 name: arckit-build
-description: ArcKit build harness — orchestrates parallel /arckit:* artefact generation using subagent isolation. Reads project state, computes the artefact dependency DAG, dispatches one subagent per target per wave (each subagent invokes a /arckit:* skill in its own isolated context), validates outputs, commits the wave, and persists state to .arckit/state.json for resumability. Use this when you need to build/rebuild a substantial set of ArcKit artefacts and don't want to run /arckit:* skills sequentially in main context (which exhausts context and fails past ~5 artefacts). Args: <project> (e.g. 001 or 001-arckit-saas) | --plan (dry run) | --resume (pick up from state) | --target NAME (specific target + deps) | --refresh NAME (force rebuild) | --no-commit | --recipe NAME.
+description: "This skill should be used when the user asks to bulk-build ArcKit artefacts, run an end-to-end architecture build, generate multiple /arckit:* outputs in parallel, orchestrate a wave-based build, resume an interrupted build, or rebuild a project from scratch without exhausting main-context. Triggers: arckit-build, build harness, build all artefacts, generate full project, /arckit:* in parallel, run the recipe, --plan, --resume, --target, --refresh, --recipe, state.json. The skill orchestrates parallel /arckit:* generation using subagent isolation: reads project state, computes the artefact dependency DAG, dispatches one subagent per target per wave (each subagent invokes a /arckit:* skill in its own context), validates outputs, commits the wave, and persists progress to .arckit/state.json for resumability."
+paths:
+  - "projects/**/.arckit/state.json"
+  - "projects/**/ARC-*-*.md"
+  - ".claude/skills/arckit-build.md"
 ---
 
 # ArcKit Build Harness (v0.2)
