@@ -12,66 +12,74 @@ ArcKit maintains a traceability chain: Stakeholders → Goals → Requirements (
 
 ## Project status
 
-- 001-arckit-saas: 63% essential coverage · 33% compliance readiness · 19 drafts, 9 orphans · next: /arckit:hld-review
-- 002-arckit-sovereign: 63% essential coverage · 17% compliance readiness · 11 drafts, 5 orphans · next: /arckit:hld-review
+- 001-arckit-saas: 88% essential coverage · 58% compliance readiness · 23 drafts · next: /arckit:conformance
+- 002-arckit-sovereign: 88% essential coverage · 50% compliance readiness · 21 drafts · next: /arckit:conformance
 
 ## Global artifacts
 
-- [GLOSS](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/000-global/ARC-000-GLOSS-v1.0.md): Other · `ARC-000-GLOSS-v1.0`.
 - [Architecture Principles](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/000-global/ARC-000-PRIN-v1.0.md): Architecture · `ARC-000-PRIN-v1.0`.
 - [Architecture Principles](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/000-global/ARC-000-PRIN-v2.0.md): Architecture · `ARC-000-PRIN-v2.0`.
-- [STRATEGY](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/000-global/ARC-000-STRATEGY-v1.0.md): Other · `ARC-000-STRATEGY-v1.0`.
-- [WARDLEY](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/000-global/ARC-000-WARDLEY-v1.0.md): Other · `ARC-000-WARDLEY-v1.0`.
 
 ## Projects
 
 ### Arckit Saas
 
-- [AIP](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-AIPB-v1.0.md): Other · `ARC-001-AIPB-v1.0`.
+- [AI Playbook Assessment](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-AIPB-v1.0.md): Compliance · `ARC-001-AIPB-v1.0`.
 - [DevOps Strategy](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-DEVOPS-v1.0.md): Operations · `ARC-001-DEVOPS-v1.0`.
 - [Data Protection Impact Assessment](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-DPIA-v1.0.md): Compliance · `ARC-001-DPIA-v1.0`.
 - [FinOps Strategy](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-FINOPS-v1.0.md): Operations · `ARC-001-FINOPS-v1.0`.
-- [HLD](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-HLDR-v1.0.md): Other · `ARC-001-HLDR-v1.0`.
+- [High-Level Design Review](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-HLDR-v1.0.md): Architecture · `ARC-001-HLDR-v1.0`.
 - [Operational Readiness](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-OPS-v1.0.md): Operations · `ARC-001-OPS-v1.0`.
 - [Project Plan](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-PLAN-v1.0.md): Planning · `ARC-001-PLAN-v1.0`.
 - [Requirements](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-REQ-v1.0.md): Discovery · `ARC-001-REQ-v1.0`.
 - [Risk Register](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-RISK-v1.0.md): Governance · `ARC-001-RISK-v1.0`.
-- [ROADMAP](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-ROADMAP-v1.0.md): Other · `ARC-001-ROADMAP-v1.0`.
-- [SECURE](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-SECURE-v1.0.md): Other · `ARC-001-SECURE-v1.0`.
+- [Roadmap](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-ROAD-v1.0.md): Planning · `ARC-001-ROAD-v1.0`.
+- [Secure by Design](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-SECD-v1.0.md): Compliance · `ARC-001-SECD-v1.0`.
 - [Strategic Outline Business Case](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-SOBC-v1.0.md): Planning · `ARC-001-SOBC-v1.0`.
 - [Stakeholder Analysis](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-STKE-v1.0.md): Discovery · `ARC-001-STKE-v1.0`.
 - [Service Assessment](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-SVCASS-v1.0.md): Compliance · `ARC-001-SVCASS-v1.0`.
 - [TCoP Assessment](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-TCOP-v1.0.md): Compliance · `ARC-001-TCOP-v1.0`.
-- [TRACE](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-TRAC-v1.0.md): Other · `ARC-001-TRAC-v1.0`.
-- [ARC-001-DIAG-001 — System Context (C4 L1) and Container View (C4 L2)](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/diagrams/ARC-001-DIAG-001-v1.0.md) · `ARC-001-DIAG-001-v1.0`.
-- [ARC-001-DIAG-002 — Deployment View and Cell Topology](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/diagrams/ARC-001-DIAG-002-v1.0.md) · `ARC-001-DIAG-002-v1.0`.
-- [ARC-001-DIAG-003 — Key Sequence Diagrams](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/diagrams/ARC-001-DIAG-003-v1.0.md) · `ARC-001-DIAG-003-v1.0`.
+- [Traceability Matrix](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-TRAC-v1.0.md): Governance · `ARC-001-TRAC-v1.0`.
+- [Architecture Diagram (C4 Model): ArcKit as a Service](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/diagrams/ARC-001-DIAG-001-v1.0.md) · `ARC-001-DIAG-001-v1.0`.
+- [Architecture Diagram: ArcKit SaaS — Critical Interaction Sequence Flows](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/diagrams/ARC-001-DIAG-002-v1.0.md) · `ARC-001-DIAG-002-v1.0`.
+- [Architecture Diagram: Deployment Topology — Cells, AZs, Network Zones, and Sovereign Variant](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/diagrams/ARC-001-DIAG-003-v1.0.md) · `ARC-001-DIAG-003-v1.0`.
 - [ADR-001 — Tenant Isolation Model](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-001-v1.0.md) · `ARC-001-ADR-001-v1.0`.
-- [ADR-002 — Cloud Region and Storage Selection](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-002-v1.0.md) · `ARC-001-ADR-002-v1.0`.
-- [ADR-003 — Identity Provider Integration and SSO](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-003-v1.0.md) · `ARC-001-ADR-003-v1.0`.
-- [ADR-004 — AI Provider Abstraction and Model Strategy](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-004-v1.0.md) · `ARC-001-ADR-004-v1.0`.
-- [ADR-005 — Observability Stack (Logging, Metrics, Tracing, SIEM)](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-005-v1.0.md) · `ARC-001-ADR-005-v1.0`.
-- [ADR-006 — Deployment Topology and Runtime Platform](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-006-v1.0.md) · `ARC-001-ADR-006-v1.0`.
-- [ADR-007 — Data Portability and Export Format](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-007-v1.0.md) · `ARC-001-ADR-007-v1.0`.
-- [ADR-008 — Per-Tenant Quotas, Rate Limits, and Fair Use](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-008-v1.0.md) · `ARC-001-ADR-008-v1.0`.
+- [Architecture Decision Record: Cloud Region and Storage Selection](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-002-v1.0.md) · `ARC-001-ADR-002-v1.0`.
+- [Architecture Decision Record: Identity Provider Integration and SSO](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-003-v1.0.md) · `ARC-001-ADR-003-v1.0`.
+- [Architecture Decision Record: AI Provider Abstraction and Model Strategy](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-004-v1.0.md) · `ARC-001-ADR-004-v1.0`.
+- [Architecture Decision Record: Observability Stack (Logging, Metrics, Tracing, SIEM)](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-005-v1.0.md) · `ARC-001-ADR-005-v1.0`.
+- [Architecture Decision Record: Deployment Topology and Runtime Platform](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-006-v1.0.md) · `ARC-001-ADR-006-v1.0`.
+- [Architecture Decision Record: Data Portability and Export Format](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-007-v1.0.md) · `ARC-001-ADR-007-v1.0`.
+- [Architecture Decision Record: Per-Tenant Quotas, Rate Limits, and Fair Use](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/decisions/ARC-001-ADR-008-v1.0.md) · `ARC-001-ADR-008-v1.0`.
 
 ### Arckit Sovereign
 
+- [AI Playbook Assessment](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-AIPB-v1.0.md): Compliance · `ARC-002-AIPB-v1.0`.
+- [DevOps Strategy](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-DEVOPS-v1.0.md): Operations · `ARC-002-DEVOPS-v1.0`.
 - [Data Protection Impact Assessment](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-DPIA-v1.0.md): Compliance · `ARC-002-DPIA-v1.0`.
-- [HLD](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-HLDR-v1.0.md): Other · `ARC-002-HLDR-v1.0`.
-- [MODSEC](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-MODSEC-v1.0.md): Other · `ARC-002-MODSEC-v1.0`.
+- [FinOps Strategy](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-FINOPS-v1.0.md): Operations · `ARC-002-FINOPS-v1.0`.
+- [High-Level Design Review](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-HLDR-v1.0.md): Architecture · `ARC-002-HLDR-v1.0`.
 - [Operational Readiness](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-OPS-v1.0.md): Operations · `ARC-002-OPS-v1.0`.
 - [Project Plan](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-PLAN-v1.0.md): Planning · `ARC-002-PLAN-v1.0`.
 - [Requirements](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-REQ-v1.0.md): Discovery · `ARC-002-REQ-v1.0`.
 - [Risk Register](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-RISK-v1.0.md): Governance · `ARC-002-RISK-v1.0`.
+- [Roadmap](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-ROAD-v1.0.md): Planning · `ARC-002-ROAD-v1.0`.
+- [MOD Secure by Design](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-SECD-MOD-v1.0.md): Compliance · `ARC-002-SECD-MOD-v1.0`.
 - [Strategic Outline Business Case](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-SOBC-v1.0.md): Planning · `ARC-002-SOBC-v1.0`.
 - [Stakeholder Analysis](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-STKE-v1.0.md): Discovery · `ARC-002-STKE-v1.0`.
-- [TRACE](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-TRAC-v1.0.md): Other · `ARC-002-TRAC-v1.0`.
-- [ARC-002-DIAG-001 — Sovereign Deployment Diagrams](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-001-v1.0.md) · `ARC-002-DIAG-001-v1.0`.
-- [ADR-001 — Sovereign Packaging, Signing and Distribution](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/decisions/ARC-002-ADR-001-v1.0.md) · `ARC-002-ADR-001-v1.0`.
-- [ADR-002 — Air-Gapped Update / Patch Mechanism](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/decisions/ARC-002-ADR-002-v1.0.md) · `ARC-002-ADR-002-v1.0`.
-- [ADR-003 — Sovereign Identity Integration (Customer IdP Only)](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/decisions/ARC-002-ADR-003-v1.0.md) · `ARC-002-ADR-003-v1.0`.
-- [ADR-004 — Sovereign AI Inference Model](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/decisions/ARC-002-ADR-004-v1.0.md) · `ARC-002-ADR-004-v1.0`.
+- [TCoP Assessment](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-TCOP-v1.0.md): Compliance · `ARC-002-TCOP-v1.0`.
+- [Traceability Matrix](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/ARC-002-TRAC-v1.0.md): Governance · `ARC-002-TRAC-v1.0`.
+- [Architecture Diagram: ArcKit Sovereign Deployment — C4 Model (Context, Container, Component)](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-001-v1.0.md) · `ARC-002-DIAG-001-v1.0`.
+- [Sequence Diagrams — Sovereign-Specific Interaction Flows](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-002-v1.0.md) · `ARC-002-DIAG-002-v1.0`.
+- [Architecture Diagram: ArcKit Sovereign Deployment Topology — Single-Tenant Accredited Boundary, Bundle Distribution Path, and Trust Zones](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-003-v1.0.md) · `ARC-002-DIAG-003-v1.0`.
+- [Architecture Decision Record: Air-Gapped Operation Model — Disconnected Runtime, No Outbound Egress](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/decisions/ARC-002-ADR-001-v1.0.md) · `ARC-002-ADR-001-v1.0`.
+- [ADR-002: Signed Release Bundle — Cosign + CycloneDX SBOM + SLSA L3 + Offline Verification Manifest](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/decisions/ARC-002-ADR-002-v1.0.md) · `ARC-002-ADR-002-v1.0`.
+- [Architecture Decision Record: Cleared-Personnel Access Model for Sovereign Deployments](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/decisions/ARC-002-ADR-003-v1.0.md) · `ARC-002-ADR-003-v1.0`.
+- [Architecture Decision Record: On-Premise AI Model Integration (Sovereign Mode)](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/decisions/ARC-002-ADR-004-v1.0.md) · `ARC-002-ADR-004-v1.0`.
+- [ADR-005 — Customer-Controlled Telemetry, Time, CA, Package Mirror](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/decisions/ARC-002-ADR-005-v1.0.md) · `ARC-002-ADR-005-v1.0`.
+- [Architecture Decision Record: JSP 440 / Security Aspects Letter Alignment — Controls Inheritance and Accreditation Pathway](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/decisions/ARC-002-ADR-006-v1.0.md) · `ARC-002-ADR-006-v1.0`.
+- [Architecture Decision Record: Distribution Model for Sovereign Release Bundle (Multi-Channel — Sealed Media Default with Diode Option)](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/decisions/ARC-002-ADR-007-v1.0.md) · `ARC-002-ADR-007-v1.0`.
+- [Architecture Decision Record: Long-Term Support Release Line for Sovereign Deployments](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/002-arckit-sovereign/decisions/ARC-002-ADR-008-v1.0.md) · `ARC-002-ADR-008-v1.0`.
 
 ## ArcKit guides
 
