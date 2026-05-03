@@ -4,11 +4,23 @@
   "project_name": "001-arckit-saas",
   "recipe": "uk-saas",
   "started_at": "2026-05-03T16:00:00Z",
-  "last_wave_completed": 8,
-  "current_wave": "complete",
-  "build_status": "BUILD COMPLETE — recipe + post-build hooks both successful",
+  "last_wave_completed": 9,
+  "current_wave": 10,
+  "build_status": "research wave in progress (wave 9 complete; wave 10 dispatched)",
   "build_completed_at": "2026-05-03T18:10:00Z",
+  "research_resume_started_at": "2026-05-03T21:29:47Z",
   "targets": {
+    "ORG_RESEARCH": {
+      "status": "complete",
+      "path": "projects/000-global/research/ARC-000-RSCH-v1.0.md",
+      "built_at": "2026-05-03T21:36:50Z",
+      "wave": 9,
+      "skill": "arckit:research",
+      "topic": "Target organisation strategy, structure, and existing systems",
+      "line_count": 604,
+      "agent_id": "ab5409afe98ea94c7",
+      "agent_summary": "Bimodal adopter posture (SaaS-friendly civilian/NHS/local-gov vs sovereign-only MOD). Existing-systems baseline = GOV.UK Design System + landing zones + GitHub-flavoured authoring + Microsoft 365/Entra. Procurement and sovereignty stance is mandatory not optional — G-Cloud (BR-004) and UK data residency (Principle 7) are floor not aspiration."
+    },
     "PRIN": {
       "status": "complete",
       "path": "projects/000-global/ARC-000-PRIN-v2.0.md",
