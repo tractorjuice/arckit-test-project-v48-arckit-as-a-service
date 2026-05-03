@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-03T20:12:22.017Z",
+  "generated": "2026-05-03T22:12:55.679Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -809,6 +809,13 @@
       "category": "Architecture",
       "documentId": "ARC-000-PRIN-v2.0",
       "extension": ".md"
+    },
+    {
+      "path": "projects/000-global/research/ARC-000-RSCH-v1.0.md",
+      "title": "Target-Organisation Research: ArcKit as a Service — UK Public-Sector Adopter Landscape",
+      "category": "Discovery",
+      "documentId": "ARC-000-RSCH-v1.0",
+      "extension": ".md"
     }
   ],
   "typeCategories": {
@@ -1092,6 +1099,66 @@
           "documentId": "ARC-001-ADR-008-v1.0",
           "extension": ".md"
         }
+      ],
+      "research": [
+        {
+          "path": "projects/001-arckit-saas/research/ARC-001-AWRS-v1.0.md",
+          "title": "AWS Technology Research: ArcKit as a Service (Managed SaaS)",
+          "documentId": "ARC-001-AWRS-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/research/ARC-001-AZRS-v1.0.md",
+          "title": "Azure Technology Research: ArcKit as a Service",
+          "documentId": "ARC-001-AZRS-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/research/ARC-001-GCRS-v1.0.md",
+          "title": "Google Cloud Technology Research: ArcKit as a Service",
+          "documentId": "ARC-001-GCRS-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/research/ARC-001-GOVR-v1.0.md",
+          "title": "Government Reuse Assessment: ArcKit as a Service (Managed SaaS)",
+          "documentId": "ARC-001-GOVR-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/research/ARC-001-RSCH-v1.0.md",
+          "title": "Technology and Service Research: ArcKit as a Service (Managed SaaS) — SaaS Control Plane",
+          "documentId": "ARC-001-RSCH-v1.0",
+          "extension": ".md"
+        }
+      ],
+      "vendorProfiles": [
+        {
+          "path": "projects/001-arckit-saas/vendors/aws-profile.md",
+          "title": "Aws"
+        },
+        {
+          "path": "projects/001-arckit-saas/vendors/grafana-labs-profile.md",
+          "title": "Grafana Labs"
+        },
+        {
+          "path": "projects/001-arckit-saas/vendors/microsoft-azure-profile.md",
+          "title": "Microsoft Azure"
+        }
+      ],
+      "techNotes": [
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ai-provider-abstraction.md",
+          "title": "Tech Note: AI Provider Abstraction (Bedrock / Azure OpenAI / Vertex)"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/multi-tenant-isolation-pool-with-cells.md",
+          "title": "Tech Note: Multi-Tenant Isolation — Pool with Cells Pattern"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/opentelemetry-observability.md",
+          "title": "Tech Note: OpenTelemetry-Native Observability for Multi-Tenant SaaS"
+        }
       ]
     },
     {
@@ -1312,7 +1379,7 @@
         "health": {
           "stale": false,
           "draft": true,
-          "orphan": true,
+          "orphan": false,
           "ageDays": 0
         }
       },
@@ -1350,7 +1417,80 @@
         "health": {
           "stale": false,
           "draft": true,
-          "orphan": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-000-RSCH-v1.0": {
+        "type": "RSCH",
+        "project": "000-global",
+        "path": "projects/000-global/research/ARC-000-RSCH-v1.0.md",
+        "title": "Target-Organisation Research: ArcKit as a Service — UK Public-Sector Adopter Landscape",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit as a Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-000-RSCH-v1.0",
+          "Document Type": "Research Findings (Target Organisation)",
+          "Project": "ArcKit as a Service — Wave 1 cross-project context (Project 000-global)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Cycle": "Annual (refresh each year of the SOBC outlook)",
+          "Next Review Date": "2027-05-03",
+          "Owner": "Mark Craddock (ArcKit as a Service Owner)",
+          "Reviewed By": "PENDING",
+          "Approved By": "PENDING",
+          "Distribution": "Project 001 team, downstream Wave-2 research subagents (RESEARCH / AWS / AZURE / GCP / GOV_REUSE), CCS liaison, GDS, CDDO, MOD Defence Digital",
+          "UK Central-Civil Department / ALB (DDaT EA function present)": "Mix of bespoke EA wikis (Confluence, SharePoint), commercial EA tooling (LeanIX, Ardoq, MEGA, Bizzdesign) and Office-document templates. Often partial coverage; assurance-evidence quality variable.",
+          "NHS Trust / NHS England": "Limited dedicated EA tooling; Microsoft 365-centric estate; clinical-system focus. Architecture-governance capability typically thin outside national bodies.",
+          "MOD Command / Defence Digital": "Strong existing assurance machinery (JSP 440, JSP 604, MOD Secure by Design via CAAT). Architecture artefacts often classified above the SaaS ceiling.",
+          "Devolved administration / Local authority": "Variable; smaller teams; heavy reliance on suppliers. Often no dedicated EA tooling.",
+          "UK SME supplying the public sector": "No commercial EA tooling at SME prices. Bespoke / Office-document governance.",
+          "Classification ceiling": "OFFICIAL with OFFICIAL-SENSITIVE handling caveats",
+          "Data residency": "UK by default",
+          "Identity / SSO": "Entra ID, OIDC, SAML 2.0, GOV.UK One Login (citizen), NHS CIS2 (NHS)",
+          "Procurement route": "G-Cloud (primary), NHS frameworks, local-gov frameworks, direct procurement",
+          "Assurance language": "TCoP, GDS Service Standard, NCSC CAF, NCSC Cloud Security Principles, UK GDPR / DPA 2018, PSBAR / WCAG 2.2 AA, NHS DSPT / DTAC",
+          "Telemetry destination": "Vendor-controlled (managed SaaS)",
+          "AI / model endpoint": "Public-internet provider (with no-training assurances and DPIA)",
+          "Operational model": "Vendor-operated multi-tenant SaaS",
+          "Update / patching": "Continuous delivery, SaaS standard",
+          "GOV.UK Design System adoption expected?": "Yes (FR-013) — SaaS UI matches public-sector visual language",
+          "G-Cloud listing required?": "Yes (BR-004) — primary procurement path"
+        },
+        "reqIds": [
+          "BR-001",
+          "BR-002",
+          "BR-003",
+          "BR-004",
+          "BR-005",
+          "BR-006",
+          "BR-007",
+          "BR-008",
+          "FR-001",
+          "FR-015",
+          "FR-013",
+          "FR-007",
+          "NFR-A-001",
+          "FR-006",
+          "NFR-C-001",
+          "FR-004",
+          "INT-002",
+          "INT-004"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
           "ageDays": 0
         }
       },
@@ -3320,6 +3460,531 @@
           "ageDays": 0
         }
       },
+      "ARC-001-AWRS-v1.0": {
+        "type": "AWRS",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/research/ARC-001-AWRS-v1.0.md",
+        "title": "AWS Technology Research: ArcKit as a Service (Managed SaaS)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock, Service Owner",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-001-AWRS-v1.0",
+          "Document Type": "AWS Technology Research",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Cycle": "On change",
+          "Next Review Date": "2026-08-03",
+          "Owner": "Mark Craddock, Service Owner",
+          "Reviewed By": "[PENDING — Lead Architect]",
+          "Approved By": "[PENDING — Architecture Review Board]",
+          "Distribution": "Project Team, Architecture Team, Security Lead, FinOps Lead",
+          "UK Region Availability (eu-west-2 London)": "All 13 services confirmed available (MCP `get_regional_availability` — 2026-05-03)",
+          "G-Cloud Listing": "AWS EMEA SARL (UK Branch) listed on G-Cloud 14 (RM1557.14)",
+          "Data Classification": "OFFICIAL and OFFICIAL-SENSITIVE supported on standard AWS commercial regions",
+          "NCSC Cloud Security Principles (14)": "AWS Config conformance pack `Operational Best Practices for NCSC Cloud Security Principles` published; 14/14 mapped",
+          "NCSC CAF v3": "AWS Config conformance pack `Operational Best Practices for NCSC CAF` published",
+          "UK GDPR / DPA 2018": "UK GDPR Article 28 DPA available; UK contracting entity; sub-processor inventory published",
+          "Subtotal — EKS per cell": "| **≈ 324**",
+          "Subtotal — Persistence per cell": "| **≈ 280–470**",
+          "AWS WAF + Shield Standard": "Edge protection on ALB / CloudFront",
+          "AWS Secrets Manager": "Secret store for ESO / IRSA pattern",
+          "AWS IAM Access Analyzer": "Continuous external-access detection",
+          "Amazon CloudFront + AWS WAF": "Edge cache for marketing site + static assets, DDoS shield",
+          "Amazon Route 53": "DNS, health-checked records",
+          "Application Load Balancer": "Per-cell ingress (in front of NGINX / ingress controller)",
+          "Amazon CloudWatch + AWS X-Ray + AMP": "Logs + RED metrics + traces — adapter for OpenTelemetry sinks per ADR-005",
+          "AWS Systems Manager": "Operator-side runbooks, patching, parameter store",
+          "Amazon ElastiCache (Redis)": "Coordinated rate-limit store per cell; ADR-008 token-bucket cluster-shared",
+          "Amazon SES": "Transactional email (INT-004)",
+          "Amazon EventBridge + SNS / SQS / MSK": "Async events + dead-letter queues for FR-008 AsyncAPI surface",
+          "Total": "|",
+          "Total 3-yr TCO": "|"
+        },
+        "reqIds": [
+          "FR-004",
+          "BR-004",
+          "NFR-C-007",
+          "NFR-SEC-009",
+          "NFR-SEC-008",
+          "NFR-C-001",
+          "NFR-A-001",
+          "NFR-S-001",
+          "NFR-SEC-002",
+          "NFR-I-001",
+          "INT-006",
+          "NFR-SEC-007",
+          "BR-001",
+          "NFR-A-002",
+          "NFR-I-002",
+          "DR-001",
+          "NFR-SEC-004",
+          "NFR-C-002",
+          "FR-007",
+          "NFR-SEC-001",
+          "INT-001",
+          "INT-005",
+          "NFR-P-002",
+          "BR-007",
+          "NFR-SEC-005",
+          "NFR-SEC-006",
+          "BR-006",
+          "NFR-P-001",
+          "FR-009",
+          "FR-015",
+          "NFR-M-001",
+          "NFR-M-003",
+          "INT-004",
+          "FR-008",
+          "INT-003",
+          "INT-002"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-AZRS-v1.0": {
+        "type": "AZRS",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/research/ARC-001-AZRS-v1.0.md",
+        "title": "Azure Technology Research: ArcKit as a Service",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-001-AZRS-v1.0",
+          "Document Type": "Azure Technology Research",
+          "Project": "ArcKit as a Service (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Cycle": "Quarterly",
+          "Next Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Reviewed By": "PENDING — Architecture Review Board",
+          "Approved By": "PENDING — Architecture Review Board Chair",
+          "Distribution": "Project Team, Architecture Team, FinOps, Security",
+          "Per-cell TOTAL (single-cell GA)": "|",
+          "Cross-cell shared (registry, GitOps, FinOps)": "|",
+          "Estimated GA monthly cost (1 cell, ~200 SME tenants)": "|",
+          "UK Region Availability": "Confirmed",
+          "G-Cloud Listing": "Confirmed",
+          "Data Classification": "OFFICIAL with OFFICIAL-SENSITIVE handling caveats",
+          "NCSC Cloud Security Principles": "All 14 supported by Azure attestation",
+          "Sovereign / Air-gapped Portability": "Engineered (Principle 21 binding)",
+          "AKS total per cell": "| **£580**",
+          "Reliability": "Strong",
+          "Security": "Strong",
+          "Cost Optimization": "Good",
+          "Operational Excellence": "Strong",
+          "Performance Efficiency": "Strong",
+          "PostgreSQL total per cell": "| **£640**",
+          "Network Security (NS)": "NS-1, NS-2, NS-3, NS-7",
+          "Identity Management (IM)": "IM-1, IM-2, IM-3, IM-7",
+          "Privileged Access (PA)": "PA-1, PA-2, PA-7",
+          "Data Protection (DP)": "DP-1..DP-6",
+          "Asset Management (AM)": "AM-1..AM-3",
+          "Logging and Threat Detection (LT)": "LT-1..LT-5",
+          "Incident Response (IR)": "IR-1..IR-3",
+          "Posture and Vulnerability (PV)": "PV-1..PV-6",
+          "Endpoint Security (ES)": "ES-1, ES-2",
+          "Backup and Recovery (BR)": "BR-1..BR-3",
+          "DevOps Security (DS)": "DS-1..DS-7",
+          "Governance and Strategy (GS)": "GS-1..GS-3",
+          "NCSC 14 Cloud Security Principles": "Microsoft attests annually; ArcKit inherits the platform-control attestation and adds its own application-layer attestation",
+          "G-Cloud (current framework)": "Microsoft Limited is a current G-Cloud supplier; ArcKit must list separately as a SaaS reseller / G-Cloud entry",
+          "UK GDPR / DPA 2018": "Met for OFFICIAL with UK-region pinning + UK/EEA-only sub-processors + DPA + UK SCCs as fallback",
+          "OFFICIAL / OFFICIAL-SENSITIVE": "Suitable",
+          "SECRET": "Not suitable on this route",
+          "Azure Policy regulatory compliance built-in initiative for UK OFFICIAL and UK NHS": "Adopted",
+          "Cell-internal subtotal": "|",
+          "Cross-cell shared (registry, AFD, GitOps, FinOps)": "|",
+          "Operational reserve / 10%": "|",
+          "TOTAL": "|",
+          "Total": "|"
+        },
+        "reqIds": [
+          "NFR-C-007",
+          "FR-002",
+          "FR-003",
+          "FR-005",
+          "NFR-A-001",
+          "NFR-S-001",
+          "NFR-SEC-002",
+          "FR-008",
+          "NFR-SEC-001",
+          "NFR-P-001",
+          "BR-1",
+          "DR-001",
+          "NFR-A-002",
+          "FR-006",
+          "DR-002",
+          "NFR-SEC-004",
+          "FR-007",
+          "INT-001",
+          "FR-004",
+          "INT-005",
+          "NFR-P-002",
+          "NFR-C-001",
+          "NFR-I-001",
+          "NFR-SEC-006",
+          "NFR-M-001",
+          "NFR-A-003",
+          "FR-012",
+          "NFR-C-002",
+          "BR-3",
+          "BR-002",
+          "BR-004"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-GCRS-v1.0": {
+        "type": "GCRS",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/research/ARC-001-GCRS-v1.0.md",
+        "title": "Google Cloud Technology Research: ArcKit as a Service",
+        "status": "",
+        "severity": "LOW",
+        "createdDate": null,
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "",
+        "classification": "",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Per-cell run-rate (excl. AI variable)": "|",
+          "Vendor-global services (cross-cell, single instance)": "|",
+          "Total (Cell A only, GA Q1)": "|",
+          "UK Region Availability": "✅ europe-west2 (London)",
+          "G-Cloud Listing": "✅ G-Cloud 14 (RM1557.14)",
+          "Data Classification": "✅ OFFICIAL / OFFICIAL-SENSITIVE",
+          "NCSC Cloud Security Principles": "✅ 14/14 attestation published",
+          "Assured Workloads — UK regulatory pack": "⚠️ Limited",
+          "Sovereign-route portability (P-21)": "✅ Engineered",
+          "Total": "| **£320**",
+          "Sustainability": "⭐⭐⭐⭐⭐",
+          "Operational Excellence": "⭐⭐⭐⭐⭐",
+          "Security, Privacy and Compliance": "⭐⭐⭐⭐⭐",
+          "Reliability": "⭐⭐⭐⭐⭐",
+          "Cost Optimization": "⭐⭐⭐⭐☆",
+          "Performance Optimization": "⭐⭐⭐⭐⭐",
+          "Recommendation": "**✅ Primary**",
+          "Per-cell, primary region only": "| **£780**",
+          "Per-cell with DR replica": "| **£1,050**",
+          "Total (vendor-global, allocated 50% to first cell)": "| **£180**",
+          "Vulnerability Findings": "Web Security Scanner; Container Analysis on every push; SBOM",
+          "Misconfiguration Findings": "Security Health Analytics across org",
+          "Threat Findings": "Event Threat Detection on Cloud Logging; Container Threat Detection on GKE Autopilot",
+          "Compliance Findings": "CIS GCP Benchmark, NIST 800-53, ISO 27001, PCI DSS continuous",
+          "Identity & Access": "IAM Recommender, Policy Analyzer; Workload Identity Federation enforces no-keys",
+          "Data Protection": "Cloud DLP redaction at log ingest; CMEK on Cloud SQL + Cloud Storage; default-encryption everywhere",
+          "Network Security": "VPC Service Controls (OFFICIAL-SENSITIVE); Firewall Insights; Private Service Connect",
+          "NCSC Cloud Security Principles 1–14": "✅ Google publishes per-principle attestation",
+          "NCSC CAF (CAF v3.2 — B1..B5, C1..C2)": "✅ Mappable",
+          "Cyber Essentials Plus": "✅ Google attestation; project-level CE+ remains project responsibility",
+          "UK GDPR": "✅ Google Cloud DPA + UK IDTA addendum",
+          "OFFICIAL": "✅ Standard Google Cloud services suitable",
+          "OFFICIAL-SENSITIVE": "✅ With VPC Service Controls + CMEK + DLP redaction",
+          "Above OFFICIAL-SENSITIVE": "❌ Out of scope per NFR-C-007",
+          "Cell A total (excl. DR)": "|",
+          "Net Cell A": "|",
+          "3-Year Total": "|"
+        },
+        "reqIds": [
+          "NFR-C-007",
+          "NFR-SEC-009",
+          "NFR-S-001",
+          "NFR-A-001",
+          "NFR-A-003",
+          "NFR-SEC-002",
+          "NFR-SEC-005",
+          "NFR-I-001",
+          "NFR-SEC-001",
+          "NFR-SEC-006",
+          "FR-002",
+          "DR-001",
+          "NFR-A-002",
+          "NFR-SEC-004",
+          "INT-006",
+          "FR-006",
+          "FR-005",
+          "DR-005",
+          "NFR-C-002",
+          "FR-004",
+          "INT-005",
+          "NFR-P-002",
+          "FR-007",
+          "INT-001",
+          "FR-014",
+          "NFR-M-001",
+          "NFR-SEC-008",
+          "INT-004",
+          "NFR-C-001"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": false,
+          "ageDays": null
+        }
+      },
+      "ARC-001-GOVR-v1.0": {
+        "type": "GOVR",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/research/ARC-001-GOVR-v1.0.md",
+        "title": "Government Reuse Assessment: ArcKit as a Service (Managed SaaS)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit as a Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-001-GOVR-v1.0",
+          "Document Type": "Government Code Reuse Assessment",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Cycle": "6-monthly (gov repo landscape changes quickly)",
+          "Next Review Date": "2026-11-03",
+          "Owner": "Mark Craddock (ArcKit as a Service Owner)",
+          "Reviewed By": "PENDING",
+          "Approved By": "PENDING",
+          "Distribution": "Project 001 team, Lead Architect, Service Owner, downstream `/arckit:research` and `/arckit:adr` consumers, CCS liaison",
+          "GOV.UK Design System frontend": "`alphagov/govuk-frontend`",
+          "Transactional email / notifications": "`alphagov/notifications-python-client` (and node-client)",
+          "NHS-tenant-facing UI patterns": "`nhsuk/nhsuk-frontend`",
+          "GOV.UK One Login OIDC integration": "`govuk-one-login/authentication-stubs`",
+          "AWS landing-zone Terraform": "`ministryofjustice/modernisation-platform`",
+          "Cross-government API discovery / catalogue": "`co-cddo/api-catalogue`",
+          "Blazor / .NET GOV.UK component library": "`Dorset-Council-UK/GdsBlazorComponents`",
+          "HTTP routing in front of multi-tenant services": "`alphagov/router`",
+          "AI / LLM RAG pipeline reference": "`i-dot-ai/redbox` (archived 2026-01)",
+          "Multi-tenant SaaS isolation framework": "None found",
+          "Tamper-evident audit logging library": "None found",
+          "Mermaid / PlantUML rendering pipeline": "None found in UK gov repos",
+          "EA tooling adapter (LeanIX / Ardoq / MEGA)": "\"enterprise architecture tooling adapter integration leanix ardoq\"",
+          "Companies House client library": "None at SaaS quality",
+          "Markdown / AsciiDoc renderer with GOV.UK styling": "None found as a library",
+          "Organisation": "i.AI / Cabinet Office (formerly known as the AI Incubator)",
+          "Repository URL": "https://github.com/i-dot-ai/redbox",
+          "Language": "Jupyter Notebook 81.7%, Python 10.2%",
+          "License": "MIT",
+          "Last Activity": "Last release 0.17.2 on 2025-10-27. **Archived 2026-01-09**.",
+          "Stars": "n/a",
+          "Contributors": "Active GDS team, 12,492 commits, 102 releases",
+          "Documentation": "Good — README, architecture notes, LangGraph wiring",
+          "Quick Start": "NuGet `Dorset-Council-UK.GdsBlazorComponents`",
+          "License Compatibility": "5",
+          "Code Quality": "4",
+          "Documentation Quality": "4",
+          "Tech Stack Alignment": "3",
+          "Activity / Maintenance": "1",
+          "Overall": "**3.4**",
+          "Markdown / AsciiDoc renderer": "\"markdown asciidoc rendering toolkit for technical documentation static sites\"",
+          "Companies House client": "\"Companies House API client library SME verification\""
+        },
+        "reqIds": [
+          "BR-001",
+          "BR-008",
+          "FR-001",
+          "FR-015",
+          "NFR-SEC-001",
+          "NFR-SEC-009",
+          "INT-001",
+          "INT-009",
+          "DR-001",
+          "DR-007",
+          "FR-008",
+          "FR-013",
+          "INT-004",
+          "NFR-U-001",
+          "NFR-C-003",
+          "FR-009",
+          "NFR-C-001",
+          "NFR-A-001",
+          "NFR-A-002",
+          "INT-006",
+          "NFR-C-007",
+          "NFR-I-001",
+          "NFR-S-001",
+          "NFR-A-003",
+          "INT-005",
+          "FR-004",
+          "NFR-P-002",
+          "FR-002",
+          "NFR-SEC-002",
+          "FR-005",
+          "FR-012",
+          "NFR-C-002",
+          "FR-003",
+          "BR-005",
+          "BR-002",
+          "BR-003",
+          "BR-004",
+          "BR-006",
+          "BR-007",
+          "FR-006",
+          "FR-007",
+          "FR-010",
+          "FR-011",
+          "FR-014",
+          "NFR-P-001",
+          "NFR-P-003",
+          "NFR-S-002",
+          "NFR-SEC-003",
+          "NFR-SEC-004",
+          "NFR-SEC-005",
+          "NFR-SEC-006",
+          "NFR-SEC-007",
+          "NFR-SEC-008",
+          "NFR-C-004",
+          "NFR-C-005",
+          "NFR-C-006",
+          "NFR-U-002",
+          "NFR-M-001",
+          "NFR-M-002",
+          "NFR-M-003",
+          "NFR-I-002",
+          "INT-002",
+          "INT-003",
+          "INT-007",
+          "INT-008"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-RSCH-v1.0": {
+        "type": "RSCH",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/research/ARC-001-RSCH-v1.0.md",
+        "title": "Technology and Service Research: ArcKit as a Service (Managed SaaS) — SaaS Control Plane",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner — pending Lead Architect appointment)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-001-RSCH-v1.0",
+          "Document Type": "Technology and Service Research (SaaS-Control-Plane Scope)",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Cycle": "Quarterly through Beta; annual post-GA",
+          "Next Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (Service Owner — pending Lead Architect appointment)",
+          "Reviewed By": "PENDING",
+          "Approved By": "PENDING",
+          "Distribution": "Project Team, Architecture, Security Lead, DPO, FinOps, CCS liaison, Project 002 (sovereign) liaison",
+          "GOV.UK Platforms": "0",
+          "TOTAL": "6 categories",
+          "Total": "**£1.15M**",
+          "3-Year TCO": "|",
+          "Subtotal per cell": "**£57k**",
+          "Cells in flight (cell-fill discipline of ADR-001)": "1 cell",
+          "Total infra Year-1/Year-2/Year-3": "**£58k**",
+          "3-Year TCO (infra)": "|",
+          "Ardoq": "Enterprise EA tooling",
+          "MEGA HOPEX": "Enterprise EA tooling",
+          "Bizzdesign Horizzon": "Enterprise EA tooling",
+          "Sparx Enterprise Architect": "Modelling tool (perpetual licence + SaaS hosted variants)",
+          "TOTAL (mid-point)": "| **£0.51M**"
+        },
+        "reqIds": [
+          "FR-012",
+          "FR-014",
+          "NFR-C-002",
+          "FR-007",
+          "BR-004",
+          "BR-001",
+          "BR-002",
+          "BR-005",
+          "BR-006",
+          "BR-007",
+          "FR-002",
+          "FR-004",
+          "FR-005",
+          "FR-009",
+          "NFR-A-001",
+          "NFR-A-002",
+          "NFR-A-003",
+          "NFR-S-001",
+          "NFR-S-002",
+          "NFR-SEC-001",
+          "NFR-SEC-002",
+          "NFR-SEC-007",
+          "NFR-SEC-008",
+          "NFR-SEC-009",
+          "NFR-C-001",
+          "NFR-C-007",
+          "NFR-I-001",
+          "NFR-I-002",
+          "INT-001",
+          "INT-005",
+          "INT-006",
+          "INT-007",
+          "BR-003",
+          "BR-008",
+          "NFR-SEC-004",
+          "NFR-P-002",
+          "NFR-M-001",
+          "NFR-SEC-003",
+          "NFR-C-005",
+          "NFR-C-009",
+          "FR-015",
+          "INT-002"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
       "ARC-002-AIPB-v1.0": {
         "type": "AIPB",
         "project": "002-arckit-sovereign",
@@ -5157,6 +5822,31 @@
     },
     "edges": [
       {
+        "from": "ARC-000-RSCH-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-000-RSCH-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-000-RSCH-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-000-RSCH-v1.0",
+        "to": "ARC-001-RSCH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-000-RSCH-v1.0",
+        "to": "ARC-001-SOBC",
+        "type": "references"
+      },
+      {
         "from": "ARC-001-AIPB-v1.0",
         "to": "ARC-001-DPIA",
         "type": "references"
@@ -6527,6 +7217,151 @@
         "type": "references"
       },
       {
+        "from": "ARC-001-AWRS-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-AWRS-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-AWRS-v1.0",
+        "to": "ARC-001-ADR-002",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-AWRS-v1.0",
+        "to": "ARC-001-ADR-006",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-AWRS-v1.0",
+        "to": "ARC-001-HLDR",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-AWRS-v1.0",
+        "to": "ARC-001-ADR-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-AWRS-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-AZRS-v1.0",
+        "to": "ARC-001-HLDR",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-AZRS-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-AZRS-v1.0",
+        "to": "ARC-001-DIAG-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-GCRS-v1.0",
+        "to": "ARC-001-DPIA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-GCRS-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-GCRS-v1.0",
+        "to": "ARC-001-HLDR",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-GCRS-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-GCRS-v1.0",
+        "to": "ARC-001-ADR",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-GCRS-v1.0",
+        "to": "ARC-001-AIPB",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-GOVR-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-GOVR-v1.0",
+        "to": "ARC-000-RSCH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-GOVR-v1.0",
+        "to": "ARC-001-ADR-006",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-GOVR-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RSCH-v1.0",
+        "to": "ARC-000-RSCH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RSCH-v1.0",
+        "to": "ARC-001-AWRS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RSCH-v1.0",
+        "to": "ARC-001-AZRS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RSCH-v1.0",
+        "to": "ARC-001-GCRS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RSCH-v1.0",
+        "to": "ARC-001-GOVR",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RSCH-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RSCH-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RSCH-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RSCH-v1.0",
+        "to": "ARC-001-SOBC",
+        "type": "references"
+      },
+      {
         "from": "ARC-002-AIPB-v1.0",
         "to": "ARC-002-ADR-004",
         "type": "references"
@@ -7569,7 +8404,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-03T20:12:22.048Z",
+    "baseline": "2026-05-03T22:12:55.744Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -7639,9 +8474,9 @@
       {
         "project": "001-arckit-saas",
         "projectId": "001",
-        "artifactCount": 27,
-        "edgeCount": 274,
-        "density": 10.15,
+        "artifactCount": 32,
+        "edgeCount": 303,
+        "density": 9.47,
         "coverage": {
           "essentialPresent": [
             "REQ",
@@ -7664,16 +8499,21 @@
           "presentTypes": [
             "ADR",
             "AIPB",
+            "AWRS",
+            "AZRS",
             "DEVOPS",
             "DIAG",
             "DPIA",
             "FINOPS",
+            "GCRS",
+            "GOVR",
             "HLDR",
             "OPS",
             "PLAN",
             "REQ",
             "RISK",
             "ROAD",
+            "RSCH",
             "SECD",
             "SOBC",
             "STKE",
@@ -7686,8 +8526,9 @@
             "Operations": 3,
             "Architecture": 3,
             "Planning": 3,
-            "Discovery": 2,
-            "Governance": 2
+            "Discovery": 3,
+            "Governance": 2,
+            "Research": 4
           }
         },
         "compliance": {
@@ -7712,7 +8553,7 @@
         },
         "health": {
           "stale": 0,
-          "draft": 23,
+          "draft": 27,
           "orphan": 0
         },
         "contextualSuggestions": [
