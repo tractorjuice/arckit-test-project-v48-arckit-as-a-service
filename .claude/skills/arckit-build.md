@@ -66,8 +66,8 @@ The helper returns only the *filename* (e.g. `ARC-001-REQ-v1.0.md`), not the ful
 | ROADMAP | `arckit:roadmap` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-ROAD-v{V}.md` | PLAN |
 | TCOP | `arckit:tcop` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-TCOP-v{V}.md` | REQ, STKE, RISK, ADR-* |
 | SBD | `arckit:secure` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-SBD-v{V}.md` | TCOP, RISK, REQ, ADR-* |
-| DPIA | `arckit:dpia` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-DPIA-v{V}.md` | REQ, STKE, RISK |
-| AIP | `arckit:ai-playbook` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-AIP-v{V}.md` | DPIA, RISK, REQ, ADR-004 |
+| DPIA | `arckit:dpia` | `{P} scope=full-system consultation=surveys` | `projects/{P}-{NAME}/ARC-{P}-DPIA-v{V}.md` | REQ, STKE, RISK |
+| AIP | `arckit:ai-playbook` | `{P} ai-mode=auto-detect-from-REQ-FRs` | `projects/{P}-{NAME}/ARC-{P}-AIP-v{V}.md` | DPIA, RISK, REQ, ADR-004 |
 | SVCASS | `arckit:service-assessment` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-SVCASS-v{V}.md` | TCOP, SBD, DPIA, AIP, REQ, STKE |
 | HLD | `arckit:hld-review` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-HLD-v{V}.md` | REQ, ADR-*, PRIN |
 | DIAG-C4 | `arckit:diagram` | `{P} c4-context` | `projects/{P}-{NAME}/diagrams/ARC-{P}-DIAG-001-v{V}.md` | HLD |
@@ -78,7 +78,7 @@ The helper returns only the *filename* (e.g. `ARC-001-REQ-v1.0.md`), not the ful
 | OPS | `arckit:operationalize` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-OPS-v{V}.md` | HLD, DEVOPS, RISK |
 | TRACE | `arckit:traceability` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-TRACE-v{V}.md` | REQ, STKE, ADR-*, RISK, HLD, DPIA, SBD, TCOP, PLAN, ROADMAP, AIP, SVCASS, DEVOPS, FINOPS, OPS |
 
-**ADR topic seeding** — `arckit:adr` requires a topic. Topics are recipe-defined, not auto-discovered in v0.1. UK-SaaS default ADR set:
+**ADR topic seeding** — `arckit:adr` requires a topic. Topics are recipe-defined, not auto-discovered (auto-discovery deferred to v0.5+ external recipes). UK-SaaS default ADR set:
 
 | ADR | Topic |
 |-----|-------|
@@ -119,8 +119,8 @@ Standard topological sort with parallelism:
 - Wave 1: GLOSSARY, REQ, STKE (deps on PRIN only)
 - Wave 2: ADR-001..ADR-008 (parallel; deps on PRIN + REQ)
 - Wave 3: STRATEGY, WARDLEY, RISK, HLD, DEVOPS, FINOPS (parallel)
-- Wave 4: SOBC, TCOP, SBD, DPIA, DIAG-C4, DIAG-SEQ (parallel; DIAG-DEP waits on ADR-006 which is already done in W2)
-- Wave 5: DIAG-DEP, PLAN, OPS, AIP (parallel; AIP only if in scope)
+- Wave 4: SOBC, TCOP, SBD, DPIA, DIAG-C4, DIAG-SEQ (parallel)
+- Wave 5: DIAG-DEP, PLAN, OPS, AIP (parallel; AIP only if in scope) — note: DIAG-DEP and OPS have all deps satisfied by end of W3 and could topologically run in W4; deferred to W5 to keep wave widths balanced (W4 already has 6 targets)
 - Wave 6: ROADMAP (deps on PLAN)
 - Wave 7: SVCASS (deps on TCOP, SBD, DPIA, AIP)
 - Wave 8: TRACE
@@ -158,18 +158,38 @@ Inputs you may read (only these):
 {INPUT_PATHS_BULLETED}
 
 Steps:
-1. Use the Skill tool to invoke `{SKILL}` with the args above verbatim. Do not ask interactive
-   questions — if the skill calls AskUserQuestion, supply sensible defaults and continue.
+1. Use the Skill tool to invoke `{SKILL}` with the args above verbatim.
+
+   **Interactive Q&A handling (CRITICAL — subagents have no user available):**
+   If the skill calls `AskUserQuestion`, you MUST select the option marked `(Recommended)`
+   without asking. If no option is marked Recommended, use these defaults:
+
+   | Question header | Default |
+   |-----------------|---------|
+   | Scope | `Full system` |
+   | Consultation | `Surveys` |
+   | Phase | value from skill args, else `alpha` |
+   | AI mode / scope | derive from REQ FRs (AI-in-scope iff any FR mentions AI/ML/LLM) |
+   | Risk appetite | `Medium` |
+   | Anything else | first option in the list |
+
+   Document the choice you made in your final report so the orchestrator can record it.
+   Never block waiting for an answer.
+
 2. Follow the skill's instructions exactly. Resolve the output filename via the ArcKit helper —
    **positional args first, flags last**:
-     - Single-instance: `bash scripts/bash/generate-document-id.sh {PROJECT_ID} {TYPE} {VERSION} --filename`
-     - Multi-instance (ADR/DIAG/...): `bash scripts/bash/generate-document-id.sh {PROJECT_ID} {TYPE} {VERSION} --filename --next-num projects/{PROJECT_ID}-{NAME}/{decisions|diagrams}`
-   The helper returns only the bare filename; compose the full path against the recipe-defined
-   subfolder. Do not hardcode. The expected path above is for validation only.
-3. Sanity check via Bash:
+     - Single-instance: `ACTUAL_PATH="projects/{PROJECT_ID}-{NAME}/$(bash scripts/bash/generate-document-id.sh {PROJECT_ID} {TYPE} {VERSION} --filename)"`
+     - Multi-instance (ADR/DIAG/...): `ACTUAL_PATH="projects/{PROJECT_ID}-{NAME}/{decisions|diagrams}/$(bash scripts/bash/generate-document-id.sh {PROJECT_ID} {TYPE} {VERSION} --filename --next-num projects/{PROJECT_ID}-{NAME}/{decisions|diagrams})"`
+
+   Capture the resolved path into `ACTUAL_PATH` as shown. The helper returns only the bare
+   filename; the harness composes the full path against the recipe-defined subfolder.
+   Do not hardcode. The expected path above is for validation only.
+
+3. Sanity check via Bash (note: pass `ACTUAL_PATH` set in step 2):
    - `test -f "$ACTUAL_PATH"` returns success
-   - `wc -l < "$ACTUAL_PATH"` returns > 100
+   - `[ "$(wc -l < "$ACTUAL_PATH")" -gt 100 ]`
    - `grep -c '^## Document Control\|^| Document ID' "$ACTUAL_PATH"` returns ≥ 1
+
 4. Do NOT git commit. Do NOT modify other files. The orchestrator handles version control.
 
 Report back ≤ 200 words:
@@ -248,7 +268,7 @@ Otherwise, proceed.
 
 ```json
 {
-  "version": "0.1",
+  "state_format_version": "0.2",
   "project_id": "001",
   "project_name": "001-arckit-saas",
   "recipe": "uk-saas",
@@ -274,7 +294,14 @@ Otherwise, proceed.
 1. **Parse arguments** from skill input (project, --plan, --resume, etc.). If project not specified, ask user.
 2. **Detect project**: resolve `<project>` arg → `projects/{P}-{slug}/`. Confirm directory exists.
 3. **Load state.json** at `projects/{P}/.arckit/state.json`. If absent, scan project dir for existing `ARC-{P}-*-v*.md` files and infer initial state.
-4. **Subagent capability smoke-test** (first wave only, skip on `--resume`): before dispatching the real wave, spawn one throwaway `general-purpose` Agent with the prompt *"Use the Skill tool to list whether `arckit:principles` is available. Return one line: AVAILABLE or NOT_AVAILABLE."* If the response is `NOT_AVAILABLE`, halt with a clear error: subagents in this session do not have access to plugin skills (Failure mode #1). Suggest enabling the plugin at user-scope or running the harness from a session where `claude --print '/skill list'` shows the `arckit:*` family.
+4. **Subagent capability smoke-test** (first wave only, skip on `--resume`): before dispatching the real wave, spawn one throwaway `general-purpose` Agent with this prompt:
+
+   > "Examine your system-reminder messages — they enumerate the skills available in this conversation. Return exactly one line:
+   > - `AVAILABLE` if the list contains `arckit:principles` (or any other `arckit:*` skill).
+   > - `NOT_AVAILABLE` otherwise.
+   > Do NOT invoke any skill. Do NOT call any tool other than reading your own context."
+
+   This is a metadata check, not a skill invocation — it should complete in seconds without loading any skill prompt. If the response is `NOT_AVAILABLE`, halt with a clear error: subagents in this session do not have access to plugin skills (Failure mode #1). Suggest enabling the plugin at user-scope or running the harness from a session where `claude --print '/skill list'` shows the `arckit:*` family.
 5. **Compute work list**: recipe targets minus `state.targets` whose `status: complete` AND file exists.
 6. **If `--plan`**: print plan (each wave + targets + line `(skip|build) target ← deps`), exit.
 7. **For each wave** (sequential outer loop):
@@ -295,7 +322,7 @@ Otherwise, proceed.
 
 ## Failure modes to watch for
 
-- **Subagent doesn't have access to `arckit:*` skills** — if Skill tool returns "skill not found", surface clearly. Workaround: load the skill prompt in main context once, pass as plain text to agent (not implemented in v0.1).
+- **Subagent doesn't have access to `arckit:*` skills** — detected by the smoke-test in step 4 of the run order; halts the build before any wave dispatches. Workaround if smoke-test fails: load the skill prompt in main context once, pass as plain text to agent (deferred to v0.3+).
 - **Skill expects interactive Q&A** — some skills (e.g., `/arckit:dpia`) ask AskUserQuestion. The agent prompt must pre-resolve those by spelling them out in `{SKILL_ARGS}`. The recipe's Skill-args column should be specific enough to skip interaction.
 - **Output path collision** — two skills writing to same path. Recipe must have unique paths per target.
 - **State drift** — user manually deletes/edits artefacts after build. Detect via `test -f` validation + optional file-hash check (v0.3+).
@@ -303,9 +330,8 @@ Otherwise, proceed.
 
 ## Future versions
 
-- v0.2: full DAG resolver (currently uses hardcoded wave hints).
-- v0.3: input-hash-based change detection — skip if all inputs unchanged.
-- v0.4: cross-reference + schema validators between waves.
-- v0.5: external recipe YAML files (not hardcoded in skill).
+- v0.3: full DAG resolver (currently waves are computed from the recipe but the algorithm runs against a hardcoded recipe table); input-hash-based change detection — skip if all inputs unchanged; hard-vs-soft dependency distinction (e.g., DPIA *can* read SBD if present without blocking on it).
+- v0.4: cross-reference + schema validators between waves; orchestrator-side fallback for skills inaccessible to subagents.
+- v0.5: external recipe YAML files (not hardcoded in skill); ADR topic auto-discovery.
 - v0.6: CI mode (`--validate-only` for GitHub Actions).
-- v1.0: skills declare I/O in frontmatter; harness reads frontmatter directly; dedicated `arckit:artefact-worker` subagent type.
+- v1.0: skills declare I/O in frontmatter; harness reads frontmatter directly; dedicated `arckit:artefact-worker` subagent type; recipe-table "Expected output path" column dropped (validation invokes the helper directly — single source of truth).
