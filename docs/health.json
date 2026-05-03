@@ -1,8 +1,8 @@
 {
-  "generated": "2026-05-03T08:45:26.742Z",
+  "generated": "2026-05-03T12:32:37.902Z",
   "scanned": {
     "projects": 2,
-    "artifacts": 4
+    "artifacts": 5
   },
   "summary": {
     "HIGH": 0,
@@ -22,13 +22,13 @@
   "projects": [
     {
       "id": "001-arckit-saas",
-      "artifacts": 2,
+      "artifacts": 3,
       "findings": [
         {
           "severity": "MEDIUM",
           "rule": "ORPHAN-REQ",
           "file": "ARC-001-REQ-v1.0.md",
-          "message": "Total requirements: 70\n  Requirements not referenced by any ADR: 70\n  Examples: BR-001, BR-002, BR-003, BR-004, BR-005 (+65 more)",
+          "message": "Total requirements: 70\n  Requirements not referenced by any ADR: 43\n  Examples: BR-002, BR-003, BR-006, BR-007, BR-008 (+38 more)",
           "action": "Review whether these requirements need architectural decisions documented as ADRs"
         }
       ]

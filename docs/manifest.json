@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-03T08:45:49.156Z",
+  "generated": "2026-05-03T12:32:15.362Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -924,6 +924,14 @@
           "documentId": "ARC-001-STKE-v1.0",
           "extension": ".md"
         }
+      ],
+      "decisions": [
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-001-v1.0.md",
+          "title": "ADR-001 — Tenant Isolation Model",
+          "documentId": "ARC-001-ADR-001-v1.0",
+          "extension": ".md"
+        }
       ]
     },
     {
@@ -1185,6 +1193,75 @@
           "ageDays": 0
         }
       },
+      "ARC-001-ADR-001-v1.0": {
+        "type": "ADR",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-001-v1.0.md",
+        "title": "ADR-001 — Tenant Isolation Model",
+        "status": "Proposed",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner — pending appointment of Lead Architect)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-001-ADR-001-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "Proposed",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (Service Owner — pending appointment of Lead Architect)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture Team, Security Lead, DPO, Crown Commercial Service liaison",
+          "Escalation Level": "Department",
+          "Governance Forum": "ArcKit Architecture Review Board (ARB)",
+          "Decision Required By": "2026-06-30 (before HLD work begins)"
+        },
+        "reqIds": [
+          "FR-006",
+          "BR-001",
+          "BR-005",
+          "NFR-SEC-002",
+          "NFR-I-001",
+          "NFR-S-001",
+          "NFR-C-007",
+          "NFR-SEC-001",
+          "NFR-A-003",
+          "BR-004",
+          "NFR-C-001",
+          "NFR-C-005",
+          "NFR-C-004",
+          "NFR-SEC-009",
+          "NFR-SEC-008",
+          "FR-001",
+          "NFR-SEC-004",
+          "NFR-M-001",
+          "NFR-SEC-006",
+          "INT-009",
+          "FR-002",
+          "FR-004",
+          "FR-014",
+          "NFR-SEC-003",
+          "NFR-A-001",
+          "NFR-C-009",
+          "DR-001",
+          "DR-007"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
       "ARC-002-REQ-v1.0": {
         "type": "REQ",
         "project": "002-arckit-sovereign",
@@ -1358,6 +1435,26 @@
         "type": "references"
       },
       {
+        "from": "ARC-001-ADR-001-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-ADR-001-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-ADR-001-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-ADR-001-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
         "from": "ARC-002-REQ-v1.0",
         "to": "ARC-000-PRIN",
         "type": "references"
@@ -1395,7 +1492,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-03T08:45:49.175Z",
+    "baseline": "2026-05-03T12:32:15.371Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -1465,13 +1562,14 @@
       {
         "project": "001-arckit-saas",
         "projectId": "001",
-        "artifactCount": 2,
-        "edgeCount": 3,
-        "density": 1.5,
+        "artifactCount": 3,
+        "edgeCount": 7,
+        "density": 2.33,
         "coverage": {
           "essentialPresent": [
             "REQ",
-            "STKE"
+            "STKE",
+            "ADR"
           ],
           "essentialMissing": [
             {
@@ -1485,12 +1583,6 @@
               "command": "/arckit:sobc",
               "label": "Strategic Outline Business Case",
               "tier": 2
-            },
-            {
-              "type": "ADR",
-              "command": "/arckit:adr",
-              "label": "Architecture Decision Record",
-              "tier": 3
             },
             {
               "type": "HLDR",
@@ -1511,13 +1603,15 @@
               "tier": 4
             }
           ],
-          "essentialPct": 25,
+          "essentialPct": 38,
           "presentTypes": [
+            "ADR",
             "REQ",
             "STKE"
           ],
           "presentByCategory": {
-            "Discovery": 2
+            "Discovery": 2,
+            "Architecture": 1
           }
         },
         "compliance": {
@@ -1583,9 +1677,9 @@
             "reason": "Tier 2 essential missing"
           },
           {
-            "command": "/arckit:adr",
-            "label": "Architecture Decision Record",
-            "type": "ADR",
+            "command": "/arckit:hld-review",
+            "label": "High-Level Design Review",
+            "type": "HLDR",
             "tier": 3,
             "reason": "Tier 3 essential missing"
           }
