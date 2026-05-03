@@ -1,0 +1,101 @@
+{
+  "state_format_version": "0.2",
+  "project_id": "002",
+  "project_name": "002-arckit-sovereign",
+  "recipe": "uk-saas",
+  "recipe_overrides": {
+    "swap": {"SBD": "MOD-SBD"},
+    "skip": ["SVCASS"],
+    "rationale": "Sovereign / air-gapped route per Principle 21. SBD swapped for MOD Secure by Design (JSP 440 / 604, Security Aspects Letter). SVCASS skipped — not a public-facing GDS service; assurance gates flow through MOD accreditation pathway, not GDS Service Standard. AIP retained because AI is pluggable per ADR-004 (sovereign customer can point at on-premise model)."
+  },
+  "started_at": "2026-05-03T18:20:00Z",
+  "current_wave": 3,
+  "targets": {
+    "PRIN": {
+      "status": "complete",
+      "path": "projects/000-global/ARC-000-PRIN-v2.0.md",
+      "wave": 0,
+      "source": "shared-with-001",
+      "skill": "arckit:principles"
+    },
+    "GLOSSARY": {
+      "status": "complete",
+      "path": "projects/000-global/ARC-000-GLO-v1.0.md",
+      "wave": 0,
+      "source": "shared-with-001",
+      "skill": "arckit:glossary"
+    },
+    "STRATEGY": {
+      "status": "complete",
+      "path": "projects/000-global/ARC-000-STRAT-v1.0.md",
+      "wave": 0,
+      "source": "shared-with-001",
+      "skill": "arckit:strategy"
+    },
+    "WARDLEY": {
+      "status": "complete",
+      "path": "projects/000-global/ARC-000-WARD-v1.0.md",
+      "wave": 0,
+      "source": "shared-with-001",
+      "skill": "arckit:wardley"
+    },
+    "REQ": {
+      "status": "complete",
+      "path": "projects/002-arckit-sovereign/ARC-002-REQ-v1.0.md",
+      "wave": 0,
+      "source": "pre-existing",
+      "skill": "arckit:requirements"
+    },
+    "STKE": {
+      "status": "complete",
+      "path": "projects/002-arckit-sovereign/ARC-002-STKE-v1.0.md",
+      "wave": 0,
+      "source": "pre-existing",
+      "skill": "arckit:stakeholders"
+    },
+    "ADR-001": {"status": "complete", "wave": 2, "skill": "arckit:adr", "topic": "Air-gapped Operation Model", "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-001-v1.0.md", "line_count": 777, "agent_id": "a5cce6b744d7393fc"},
+    "ADR-002": {"status": "complete", "wave": 2, "skill": "arckit:adr", "topic": "Signed Release Bundle", "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-002-v1.0.md", "line_count": 620, "agent_id": "a485d1103a3c1a741"},
+    "ADR-003": {"status": "complete", "wave": 2, "skill": "arckit:adr", "topic": "Cleared-Personnel Access Model", "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-003-v1.0.md", "line_count": 750, "agent_id": "acde79642d27f3250"},
+    "ADR-004": {"status": "complete", "wave": 2, "skill": "arckit:adr", "topic": "On-Premise AI Model Integration", "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-004-v1.0.md", "line_count": 722, "agent_id": "a492421e96895b3ae"},
+    "ADR-005": {"status": "complete", "wave": 2, "skill": "arckit:adr", "topic": "Customer-Controlled Telemetry/Time/CA/Mirror", "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-005-v1.0.md", "line_count": 642, "agent_id": "a8a28c70d91adffd1"},
+    "ADR-006": {"status": "complete", "wave": 2, "skill": "arckit:adr", "topic": "JSP 440 / SAL Alignment", "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-006-v1.0.md", "line_count": 603, "agent_id": "ae1681bfc994dd296"},
+    "ADR-007": {"status": "complete", "wave": 2, "skill": "arckit:adr", "topic": "Distribution Model — offline media", "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-007-v1.0.md", "line_count": 801, "agent_id": "a954bfc5e7af6817f"},
+    "ADR-008": {"status": "complete", "wave": 2, "skill": "arckit:adr", "topic": "Long-Term Support Release Line", "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-008-v1.0.md", "line_count": 662, "agent_id": "a09af91514729e00b"},
+    "RISK": {"status": "pending", "skill": "arckit:risk"},
+    "SOBC": {"status": "pending", "skill": "arckit:sobc"},
+    "PLAN": {"status": "pending", "skill": "arckit:plan"},
+    "ROADMAP": {"status": "pending", "skill": "arckit:roadmap"},
+    "TCOP": {"status": "pending", "skill": "arckit:tcop"},
+    "MOD-SBD": {"status": "pending", "skill": "arckit:mod-secure", "note": "Replaces SBD for sovereign — uses MOD Secure by Design framework, JSP 440, Security Aspects Letter"},
+    "DPIA": {"status": "pending", "skill": "arckit:dpia"},
+    "AIP": {"status": "pending", "skill": "arckit:ai-playbook"},
+    "HLD": {"status": "pending", "skill": "arckit:hld-review"},
+    "DIAG-C4": {"status": "pending", "skill": "arckit:diagram"},
+    "DIAG-SEQ": {"status": "pending", "skill": "arckit:diagram"},
+    "DIAG-DEP": {"status": "pending", "skill": "arckit:diagram"},
+    "DEVOPS": {"status": "pending", "skill": "arckit:devops"},
+    "FINOPS": {"status": "pending", "skill": "arckit:finops"},
+    "OPS": {"status": "pending", "skill": "arckit:operationalize"},
+    "TRACE": {"status": "pending", "skill": "arckit:traceability"}
+  },
+  "waves": [
+    {"n": 0, "targets": ["PRIN", "GLOSSARY", "STRATEGY", "WARDLEY", "REQ", "STKE"], "status": "complete", "source": "pre-existing"},
+    {
+      "n": 2,
+      "targets": ["ADR-001", "ADR-002", "ADR-003", "ADR-004", "ADR-005", "ADR-006", "ADR-007", "ADR-008"],
+      "status": "complete",
+      "completed_at": "2026-05-03T18:30:00Z",
+      "via": "/arckit-build harness — first parallel wave on project 002",
+      "wall_clock_minutes": 8,
+      "lines_generated": 5577,
+      "note": "8 parallel ADR agents; sovereign-specific topics seeded explicitly via skill args (ADR topic auto-discovery deferred to v0.5+). All passed validation. Agents reported orchestrator-assigned numbers were honoured cleanly — no helper-script collisions because each agent had an explicit OUTPUT PATH in its prompt."
+    }
+  ],
+  "next_wave_plan": {
+    "n": 3,
+    "targets": ["RISK", "HLD", "DEVOPS", "FINOPS"],
+    "rationale": "RISK needs PRIN+REQ+STKE+ADR-* (all done). HLD needs PRIN+REQ+ADR-* (all done). DEVOPS needs REQ+ADR-* (all done). FINOPS needs REQ+RISK — wait, FINOPS would need RISK which is in this wave. Move FINOPS to wave 4.",
+    "estimated_agents": 3,
+    "estimated_duration_min": "8-12 wall-clock"
+  }
+}
