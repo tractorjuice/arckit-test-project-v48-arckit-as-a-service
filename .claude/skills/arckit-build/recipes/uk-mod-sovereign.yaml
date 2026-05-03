@@ -162,7 +162,7 @@ targets:
   - id: HLD
     skill: arckit:hld-review
     args: "{P}"
-    output: { project: "{P}-{NAME}", type: HLD }
+    output: { project: "{P}-{NAME}", type: HLDR }
     deps: [REQ, "ADR-*", PRIN]
 
   - id: SOBC
@@ -181,7 +181,7 @@ targets:
   - id: MOD_SBD
     skill: arckit:mod-secure
     args: "{P}"
-    output: { project: "{P}-{NAME}", type: MOD-SBD }
+    output: { project: "{P}-{NAME}", type: SECD-MOD }
     deps: [TCOP, RISK, REQ, "ADR-*"]
 
   - id: DPIA
@@ -247,7 +247,7 @@ targets:
   - id: AIP
     skill: arckit:ai-playbook
     args: "{P} ai-mode=on-premise"
-    output: { project: "{P}-{NAME}", type: AIP }
+    output: { project: "{P}-{NAME}", type: AIPB }
     deps: [DPIA, RISK, REQ, ADR-004]
 
   - id: JSP_936
@@ -268,7 +268,7 @@ targets:
   - id: TRACE
     skill: arckit:traceability
     args: "{P}"
-    output: { project: "{P}-{NAME}", type: TRACE }
+    output: { project: "{P}-{NAME}", type: TRAC }
     deps:
       [REQ, STKE, "ADR-*", RISK, HLD, DPIA, MOD_SBD, TCOP,
        PLAN, ROADMAP, AIP, JSP_936, DEVOPS, FINOPS, OPS]
