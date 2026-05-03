@@ -1,9 +1,9 @@
 {
-  "generated": "2026-05-03T13:23:10.920533Z",
+  "generated": "2026-05-03T13:29:37.298Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
-  "defaultDocument": "projects/000-global/ARC-000-PRIN-v2.0.md",
+  "defaultDocument": "projects/000-global/ARC-000-PRIN-v1.0.md",
   "guides": [
     {
       "path": "docs/guides/adr.md",
@@ -73,7 +73,7 @@
     },
     {
       "path": "docs/guides/codes-of-practice.md",
-      "title": "UK Government Codes of Practice \u2014 ArcKit Reference Guide",
+      "title": "UK Government Codes of Practice — ArcKit Reference Guide",
       "category": "Compliance",
       "status": "beta"
     },
@@ -109,7 +109,7 @@
     },
     {
       "path": "docs/guides/data-quality-framework.md",
-      "title": "UK Government Data Quality Framework \u2014 ArcKit Reference Guide",
+      "title": "UK Government Data Quality Framework — ArcKit Reference Guide",
       "category": "Governance",
       "status": "beta"
     },
@@ -265,7 +265,7 @@
     },
     {
       "path": "docs/guides/fr-irn.md",
-      "title": "IRN \u2014 Indice de R\u00e9silience Num\u00e9rique Playbook",
+      "title": "IRN — Indice de Résilience Numérique Playbook",
       "category": "Other",
       "status": "beta"
     },
@@ -343,7 +343,7 @@
     },
     {
       "path": "docs/guides/govs-007-security.md",
-      "title": "GovS 007: Security \u2014 ArcKit Reference Guide",
+      "title": "GovS 007: Security — ArcKit Reference Guide",
       "category": "Compliance",
       "status": "beta"
     },
@@ -355,7 +355,7 @@
     },
     {
       "path": "docs/guides/graph-report.md",
-      "title": "`/arckit:graph-report` \u2014 governance metrics dashboard",
+      "title": "`/arckit:graph-report` — governance metrics dashboard",
       "category": "Other",
       "status": "beta"
     },
@@ -433,13 +433,13 @@
     },
     {
       "path": "docs/guides/national-data-strategy.md",
-      "title": "UK National Data Strategy \u2014 ArcKit Reference Guide",
+      "title": "UK National Data Strategy — ArcKit Reference Guide",
       "category": "Compliance",
       "status": "beta"
     },
     {
       "path": "docs/guides/navigator.md",
-      "title": "`/arckit:navigator` \u2014 what should I do next?",
+      "title": "`/arckit:navigator` — what should I do next?",
       "category": "Other",
       "status": "beta"
     },
@@ -797,11 +797,10 @@
   "global": [
     {
       "path": "projects/000-global/ARC-000-GLOSS-v1.0.md",
-      "title": "Glossary",
-      "category": "Discovery",
+      "title": "GLOSS",
+      "category": "Other",
       "documentId": "ARC-000-GLOSS-v1.0",
-      "extension": ".md",
-      "isDefault": false
+      "extension": ".md"
     },
     {
       "path": "projects/000-global/ARC-000-PRIN-v1.0.md",
@@ -809,31 +808,28 @@
       "category": "Architecture",
       "documentId": "ARC-000-PRIN-v1.0",
       "extension": ".md",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "path": "projects/000-global/ARC-000-PRIN-v2.0.md",
       "title": "Architecture Principles",
       "category": "Architecture",
       "documentId": "ARC-000-PRIN-v2.0",
-      "extension": ".md",
-      "isDefault": true
+      "extension": ".md"
     },
     {
       "path": "projects/000-global/ARC-000-STRATEGY-v1.0.md",
-      "title": "Architecture Strategy",
-      "category": "Planning",
+      "title": "STRATEGY",
+      "category": "Other",
       "documentId": "ARC-000-STRATEGY-v1.0",
-      "extension": ".md",
-      "isDefault": false
+      "extension": ".md"
     },
     {
       "path": "projects/000-global/ARC-000-WARDLEY-v1.0.md",
-      "title": "Wardley Map",
-      "category": "Architecture",
+      "title": "WARDLEY",
+      "category": "Other",
       "documentId": "ARC-000-WARDLEY-v1.0",
-      "extension": ".md",
-      "isDefault": false
+      "extension": ".md"
     }
   ],
   "typeCategories": {
@@ -928,17 +924,7 @@
     "NPRA": "Governance",
     "AICH": "Compliance",
     "AUTI": "Architecture",
-    "FPRO": "Procurement",
-    "AIP": "Compliance",
-    "SECURE": "Compliance",
-    "MODSEC": "Compliance",
-    "HLD": "Design",
-    "DLD": "Design",
-    "ROADMAP": "Planning",
-    "STRATEGY": "Planning",
-    "WARDLEY": "Architecture",
-    "GLOSS": "Discovery",
-    "TRACE": "Compliance"
+    "FPRO": "Procurement"
   },
   "projects": [
     {
@@ -947,8 +933,8 @@
       "documents": [
         {
           "path": "projects/001-arckit-saas/ARC-001-AIP-v1.0.md",
-          "title": "AI Playbook Conformance",
-          "category": "Compliance",
+          "title": "AIP",
+          "category": "Other",
           "documentId": "ARC-001-AIP-v1.0",
           "extension": ".md"
         },
@@ -975,14 +961,14 @@
         },
         {
           "path": "projects/001-arckit-saas/ARC-001-HLD-v1.0.md",
-          "title": "High-Level Design",
-          "category": "Design",
+          "title": "HLD",
+          "category": "Other",
           "documentId": "ARC-001-HLD-v1.0",
           "extension": ".md"
         },
         {
           "path": "projects/001-arckit-saas/ARC-001-OPS-v1.0.md",
-          "title": "Operational Readiness Pack",
+          "title": "Operational Readiness",
           "category": "Operations",
           "documentId": "ARC-001-OPS-v1.0",
           "extension": ".md"
@@ -1010,15 +996,15 @@
         },
         {
           "path": "projects/001-arckit-saas/ARC-001-ROADMAP-v1.0.md",
-          "title": "Strategic Roadmap",
-          "category": "Planning",
+          "title": "ROADMAP",
+          "category": "Other",
           "documentId": "ARC-001-ROADMAP-v1.0",
           "extension": ".md"
         },
         {
           "path": "projects/001-arckit-saas/ARC-001-SECURE-v1.0.md",
-          "title": "Secure by Design Assessment",
-          "category": "Compliance",
+          "title": "SECURE",
+          "category": "Other",
           "documentId": "ARC-001-SECURE-v1.0",
           "extension": ".md"
         },
@@ -1038,104 +1024,93 @@
         },
         {
           "path": "projects/001-arckit-saas/ARC-001-SVCASS-v1.0.md",
-          "title": "GDS Service Standard Readiness",
+          "title": "Service Assessment",
           "category": "Compliance",
           "documentId": "ARC-001-SVCASS-v1.0",
           "extension": ".md"
         },
         {
           "path": "projects/001-arckit-saas/ARC-001-TCOP-v1.0.md",
-          "title": "Technology Code of Practice Assessment",
+          "title": "TCoP Assessment",
           "category": "Compliance",
           "documentId": "ARC-001-TCOP-v1.0",
           "extension": ".md"
         },
         {
           "path": "projects/001-arckit-saas/ARC-001-TRACE-v1.0.md",
-          "title": "Requirements Traceability Matrix",
-          "category": "Compliance",
+          "title": "TRACE",
+          "category": "Other",
           "documentId": "ARC-001-TRACE-v1.0",
-          "extension": ".md"
-        }
-      ],
-      "decisions": [
-        {
-          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-001-v1.0.md",
-          "title": "ADR-001 \u2014 Tenant Isolation Model",
-          "category": "Architecture",
-          "documentId": "ARC-001-ADR-001-v1.0",
-          "extension": ".md"
-        },
-        {
-          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-002-v1.0.md",
-          "title": "ADR-002 \u2014 Cloud Region and Storage Selection",
-          "category": "Architecture",
-          "documentId": "ARC-001-ADR-002-v1.0",
-          "extension": ".md"
-        },
-        {
-          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-003-v1.0.md",
-          "title": "ADR-003 \u2014 Identity Provider Integration and SSO",
-          "category": "Architecture",
-          "documentId": "ARC-001-ADR-003-v1.0",
-          "extension": ".md"
-        },
-        {
-          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-004-v1.0.md",
-          "title": "ADR-004 \u2014 AI Provider Abstraction and Model Strategy",
-          "category": "Architecture",
-          "documentId": "ARC-001-ADR-004-v1.0",
-          "extension": ".md"
-        },
-        {
-          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-005-v1.0.md",
-          "title": "ADR-005 \u2014 Observability Stack (Logging, Metrics, Tracing, SIEM)",
-          "category": "Architecture",
-          "documentId": "ARC-001-ADR-005-v1.0",
-          "extension": ".md"
-        },
-        {
-          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-006-v1.0.md",
-          "title": "ADR-006 \u2014 Deployment Topology and Runtime Platform",
-          "category": "Architecture",
-          "documentId": "ARC-001-ADR-006-v1.0",
-          "extension": ".md"
-        },
-        {
-          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-007-v1.0.md",
-          "title": "ADR-007 \u2014 Data Portability and Export Format",
-          "category": "Architecture",
-          "documentId": "ARC-001-ADR-007-v1.0",
-          "extension": ".md"
-        },
-        {
-          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-008-v1.0.md",
-          "title": "ADR-008 \u2014 Per-Tenant Quotas, Rate Limits, and Fair Use",
-          "category": "Architecture",
-          "documentId": "ARC-001-ADR-008-v1.0",
           "extension": ".md"
         }
       ],
       "diagrams": [
         {
           "path": "projects/001-arckit-saas/diagrams/ARC-001-DIAG-001-v1.0.md",
-          "title": "ARC-001-DIAG-001 \u2014 System Context (C4 L1) and Container View (C4 L2)",
-          "category": "Architecture",
+          "title": "ARC-001-DIAG-001 — System Context (C4 L1) and Container View (C4 L2)",
           "documentId": "ARC-001-DIAG-001-v1.0",
           "extension": ".md"
         },
         {
           "path": "projects/001-arckit-saas/diagrams/ARC-001-DIAG-002-v1.0.md",
-          "title": "ARC-001-DIAG-002 \u2014 Deployment View and Cell Topology",
-          "category": "Architecture",
+          "title": "ARC-001-DIAG-002 — Deployment View and Cell Topology",
           "documentId": "ARC-001-DIAG-002-v1.0",
           "extension": ".md"
         },
         {
           "path": "projects/001-arckit-saas/diagrams/ARC-001-DIAG-003-v1.0.md",
-          "title": "ARC-001-DIAG-003 \u2014 Key Sequence Diagrams",
-          "category": "Architecture",
+          "title": "ARC-001-DIAG-003 — Key Sequence Diagrams",
           "documentId": "ARC-001-DIAG-003-v1.0",
+          "extension": ".md"
+        }
+      ],
+      "decisions": [
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-001-v1.0.md",
+          "title": "ADR-001 — Tenant Isolation Model",
+          "documentId": "ARC-001-ADR-001-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-002-v1.0.md",
+          "title": "ADR-002 — Cloud Region and Storage Selection",
+          "documentId": "ARC-001-ADR-002-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-003-v1.0.md",
+          "title": "ADR-003 — Identity Provider Integration and SSO",
+          "documentId": "ARC-001-ADR-003-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-004-v1.0.md",
+          "title": "ADR-004 — AI Provider Abstraction and Model Strategy",
+          "documentId": "ARC-001-ADR-004-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-005-v1.0.md",
+          "title": "ADR-005 — Observability Stack (Logging, Metrics, Tracing, SIEM)",
+          "documentId": "ARC-001-ADR-005-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-006-v1.0.md",
+          "title": "ADR-006 — Deployment Topology and Runtime Platform",
+          "documentId": "ARC-001-ADR-006-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-007-v1.0.md",
+          "title": "ADR-007 — Data Portability and Export Format",
+          "documentId": "ARC-001-ADR-007-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-008-v1.0.md",
+          "title": "ADR-008 — Per-Tenant Quotas, Rate Limits, and Fair Use",
+          "documentId": "ARC-001-ADR-008-v1.0",
           "extension": ".md"
         }
       ]
@@ -1153,21 +1128,21 @@
         },
         {
           "path": "projects/002-arckit-sovereign/ARC-002-HLD-v1.0.md",
-          "title": "High-Level Design",
-          "category": "Design",
+          "title": "HLD",
+          "category": "Other",
           "documentId": "ARC-002-HLD-v1.0",
           "extension": ".md"
         },
         {
           "path": "projects/002-arckit-sovereign/ARC-002-MODSEC-v1.0.md",
-          "title": "MOD Secure by Design Assessment",
-          "category": "Compliance",
+          "title": "MODSEC",
+          "category": "Other",
           "documentId": "ARC-002-MODSEC-v1.0",
           "extension": ".md"
         },
         {
           "path": "projects/002-arckit-sovereign/ARC-002-OPS-v1.0.md",
-          "title": "Operational Readiness Pack",
+          "title": "Operational Readiness",
           "category": "Operations",
           "documentId": "ARC-002-OPS-v1.0",
           "extension": ".md"
@@ -1209,48 +1184,43 @@
         },
         {
           "path": "projects/002-arckit-sovereign/ARC-002-TRACE-v1.0.md",
-          "title": "Requirements Traceability Matrix",
-          "category": "Compliance",
+          "title": "TRACE",
+          "category": "Other",
           "documentId": "ARC-002-TRACE-v1.0",
-          "extension": ".md"
-        }
-      ],
-      "decisions": [
-        {
-          "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-001-v1.0.md",
-          "title": "ADR-001 \u2014 Sovereign Packaging, Signing and Distribution",
-          "category": "Architecture",
-          "documentId": "ARC-002-ADR-001-v1.0",
-          "extension": ".md"
-        },
-        {
-          "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-002-v1.0.md",
-          "title": "ADR-002 \u2014 Air-Gapped Update / Patch Mechanism",
-          "category": "Architecture",
-          "documentId": "ARC-002-ADR-002-v1.0",
-          "extension": ".md"
-        },
-        {
-          "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-003-v1.0.md",
-          "title": "ADR-003 \u2014 Sovereign Identity Integration (Customer IdP Only)",
-          "category": "Architecture",
-          "documentId": "ARC-002-ADR-003-v1.0",
-          "extension": ".md"
-        },
-        {
-          "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-004-v1.0.md",
-          "title": "ADR-004 \u2014 Sovereign AI Inference Model",
-          "category": "Architecture",
-          "documentId": "ARC-002-ADR-004-v1.0",
           "extension": ".md"
         }
       ],
       "diagrams": [
         {
           "path": "projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-001-v1.0.md",
-          "title": "ARC-002-DIAG-001 \u2014 Sovereign Deployment Diagrams",
-          "category": "Architecture",
+          "title": "ARC-002-DIAG-001 — Sovereign Deployment Diagrams",
           "documentId": "ARC-002-DIAG-001-v1.0",
+          "extension": ".md"
+        }
+      ],
+      "decisions": [
+        {
+          "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-001-v1.0.md",
+          "title": "ADR-001 — Sovereign Packaging, Signing and Distribution",
+          "documentId": "ARC-002-ADR-001-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-002-v1.0.md",
+          "title": "ADR-002 — Air-Gapped Update / Patch Mechanism",
+          "documentId": "ARC-002-ADR-002-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-003-v1.0.md",
+          "title": "ADR-003 — Sovereign Identity Integration (Customer IdP Only)",
+          "documentId": "ARC-002-ADR-003-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-004-v1.0.md",
+          "title": "ADR-004 — Sovereign AI Inference Model",
+          "documentId": "ARC-002-ADR-004-v1.0",
           "extension": ".md"
         }
       ]
@@ -1258,11 +1228,45 @@
   ],
   "dependencyGraph": {
     "nodes": {
+      "ARC-000-GLOSS-v1.0": {
+        "type": "GLOSS",
+        "project": "000-global",
+        "path": "projects/000-global/ARC-000-GLOSS-v1.0.md",
+        "title": "ArcKit as a Service — Glossary",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-000-GLOSS-v1.0",
+          "Document Type": "Cross-Project Glossary",
+          "Project": "Cross-project (000-global)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03"
+        },
+        "reqIds": [
+          "NFR-SEC-004",
+          "BR-005"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": true,
+          "ageDays": 0
+        }
+      },
       "ARC-000-PRIN-v1.0": {
         "type": "PRIN",
         "project": "000-global",
         "path": "projects/000-global/ARC-000-PRIN-v1.0.md",
-        "title": "ArcKit as a Service \u2014 Enterprise Architecture Principles",
+        "title": "ArcKit as a Service — Enterprise Architecture Principles",
         "status": "DRAFT",
         "severity": "MEDIUM",
         "createdDate": "2026-05-03",
@@ -1300,7 +1304,7 @@
         "type": "PRIN",
         "project": "000-global",
         "path": "projects/000-global/ARC-000-PRIN-v2.0.md",
-        "title": "ArcKit as a Service \u2014 Enterprise Architecture Principles",
+        "title": "ArcKit as a Service — Enterprise Architecture Principles",
         "status": "DRAFT",
         "severity": "MEDIUM",
         "createdDate": "2026-05-03",
@@ -1331,6 +1335,397 @@
           "stale": false,
           "draft": true,
           "orphan": true,
+          "ageDays": 0
+        }
+      },
+      "ARC-000-STRATEGY-v1.0": {
+        "type": "STRATEGY",
+        "project": "000-global",
+        "path": "projects/000-global/ARC-000-STRATEGY-v1.0.md",
+        "title": "ArcKit as a Service — Architecture Strategy",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-000-STRATEGY-v1.0",
+          "Document Type": "Cross-Project Architecture Strategy",
+          "Project": "Cross-project (000-global)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Reviewed By": "[PENDING — ARB; Vendor SLT]",
+          "Distribution": "ARB; Vendor SLT; prospective enterprise customers (executive summary); CCS / CDDO (executive summary)"
+        },
+        "reqIds": [
+          "BR-005",
+          "FR-006",
+          "BR-008",
+          "NFR-C-005",
+          "NFR-C-001"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-000-WARDLEY-v1.0": {
+        "type": "WARDLEY",
+        "project": "000-global",
+        "path": "projects/000-global/ARC-000-WARDLEY-v1.0.md",
+        "title": "ArcKit as a Service — Wardley Map (Strategic Positioning)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-000-WARDLEY-v1.0",
+          "Document Type": "Wardley Map (strategic)",
+          "Project": "Cross-project (000-global)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Distribution": "ARB; Vendor SLT; ARB-equivalent strategy advisers",
+          "Open source the codebase": "ArcKit core open-source; sovereign route is the open codebase + bundle + LTS",
+          "Use ecosystem standards": "OpenAPI, OIDC/SAML, OpenTelemetry, OCI, CycloneDX, SLSA",
+          "Defensible commodity below, differentiated custom above": "Hyperscaler / Postgres / S3 commodity below; ArcKit application + cell pattern + AI Adaptor custom above",
+          "Two providers for any genesis-adjacent dependency": "AI providers (×2); hyperscaler open-API alternative; IdP options (vendor + federation + One Login)",
+          "Pioneer / Settler / Town Planner": "Pioneer = ArcKit application; Settler = cell + bundle pipelines; Town Planner = SRE / LTS line"
+        },
+        "reqIds": [
+          "FR-013",
+          "INT-007",
+          "BR-005"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-AIP-v1.0": {
+        "type": "AIP",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-AIP-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — UK Government AI Playbook Conformance",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-AIP-v1.0",
+          "Document Type": "UK Government AI Playbook Conformance Assessment",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Reviewed By": "[PENDING — DPO; AI Ethics reviewer; ARB]",
+          "Approved By": "[PENDING — Service Owner; ARB]",
+          "Distribution": "ARB, DPO, ICO (on engagement), CDDO/CO AI assurance team, prospective public-sector buyers"
+        },
+        "reqIds": [
+          "FR-004",
+          "NFR-A-003",
+          "FR-003",
+          "FR-012"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-DEVOPS-v1.0": {
+        "type": "DEVOPS",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-DEVOPS-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — DevOps Strategy",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner) — until Lead Architect appointed",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-DEVOPS-v1.0",
+          "Document Type": "DevOps Strategy",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner) — until Lead Architect appointed",
+          "Distribution": "Engineering, SRE, Security, ARB"
+        },
+        "reqIds": [
+          "NFR-SEC-005",
+          "NFR-C-003",
+          "NFR-SEC-002",
+          "NFR-SEC-006",
+          "FR-006",
+          "NFR-C-005",
+          "NFR-A-001",
+          "NFR-P-001",
+          "NFR-P-002",
+          "NFR-P-003"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-DPIA-v1.0": {
+        "type": "DPIA",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-DPIA-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — Data Protection Impact Assessment (DPIA)",
+        "status": "DRAFT",
+        "severity": "HIGH",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Data Protection Officer (PENDING — Service Owner is interim accountable owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-DPIA-v1.0",
+          "Document Type": "Data Protection Impact Assessment (UK GDPR Article 35)",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Owner": "Data Protection Officer (PENDING — Service Owner is interim accountable owner)",
+          "Reviewed By": "[PENDING — DPO; Security Lead]",
+          "Approved By": "[PENDING — Service Owner; ARB]",
+          "Distribution": "DPO, Security Lead, ARB, Buying-authority DPOs (on request), ICO (if engaged)"
+        },
+        "reqIds": [
+          "FR-004",
+          "NFR-SEC-002",
+          "FR-011",
+          "NFR-S-001",
+          "FR-001",
+          "FR-002",
+          "BR-003",
+          "INT-003",
+          "NFR-C-001",
+          "FR-012",
+          "FR-010",
+          "NFR-SEC-004",
+          "NFR-SEC-001",
+          "NFR-A-002",
+          "NFR-SEC-006",
+          "NFR-I-002"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-FINOPS-v1.0": {
+        "type": "FINOPS",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-FINOPS-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — FinOps Strategy",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-FINOPS-v1.0",
+          "Document Type": "FinOps Strategy",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Distribution": "Vendor SLT, ARB, Engineering, SRE"
+        },
+        "reqIds": [
+          "BR-001",
+          "BR-005",
+          "BR-006"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-HLD-v1.0": {
+        "type": "HLD",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-HLD-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — High-Level Design (HLD)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner) — until Lead Architect appointed",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-HLD-v1.0",
+          "Document Type": "High-Level Design",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner) — until Lead Architect appointed",
+          "Distribution": "ARB, Engineering, SRE, Security, prospective DDaT Architects (SD-1, SD-3, SD-4, SD-5)"
+        },
+        "reqIds": [
+          "INT-003",
+          "INT-002",
+          "INT-004",
+          "BR-004",
+          "FR-014",
+          "FR-013",
+          "FR-003",
+          "FR-011",
+          "FR-012",
+          "NFR-A-001",
+          "FR-009",
+          "INT-001",
+          "INT-007",
+          "NFR-A-003",
+          "BR-003",
+          "FR-010"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-OPS-v1.0": {
+        "type": "OPS",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-OPS-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — Operational Readiness Pack",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock — until SRE Lead appointed",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-OPS-v1.0",
+          "Document Type": "Operational Readiness Pack",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Mark Craddock — until SRE Lead appointed",
+          "Distribution": "SRE, Engineering, Security, Service Owner, ARB"
+        },
+        "reqIds": [
+          "FR-009",
+          "NFR-A-001",
+          "FR-010",
+          "NFR-A-002",
+          "NFR-SEC-006",
+          "NFR-M-001"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-PLAN-v1.0": {
+        "type": "PLAN",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-PLAN-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — Project Plan",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-PLAN-v1.0",
+          "Document Type": "Project Plan",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Distribution": "Project Team, ARB, Vendor SLT"
+        },
+        "reqIds": [
+          "FR-006",
+          "FR-014",
+          "FR-015",
+          "BR-005",
+          "FR-012",
+          "FR-013"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
           "ageDays": 0
         }
       },
@@ -1443,6 +1838,197 @@
           "ageDays": 0
         }
       },
+      "ARC-001-RISK-v1.0": {
+        "type": "RISK",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-RISK-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — Risk Register",
+        "status": "DRAFT",
+        "severity": "HIGH",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Service Owner",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-RISK-v1.0",
+          "Document Type": "Risk Register (HM Treasury Orange Book aligned)",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Cycle": "Monthly (DRAFT/Alpha); Quarterly (Beta/GA); on-trigger always",
+          "Next Review Date": "2026-06-03",
+          "Owner": "Service Owner",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, ARB, Audit Committee, Vendor Senior Leadership, DPO, Security Lead, FinOps",
+          "Category": "Compliance",
+          "Description": "Vendor's interpretation of contract / KPI publication obligations under Procurement Act 2023 differs from a buying authority's.",
+          "Trigger / Cause": "Provider product decision; regulator action; market change.",
+          "Inherent likelihood × impact": "3 × 5 = **15**",
+          "Mitigating controls": "Legal review; transparent published list pricing (BR-002); buyer engagement pre-contract.",
+          "Residual likelihood × impact": "1 × 5 = **5**",
+          "Action(s)": "A1 G-Cloud submission targeted 6 months before GA; A2 DOS pack ready as alternative; A3 CCS framework cycle calendared.",
+          "Review trigger": "Any change in Service Owner availability; alpha gate.",
+          "Linked artefacts": "Principle 1, BR-001, BR-005, ADR-008, ADR-004",
+          "Inherent L×I": "2 × 3 = **6**",
+          "Residual L×I": "1 × 3 = **3**"
+        },
+        "reqIds": [
+          "NFR-SEC-002",
+          "NFR-SEC-006",
+          "INT-009",
+          "BR-001",
+          "BR-005",
+          "NFR-A-001",
+          "NFR-M-003",
+          "BR-003",
+          "INT-003",
+          "FR-009",
+          "NFR-C-003",
+          "FR-013",
+          "NFR-A-002",
+          "BR-002"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-ROADMAP-v1.0": {
+        "type": "ROADMAP",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-ROADMAP-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — Strategic Architecture Roadmap",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-ROADMAP-v1.0",
+          "Document Type": "Strategic Architecture Roadmap (multi-year)",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Distribution": "ARB, Vendor SLT, prospective enterprise / sovereign customers (executive summary only)"
+        },
+        "reqIds": [
+          "BR-005",
+          "NFR-S-001"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-SECURE-v1.0": {
+        "type": "SECURE",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-SECURE-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — Secure by Design Assessment",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner) — until appointment of Vendor Security Lead",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-SECURE-v1.0",
+          "Document Type": "UK Government Secure by Design (SbD) Assessment",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner) — until appointment of Vendor Security Lead",
+          "Reviewed By": "[PENDING — Security Lead, ARB]",
+          "Approved By": "[PENDING — ARB Chair]",
+          "Distribution": "ARB, Buying-authority Security Architects (SD-3), DPO, GovAssure assessors"
+        },
+        "reqIds": [
+          "NFR-SEC-001",
+          "NFR-SEC-006",
+          "DR-001",
+          "DR-007",
+          "NFR-C-007",
+          "NFR-SEC-002",
+          "FR-012",
+          "INT-009",
+          "FR-009",
+          "NFR-A-001",
+          "NFR-SEC-008"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-SOBC-v1.0": {
+        "type": "SOBC",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-SOBC-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — Strategic Outline Business Case (SOBC)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner / SRO equivalent)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-SOBC-v1.0",
+          "Document Type": "Strategic Outline Business Case (HM Treasury Green Book five-case model)",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner / SRO equivalent)",
+          "Reviewed By": "[PENDING — ARB; Vendor Finance]",
+          "Approved By": "[PENDING — Vendor SLT; ARB]",
+          "Distribution": "ARB, Vendor SLT, prospective investors / co-funders, CCS / CDDO (where helpful for procurement)"
+        },
+        "reqIds": [
+          "BR-005",
+          "BR-001",
+          "BR-004",
+          "BR-007",
+          "BR-008"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
       "ARC-001-STKE-v1.0": {
         "type": "STKE",
         "project": "001-arckit-saas",
@@ -1494,17 +2080,208 @@
           "ageDays": 0
         }
       },
+      "ARC-001-SVCASS-v1.0": {
+        "type": "SVCASS",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-SVCASS-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — GDS Service Standard Readiness",
+        "status": "DRAFT",
+        "severity": "HIGH",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-SVCASS-v1.0",
+          "Document Type": "GDS Service Standard 14-Point Readiness Assessment",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Distribution": "ARB; CDDO Service Assessor (when booked); buying-authority assessors (SD-14)"
+        },
+        "reqIds": [
+          "FR-013",
+          "NFR-C-003",
+          "FR-009",
+          "NFR-A-001"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-TCOP-v1.0": {
+        "type": "TCOP",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-TCOP-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — Technology Code of Practice (TCoP) Assessment",
+        "status": "DRAFT",
+        "severity": "HIGH",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-TCOP-v1.0",
+          "Document Type": "Technology Code of Practice Assessment",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Distribution": "ARB, GDS, CDDO, Buying-authority TDA reviewers"
+        },
+        "reqIds": [
+          "NFR-C-003",
+          "NFR-U-002",
+          "FR-013",
+          "NFR-SEC-005",
+          "FR-008",
+          "NFR-I-001",
+          "NFR-I-002",
+          "NFR-SEC-001",
+          "NFR-SEC-008",
+          "NFR-C-001",
+          "FR-007",
+          "INT-003",
+          "FR-012",
+          "BR-002",
+          "BR-004",
+          "INT-008",
+          "NFR-C-005",
+          "NFR-C-009"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-TRACE-v1.0": {
+        "type": "TRACE",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-TRACE-v1.0.md",
+        "title": "ArcKit as a Service (Managed SaaS) — Requirements Traceability Matrix",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-TRACE-v1.0",
+          "Document Type": "Requirements Traceability Matrix",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Distribution": "ARB, DDaT Architects (SD-1, SD-2, SD-4)"
+        },
+        "reqIds": [
+          "BR-001",
+          "BR-002",
+          "BR-003",
+          "INT-003",
+          "BR-004",
+          "BR-005",
+          "BR-006",
+          "BR-007",
+          "BR-008",
+          "FR-001",
+          "FR-002",
+          "FR-003",
+          "FR-004",
+          "FR-005",
+          "FR-006",
+          "FR-007",
+          "FR-008",
+          "FR-009",
+          "FR-010",
+          "FR-011",
+          "FR-012",
+          "FR-013",
+          "FR-014",
+          "FR-015",
+          "NFR-P-001",
+          "NFR-P-002",
+          "NFR-P-003",
+          "NFR-A-001",
+          "NFR-A-002",
+          "NFR-A-003",
+          "NFR-S-001",
+          "NFR-S-002",
+          "NFR-SEC-001",
+          "NFR-SEC-002",
+          "NFR-SEC-003",
+          "NFR-SEC-004",
+          "NFR-SEC-005",
+          "NFR-SEC-006",
+          "NFR-SEC-007",
+          "NFR-SEC-008",
+          "NFR-SEC-009",
+          "NFR-C-001",
+          "NFR-C-002",
+          "NFR-C-003",
+          "NFR-C-004",
+          "NFR-C-005",
+          "NFR-C-006",
+          "NFR-C-007",
+          "NFR-C-009",
+          "NFR-U-001",
+          "NFR-U-002",
+          "NFR-M-001",
+          "NFR-M-002",
+          "NFR-M-003",
+          "NFR-I-001",
+          "NFR-I-002",
+          "INT-001",
+          "INT-002",
+          "INT-004",
+          "INT-005",
+          "INT-006",
+          "INT-007",
+          "INT-008",
+          "INT-009",
+          "DR-001",
+          "DR-007"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
       "ARC-001-ADR-001-v1.0": {
         "type": "ADR",
         "project": "001-arckit-saas",
         "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-001-v1.0.md",
-        "title": "ADR-001 \u2014 Tenant Isolation Model",
+        "title": "ADR-001 — Tenant Isolation Model",
         "status": "Proposed",
         "severity": "MEDIUM",
         "createdDate": "2026-05-03",
         "lastModified": "2026-05-03",
         "version": "1.0",
-        "owner": "Mark Craddock (Service Owner \u2014 pending appointment of Lead Architect)",
+        "owner": "Mark Craddock (Service Owner — pending appointment of Lead Architect)",
         "classification": "OFFICIAL",
         "vendor": null,
         "subdir": "decisions",
@@ -1518,7 +2295,7 @@
           "Created Date": "2026-05-03",
           "Last Modified": "2026-05-03",
           "Review Date": "2026-08-03",
-          "Owner": "Mark Craddock (Service Owner \u2014 pending appointment of Lead Architect)",
+          "Owner": "Mark Craddock (Service Owner — pending appointment of Lead Architect)",
           "Reviewed By": "[PENDING]",
           "Approved By": "[PENDING]",
           "Distribution": "Project Team, Architecture Team, Security Lead, DPO, Crown Commercial Service liaison",
@@ -1559,6 +2336,734 @@
         "health": {
           "stale": false,
           "draft": false,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-ADR-002-v1.0": {
+        "type": "ADR",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-002-v1.0.md",
+        "title": "ADR-002 — Cloud Region and Storage Selection",
+        "status": "Proposed",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner — pending appointment of Lead Architect)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-001-ADR-002-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "Proposed",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (Service Owner — pending appointment of Lead Architect)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture Team, Security Lead, DPO, FinOps, CCS liaison",
+          "Escalation Level": "Department",
+          "Governance Forum": "ArcKit Architecture Review Board (ARB)",
+          "Decision Required By": "2026-06-30 (before HLD work begins; gates ADR-003, ADR-005, ADR-006)"
+        },
+        "reqIds": [
+          "NFR-C-001",
+          "NFR-C-007",
+          "INT-006",
+          "NFR-SEC-002",
+          "BR-001",
+          "BR-005",
+          "BR-004",
+          "BR-006",
+          "NFR-C-005",
+          "NFR-I-001",
+          "NFR-A-001",
+          "NFR-A-002",
+          "NFR-S-001",
+          "FR-006",
+          "NFR-SEC-004",
+          "NFR-C-009",
+          "NFR-M-003",
+          "FR-009",
+          "FR-015",
+          "BR-007",
+          "FR-010",
+          "INT-002",
+          "INT-007",
+          "FR-004",
+          "INT-004",
+          "INT-003",
+          "FR-011"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": true,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-ADR-003-v1.0": {
+        "type": "ADR",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-003-v1.0.md",
+        "title": "ADR-003 — Identity Provider Integration and SSO",
+        "status": "Proposed",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-001-ADR-003-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "Proposed",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture, Security Lead, DPO, pilot tenants",
+          "Escalation Level": "Department",
+          "Governance Forum": "ARB",
+          "Decision Required By": "2026-06-30"
+        },
+        "reqIds": [
+          "FR-007",
+          "FR-014",
+          "NFR-SEC-001",
+          "NFR-SEC-002",
+          "INT-001",
+          "NFR-I-001",
+          "BR-001",
+          "BR-005",
+          "BR-006",
+          "NFR-C-001",
+          "NFR-C-005",
+          "FR-009",
+          "NFR-SEC-006",
+          "NFR-SEC-003",
+          "NFR-SEC-007",
+          "NFR-C-009"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": true,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-ADR-004-v1.0": {
+        "type": "ADR",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-004-v1.0.md",
+        "title": "ADR-004 — AI Provider Abstraction and Model Strategy",
+        "status": "Proposed",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-001-ADR-004-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "Proposed",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture, Security, DPO, AI Ethics reviewer, pilot tenants",
+          "Escalation Level": "Department",
+          "Governance Forum": "ARB + AI Ethics review",
+          "Decision Required By": "2026-06-30"
+        },
+        "reqIds": [
+          "FR-004",
+          "NFR-SEC-002",
+          "NFR-C-001",
+          "NFR-C-002",
+          "INT-005",
+          "FR-003",
+          "NFR-P-002",
+          "NFR-A-003",
+          "BR-001",
+          "BR-005",
+          "BR-006",
+          "FR-002",
+          "FR-014",
+          "NFR-I-001",
+          "FR-005"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": true,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-ADR-005-v1.0": {
+        "type": "ADR",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-005-v1.0.md",
+        "title": "ADR-005 — Observability Stack (Logging, Metrics, Tracing, SIEM)",
+        "status": "Proposed",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-001-ADR-005-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "Proposed",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture, Security Lead, SRE, DPO",
+          "Escalation Level": "Department",
+          "Governance Forum": "ARB",
+          "Decision Required By": "2026-06-30"
+        },
+        "reqIds": [
+          "NFR-M-002",
+          "NFR-A-001",
+          "NFR-SEC-008",
+          "NFR-C-002",
+          "NFR-C-001",
+          "FR-012",
+          "NFR-I-001",
+          "INT-004",
+          "NFR-SEC-002",
+          "BR-005",
+          "FR-009",
+          "NFR-C-009",
+          "NFR-C-005",
+          "BR-006",
+          "FR-005",
+          "FR-014",
+          "INT-007",
+          "NFR-M-001",
+          "FR-010"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": true,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-ADR-006-v1.0": {
+        "type": "ADR",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-006-v1.0.md",
+        "title": "ADR-006 — Deployment Topology and Runtime Platform",
+        "status": "Proposed",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-001-ADR-006-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "Proposed",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture, SRE, Security, FinOps",
+          "Escalation Level": "Department",
+          "Governance Forum": "ARB",
+          "Decision Required By": "2026-07-15 (gates HLD)"
+        },
+        "reqIds": [
+          "NFR-M-001",
+          "NFR-A-001",
+          "NFR-S-001",
+          "BR-001",
+          "NFR-SEC-008",
+          "NFR-C-009",
+          "NFR-C-002",
+          "NFR-P-001",
+          "FR-004",
+          "BR-004",
+          "BR-007",
+          "FR-001",
+          "FR-002",
+          "FR-009",
+          "FR-014",
+          "INT-006",
+          "NFR-A-002",
+          "NFR-A-003",
+          "NFR-SEC-002",
+          "NFR-M-003",
+          "NFR-I-001",
+          "FR-006"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": true,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-ADR-007-v1.0": {
+        "type": "ADR",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-007-v1.0.md",
+        "title": "ADR-007 — Data Portability and Export Format",
+        "status": "Proposed",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-001-ADR-007-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "Proposed",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture, DPO, pilot tenants, Crown Commercial Service",
+          "Escalation Level": "Department",
+          "Governance Forum": "ARB",
+          "Decision Required By": "2026-07-15"
+        },
+        "reqIds": [
+          "BR-007",
+          "FR-006",
+          "NFR-I-001",
+          "NFR-SEC-002",
+          "NFR-I-002",
+          "BR-006",
+          "NFR-C-001",
+          "BR-004",
+          "NFR-C-005",
+          "BR-001",
+          "FR-010",
+          "FR-005",
+          "NFR-C-002",
+          "FR-009"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-ADR-008-v1.0": {
+        "type": "ADR",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-008-v1.0.md",
+        "title": "ADR-008 — Per-Tenant Quotas, Rate Limits, and Fair Use",
+        "status": "Proposed",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-001-ADR-008-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "Proposed",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture, SRE, Security, FinOps, pilot tenants",
+          "Escalation Level": "Project",
+          "Governance Forum": "ARB (informed)",
+          "Decision Required By": "2026-07-31"
+        },
+        "reqIds": [
+          "NFR-A-003",
+          "BR-001",
+          "FR-014",
+          "BR-005",
+          "NFR-C-005",
+          "NFR-SEC-008",
+          "FR-002",
+          "NFR-S-001",
+          "FR-004",
+          "NFR-M-001"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": true,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-DIAG-001-v1.0": {
+        "type": "DIAG",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/diagrams/ARC-001-DIAG-001-v1.0.md",
+        "title": "ARC-001-DIAG-001 — System Context (C4 L1) and Container View (C4 L2)",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "diagrams",
+        "controlFields": {
+          "Document ID": "ARC-001-DIAG-001-v1.0",
+          "Document Type": "Architecture Diagram pack (C4 Levels 1–2)",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner)"
+        },
+        "reqIds": [
+          "INT-003",
+          "INT-002",
+          "INT-004",
+          "BR-004",
+          "FR-003",
+          "FR-014",
+          "FR-011",
+          "FR-012"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": true,
+          "ageDays": 0
+        }
+      },
+      "ARC-001-DIAG-002-v1.0": {
+        "type": "DIAG",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/diagrams/ARC-001-DIAG-002-v1.0.md",
+        "title": "ARC-001-DIAG-002 — Deployment View and Cell Topology",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": null,
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "diagrams",
+        "controlFields": {
+          "Document ID": "ARC-001-DIAG-002-v1.0",
+          "Document Type": "Deployment / Cell Topology Diagrams",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0"
+        },
+        "reqIds": [],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": true,
+          "ageDays": null
+        }
+      },
+      "ARC-001-DIAG-003-v1.0": {
+        "type": "DIAG",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/diagrams/ARC-001-DIAG-003-v1.0.md",
+        "title": "ARC-001-DIAG-003 — Key Sequence Diagrams",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": null,
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "",
+        "classification": "",
+        "vendor": null,
+        "subdir": "diagrams",
+        "controlFields": {
+          "Document ID": "ARC-001-DIAG-003-v1.0",
+          "Document Type": "Sequence Diagrams (UC-1, UC-2, UC-3 + identity)",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Status": "DRAFT",
+          "Version": "1.0"
+        },
+        "reqIds": [
+          "BR-003",
+          "FR-010"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": true,
+          "ageDays": null
+        }
+      },
+      "ARC-002-DPIA-v1.0": {
+        "type": "DPIA",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/ARC-002-DPIA-v1.0.md",
+        "title": "ArcKit as a Service (Sovereign Deployment) — Data Protection Impact Assessment (DPIA)",
+        "status": "DRAFT",
+        "severity": "HIGH",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Customer DPO (per engagement) — Vendor DPO is co-owner of vendor-side processing",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-DPIA-v1.0",
+          "Document Type": "Data Protection Impact Assessment (UK GDPR Article 35)",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Customer DPO (per engagement) — Vendor DPO is co-owner of vendor-side processing",
+          "Distribution": "Customer DPO; Customer SIRO; Vendor DPO; ICO (if engaged)"
+        },
+        "reqIds": [
+          "INT-010",
+          "INT-009",
+          "FR-010"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-HLD-v1.0": {
+        "type": "HLD",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/ARC-002-HLD-v1.0.md",
+        "title": "ArcKit as a Service (Sovereign Deployment) — High-Level Design",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock — until Sovereign Delivery Lead appointed",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-HLD-v1.0",
+          "Document Type": "High-Level Design",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Mark Craddock — until Sovereign Delivery Lead appointed",
+          "Distribution": "ARB, Customer Accreditor (SD-1), Customer SIRO (SD-2), MOD Defence Digital (SD-7)"
+        },
+        "reqIds": [
+          "FR-007",
+          "INT-002",
+          "INT-007",
+          "INT-004",
+          "INT-005",
+          "INT-006",
+          "INT-009",
+          "FR-008",
+          "FR-009",
+          "FR-010",
+          "FR-006",
+          "NFR-SEC-006",
+          "NFR-C-004",
+          "FR-003",
+          "FR-001",
+          "FR-005"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-MODSEC-v1.0": {
+        "type": "MODSEC",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/ARC-002-MODSEC-v1.0.md",
+        "title": "ArcKit as a Service (Sovereign Deployment) — MOD Secure by Design Assessment",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock — until Sovereign Delivery Lead appointed",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-MODSEC-v1.0",
+          "Document Type": "MOD Secure by Design Assessment (CAAT-aligned)",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Mark Craddock — until Sovereign Delivery Lead appointed",
+          "Reviewed By": "[PENDING — Vendor Security Lead; Customer Accreditor]",
+          "Approved By": "[PENDING — Customer SIRO; ARB]",
+          "Distribution": "Customer Accreditor (SD-1); Customer SIRO (SD-2); Customer DSO (SD-3); MOD Defence Digital (SD-7); Vendor Security Lead"
+        },
+        "reqIds": [
+          "NFR-SEC-001",
+          "INT-007",
+          "INT-004",
+          "NFR-SEC-004",
+          "FR-010",
+          "FR-006",
+          "NFR-SEC-006",
+          "NFR-SEC-003",
+          "FR-003",
+          "BR-008",
+          "NFR-C-001",
+          "INT-009"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-OPS-v1.0": {
+        "type": "OPS",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/ARC-002-OPS-v1.0.md",
+        "title": "ArcKit as a Service (Sovereign Deployment) — Operational Readiness Pack",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock — until Sovereign Delivery Lead appointed",
+        "classification": "",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-OPS-v1.0",
+          "Document Type": "Operational Readiness Pack (Sovereign — vendor-side + customer-side)",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Mark Craddock — until Sovereign Delivery Lead appointed"
+        },
+        "reqIds": [
+          "INT-009",
+          "FR-001",
+          "FR-005",
+          "FR-002",
+          "FR-014",
+          "FR-003",
+          "NFR-A-003",
+          "NFR-SEC-003",
+          "NFR-SEC-007",
+          "FR-010",
+          "INT-010",
+          "FR-009",
+          "NFR-A-002"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-PLAN-v1.0": {
+        "type": "PLAN",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/ARC-002-PLAN-v1.0.md",
+        "title": "ArcKit as a Service (Sovereign Deployment) — Project Plan",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock — until Sovereign Delivery Lead appointed",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-PLAN-v1.0",
+          "Document Type": "Project Plan",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Mark Craddock — until Sovereign Delivery Lead appointed",
+          "Distribution": "Project Team, ARB, Vendor SLT"
+        },
+        "reqIds": [
+          "BR-008"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
           "orphan": false,
           "ageDays": 0
         }
@@ -1665,6 +3170,86 @@
           "ageDays": 0
         }
       },
+      "ARC-002-RISK-v1.0": {
+        "type": "RISK",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/ARC-002-RISK-v1.0.md",
+        "title": "ArcKit as a Service (Sovereign Deployment) — Risk Register",
+        "status": "DRAFT",
+        "severity": "HIGH",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Vendor SLT",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-RISK-v1.0",
+          "Document Type": "Risk Register (HM Treasury Orange Book aligned)",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Vendor SLT",
+          "Distribution": "ARB; MOD Defence Digital liaison; Customer SIROs (per engagement)",
+          "Description": "Project 001 R-006 affects ability to staff sovereign engagements.",
+          "Mitigations": "Sovereign Delivery Lead appointment; runbook coverage; succession plan.",
+          "Residual": "3 × 4 = 12 (kept HIGH; ARB-tracked)"
+        },
+        "reqIds": [
+          "BR-008",
+          "INT-009",
+          "FR-009",
+          "FR-006",
+          "FR-003"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-SOBC-v1.0": {
+        "type": "SOBC",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/ARC-002-SOBC-v1.0.md",
+        "title": "ArcKit as a Service (Sovereign Deployment) — Strategic Outline Business Case",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-SOBC-v1.0",
+          "Document Type": "Strategic Outline Business Case (Green Book five-case)",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Distribution": "ARB; Vendor SLT; MOD Defence Digital (where helpful for partnership conversations)"
+        },
+        "reqIds": [
+          "BR-005",
+          "BR-008",
+          "NFR-C-005",
+          "INT-009"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
       "ARC-002-STKE-v1.0": {
         "type": "STKE",
         "project": "002-arckit-sovereign",
@@ -1717,12 +3302,545 @@
           "orphan": false,
           "ageDays": 0
         }
+      },
+      "ARC-002-TRACE-v1.0": {
+        "type": "TRACE",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/ARC-002-TRACE-v1.0.md",
+        "title": "ArcKit as a Service (Sovereign Deployment) — Requirements Traceability Matrix",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock — until Sovereign Delivery Lead appointed",
+        "classification": "",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-TRACE-v1.0",
+          "Document Type": "Requirements Traceability Matrix",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Owner": "Mark Craddock — until Sovereign Delivery Lead appointed"
+        },
+        "reqIds": [
+          "BR-001",
+          "BR-002",
+          "NFR-SEC-004",
+          "BR-003",
+          "INT-002",
+          "INT-007",
+          "INT-004",
+          "BR-004",
+          "BR-005",
+          "BR-006",
+          "BR-007",
+          "INT-008",
+          "BR-008",
+          "FR-001",
+          "FR-002",
+          "FR-003",
+          "FR-004",
+          "FR-005",
+          "FR-006",
+          "FR-007",
+          "FR-008",
+          "FR-009",
+          "FR-010",
+          "FR-011",
+          "FR-012",
+          "FR-013",
+          "INT-009",
+          "FR-014",
+          "NFR-P-001",
+          "NFR-A-001",
+          "NFR-A-002",
+          "NFR-A-003",
+          "NFR-S-001",
+          "NFR-SEC-001",
+          "NFR-SEC-002",
+          "NFR-SEC-003",
+          "NFR-SEC-005",
+          "NFR-SEC-006",
+          "NFR-SEC-007",
+          "NFR-SEC-008",
+          "NFR-C-001",
+          "NFR-C-002",
+          "NFR-C-003",
+          "NFR-C-004",
+          "NFR-C-005",
+          "NFR-M-001",
+          "NFR-M-002",
+          "NFR-I-001",
+          "NFR-I-002",
+          "INT-001",
+          "INT-003",
+          "INT-005",
+          "INT-006",
+          "INT-010",
+          "DR-001",
+          "DR-007"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-ADR-001-v1.0": {
+        "type": "ADR",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-001-v1.0.md",
+        "title": "ADR-001 — Sovereign Packaging, Signing and Distribution",
+        "status": "Proposed",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner) — until Sovereign Delivery Lead appointed",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-002-ADR-001-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "Proposed",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (Service Owner) — until Sovereign Delivery Lead appointed",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture, Security Lead, MOD Defence Digital liaison",
+          "Escalation Level": "Department",
+          "Governance Forum": "ARB",
+          "Decision Required By": "2026-09-30 (gates project 002 ADR-002 / 003 / 004 and HLD)"
+        },
+        "reqIds": [
+          "BR-001",
+          "NFR-SEC-004",
+          "DR-007",
+          "BR-005",
+          "NFR-C-005",
+          "FR-014",
+          "NFR-SEC-005",
+          "BR-002",
+          "BR-007",
+          "NFR-SEC-001",
+          "NFR-C-001",
+          "FR-001",
+          "FR-002",
+          "NFR-I-001",
+          "BR-008"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": true,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-ADR-002-v1.0": {
+        "type": "ADR",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-002-v1.0.md",
+        "title": "ADR-002 — Air-Gapped Update / Patch Mechanism",
+        "status": "Proposed",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock — until LTS Engineering Lead appointed",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-002-ADR-002-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "Proposed",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Owner": "Mark Craddock — until LTS Engineering Lead appointed",
+          "Escalation Level": "Project",
+          "Governance Forum": "ARB (informed)",
+          "Decision Required By": "2026-09-30"
+        },
+        "reqIds": [
+          "BR-005",
+          "NFR-C-005",
+          "FR-014",
+          "FR-002",
+          "NFR-SEC-005",
+          "NFR-M-001",
+          "NFR-SEC-004",
+          "INT-009",
+          "NFR-SEC-008",
+          "NFR-SEC-001"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": true,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-ADR-003-v1.0": {
+        "type": "ADR",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-003-v1.0.md",
+        "title": "ADR-003 — Sovereign Identity Integration (Customer IdP Only)",
+        "status": "Proposed",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-002-ADR-003-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "Proposed",
+          "Version": "1.0",
+          "Created Date": "2026-05-03"
+        },
+        "reqIds": [
+          "FR-007",
+          "NFR-SEC-004",
+          "NFR-SEC-007",
+          "NFR-I-001",
+          "NFR-SEC-001",
+          "FR-005",
+          "INT-007"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": true,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-ADR-004-v1.0": {
+        "type": "ADR",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-004-v1.0.md",
+        "title": "ADR-004 — Sovereign AI Inference Model",
+        "status": "Proposed",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "decisions",
+        "controlFields": {
+          "Document ID": "ARC-002-ADR-004-v1.0",
+          "Document Type": "Architecture Decision Record",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "Proposed",
+          "Version": "1.0",
+          "Created Date": "2026-05-03"
+        },
+        "reqIds": [
+          "NFR-SEC-004",
+          "NFR-A-003",
+          "FR-008",
+          "FR-010",
+          "INT-005",
+          "NFR-SEC-001",
+          "FR-005",
+          "FR-004"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": true,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-DIAG-001-v1.0": {
+        "type": "DIAG",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-001-v1.0.md",
+        "title": "ARC-002-DIAG-001 — Sovereign Deployment Diagrams",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "",
+        "classification": "",
+        "vendor": null,
+        "subdir": "diagrams",
+        "controlFields": {
+          "Document ID": "ARC-002-DIAG-001-v1.0",
+          "Document Type": "Sovereign Deployment Diagrams (System Context, Container, Bundle Distribution, Sequences)",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03"
+        },
+        "reqIds": [
+          "FR-006",
+          "NFR-SEC-006"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": true,
+          "ageDays": 0
+        }
       }
     },
     "edges": [
       {
+        "from": "ARC-000-WARDLEY-v1.0",
+        "to": "ARC-000-STRATEGY",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-AIP-v1.0",
+        "to": "ARC-001-DPIA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-AIP-v1.0",
+        "to": "ARC-001-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DPIA-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DPIA-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DPIA-v1.0",
+        "to": "ARC-001-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DPIA-v1.0",
+        "to": "ARC-001-TCOP",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DPIA-v1.0",
+        "to": "ARC-001-SECURE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DPIA-v1.0",
+        "to": "ARC-001-AIP",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DPIA-v1.0",
+        "to": "ARC-001-OPS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-HLD-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-HLD-v1.0",
+        "to": "ARC-001-DIAG",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-HLD-v1.0",
+        "to": "ARC-001-TRACE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-PLAN-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-PLAN-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-PLAN-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-PLAN-v1.0",
+        "to": "ARC-001-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-PLAN-v1.0",
+        "to": "ARC-001-ROADMAP",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-PLAN-v1.0",
+        "to": "ARC-001-DEVOPS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-PLAN-v1.0",
+        "to": "ARC-001-FINOPS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-PLAN-v1.0",
+        "to": "ARC-001-AIP",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-PLAN-v1.0",
+        "to": "ARC-001-HLD",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-PLAN-v1.0",
+        "to": "ARC-001-OPS",
+        "type": "references"
+      },
+      {
         "from": "ARC-001-REQ-v1.0",
         "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-001-ADR-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-ROADMAP-v1.0",
+        "to": "ARC-001-DEVOPS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-ROADMAP-v1.0",
+        "to": "ARC-001-FINOPS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-ROADMAP-v1.0",
+        "to": "ARC-001-AIP",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-ROADMAP-v1.0",
+        "to": "ARC-001-OPS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SECURE-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SECURE-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SECURE-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SECURE-v1.0",
+        "to": "ARC-001-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SECURE-v1.0",
+        "to": "ARC-001-DPIA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SECURE-v1.0",
+        "to": "ARC-001-TCOP",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SECURE-v1.0",
+        "to": "ARC-001-AIP",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SECURE-v1.0",
+        "to": "ARC-001-OPS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SOBC-v1.0",
+        "to": "ARC-001-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SOBC-v1.0",
+        "to": "ARC-001-PLAN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SOBC-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SOBC-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SOBC-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SOBC-v1.0",
+        "to": "ARC-001-TCOP",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-SOBC-v1.0",
+        "to": "ARC-001-ROADMAP",
         "type": "references"
       },
       {
@@ -1733,6 +3851,41 @@
       {
         "from": "ARC-001-STKE-v1.0",
         "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-TCOP-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-TCOP-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-TCOP-v1.0",
+        "to": "ARC-001-DPIA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-TCOP-v1.0",
+        "to": "ARC-001-SVCASS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-TCOP-v1.0",
+        "to": "ARC-001-AIP",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-TCOP-v1.0",
+        "to": "ARC-001-SOBC",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-TRACE-v1.0",
+        "to": "ARC-001-RISK",
         "type": "references"
       },
       {
@@ -1756,6 +3909,51 @@
         "type": "references"
       },
       {
+        "from": "ARC-001-ADR-007-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DPIA-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DPIA-v1.0",
+        "to": "ARC-002-MODSEC",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-HLD-v1.0",
+        "to": "ARC-002-DIAG",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-HLD-v1.0",
+        "to": "ARC-002-TRACE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-MODSEC-v1.0",
+        "to": "ARC-002-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-MODSEC-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-MODSEC-v1.0",
+        "to": "ARC-002-DPIA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-MODSEC-v1.0",
+        "to": "ARC-002-OPS",
+        "type": "references"
+      },
+      {
         "from": "ARC-002-REQ-v1.0",
         "to": "ARC-000-PRIN",
         "type": "references"
@@ -1768,6 +3966,31 @@
       {
         "from": "ARC-002-REQ-v1.0",
         "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-RISK-v1.0",
+        "to": "ARC-001-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-RISK-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-RISK-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-RISK-v1.0",
+        "to": "ARC-002-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-SOBC-v1.0",
+        "to": "ARC-002-PLAN",
         "type": "references"
       },
       {
@@ -1793,7 +4016,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-03T13:23:10.920533Z",
+    "baseline": "2026-05-03T13:29:37.310Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -1863,28 +4086,18 @@
       {
         "project": "001-arckit-saas",
         "projectId": "001",
-        "artifactCount": 3,
-        "edgeCount": 7,
-        "density": 2.33,
+        "artifactCount": 27,
+        "edgeCount": 60,
+        "density": 2.22,
         "coverage": {
           "essentialPresent": [
             "REQ",
             "STKE",
+            "RISK",
+            "SOBC",
             "ADR"
           ],
           "essentialMissing": [
-            {
-              "type": "RISK",
-              "command": "/arckit:risk",
-              "label": "Risk Register",
-              "tier": 1
-            },
-            {
-              "type": "SOBC",
-              "command": "/arckit:sobc",
-              "label": "Strategic Outline Business Case",
-              "tier": 2
-            },
             {
               "type": "HLDR",
               "command": "/arckit:hld-review",
@@ -1904,26 +4117,46 @@
               "tier": 4
             }
           ],
-          "essentialPct": 38,
+          "essentialPct": 63,
           "presentTypes": [
             "ADR",
+            "AIP",
+            "DEVOPS",
+            "DIAG",
+            "DPIA",
+            "FINOPS",
+            "HLD",
+            "OPS",
+            "PLAN",
             "REQ",
-            "STKE"
+            "RISK",
+            "ROADMAP",
+            "SECURE",
+            "SOBC",
+            "STKE",
+            "SVCASS",
+            "TCOP",
+            "TRACE"
           ],
           "presentByCategory": {
+            "Operations": 3,
+            "Compliance": 3,
+            "Planning": 2,
             "Discovery": 2,
-            "Architecture": 1
+            "Governance": 1,
+            "Architecture": 2
           }
         },
         "compliance": {
-          "presentHigh": [],
-          "missingHigh": [
+          "presentHigh": [
             "TCOP",
-            "SECD",
-            "SECD-MOD",
             "DPIA",
             "SVCASS",
-            "RISK",
+            "RISK"
+          ],
+          "missingHigh": [
+            "SECD",
+            "SECD-MOD",
             "TRAC",
             "CONF",
             "PRIN-COMP",
@@ -1931,29 +4164,19 @@
             "ATRS",
             "JSP936"
           ],
-          "pct": 0,
+          "pct": 33,
           "total": 12
         },
         "health": {
           "stale": 0,
-          "draft": 2,
-          "orphan": 0
+          "draft": 19,
+          "orphan": 9
         },
         "contextualSuggestions": [
-          {
-            "command": "/arckit:dpia",
-            "type": "DPIA",
-            "trigger": "processing personal data"
-          },
           {
             "command": "/arckit:secure",
             "type": "SECD",
             "trigger": "security-sensitive system"
-          },
-          {
-            "command": "/arckit:tcop",
-            "type": "TCOP",
-            "trigger": "UK Gov Service Standard"
           },
           {
             "command": "/arckit:data-model",
@@ -1963,59 +4186,44 @@
         ],
         "hasGlobalPrin": true,
         "recommendations": [
-          {
-            "command": "/arckit:risk",
-            "label": "Risk Register",
-            "type": "RISK",
-            "tier": 1,
-            "reason": "Tier 1 essential missing"
-          },
-          {
-            "command": "/arckit:sobc",
-            "label": "Strategic Outline Business Case",
-            "type": "SOBC",
-            "tier": 2,
-            "reason": "Tier 2 essential missing"
-          },
           {
             "command": "/arckit:hld-review",
             "label": "High-Level Design Review",
             "type": "HLDR",
             "tier": 3,
             "reason": "Tier 3 essential missing"
+          },
+          {
+            "command": "/arckit:traceability",
+            "label": "Traceability Matrix",
+            "type": "TRAC",
+            "tier": 4,
+            "reason": "Tier 4 essential missing"
+          },
+          {
+            "command": "/arckit:conformance",
+            "label": "Conformance Assessment",
+            "type": "CONF",
+            "tier": 4,
+            "reason": "Tier 4 essential missing"
           }
         ]
       },
       {
         "project": "002-arckit-sovereign",
         "projectId": "002",
-        "artifactCount": 2,
-        "edgeCount": 7,
-        "density": 3.5,
+        "artifactCount": 15,
+        "edgeCount": 20,
+        "density": 1.33,
         "coverage": {
           "essentialPresent": [
             "REQ",
-            "STKE"
+            "STKE",
+            "RISK",
+            "SOBC",
+            "ADR"
           ],
           "essentialMissing": [
-            {
-              "type": "RISK",
-              "command": "/arckit:risk",
-              "label": "Risk Register",
-              "tier": 1
-            },
-            {
-              "type": "SOBC",
-              "command": "/arckit:sobc",
-              "label": "Strategic Outline Business Case",
-              "tier": 2
-            },
-            {
-              "type": "ADR",
-              "command": "/arckit:adr",
-              "label": "Architecture Decision Record",
-              "tier": 3
-            },
             {
               "type": "HLDR",
               "command": "/arckit:hld-review",
@@ -2035,24 +4243,40 @@
               "tier": 4
             }
           ],
-          "essentialPct": 25,
+          "essentialPct": 63,
           "presentTypes": [
+            "ADR",
+            "DIAG",
+            "DPIA",
+            "HLD",
+            "MODSEC",
+            "OPS",
+            "PLAN",
             "REQ",
-            "STKE"
+            "RISK",
+            "SOBC",
+            "STKE",
+            "TRACE"
           ],
           "presentByCategory": {
-            "Discovery": 2
+            "Compliance": 1,
+            "Operations": 1,
+            "Planning": 2,
+            "Discovery": 2,
+            "Governance": 1,
+            "Architecture": 2
           }
         },
         "compliance": {
-          "presentHigh": [],
+          "presentHigh": [
+            "DPIA",
+            "RISK"
+          ],
           "missingHigh": [
             "TCOP",
             "SECD",
             "SECD-MOD",
-            "DPIA",
             "SVCASS",
-            "RISK",
             "TRAC",
             "CONF",
             "PRIN-COMP",
@@ -2060,20 +4284,15 @@
             "ATRS",
             "JSP936"
           ],
-          "pct": 0,
+          "pct": 17,
           "total": 12
         },
         "health": {
           "stale": 0,
-          "draft": 2,
-          "orphan": 0
+          "draft": 11,
+          "orphan": 5
         },
         "contextualSuggestions": [
-          {
-            "command": "/arckit:dpia",
-            "type": "DPIA",
-            "trigger": "processing personal data"
-          },
           {
             "command": "/arckit:secure",
             "type": "SECD",
@@ -2093,40 +4312,28 @@
         "hasGlobalPrin": true,
         "recommendations": [
           {
-            "command": "/arckit:risk",
-            "label": "Risk Register",
-            "type": "RISK",
-            "tier": 1,
-            "reason": "Tier 1 essential missing"
-          },
-          {
-            "command": "/arckit:sobc",
-            "label": "Strategic Outline Business Case",
-            "type": "SOBC",
-            "tier": 2,
-            "reason": "Tier 2 essential missing"
-          },
-          {
-            "command": "/arckit:adr",
-            "label": "Architecture Decision Record",
-            "type": "ADR",
+            "command": "/arckit:hld-review",
+            "label": "High-Level Design Review",
+            "type": "HLDR",
             "tier": 3,
             "reason": "Tier 3 essential missing"
+          },
+          {
+            "command": "/arckit:traceability",
+            "label": "Traceability Matrix",
+            "type": "TRAC",
+            "tier": 4,
+            "reason": "Tier 4 essential missing"
+          },
+          {
+            "command": "/arckit:conformance",
+            "label": "Conformance Assessment",
+            "type": "CONF",
+            "tier": 4,
+            "reason": "Tier 4 essential missing"
           }
         ]
       }
-    ],
-    "byProject": {
-      "001-arckit-saas": {
-        "essentialCoveragePct": 62,
-        "drafts": 0,
-        "next": ""
-      },
-      "002-arckit-sovereign": {
-        "essentialCoveragePct": 62,
-        "drafts": 0,
-        "next": ""
-      }
-    }
+    ]
   }
 }

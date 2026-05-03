@@ -1,21 +1,21 @@
 {
-  "generated": "2026-05-03T13:23:45Z",
+  "generated": "2026-05-03T13:29:48.280Z",
   "scanned": {
     "projects": 2,
     "artifacts": 42
   },
   "summary": {
     "HIGH": 0,
-    "MEDIUM": 1,
+    "MEDIUM": 2,
     "LOW": 0,
-    "total": 1
+    "total": 2
   },
   "byType": {
     "STALE-RSCH": 0,
     "FORGOTTEN-ADR": 0,
     "UNRESOLVED-COND": 0,
     "STALE-EXT": 0,
-    "ORPHAN-REQ": 1,
+    "ORPHAN-REQ": 2,
     "MISSING-TRACE": 0,
     "VERSION-DRIFT": 0
   },
@@ -23,7 +23,15 @@
     {
       "id": "001-arckit-saas",
       "artifacts": 27,
-      "findings": []
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "rule": "ORPHAN-REQ",
+          "file": "ARC-001-REQ-v1.0.md",
+          "message": "Total requirements: 70\n  Requirements not referenced by any ADR: 18\n  Examples: BR-002, BR-003, BR-008, NFR-P-003, FR-008 (+13 more)",
+          "action": "Review whether these requirements need architectural decisions documented as ADRs"
+        }
+      ]
     },
     {
       "id": "002-arckit-sovereign",
@@ -33,7 +41,7 @@
           "severity": "MEDIUM",
           "rule": "ORPHAN-REQ",
           "file": "ARC-002-REQ-v1.0.md",
-          "message": "Total requirements: 66\n  Requirements not referenced by any ADR: 2\n  Examples: NFR-P-002, NFR-P-003",
+          "message": "Total requirements: 63\n  Requirements not referenced by any ADR: 36\n  Examples: BR-003, BR-004, BR-006, FR-003, FR-006 (+31 more)",
           "action": "Review whether these requirements need architectural decisions documented as ADRs"
         }
       ]
