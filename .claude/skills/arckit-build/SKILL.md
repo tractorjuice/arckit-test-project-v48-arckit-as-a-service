@@ -45,6 +45,13 @@ Recipes are external YAML files. Lookup precedence for `--recipe NAME` (first hi
 
 Default recipe is `uk-saas`. To customize, copy the skill default to `.arckit/recipes/uk-saas.yaml` and edit there.
 
+**Built-in recipes** (in `.claude/skills/arckit-build/recipes/`):
+
+| Recipe | Use case |
+|--------|----------|
+| `uk-saas` | UK Government managed multi-tenant SaaS — civilian departments |
+| `uk-mod-sovereign` | UK MOD / sovereign / air-gapped — `mod-secure` + `jsp-936`, no SVCASS, sealed-media distribution |
+
 ### Recipe schema (v1)
 
 See `.claude/skills/arckit-build/recipes/uk-saas.yaml` for an annotated reference. Top-level keys:
