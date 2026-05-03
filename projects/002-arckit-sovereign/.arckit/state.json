@@ -1,15 +1,16 @@
 {
-  "state_format_version": "0.2",
+  "state_format_version": "0.3",
   "project_id": "002",
   "project_name": "002-arckit-sovereign",
   "recipe": "uk-saas",
+  "recipe_path": ".claude/skills/arckit-build/recipes/uk-saas.yaml",
   "recipe_overrides": {
     "swap": {"SBD": "MOD-SBD"},
     "skip": ["SVCASS"],
     "rationale": "Sovereign / air-gapped route per Principle 21. SBD swapped for MOD Secure by Design (JSP 440 / 604, Security Aspects Letter). SVCASS skipped — not a public-facing GDS service; assurance gates flow through MOD accreditation pathway, not GDS Service Standard. AIP retained because AI is pluggable per ADR-004 (sovereign customer can point at on-premise model)."
   },
   "started_at": "2026-05-03T18:20:00Z",
-  "current_wave": 3,
+  "current_wave": 4,
   "targets": {
     "PRIN": {
       "status": "complete",
@@ -61,7 +62,7 @@
     "ADR-006": {"status": "complete", "wave": 2, "skill": "arckit:adr", "topic": "JSP 440 / SAL Alignment", "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-006-v1.0.md", "line_count": 603, "agent_id": "ae1681bfc994dd296"},
     "ADR-007": {"status": "complete", "wave": 2, "skill": "arckit:adr", "topic": "Distribution Model — offline media", "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-007-v1.0.md", "line_count": 801, "agent_id": "a954bfc5e7af6817f"},
     "ADR-008": {"status": "complete", "wave": 2, "skill": "arckit:adr", "topic": "Long-Term Support Release Line", "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-008-v1.0.md", "line_count": 662, "agent_id": "a09af91514729e00b"},
-    "RISK": {"status": "pending", "skill": "arckit:risk"},
+    "RISK": {"status": "complete", "wave": 3, "skill": "arckit:risk", "path": "projects/002-arckit-sovereign/ARC-002-RISK-v1.0.md", "line_count": 1714, "agent_id": "a2a42166b60247b8a", "headline": "13 risks; 5 inherent-Critical (R-001 strategic accreditation fail, R-002 MOD-SbD fail, R-007 boundary egress, R-004 supply-chain, R-005 SAL controls). 5 risks exceed sovereign Very-Low compliance appetite."},
     "SOBC": {"status": "pending", "skill": "arckit:sobc"},
     "PLAN": {"status": "pending", "skill": "arckit:plan"},
     "ROADMAP": {"status": "pending", "skill": "arckit:roadmap"},
@@ -69,11 +70,11 @@
     "MOD-SBD": {"status": "pending", "skill": "arckit:mod-secure", "note": "Replaces SBD for sovereign — uses MOD Secure by Design framework, JSP 440, Security Aspects Letter"},
     "DPIA": {"status": "pending", "skill": "arckit:dpia"},
     "AIP": {"status": "pending", "skill": "arckit:ai-playbook"},
-    "HLD": {"status": "pending", "skill": "arckit:hld-review"},
+    "HLD": {"status": "complete", "wave": 3, "skill": "arckit:hld-review", "path": "projects/002-arckit-sovereign/ARC-002-HLD-v1.0.md", "line_count": 630, "agent_id": "a6782b3a7ec232488", "headline": "APPROVED WITH CONDITIONS — 3 blocking items (diagrams pending W5/6, MOD-SBD/DPIA inputs pending W4, end-to-end air-gap CI walkthrough unevidenced) + 4 advisory."},
     "DIAG-C4": {"status": "pending", "skill": "arckit:diagram"},
     "DIAG-SEQ": {"status": "pending", "skill": "arckit:diagram"},
     "DIAG-DEP": {"status": "pending", "skill": "arckit:diagram"},
-    "DEVOPS": {"status": "pending", "skill": "arckit:devops"},
+    "DEVOPS": {"status": "complete", "wave": 3, "skill": "arckit:devops", "path": "projects/002-arckit-sovereign/ARC-002-DEVOPS-v1.0.md", "line_count": 853, "agent_id": "a096c51dc15d8500a", "headline": "Dual-output pipeline (SaaS + sovereign bundle from one revision). 3 release-blocking gates: reproducibility cross-build digest match, network-deny smoke (zero outbound), HSM-OVM signing M-of-N + SLSA L3 + dual SBOM. Annual LTS 24-month support."},
     "FINOPS": {"status": "pending", "skill": "arckit:finops"},
     "OPS": {"status": "pending", "skill": "arckit:operationalize"},
     "TRACE": {"status": "pending", "skill": "arckit:traceability"}
@@ -89,13 +90,23 @@
       "wall_clock_minutes": 8,
       "lines_generated": 5577,
       "note": "8 parallel ADR agents; sovereign-specific topics seeded explicitly via skill args (ADR topic auto-discovery deferred to v0.5+). All passed validation. Agents reported orchestrator-assigned numbers were honoured cleanly — no helper-script collisions because each agent had an explicit OUTPUT PATH in its prompt."
+    },
+    {
+      "n": 3,
+      "targets": ["RISK", "HLD", "DEVOPS"],
+      "status": "complete",
+      "completed_at": "2026-05-03T18:42:00Z",
+      "via": "/arckit-build harness — second parallel wave on project 002",
+      "wall_clock_minutes": 13,
+      "lines_generated": 3197,
+      "note": "3 parallel agents. RISK identified 5 sovereign-Critical risks; HLD approved with 3 blocking conditions + 4 advisory; DEVOPS pipeline defined dual-output (SaaS + sovereign bundle) with HSM-OVM signing."
     }
   ],
   "next_wave_plan": {
-    "n": 3,
-    "targets": ["RISK", "HLD", "DEVOPS", "FINOPS"],
-    "rationale": "RISK needs PRIN+REQ+STKE+ADR-* (all done). HLD needs PRIN+REQ+ADR-* (all done). DEVOPS needs REQ+ADR-* (all done). FINOPS needs REQ+RISK — wait, FINOPS would need RISK which is in this wave. Move FINOPS to wave 4.",
-    "estimated_agents": 3,
-    "estimated_duration_min": "8-12 wall-clock"
+    "n": 4,
+    "targets": ["SOBC", "TCOP", "MOD-SBD", "FINOPS", "DPIA"],
+    "rationale": "All deps satisfied. SOBC←REQ/STKE/RISK; TCOP←REQ/STKE/RISK/ADR-*; MOD-SBD←RISK/REQ/ADR-* + Principle 5/21 sovereign controls; FINOPS←REQ/RISK; DPIA←REQ/STKE/RISK (no SBD dep per v0.2 recipe).",
+    "estimated_agents": 5,
+    "estimated_duration_min": "8-15 wall-clock"
   }
 }
