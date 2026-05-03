@@ -4,9 +4,9 @@
   "project_name": "001-arckit-saas",
   "recipe": "uk-saas",
   "started_at": "2026-05-03T16:00:00Z",
-  "last_wave_completed": 9,
-  "current_wave": 10,
-  "build_status": "research wave in progress (wave 9 complete; wave 10 dispatched)",
+  "last_wave_completed": 10,
+  "current_wave": 11,
+  "build_status": "research wave complete (waves 9 + 10); post-build hooks pending",
   "build_completed_at": "2026-05-03T18:10:00Z",
   "research_resume_started_at": "2026-05-03T21:29:47Z",
   "targets": {
@@ -20,6 +20,61 @@
       "line_count": 604,
       "agent_id": "ab5409afe98ea94c7",
       "agent_summary": "Bimodal adopter posture (SaaS-friendly civilian/NHS/local-gov vs sovereign-only MOD). Existing-systems baseline = GOV.UK Design System + landing zones + GitHub-flavoured authoring + Microsoft 365/Entra. Procurement and sovereignty stance is mandatory not optional — G-Cloud (BR-004) and UK data residency (Principle 7) are floor not aspiration."
+    },
+    "RESEARCH": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/research/ARC-001-RSCH-v1.0.md",
+      "built_at": "2026-05-03T21:54:03Z",
+      "wave": 10,
+      "skill": "arckit:research",
+      "topic": "Technology and vendor market research (build vs buy, TCO)",
+      "line_count": 1337,
+      "agent_id": "affc27895b70cc09c",
+      "agent_summary": "BUY managed primitives (AWS eu-west-2 primary + Azure UK South cross-vendor floor) for cell topology ~£58–71k/cell/yr. BUY Bedrock as primary AI + Azure OpenAI as ADR-004 second; ADOPT open-weight Llama-3/Mistral self-host as project 002 sovereign default. 3-yr SaaS-control-plane TCO ~£1.92M mid-point; reconciles cleanly against SOBC £2.85M OpEx envelope (£0.93M overhead lines outside scope)."
+    },
+    "AWS_RESEARCH": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/research/ARC-001-AWRS-v1.0.md",
+      "built_at": "2026-05-03T21:54:03Z",
+      "wave": 10,
+      "skill": "arckit:aws-research",
+      "topic": "AWS service availability + architecture patterns + UK region",
+      "line_count": 718,
+      "agent_id": "af905155e2371568e",
+      "agent_summary": "EKS one-cluster-per-cell (~£324/mo), RDS PostgreSQL Multi-AZ + S3 Object Lock with KMS-CMK and CRR to eu-west-1 (~£280–470/mo), Bedrock Claude/Llama/Cohere via provider-agnostic adaptor (~£300–1,500/mo capped by ADR-008). Total 3-cell GA estimate £4,680/mo (£153k 3-yr TCO). 14/14 NCSC CSP and full CAF v3 mapped via AWS Config conformance packs. eu-west-2 confirmed for all services via MCP."
+    },
+    "AZURE_RESEARCH": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/research/ARC-001-AZRS-v1.0.md",
+      "built_at": "2026-05-03T21:54:03Z",
+      "wave": 10,
+      "skill": "arckit:azure-research",
+      "topic": "Azure service availability + architecture patterns + UK South / UK West",
+      "line_count": 809,
+      "agent_id": "a071fbd917b272ead",
+      "agent_summary": "AKS Standard tier UK South 3-AZ cell-per-tenant (~£580/cell/mo); Azure Database for PostgreSQL Flexible Server GP D4ds_v5 ZR-HA + RLS (~£640/cell/mo); Azure OpenAI UK South (gpt-4o + gpt-3.5 only, newer models out-of-region) with Modified Abuse Monitoring opt-in (~£1,200/cell/mo). Total ~£5,940/cell/mo, 3-yr TCO £367.7k for 3 cells. KEY constraints: API Management v2 UK South temporary creation block (UK West fallback), MAM application required pre-GA, GOV.UK One Login federates via Entra External ID custom-OIDC."
+    },
+    "GCP_RESEARCH": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/research/ARC-001-GCRS-v1.0.md",
+      "built_at": "2026-05-03T21:54:03Z",
+      "wave": 10,
+      "skill": "arckit:gcp-research",
+      "topic": "Google Cloud service availability + architecture patterns + europe-west2",
+      "line_count": 1025,
+      "agent_id": "af01e6000be2429e6",
+      "agent_summary": "GKE Autopilot europe-west2 (~£1,650/cell/mo pre-CUD); Cloud SQL Postgres 15 Enterprise Plus Regional HA + RLS + CMEK (~£780/cell/mo); Vertex AI Gemini 2.5 Pro/Flash with KEY constraint — eu multi-region NOT UK-pinnable, requires UK IDTA + SCC for OFFICIAL data, so Anthropic on AWS Bedrock europe-west2 used as UK-pinned alternate. Per-cell ~£4,250/mo; 3-yr TCO ~£498k pre-CUD / £430k with 1+3yr CUDs. Workload Identity Federation + Binary Authorization + Cosign close NFR-SEC-005/006."
+    },
+    "GOV_REUSE": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/research/ARC-001-GOVR-v1.0.md",
+      "built_at": "2026-05-03T21:54:03Z",
+      "wave": 10,
+      "skill": "arckit:gov-reuse",
+      "topic": "UK government code reuse search via govreposcrape",
+      "line_count": 754,
+      "agent_id": "a2268195115adfd9d",
+      "agent_summary": "Top reuse: alphagov/govuk-frontend (Library, MIT, ~30 days saved on FR-013 + WCAG 2.2 AA); alphagov/notifications-python-client + notifications-node-client (Library, ~8 days saved on INT-004 email); ministryofjustice/modernisation-platform (Reference/Fork, ~60 days saved on Terraform AWS landing-zone). Total ~137 person-days saved. BUILD-NEW gaps: multi-tenant isolation, tamper-evident audit logging, Companies House client, Mermaid renderer, Markdown/AsciiDoc renderer with GOV.UK styling, EA-tooling adapters."
     },
     "PRIN": {
       "status": "complete",
