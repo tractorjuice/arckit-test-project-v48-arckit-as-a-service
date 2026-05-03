@@ -2,9 +2,13 @@
   "state_format_version": "0.3",
   "project_id": "002",
   "project_name": "002-arckit-sovereign",
-  "recipe": "uk-saas",
-  "recipe_path": ".claude/skills/arckit-build/recipes/uk-saas.yaml",
-  "recipe_overrides": {
+  "recipe": "uk-mod-sovereign",
+  "recipe_path": "/home/codespace/.claude/plugins/cache/arc-kit/arckit/4.13.1/skills/arckit-build/recipes/uk-mod-sovereign.yaml",
+  "recipe_history": [
+    {"recipe": "uk-saas", "with_overrides": true, "completed_at": "2026-05-03T19:50:00Z"},
+    {"recipe": "uk-mod-sovereign", "completed_at": "2026-05-03T20:10:00Z", "delta_targets": ["RESEARCH", "AWS_RESEARCH", "AZURE_RESEARCH", "GCP_RESEARCH", "JSP_936", "DIAG-AIRGAP"]}
+  ],
+  "recipe_overrides_legacy_uk_saas": {
     "swap": {"SBD": "MOD-SBD"},
     "skip": ["SVCASS"],
     "rationale": "Sovereign / air-gapped route per Principle 21. SBD swapped for MOD Secure by Design (JSP 440 / 604, Security Aspects Letter). SVCASS skipped — not a public-facing GDS service; assurance gates flow through MOD accreditation pathway, not GDS Service Standard. AIP retained because AI is pluggable per ADR-004 (sovereign customer can point at on-premise model)."
@@ -79,7 +83,14 @@
     "DEVOPS": {"status": "complete", "wave": 3, "skill": "arckit:devops", "path": "projects/002-arckit-sovereign/ARC-002-DEVOPS-v1.0.md", "line_count": 853, "agent_id": "a096c51dc15d8500a", "headline": "Dual-output pipeline (SaaS + sovereign bundle from one revision). 3 release-blocking gates: reproducibility cross-build digest match, network-deny smoke (zero outbound), HSM-OVM signing M-of-N + SLSA L3 + dual SBOM. Annual LTS 24-month support."},
     "FINOPS": {"status": "complete", "wave": 4, "skill": "arckit:finops", "path": "projects/002-arckit-sovereign/ARC-002-FINOPS-v1.0.md", "line_count": 540, "agent_id": "a3afc7a7bfb5a3e6c", "headline": "Per-site cost-to-serve ~£250k–£850k Y1 (median ~£500k); ~£250k/yr steady. ≥25% margin → SaaS cross-subsidy floor. Top levers: LTS concurrency, per-site amortisation, HSM utilisation."},
     "OPS": {"status": "complete", "wave": 5, "skill": "arckit:operationalize", "path": "projects/002-arckit-sovereign/ARC-002-OPS-v1.0.md", "line_count": 878, "agent_id": "a8eb3e562657d9361", "headline": "Vendor scope: bundle issue+sign, LTS patch stream, evidence-pack refresh, opt-in remote support, VDP. Customer scope: deployed-instance lifecycle. ATO hand-over pivot. Patch SLA 7d Critical / 30d High / 90d Medium."},
-    "TRACE": {"status": "complete", "wave": 7, "skill": "arckit:traceability", "path": "projects/002-arckit-sovereign/ARC-002-TRAC-v1.0.md", "line_count": 647, "agent_id": "af707c40f44038801", "headline": "100% forward chain coverage. 13/13 risks traced. TCoP 13/13, MOD-SbD 7/7, JSP 440 control families mapped, JSP 604 4/4 gates, DPIA 5/5, AIP 16/16. Cross-project linkage to 001 documented per Principle 21."}
+    "TRACE": {"status": "complete", "wave": 7, "skill": "arckit:traceability", "path": "projects/002-arckit-sovereign/ARC-002-TRAC-v1.0.md", "line_count": 647, "agent_id": "af707c40f44038801", "headline": "100% forward chain coverage. 13/13 risks traced. TCoP 13/13, MOD-SbD 7/7, JSP 440 control families mapped, JSP 604 4/4 gates, DPIA 5/5, AIP 16/16. Cross-project linkage to 001 documented per Principle 21."},
+    "ORG_RESEARCH": {"status": "complete", "wave": 8, "skill": "arckit:research", "path": "projects/000-global/research/ARC-000-RSCH-v1.0.md", "source": "pre-existing-from-uk-saas-build", "topic": "Target organisation strategy, structure, and existing systems"},
+    "RESEARCH": {"status": "complete", "wave": 8, "skill": "arckit:research", "path": "projects/002-arckit-sovereign/research/ARC-002-RSCH-v1.0.md", "line_count": 804, "agent_id": "aa4008240e3b53b91", "headline": "Sovereign deployment is overwhelmingly ADOPT not BUY — air-gap excludes hyperscaler managed services. Single load-bearing BUILD investment is sovereign packaging+LTS pipeline (~£1.6M 3-yr). Default sovereign AI = NVIDIA Triton+vLLM+open-weight on customer GPUs; FIPS 140-3 L3 HSMs for vendor signing."},
+    "AWS_RESEARCH": {"status": "complete", "wave": 8, "skill": "arckit:aws-research", "path": "projects/002-arckit-sovereign/research/ARC-002-AWRS-v1.0.md", "line_count": 530, "agent_id": "a484da3ac471dc0eb", "headline": "AWS Outposts NOT suitable for MOD air-gap (requires service-link). Snowball Edge with EKS Anywhere is only AWS substrate supporting fully disconnected operation. No UK sovereign AWS region exists — recommend substrate-agnostic sealed-bundle install per ADR-007."},
+    "AZURE_RESEARCH": {"status": "complete", "wave": 8, "skill": "arckit:azure-research", "path": "projects/002-arckit-sovereign/research/ARC-002-AZRS-v1.0.md", "line_count": 730, "agent_id": "a87151a322b6ff848", "headline": "Azure Local with Disconnected Operations is the strategic sovereign substrate (foundation of MS Sovereign Private Cloud). Foundry Local on Azure Local is supported on-prem AI path for ADR-004. Vendor has zero Azure consumption cost — customer pays MS direct."},
+    "GCP_RESEARCH": {"status": "complete", "wave": 8, "skill": "arckit:gcp-research", "path": "projects/002-arckit-sovereign/research/ARC-002-GCRS-v1.0.md", "line_count": 930, "agent_id": "a4f7f6836323b4c56", "headline": "GDC Air-Gapped is only viable Google customer-side runtime. Two-plane sovereign delivery: vendor build plane in europe-west2 producing signed bundles → sealed media → customer GDC Air-Gapped at MOD site. Vertex AI on GDC Air-Gapped resolves Conflict C-4."},
+    "JSP_936": {"status": "complete", "wave": 8, "skill": "arckit:jsp-936", "path": "projects/002-arckit-sovereign/ARC-002-JSP936-v1.0.md", "line_count": 960, "agent_id": "a089cd3f4699d269f", "headline": "18/23 controlling rows vendor-side COMPLIANT (~78%); 5 rows structurally RAISO-to-complete for deployed instance (vendor-narrow scope). Risk MAJOR (12/25). Approval pathway: Defence-Level (JROC/IAC) for deployed instance; vendor ARB+AI Ethics Reviewer for abstraction."},
+    "DIAG-AIRGAP": {"status": "complete", "wave": 8, "skill": "arckit:diagram", "path": "projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-004-v1.0.md", "line_count": 443, "mermaid_blocks": 1, "agent_id": "a06c27e94ca8f3972", "topic": "air-gap-boundary", "headline": "Single Mermaid flowchart TB: accredited perimeter, vendor-side build/sign trust zone, sealed-media one-way ingress with 5-step verification ceremony, customer-side runtime with 6 customer-controlled foundational services + 8-container ArcKit runtime. Zero outbound edges — air-gap rendered as deliberate absence."}
   },
   "waves": [
     {"n": 0, "targets": ["PRIN", "GLOSSARY", "STRATEGY", "WARDLEY", "REQ", "STKE"], "status": "complete", "source": "pre-existing"},
@@ -142,6 +153,17 @@
       "wall_clock_minutes": 8,
       "lines_generated": 647,
       "note": "1 agent. Full traceability matrix; all 13 risks covered; cross-project linkage to 001 documented per Principle 21."
+    },
+    {
+      "n": 8,
+      "targets": ["RESEARCH", "AWS_RESEARCH", "AZURE_RESEARCH", "GCP_RESEARCH", "JSP_936", "DIAG-AIRGAP"],
+      "status": "complete",
+      "completed_at": "2026-05-03T20:10:00Z",
+      "via": "/arckit-build harness — recipe upgrade to uk-mod-sovereign",
+      "recipe_change": "uk-saas → uk-mod-sovereign: adds research wave (RESEARCH/AWS/AZURE/GCP), JSP 936, DIAG-AIRGAP",
+      "wall_clock_minutes": 18,
+      "lines_generated": 4397,
+      "note": "6 parallel agents. Smoke-test reported NOT_AVAILABLE but user opted to proceed — empirically subagents invoked skills successfully (matches prior wave behaviour). All 6 outputs PASS validation. ORG_RESEARCH inherited from uk-saas build (000-global/research/ARC-000-RSCH-v1.0.md)."
     }
   ],
   "build_summary": {
