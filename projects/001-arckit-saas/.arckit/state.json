@@ -4,8 +4,8 @@
   "project_name": "001-arckit-saas",
   "recipe": "uk-saas",
   "started_at": "2026-05-03T16:00:00Z",
-  "last_wave_completed": 5,
-  "current_wave": 6,
+  "last_wave_completed": 6,
+  "current_wave": 7,
   "targets": {
     "PRIN": {
       "status": "complete",
@@ -209,12 +209,60 @@
       "agent_id": "a74a8fb181d23f563",
       "headline": "Break-even GA + 18m. Top 3 levers: AI provider substitution (-20–35%), per-tenant quotas (-15–25%), commitment purchases (-15–35%). 3 KRIs to RISK §J."
     },
-    "PLAN": {"status": "pending", "skill": "arckit:plan"},
+    "PLAN": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-PLAN-v1.0.md",
+      "wave": 6,
+      "skill": "arckit:plan",
+      "built_at": "2026-05-03T17:30:00Z",
+      "line_count": 654,
+      "agent_id": "ab1c380d30e3694cc",
+      "headline": "GA target 2027-04-30. Critical path: AI abstraction (R-006/R-017), tenant isolation (R-008/R-014), pilot recruitment (R-003)."
+    },
     "ROADMAP": {"status": "pending", "skill": "arckit:roadmap"},
-    "DIAG-C4": {"status": "pending", "skill": "arckit:diagram"},
-    "DIAG-SEQ": {"status": "pending", "skill": "arckit:diagram"},
-    "DIAG-DEP": {"status": "pending", "skill": "arckit:diagram"},
-    "OPS": {"status": "pending", "skill": "arckit:operationalize"},
+    "DIAG-C4": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/diagrams/ARC-001-DIAG-001-v1.0.md",
+      "wave": 6,
+      "skill": "arckit:diagram",
+      "built_at": "2026-05-03T17:30:00Z",
+      "line_count": 557,
+      "mermaid_blocks": 4,
+      "agent_id": "a1864e84cf1be3b9d",
+      "headline": "C4 Context (13 elements) + Container (32) + Component (12 across C1 + C5). Highlights: namespace-per-tenant, tenant_id propagation, pluggable AI."
+    },
+    "DIAG-SEQ": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/diagrams/ARC-001-DIAG-002-v1.0.md",
+      "wave": 6,
+      "skill": "arckit:diagram",
+      "built_at": "2026-05-03T17:30:00Z",
+      "line_count": 600,
+      "mermaid_blocks": 5,
+      "agent_id": "aba990bfd51970590",
+      "headline": "5 sequence diagrams: onboarding, OIDC SSO, AI generation, export/exit, audit query. Theme: tenant_id at every boundary; audit-log on every state change."
+    },
+    "DIAG-DEP": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/diagrams/ARC-001-DIAG-003-v1.0.md",
+      "wave": 6,
+      "skill": "arckit:diagram",
+      "built_at": "2026-05-03T17:30:00Z",
+      "line_count": 558,
+      "mermaid_blocks": 3,
+      "agent_id": "a9b7c566176666528",
+      "headline": "3 views: SaaS cell-per-tier topology, sovereign air-gapped variant, network/trust-zone with mTLS + Article 46."
+    },
+    "OPS": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-OPS-v1.0.md",
+      "wave": 6,
+      "skill": "arckit:operationalize",
+      "built_at": "2026-05-03T17:30:00Z",
+      "line_count": 1708,
+      "agent_id": "a59f8cd3c450d04d0",
+      "headline": "SLO 99.9%/RTO<4h/RPO<15min. 5+ runbooks incl. cross-tenant leak (ICO 72h template), SAR/erasure, AI sub-processor incident, CH outage, IdP compromise. DR drill quarterly."
+    },
     "TRACE": {"status": "pending", "skill": "arckit:traceability"}
   },
   "waves": [
@@ -233,13 +281,24 @@
       "longest_agent_minutes": 11,
       "shortest_agent_minutes": 5,
       "note": "First production run of the harness. 5 agents in parallel. Each invoked its /arckit:* skill in isolation. Total content generated: 5,245 lines. Sequential equivalent would have been ~30-45 minutes."
+    },
+    {
+      "n": 6,
+      "targets": ["PLAN", "DIAG-C4", "DIAG-SEQ", "DIAG-DEP", "OPS"],
+      "status": "complete",
+      "completed_at": "2026-05-03T17:30:00Z",
+      "via": "/arckit-build harness — second parallel wave",
+      "wall_clock_minutes": 11,
+      "longest_agent_minutes": 11,
+      "shortest_agent_minutes": 4,
+      "note": "5 agents in parallel. Total content generated: 4,077 lines including 12 Mermaid diagrams (4 C4 + 5 sequence + 3 deployment)."
     }
   ],
   "next_wave_plan": {
-    "n": 6,
-    "targets": ["PLAN", "DIAG-C4", "DIAG-SEQ", "DIAG-DEP", "OPS"],
-    "rationale": "PLAN deps satisfied (SOBC, RISK done). All three DIAGs need HLD (now done). OPS needs HLD + DEVOPS + RISK (all done). Parallel-safe: 5 agents.",
-    "estimated_agents": 5,
-    "estimated_duration_min": "5-15 wall-clock"
+    "n": 7,
+    "targets": ["ROADMAP"],
+    "rationale": "ROADMAP needs PLAN (now done). Single artefact wave.",
+    "estimated_agents": 1,
+    "estimated_duration_min": "5 wall-clock"
   }
 }
