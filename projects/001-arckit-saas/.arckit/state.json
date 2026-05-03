@@ -4,8 +4,9 @@
   "project_name": "001-arckit-saas",
   "recipe": "uk-saas",
   "started_at": "2026-05-03T16:00:00Z",
-  "last_wave_completed": 7,
-  "current_wave": 8,
+  "last_wave_completed": 8,
+  "current_wave": "post-build",
+  "build_status": "RECIPE COMPLETE — pending post-build hooks (health + pages)",
   "targets": {
     "PRIN": {
       "status": "complete",
@@ -272,7 +273,16 @@
       "agent_id": "a59f8cd3c450d04d0",
       "headline": "SLO 99.9%/RTO<4h/RPO<15min. 5+ runbooks incl. cross-tenant leak (ICO 72h template), SAR/erasure, AI sub-processor incident, CH outage, IdP compromise. DR drill quarterly."
     },
-    "TRACE": {"status": "pending", "skill": "arckit:traceability"}
+    "TRACE": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-TRACE-v1.0.md",
+      "wave": 8,
+      "skill": "arckit:traceability",
+      "built_at": "2026-05-03T18:00:00Z",
+      "line_count": 759,
+      "agent_id": "a7c84ba3936da0865",
+      "headline": "100% coverage. 17/17 risks traced. 14/14 SDs → 8/8 Goals → 7/7 Outcomes → 8/8 BRs (7✅+1⚠️) → 15/15 FRs → 33 NFRs (21✅+12⚠️). 3 orphans, 3 gaps identified."
+    }
   },
   "waves": [
     {"n": 0, "targets": ["PRIN", "GLOSSARY", "STRATEGY", "WARDLEY", "REQ", "STKE"], "status": "complete", "source": "pre-existing"},
@@ -310,13 +320,22 @@
       "via": "/arckit-build harness — single-target wave",
       "wall_clock_minutes": 10,
       "note": "1 agent. 1,289 lines. 3-year capability + governance roadmap."
+    },
+    {
+      "n": 8,
+      "targets": ["TRACE"],
+      "status": "complete",
+      "completed_at": "2026-05-03T18:00:00Z",
+      "via": "/arckit-build harness — final wave",
+      "wall_clock_minutes": 9,
+      "note": "1 agent. 759 lines. Full traceability matrix; all 17 risks covered; 3 orphans + 3 gaps identified for follow-up."
     }
   ],
   "next_wave_plan": {
-    "n": 8,
-    "targets": ["TRACE"],
-    "rationale": "TRACE needs everything. All upstream artefacts now complete. Final wave.",
-    "estimated_agents": 1,
-    "estimated_duration_min": "5-10 wall-clock"
+    "n": "post-build",
+    "targets": ["health", "pages"],
+    "rationale": "Post-build hooks — diagnostic scan + docs site regeneration.",
+    "estimated_agents": 2,
+    "estimated_duration_min": "3-5 wall-clock"
   }
 }
