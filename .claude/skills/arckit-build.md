@@ -3,7 +3,7 @@ name: arckit-build
 description: ArcKit build harness — orchestrates parallel /arckit:* artefact generation using subagent isolation. Reads project state, computes the artefact dependency DAG, dispatches one subagent per target per wave (each subagent invokes a /arckit:* skill in its own isolated context), validates outputs, commits the wave, and persists state to .arckit/state.json for resumability. Use this when you need to build/rebuild a substantial set of ArcKit artefacts and don't want to run /arckit:* skills sequentially in main context (which exhausts context and fails past ~5 artefacts). Args: <project> (e.g. 001 or 001-arckit-saas) | --plan (dry run) | --resume (pick up from state) | --target NAME (specific target + deps) | --refresh NAME (force rebuild) | --no-commit | --recipe NAME.
 ---
 
-# ArcKit Build Harness (v0.1)
+# ArcKit Build Harness (v0.2)
 
 You are running the ArcKit build harness. Your job is **orchestration only** — never read or write artefact content yourself. Spawn subagents for that.
 
@@ -30,34 +30,51 @@ You are running the ArcKit build harness. Your job is **orchestration only** —
 
 ## Recipe: UK-SaaS (v0.1, hardcoded)
 
-Required artefacts. `{P}` = project ID, `{V}` = version (default `1.0`), `{N}` = sequence.
+Required artefacts. `{P}` = project ID, `{V}` = version (default `1.0`), `{N}` = sequence, `{NAME}` = project slug.
 
-| Target | Skill | Output path | Depends on |
-|--------|-------|-------------|------------|
-| PRIN | `arckit:principles` | `projects/000-global/ARC-000-PRIN-v{V}.md` | — |
-| GLOSSARY | `arckit:glossary` | `projects/000-global/ARC-000-GLO-v{V}.md` | PRIN |
-| STRATEGY | `arckit:strategy` | `projects/000-global/ARC-000-STRAT-v{V}.md` | PRIN, STKE-any |
-| WARDLEY | `arckit:wardley` | `projects/000-global/ARC-000-WARD-v{V}.md` | PRIN, REQ-any |
-| REQ | `arckit:requirements` | `projects/{P}/ARC-{P}-REQ-v{V}.md` | PRIN |
-| STKE | `arckit:stakeholders` | `projects/{P}/ARC-{P}-STKE-v{V}.md` | PRIN |
-| ADR-{N} | `arckit:adr` | `projects/{P}/decisions/ARC-{P}-ADR-{N}-v{V}.md` | PRIN, REQ |
-| RISK | `arckit:risk` | `projects/{P}/ARC-{P}-RISK-v{V}.md` | REQ, STKE, ADR-*, PRIN |
-| SOBC | `arckit:sobc` | `projects/{P}/ARC-{P}-SOBC-v{V}.md` | REQ, STKE, RISK |
-| PLAN | `arckit:plan` | `projects/{P}/ARC-{P}-PLAN-v{V}.md` | SOBC, RISK |
-| ROADMAP | `arckit:roadmap` | `projects/{P}/ARC-{P}-ROAD-v{V}.md` | PLAN |
-| TCOP | `arckit:tcop` | `projects/{P}/ARC-{P}-TCOP-v{V}.md` | REQ, STKE, RISK, ADR-* |
-| SBD | `arckit:secure` | `projects/{P}/ARC-{P}-SBD-v{V}.md` | TCOP, RISK, REQ, ADR-* |
-| DPIA | `arckit:dpia` | `projects/{P}/ARC-{P}-DPIA-v{V}.md` | SBD, REQ, STKE, RISK |
-| AIP | `arckit:ai-playbook` | `projects/{P}/ARC-{P}-AIP-v{V}.md` | DPIA, RISK, REQ, ADR-004 |
-| SVCASS | `arckit:service-assessment` | `projects/{P}/ARC-{P}-SVCASS-v{V}.md` | TCOP, SBD, DPIA, AIP, REQ, STKE |
-| HLD | `arckit:hld-review` | `projects/{P}/ARC-{P}-HLD-v{V}.md` | REQ, ADR-*, PRIN |
-| DIAG-C4 | `arckit:diagram` | `projects/{P}/diagrams/ARC-{P}-DIAG-001-v{V}.md` | HLD |
-| DIAG-SEQ | `arckit:diagram` | `projects/{P}/diagrams/ARC-{P}-DIAG-002-v{V}.md` | HLD |
-| DIAG-DEP | `arckit:diagram` | `projects/{P}/diagrams/ARC-{P}-DIAG-003-v{V}.md` | HLD, ADR-006 |
-| DEVOPS | `arckit:devops` | `projects/{P}/ARC-{P}-DEVOPS-v{V}.md` | REQ, ADR-* |
-| FINOPS | `arckit:finops` | `projects/{P}/ARC-{P}-FINOPS-v{V}.md` | REQ, RISK |
-| OPS | `arckit:operationalize` | `projects/{P}/ARC-{P}-OPS-v{V}.md` | HLD, DEVOPS, RISK |
-| TRACE | `arckit:traceability` | `projects/{P}/ARC-{P}-TRACE-v{V}.md` | (everything) |
+Output paths use `bash scripts/bash/generate-document-id.sh --filename {TYPE} {P} {V}` rather than hardcoded strings — the helper is the source of truth for ArcKit naming and subfolder conventions (e.g. ADRs in `decisions/`, diagrams in `diagrams/`). The "Output path" column below is the *expected* result for validation only; the harness itself never constructs these strings by hand.
+
+| Target | Skill | Skill args | Expected output path | Depends on |
+|--------|-------|------------|----------------------|------------|
+| PRIN | `arckit:principles` | (none — global) | `projects/000-global/ARC-000-PRIN-v{V}.md` | — |
+| GLOSSARY | `arckit:glossary` | `{P}` | `projects/000-global/ARC-000-GLO-v{V}.md` | PRIN |
+| STRATEGY | `arckit:strategy` | (none — global) | `projects/000-global/ARC-000-STRAT-v{V}.md` | PRIN, STKE |
+| WARDLEY | `arckit:wardley` | `{NAME}` | `projects/000-global/ARC-000-WARD-v{V}.md` | PRIN, REQ |
+| REQ | `arckit:requirements` | `{NAME}` | `projects/{P}-{NAME}/ARC-{P}-REQ-v{V}.md` | PRIN |
+| STKE | `arckit:stakeholders` | `{NAME}` | `projects/{P}-{NAME}/ARC-{P}-STKE-v{V}.md` | PRIN |
+| ADR-{N} | `arckit:adr` | `{P} <topic>` (topic per recipe — see below) | `projects/{P}-{NAME}/decisions/ARC-{P}-ADR-{N}-v{V}.md` | PRIN, REQ |
+| RISK | `arckit:risk` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-RISK-v{V}.md` | REQ, STKE, ADR-*, PRIN |
+| SOBC | `arckit:sobc` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-SOBC-v{V}.md` | REQ, STKE, RISK |
+| PLAN | `arckit:plan` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-PLAN-v{V}.md` | SOBC, RISK |
+| ROADMAP | `arckit:roadmap` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-ROAD-v{V}.md` | PLAN |
+| TCOP | `arckit:tcop` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-TCOP-v{V}.md` | REQ, STKE, RISK, ADR-* |
+| SBD | `arckit:secure` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-SBD-v{V}.md` | TCOP, RISK, REQ, ADR-* |
+| DPIA | `arckit:dpia` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-DPIA-v{V}.md` | REQ, STKE, RISK |
+| AIP | `arckit:ai-playbook` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-AIP-v{V}.md` | DPIA, RISK, REQ, ADR-004 |
+| SVCASS | `arckit:service-assessment` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-SVCASS-v{V}.md` | TCOP, SBD, DPIA, AIP, REQ, STKE |
+| HLD | `arckit:hld-review` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-HLD-v{V}.md` | REQ, ADR-*, PRIN |
+| DIAG-C4 | `arckit:diagram` | `{P} c4-context` | `projects/{P}-{NAME}/diagrams/ARC-{P}-DIAG-001-v{V}.md` | HLD |
+| DIAG-SEQ | `arckit:diagram` | `{P} sequence` | `projects/{P}-{NAME}/diagrams/ARC-{P}-DIAG-002-v{V}.md` | HLD |
+| DIAG-DEP | `arckit:diagram` | `{P} deployment` | `projects/{P}-{NAME}/diagrams/ARC-{P}-DIAG-003-v{V}.md` | HLD, ADR-006 |
+| DEVOPS | `arckit:devops` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-DEVOPS-v{V}.md` | REQ, ADR-* |
+| FINOPS | `arckit:finops` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-FINOPS-v{V}.md` | REQ, RISK |
+| OPS | `arckit:operationalize` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-OPS-v{V}.md` | HLD, DEVOPS, RISK |
+| TRACE | `arckit:traceability` | `{P}` | `projects/{P}-{NAME}/ARC-{P}-TRACE-v{V}.md` | REQ, STKE, ADR-*, RISK, HLD, DPIA, SBD, TCOP, PLAN, ROADMAP, AIP, SVCASS, DEVOPS, FINOPS, OPS |
+
+**ADR topic seeding** — `arckit:adr` requires a topic. Topics are recipe-defined, not auto-discovered in v0.1. UK-SaaS default ADR set:
+
+| ADR | Topic |
+|-----|-------|
+| ADR-001 | Cloud platform (AWS / Azure / GCP) |
+| ADR-002 | Identity & access (GOV.UK One Login vs Entra) |
+| ADR-003 | Data residency & sovereignty |
+| ADR-004 | AI / LLM provider (if AI feature in scope) |
+| ADR-005 | Logging & observability stack |
+| ADR-006 | Deployment topology (regions, multi-tenancy) |
+| ADR-007 | Build vs buy (G-Cloud framework) |
+| ADR-008 | Open-source licence policy |
+
+To override, set `recipe.adrs[]` in a future external recipe file (v0.5+). For now, edit the table inline.
 
 **Optional targets** (omit unless project flags them in scope):
 - `AIP` — only if AI feature in scope (check REQ for AI-related FRs).
@@ -79,16 +96,16 @@ Standard topological sort with parallelism:
    - If wave empty → cycle / unresolvable. Halt with error.
    - Emit wave; remove its members from pending; (after dispatch + validate) add to done.
 
-For project 001 (UK-SaaS) **starting from empty state**, the wave plan is:
+**Worked example** — for project 001 (UK-SaaS) **starting from empty state**, the algorithm above produces this wave plan. Treat it as illustrative output; the harness recomputes waves at runtime from the recipe's dependency graph rather than reading this list.
 
-- Wave 0: PRIN, REQ, STKE (and any ADRs whose deps are met)
-- Wave 1: ADR-001..ADR-N (parallel)
-- Wave 2: RISK
-- Wave 3: SOBC, TCOP, HLD, DEVOPS, FINOPS (parallel)
-- Wave 4: SBD, PLAN, DIAG-C4, DIAG-SEQ, DIAG-DEP (parallel)
-- Wave 5: DPIA, ROADMAP, OPS (parallel)
-- Wave 6: AIP
-- Wave 7: SVCASS
+- Wave 0: PRIN (no deps)
+- Wave 1: GLOSSARY, REQ, STKE (deps on PRIN only)
+- Wave 2: ADR-001..ADR-008 (parallel; deps on PRIN + REQ)
+- Wave 3: STRATEGY, WARDLEY, RISK, HLD, DEVOPS, FINOPS (parallel)
+- Wave 4: SOBC, TCOP, SBD, DPIA, DIAG-C4, DIAG-SEQ (parallel; DIAG-DEP waits on ADR-006 which is already done in W2)
+- Wave 5: DIAG-DEP, PLAN, OPS, AIP (parallel; AIP only if in scope)
+- Wave 6: ROADMAP (deps on PLAN)
+- Wave 7: SVCASS (deps on TCOP, SBD, DPIA, AIP)
 - Wave 8: TRACE
 - Wave 9 (post-build): health, pages
 
@@ -117,22 +134,26 @@ You are an ArcKit artefact worker subagent (orchestrated by /arckit-build, wave 
 Project: {PROJECT_ID} ({PROJECT_NAME})
 Target: {TARGET_NAME}
 Skill to invoke: {SKILL}
-Output path: {OUTPUT_PATH}
+Skill args: {SKILL_ARGS}
+Expected output path: {EXPECTED_OUTPUT_PATH}
 
 Inputs you may read (only these):
 {INPUT_PATHS_BULLETED}
 
 Steps:
-1. Use the Skill tool to invoke `{SKILL}` with these args verbatim:
-   ```
-   {SKILL_ARGS}
-   ```
-2. Follow the skill's instructions exactly. Read inputs. Write the file at {OUTPUT_PATH}.
-3. Sanity check via Bash: `wc -l {OUTPUT_PATH}` returns > 100; `grep -c '^## Document Control' {OUTPUT_PATH}` returns ≥ 1.
+1. Use the Skill tool to invoke `{SKILL}` with the args above verbatim. Do not ask interactive
+   questions — if the skill calls AskUserQuestion, supply sensible defaults and continue.
+2. Follow the skill's instructions exactly. The skill itself derives its output filename via
+   `bash scripts/bash/generate-document-id.sh --filename {TYPE} {PROJECT_ID} {VERSION}` — do not
+   hardcode the path. The expected path above is for validation only.
+3. Sanity check via Bash:
+   - `test -f "$ACTUAL_PATH"` returns success
+   - `wc -l < "$ACTUAL_PATH"` returns > 100
+   - `grep -c '^## Document Control\|^| Document ID' "$ACTUAL_PATH"` returns ≥ 1
 4. Do NOT git commit. Do NOT modify other files. The orchestrator handles version control.
 
 Report back ≤ 200 words:
-- File path written + exact line count
+- Actual file path written (resolved by the skill) + exact line count
 - Top 3 findings, scores, or RAG ratings (whatever the skill produces as headline result)
 - Validation result: PASS or FAIL (with reason)
 - Any failures, partial completions, or warnings
@@ -191,8 +212,9 @@ EOF
 ### 7. Halt-on-fail
 
 If any agent in the wave reported `FAIL` or validation failed:
-- Do NOT commit (don't half-commit).
-- Surface to user: error summary, suggested remediation.
+- **DO write state.json** — record `status: "failed"`, `error: "..."`, `wave: {WAVE_N}` for each failed target, and `status: "complete"` for the targets in the wave that *did* succeed. State is needed for `--resume` to work.
+- **Do NOT git commit** (don't half-commit a wave). Successfully-written artefact files are left in the working tree; they will be picked up on `--resume` and committed with the rest of the (then-complete) wave.
+- Surface to user: per-target outcome, error summary, suggested remediation.
 - Suggest `--resume` once fixed.
 - Stop the build.
 
@@ -232,9 +254,10 @@ Otherwise, proceed.
 1. **Parse arguments** from skill input (project, --plan, --resume, etc.). If project not specified, ask user.
 2. **Detect project**: resolve `<project>` arg → `projects/{P}-{slug}/`. Confirm directory exists.
 3. **Load state.json** at `projects/{P}/.arckit/state.json`. If absent, scan project dir for existing `ARC-{P}-*-v*.md` files and infer initial state.
-4. **Compute work list**: recipe targets minus `state.targets` whose `status: complete` AND file exists.
-5. **If `--plan`**: print plan (each wave + targets + line `(skip|build) target ← deps`), exit.
-6. **For each wave** (sequential outer loop):
+4. **Subagent capability smoke-test** (first wave only, skip on `--resume`): before dispatching the real wave, spawn one throwaway `general-purpose` Agent with the prompt *"Use the Skill tool to list whether `arckit:principles` is available. Return one line: AVAILABLE or NOT_AVAILABLE."* If the response is `NOT_AVAILABLE`, halt with a clear error: subagents in this session do not have access to plugin skills (Failure mode #1). Suggest enabling the plugin at user-scope or running the harness from a session where `claude --print '/skill list'` shows the `arckit:*` family.
+5. **Compute work list**: recipe targets minus `state.targets` whose `status: complete` AND file exists.
+6. **If `--plan`**: print plan (each wave + targets + line `(skip|build) target ← deps`), exit.
+7. **For each wave** (sequential outer loop):
    - Print wave header.
    - Build the per-agent prompt for each target in wave.
    - **Send a single assistant message containing N Agent tool calls** (one per target, all parallel).
@@ -243,8 +266,8 @@ Otherwise, proceed.
    - Update state.json (Write tool).
    - git commit (Bash) unless `--no-commit`.
    - Halt if any fail.
-7. **Post-build hooks**: spawn 2 parallel agents — one for `arckit:health`, one for `arckit:pages`.
-8. **Final report**:
+8. **Post-build hooks**: spawn 2 parallel agents — one for `arckit:health`, one for `arckit:pages`.
+9. **Final report**:
    - Targets built (with line counts) / skipped / failed.
    - Total wall-clock.
    - Health + pages outcome.
