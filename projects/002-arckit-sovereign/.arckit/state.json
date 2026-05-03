@@ -10,7 +10,8 @@
     "rationale": "Sovereign / air-gapped route per Principle 21. SBD swapped for MOD Secure by Design (JSP 440 / 604, Security Aspects Letter). SVCASS skipped — not a public-facing GDS service; assurance gates flow through MOD accreditation pathway, not GDS Service Standard. AIP retained because AI is pluggable per ADR-004 (sovereign customer can point at on-premise model)."
   },
   "started_at": "2026-05-03T18:20:00Z",
-  "current_wave": 7,
+  "current_wave": "post-build",
+  "build_status": "RECIPE COMPLETE — pending post-build hooks",
   "targets": {
     "PRIN": {
       "status": "complete",
@@ -77,7 +78,7 @@
     "DEVOPS": {"status": "complete", "wave": 3, "skill": "arckit:devops", "path": "projects/002-arckit-sovereign/ARC-002-DEVOPS-v1.0.md", "line_count": 853, "agent_id": "a096c51dc15d8500a", "headline": "Dual-output pipeline (SaaS + sovereign bundle from one revision). 3 release-blocking gates: reproducibility cross-build digest match, network-deny smoke (zero outbound), HSM-OVM signing M-of-N + SLSA L3 + dual SBOM. Annual LTS 24-month support."},
     "FINOPS": {"status": "complete", "wave": 4, "skill": "arckit:finops", "path": "projects/002-arckit-sovereign/ARC-002-FINOPS-v1.0.md", "line_count": 540, "agent_id": "a3afc7a7bfb5a3e6c", "headline": "Per-site cost-to-serve ~£250k–£850k Y1 (median ~£500k); ~£250k/yr steady. ≥25% margin → SaaS cross-subsidy floor. Top levers: LTS concurrency, per-site amortisation, HSM utilisation."},
     "OPS": {"status": "complete", "wave": 5, "skill": "arckit:operationalize", "path": "projects/002-arckit-sovereign/ARC-002-OPS-v1.0.md", "line_count": 878, "agent_id": "a8eb3e562657d9361", "headline": "Vendor scope: bundle issue+sign, LTS patch stream, evidence-pack refresh, opt-in remote support, VDP. Customer scope: deployed-instance lifecycle. ATO hand-over pivot. Patch SLA 7d Critical / 30d High / 90d Medium."},
-    "TRACE": {"status": "pending", "skill": "arckit:traceability"}
+    "TRACE": {"status": "complete", "wave": 7, "skill": "arckit:traceability", "path": "projects/002-arckit-sovereign/ARC-002-TRACE-v1.0.md", "line_count": 647, "agent_id": "af707c40f44038801", "headline": "100% forward chain coverage. 13/13 risks traced. TCoP 13/13, MOD-SbD 7/7, JSP 440 control families mapped, JSP 604 4/4 gates, DPIA 5/5, AIP 16/16. Cross-project linkage to 001 documented per Principle 21."}
   },
   "waves": [
     {"n": 0, "targets": ["PRIN", "GLOSSARY", "STRATEGY", "WARDLEY", "REQ", "STKE"], "status": "complete", "source": "pre-existing"},
@@ -130,13 +131,27 @@
       "wall_clock_minutes": 11,
       "lines_generated": 2287,
       "note": "2 parallel agents — AI Playbook + 3-year roadmap."
+    },
+    {
+      "n": 7,
+      "targets": ["TRACE"],
+      "status": "complete",
+      "completed_at": "2026-05-03T19:40:00Z",
+      "via": "/arckit-build harness — final build wave on project 002",
+      "wall_clock_minutes": 8,
+      "lines_generated": 647,
+      "note": "1 agent. Full traceability matrix; all 13 risks covered; cross-project linkage to 001 documented per Principle 21."
     }
   ],
-  "next_wave_plan": {
-    "n": 7,
-    "targets": ["TRACE"],
-    "rationale": "TRACE needs everything; all upstream artefacts now complete. Final build wave.",
-    "estimated_agents": 1,
-    "estimated_duration_min": "5-10 wall-clock"
+  "build_summary": {
+    "total_targets_built_this_session": 23,
+    "total_waves_this_session": 6,
+    "total_lines_generated_this_session": 23253,
+    "follow_up_actions": [
+      "Run post-build hooks: arckit:health and arckit:pages",
+      "TRACE flagged 3 orphans + 3 gaps for follow-up: HLD blocking items still open, customer-side runbook bundle missing, threat model artefact missing",
+      "Pre-deployment must-lands per MOD-SBD §pre-deployment: HSM signing operational, network-deny CI green, accreditator-in-loop alpha review",
+      "Pilot ATO target: 2027-07-25; GA (LTS-1) target: 2027-10-31"
+    ]
   }
 }
