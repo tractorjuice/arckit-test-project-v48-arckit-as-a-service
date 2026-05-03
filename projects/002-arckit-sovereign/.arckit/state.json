@@ -10,7 +10,7 @@
     "rationale": "Sovereign / air-gapped route per Principle 21. SBD swapped for MOD Secure by Design (JSP 440 / 604, Security Aspects Letter). SVCASS skipped — not a public-facing GDS service; assurance gates flow through MOD accreditation pathway, not GDS Service Standard. AIP retained because AI is pluggable per ADR-004 (sovereign customer can point at on-premise model)."
   },
   "started_at": "2026-05-03T18:20:00Z",
-  "current_wave": 5,
+  "current_wave": 6,
   "targets": {
     "PRIN": {
       "status": "complete",
@@ -64,19 +64,19 @@
     "ADR-008": {"status": "complete", "wave": 2, "skill": "arckit:adr", "topic": "Long-Term Support Release Line", "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-008-v1.0.md", "line_count": 662, "agent_id": "a09af91514729e00b"},
     "RISK": {"status": "complete", "wave": 3, "skill": "arckit:risk", "path": "projects/002-arckit-sovereign/ARC-002-RISK-v1.0.md", "line_count": 1714, "agent_id": "a2a42166b60247b8a", "headline": "13 risks; 5 inherent-Critical (R-001 strategic accreditation fail, R-002 MOD-SbD fail, R-007 boundary egress, R-004 supply-chain, R-005 SAL controls). 5 risks exceed sovereign Very-Low compliance appetite."},
     "SOBC": {"status": "complete", "wave": 4, "skill": "arckit:sobc", "path": "projects/002-arckit-sovereign/ARC-002-SOBC-v1.0.md", "line_count": 1579, "agent_id": "a57e7bc230c61e438", "headline": "Option C (single-codebase + sovereign overlay) recommended. NPV 5-yr +£1.86M; BCR(system) >2.0; payback ~30 months post-bias."},
-    "PLAN": {"status": "pending", "skill": "arckit:plan"},
+    "PLAN": {"status": "complete", "wave": 5, "skill": "arckit:plan", "path": "projects/002-arckit-sovereign/ARC-002-PLAN-v1.0.md", "line_count": 538, "agent_id": "af648623519b4dfc3", "headline": "Pilot ATO 2027-07-25; GA (LTS-1) 2027-10-31. Critical path: pre-deployment must-lands (HSM/CI/accreditator review), SaaS GA dependency W60, JSP 604 Pilot ATO."},
     "ROADMAP": {"status": "pending", "skill": "arckit:roadmap"},
     "TCOP": {"status": "complete", "wave": 4, "skill": "arckit:tcop", "path": "projects/002-arckit-sovereign/ARC-002-TCOP-v1.0.md", "line_count": 800, "agent_id": "a4998d7855709b5aa", "headline": "9/13 Compliant + 3/13 Partial + 1/13 N/A (Point 13 Service Standard replaced by MOD accreditation pathway). Point 5 Cloud First N/A — JSP 440/604 override."},
     "MOD-SBD": {"status": "complete", "wave": 4, "skill": "arckit:mod-secure", "path": "projects/002-arckit-sovereign/ARC-002-MOD-SBD-v1.0.md", "line_count": 1013, "agent_id": "abdd5c4e98eb89cdd", "headline": "MOD SbD 6/7 fully compliant + 1/7 partial (Through-Life Assurance). JSP 440 28/28 controls mapped. JSP 604 readiness: Pre-Accreditation Evidence Pack Forming. R-002/R-005 residual position accepted."},
     "DPIA": {"status": "complete", "wave": 4, "skill": "arckit:dpia", "path": "projects/002-arckit-sovereign/ARC-002-DPIA-v1.0.md", "line_count": 641, "agent_id": "af67996e897d0f625", "headline": "Vendor-narrow scope (deploying authority is data controller for tenant content). 0/9 ICO criteria met → DPIA not legally required, produced for transparency. 5 LOW residual privacy risks. ICO Art.36 NOT REQUIRED."},
     "AIP": {"status": "pending", "skill": "arckit:ai-playbook"},
     "HLD": {"status": "complete", "wave": 3, "skill": "arckit:hld-review", "path": "projects/002-arckit-sovereign/ARC-002-HLD-v1.0.md", "line_count": 630, "agent_id": "a6782b3a7ec232488", "headline": "APPROVED WITH CONDITIONS — 3 blocking items (diagrams pending W5/6, MOD-SBD/DPIA inputs pending W4, end-to-end air-gap CI walkthrough unevidenced) + 4 advisory."},
-    "DIAG-C4": {"status": "pending", "skill": "arckit:diagram"},
-    "DIAG-SEQ": {"status": "pending", "skill": "arckit:diagram"},
-    "DIAG-DEP": {"status": "pending", "skill": "arckit:diagram"},
+    "DIAG-C4": {"status": "complete", "wave": 5, "skill": "arckit:diagram", "path": "projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-001-v1.0.md", "line_count": 504, "mermaid_blocks": 3, "agent_id": "aff87741f78de0a19", "headline": "C4 Context (10 nodes) + Container (14) + Component (11). Single accredited boundary with zero outbound edges; AIAdaptor reuse at L3 — single-codebase discharged."},
+    "DIAG-SEQ": {"status": "complete", "wave": 5, "skill": "arckit:diagram", "path": "projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-002-v1.0.md", "line_count": 630, "mermaid_blocks": 5, "agent_id": "af0eca9fa7c717bf7", "headline": "5 sequence diagrams: bundle issue+ceremony, JIT elevation, on-prem AI generation, break-glass, CVE hotfix. 16 alt-failure branches."},
+    "DIAG-DEP": {"status": "complete", "wave": 5, "skill": "arckit:diagram", "path": "projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-003-v1.0.md", "line_count": 446, "mermaid_blocks": 3, "agent_id": "ad1e23a0f7acce7b3", "headline": "3 views: accredited-boundary single-tenant topology, bundle issue+distribution path, trust-zone separation with vendor↔customer no-runtime-trust links."},
     "DEVOPS": {"status": "complete", "wave": 3, "skill": "arckit:devops", "path": "projects/002-arckit-sovereign/ARC-002-DEVOPS-v1.0.md", "line_count": 853, "agent_id": "a096c51dc15d8500a", "headline": "Dual-output pipeline (SaaS + sovereign bundle from one revision). 3 release-blocking gates: reproducibility cross-build digest match, network-deny smoke (zero outbound), HSM-OVM signing M-of-N + SLSA L3 + dual SBOM. Annual LTS 24-month support."},
     "FINOPS": {"status": "complete", "wave": 4, "skill": "arckit:finops", "path": "projects/002-arckit-sovereign/ARC-002-FINOPS-v1.0.md", "line_count": 540, "agent_id": "a3afc7a7bfb5a3e6c", "headline": "Per-site cost-to-serve ~£250k–£850k Y1 (median ~£500k); ~£250k/yr steady. ≥25% margin → SaaS cross-subsidy floor. Top levers: LTS concurrency, per-site amortisation, HSM utilisation."},
-    "OPS": {"status": "pending", "skill": "arckit:operationalize"},
+    "OPS": {"status": "complete", "wave": 5, "skill": "arckit:operationalize", "path": "projects/002-arckit-sovereign/ARC-002-OPS-v1.0.md", "line_count": 878, "agent_id": "a8eb3e562657d9361", "headline": "Vendor scope: bundle issue+sign, LTS patch stream, evidence-pack refresh, opt-in remote support, VDP. Customer scope: deployed-instance lifecycle. ATO hand-over pivot. Patch SLA 7d Critical / 30d High / 90d Medium."},
     "TRACE": {"status": "pending", "skill": "arckit:traceability"}
   },
   "waves": [
@@ -109,14 +109,24 @@
       "via": "/arckit-build harness — third parallel wave on project 002",
       "wall_clock_minutes": 14,
       "lines_generated": 4573,
-      "note": "5 parallel agents — strategic + compliance pack. SOBC recommends Option C (single codebase + sovereign overlay). MOD-SBD §16 accepts R-002/R-005 residual. DPIA is vendor-narrow (deploying authority is data controller for tenant content)."
+      "note": "5 parallel agents — strategic + compliance pack."
+    },
+    {
+      "n": 5,
+      "targets": ["PLAN", "OPS", "DIAG-C4", "DIAG-SEQ", "DIAG-DEP"],
+      "status": "complete",
+      "completed_at": "2026-05-03T19:20:00Z",
+      "via": "/arckit-build harness — fourth parallel wave on project 002",
+      "wall_clock_minutes": 7,
+      "lines_generated": 2996,
+      "note": "5 parallel agents — design + ops pack. Includes 11 Mermaid diagrams (3 C4 + 5 sequence + 3 deployment)."
     }
   ],
   "next_wave_plan": {
-    "n": 5,
-    "targets": ["PLAN", "OPS", "DIAG-C4", "DIAG-SEQ", "DIAG-DEP"],
-    "rationale": "PLAN←SOBC/RISK ✓. OPS←HLD/DEVOPS/RISK ✓. All 3 DIAGs←HLD ✓ (DIAG-DEP also←ADR-006 ✓).",
-    "estimated_agents": 5,
-    "estimated_duration_min": "8-15 wall-clock"
+    "n": 6,
+    "targets": ["AIP", "ROADMAP"],
+    "rationale": "AIP←DPIA/RISK/REQ/ADR-004 ✓. ROADMAP←PLAN ✓. Both can run in parallel.",
+    "estimated_agents": 2,
+    "estimated_duration_min": "5-10 wall-clock"
   }
 }
