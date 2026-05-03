@@ -5,8 +5,9 @@
   "recipe": "uk-saas",
   "started_at": "2026-05-03T16:00:00Z",
   "last_wave_completed": 8,
-  "current_wave": "post-build",
-  "build_status": "RECIPE COMPLETE — pending post-build hooks (health + pages)",
+  "current_wave": "complete",
+  "build_status": "BUILD COMPLETE — recipe + post-build hooks both successful",
+  "build_completed_at": "2026-05-03T18:10:00Z",
   "targets": {
     "PRIN": {
       "status": "complete",
@@ -331,11 +332,53 @@
       "note": "1 agent. 759 lines. Full traceability matrix; all 17 risks covered; 3 orphans + 3 gaps identified for follow-up."
     }
   ],
-  "next_wave_plan": {
-    "n": "post-build",
-    "targets": ["health", "pages"],
-    "rationale": "Post-build hooks — diagnostic scan + docs site regeneration.",
-    "estimated_agents": 2,
-    "estimated_duration_min": "3-5 wall-clock"
+  "post_build": {
+    "status": "complete",
+    "completed_at": "2026-05-03T18:10:00Z",
+    "via": "/arckit-build harness — post-build hooks",
+    "hooks": [
+      {
+        "name": "arckit:health",
+        "status": "complete",
+        "agent_id": "a66c939b1e0bea410",
+        "headline": "0 HIGH / 2 MEDIUM / 0 LOW. 2 ORPHAN-REQ findings (project 001: 13 of 70 REQs unreferenced by any ADR; project 002: all 63 REQs unreferenced — early-stage)."
+      },
+      {
+        "name": "arckit:pages",
+        "status": "complete",
+        "agent_id": "ad58d9cc7ed1ff407",
+        "headline": "47 artefacts in manifest (27 project-001 + 5 global + 15 project-002 / ADRs / diagrams). docs/index.html, manifest.json, llms.txt regenerated."
+      }
+    ]
+  },
+  "build_summary": {
+    "total_targets_built_this_session": 10,
+    "total_waves_this_session": 4,
+    "total_lines_generated_this_session": 11371,
+    "session_artefacts": [
+      {"target": "RISK", "wave": 2, "lines": 1435},
+      {"target": "TCOP", "wave": 3, "lines": 796},
+      {"target": "SBD", "wave": 4, "lines": 843},
+      {"target": "DPIA", "wave": 4, "lines": 553},
+      {"target": "AIP", "wave": 4, "lines": 589},
+      {"target": "SVCASS", "wave": 5, "lines": 1689},
+      {"target": "SOBC", "wave": 5, "lines": 1214},
+      {"target": "HLD", "wave": 5, "lines": 718},
+      {"target": "DEVOPS", "wave": 5, "lines": 867},
+      {"target": "FINOPS", "wave": 5, "lines": 757},
+      {"target": "PLAN", "wave": 6, "lines": 654},
+      {"target": "DIAG-C4", "wave": 6, "lines": 557},
+      {"target": "DIAG-SEQ", "wave": 6, "lines": 600},
+      {"target": "DIAG-DEP", "wave": 6, "lines": 558},
+      {"target": "OPS", "wave": 6, "lines": 1708},
+      {"target": "ROADMAP", "wave": 7, "lines": 1289},
+      {"target": "TRACE", "wave": 8, "lines": 759}
+    ],
+    "follow_up_actions": [
+      "Address 13 unreferenced REQs in project 001 (ARC-001-REQ-v1.0.md) — link each BR/FR/NFR to at least one ADR",
+      "Project 002 sovereign-route artefact set needs full harness run (currently only REQ + STKE)",
+      "TRACE flagged 3 orphans + 3 gaps for follow-up: C14 FinOps component, performance load-test plan, accessibility CI green-required gate",
+      "10 pre-GA must-lands per RISK §H Priority-1 still open (pen test, DPIA approval, CE Plus, ROPA, runbook, PAM, EDR, VMS, VDP, ATRS)"
+    ]
   }
 }
