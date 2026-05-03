@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-03T08:28:35.875Z",
+  "generated": "2026-05-03T08:45:49.156Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -925,6 +925,26 @@
           "extension": ".md"
         }
       ]
+    },
+    {
+      "id": "002-arckit-sovereign",
+      "name": "Arckit Sovereign",
+      "documents": [
+        {
+          "path": "projects/002-arckit-sovereign/ARC-002-REQ-v1.0.md",
+          "title": "Requirements",
+          "category": "Discovery",
+          "documentId": "ARC-002-REQ-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/ARC-002-STKE-v1.0.md",
+          "title": "Stakeholder Analysis",
+          "category": "Discovery",
+          "documentId": "ARC-002-STKE-v1.0",
+          "extension": ".md"
+        }
+      ]
     }
   ],
   "dependencyGraph": {
@@ -1164,6 +1184,161 @@
           "orphan": false,
           "ageDays": 0
         }
+      },
+      "ARC-002-REQ-v1.0": {
+        "type": "REQ",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/ARC-002-REQ-v1.0.md",
+        "title": "Project Requirements: ArcKit as a Service (Sovereign Deployment)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit as a Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-REQ-v1.0",
+          "Document Type": "Business and Technical Requirements",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Date": "2026-06-02",
+          "Owner": "Mark Craddock (ArcKit as a Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture Team, MOD Defence Digital liaison, NCSC liaison, GDS, CDDO",
+          "Total": "TBD"
+        },
+        "reqIds": [
+          "BR-005",
+          "BR-001",
+          "BR-002",
+          "BR-003",
+          "BR-004",
+          "BR-006",
+          "BR-007",
+          "BR-008",
+          "FR-001",
+          "FR-002",
+          "FR-003",
+          "FR-004",
+          "INT-005",
+          "FR-005",
+          "FR-006",
+          "NFR-SEC-002",
+          "FR-007",
+          "FR-008",
+          "FR-009",
+          "FR-010",
+          "FR-011",
+          "FR-012",
+          "FR-013",
+          "FR-014",
+          "NFR-P-001",
+          "NFR-P-002",
+          "NFR-P-003",
+          "NFR-A-001",
+          "NFR-A-002",
+          "NFR-A-003",
+          "NFR-S-001",
+          "NFR-SEC-001",
+          "NFR-SEC-003",
+          "NFR-SEC-004",
+          "NFR-SEC-005",
+          "NFR-SEC-006",
+          "NFR-SEC-007",
+          "NFR-SEC-008",
+          "NFR-C-001",
+          "NFR-C-002",
+          "NFR-C-003",
+          "NFR-C-004",
+          "NFR-C-005",
+          "NFR-M-001",
+          "NFR-M-002",
+          "NFR-I-001",
+          "NFR-I-002",
+          "INT-001",
+          "INT-002",
+          "INT-003",
+          "INT-004",
+          "INT-006",
+          "INT-007",
+          "INT-008",
+          "INT-009",
+          "INT-010",
+          "DR-001",
+          "DR-002",
+          "DR-003",
+          "DR-004",
+          "DR-005",
+          "DR-006",
+          "DR-007"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-002-STKE-v1.0": {
+        "type": "STKE",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/ARC-002-STKE-v1.0.md",
+        "title": "Stakeholder Drivers & Goals Analysis: ArcKit as a Service (Sovereign Deployment)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit as a Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-STKE-v1.0",
+          "Document Type": "Stakeholder Drivers & Goals Analysis",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Cycle": "Quarterly",
+          "Next Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (ArcKit as a Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture Team, MOD Defence Digital liaison, NCSC liaison, GDS, CDDO"
+        },
+        "reqIds": [
+          "BR-006",
+          "FR-012",
+          "FR-007",
+          "FR-010",
+          "INT-007",
+          "FR-011",
+          "BR-002",
+          "BR-005",
+          "FR-013",
+          "BR-001",
+          "FR-008",
+          "FR-004",
+          "NFR-SEC-008",
+          "BR-007"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
       }
     },
     "edges": [
@@ -1181,11 +1356,46 @@
         "from": "ARC-001-STKE-v1.0",
         "to": "ARC-000-PRIN",
         "type": "references"
+      },
+      {
+        "from": "ARC-002-REQ-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-REQ-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-REQ-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-STKE-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-STKE-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-STKE-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-STKE-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
       }
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-03T08:28:35.881Z",
+    "baseline": "2026-05-03T08:45:49.175Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -1258,6 +1468,135 @@
         "artifactCount": 2,
         "edgeCount": 3,
         "density": 1.5,
+        "coverage": {
+          "essentialPresent": [
+            "REQ",
+            "STKE"
+          ],
+          "essentialMissing": [
+            {
+              "type": "RISK",
+              "command": "/arckit:risk",
+              "label": "Risk Register",
+              "tier": 1
+            },
+            {
+              "type": "SOBC",
+              "command": "/arckit:sobc",
+              "label": "Strategic Outline Business Case",
+              "tier": 2
+            },
+            {
+              "type": "ADR",
+              "command": "/arckit:adr",
+              "label": "Architecture Decision Record",
+              "tier": 3
+            },
+            {
+              "type": "HLDR",
+              "command": "/arckit:hld-review",
+              "label": "High-Level Design Review",
+              "tier": 3
+            },
+            {
+              "type": "TRAC",
+              "command": "/arckit:traceability",
+              "label": "Traceability Matrix",
+              "tier": 4
+            },
+            {
+              "type": "CONF",
+              "command": "/arckit:conformance",
+              "label": "Conformance Assessment",
+              "tier": 4
+            }
+          ],
+          "essentialPct": 25,
+          "presentTypes": [
+            "REQ",
+            "STKE"
+          ],
+          "presentByCategory": {
+            "Discovery": 2
+          }
+        },
+        "compliance": {
+          "presentHigh": [],
+          "missingHigh": [
+            "TCOP",
+            "SECD",
+            "SECD-MOD",
+            "DPIA",
+            "SVCASS",
+            "RISK",
+            "TRAC",
+            "CONF",
+            "PRIN-COMP",
+            "AIPB",
+            "ATRS",
+            "JSP936"
+          ],
+          "pct": 0,
+          "total": 12
+        },
+        "health": {
+          "stale": 0,
+          "draft": 2,
+          "orphan": 0
+        },
+        "contextualSuggestions": [
+          {
+            "command": "/arckit:dpia",
+            "type": "DPIA",
+            "trigger": "processing personal data"
+          },
+          {
+            "command": "/arckit:secure",
+            "type": "SECD",
+            "trigger": "security-sensitive system"
+          },
+          {
+            "command": "/arckit:tcop",
+            "type": "TCOP",
+            "trigger": "UK Gov Service Standard"
+          },
+          {
+            "command": "/arckit:data-model",
+            "type": "DATA",
+            "trigger": "DR-* requirements present"
+          }
+        ],
+        "hasGlobalPrin": true,
+        "recommendations": [
+          {
+            "command": "/arckit:risk",
+            "label": "Risk Register",
+            "type": "RISK",
+            "tier": 1,
+            "reason": "Tier 1 essential missing"
+          },
+          {
+            "command": "/arckit:sobc",
+            "label": "Strategic Outline Business Case",
+            "type": "SOBC",
+            "tier": 2,
+            "reason": "Tier 2 essential missing"
+          },
+          {
+            "command": "/arckit:adr",
+            "label": "Architecture Decision Record",
+            "type": "ADR",
+            "tier": 3,
+            "reason": "Tier 3 essential missing"
+          }
+        ]
+      },
+      {
+        "project": "002-arckit-sovereign",
+        "projectId": "002",
+        "artifactCount": 2,
+        "edgeCount": 7,
+        "density": 3.5,
         "coverage": {
           "essentialPresent": [
             "REQ",
