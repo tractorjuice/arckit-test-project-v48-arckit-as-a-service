@@ -1,0 +1,101 @@
+# Vendor Profile: Microsoft Azure
+
+> **Template Origin**: Official | **ArcKit Version**: 4.13.1 | **Command**: `/arckit:research`
+
+## Document Control
+
+| Field | Value |
+|-------|-------|
+| Document ID | VENDOR-MICROSOFT-AZURE |
+| Document Type | Vendor Profile |
+| Project | ArcKit as a Service |
+| Classification | OFFICIAL |
+| Status | DRAFT |
+| Version | 1.0 |
+| Created Date | 2026-05-03 |
+| Last Researched | 2026-05-03 |
+| Confidence | High (5+ data points: pricing, UK region, Azure OpenAI, Sentinel SIEM, Entra External ID, contracting entity) |
+
+## Revision History
+
+| Version | Date | Author | Changes | Approved By | Approval Date |
+|---------|------|--------|---------|-------------|---------------|
+| 1.0 | 2026-05-03 | ArcKit AI | Initial creation from `/arckit:research` agent | PENDING | PENDING |
+
+---
+
+## Overview
+
+Microsoft Azure is the secondary hyperscaler / cross-vendor abstraction validation platform for ArcKit as a Service Project 001 and the natural ADR-004 second AI provider via Azure OpenAI. UK South region hosts the full Postgres / Blob / AKS / Azure OpenAI / Sentinel / Entra External ID stack the architecture relies on. As the dominant departmental landing zone in central-civil and NHS adopter classes (per Wave-1 ORG_RESEARCH), Azure is also the strongest tenant-side network-egress alignment for the largest enterprise-tier population.
+
+## Products & Services
+
+- **Compute**: Virtual Machines; Azure Kubernetes Service (AKS — control plane free); Container Apps; Functions.
+- **Data**: Azure Database for PostgreSQL Flexible Server (zone-redundant HA); Azure Blob Storage (immutable storage with Time-Based Retention / Legal Hold); Cosmos DB (not in shortlist).
+- **AI**: Azure OpenAI Service — GPT-4o, GPT-4 Turbo, GPT-3.5 Turbo in UK South under Microsoft enterprise OpenAI agreement (no-train default).
+- **Identity**: Microsoft Entra ID (operator IdP per ADR-003); Microsoft Entra External ID (formerly Azure AD B2C) for SaaS-tenant IdP — first 50,000 MAU free.
+- **Security / SIEM**: Microsoft Sentinel (managed cloud-native SIEM with deep CAF-aligned content library); Key Vault (BYOK + Managed HSM at FIPS 140-2 Level 3); Defender for Cloud.
+- **Observability**: Azure Monitor; Application Insights.
+
+## Pricing Model
+
+Pay-as-you-go with reservations at 1- and 3-year terms; UK regions priced consistently with US and EU regions ± single-digit %.
+
+- **AKS** control plane: free (Azure absorbs); node pool charged.
+- **Azure OpenAI**: per-token, per-model. GPT-4o ~£2.30/£9.00 per M (in/out); GPT-4 Turbo ~£8.00/£24.00; GPT-3.5 Turbo ~£0.40/£1.20 — UK South list rates as of 2026-05-03.
+- **Sentinel**: per-GB ingested; first 5 GB free; ~£1.80–£2.20 / GB at our likely volume.
+- **Entra External ID**: per-MAU; first 50,000 MAU free.
+
+## UK Government Presence
+
+- G-Cloud listed: yes (multi-lot, via Microsoft Limited UK contracting entity).
+- DOS listed: yes.
+- UK data centres: yes — UK South (London) primary + UK West (Cardiff) DR pair.
+
+## Strengths
+
+- Free AKS control plane (Azure absorbs control-plane cost; AWS EKS charges ~£0.10/hour).
+- UK South is the dominant landing zone for central-civil departments and NHS — picks up tenant-side network egress and integration friction for the largest enterprise-tier population.
+- Azure OpenAI co-located with Azure cells; clean ADR-004 second AI provider satisfying Goal G-8 quarterly-CI.
+- Entra ID native at the operator IdP layer (ADR-003) — single IdP for vendor staff.
+- Azure Database for PostgreSQL has zone-redundant HA → RPO ~0; meets and exceeds NFR-A-002.
+- Microsoft Sentinel has the deepest UK public-sector CAF content library.
+
+## Weaknesses
+
+- AKS node-pool floor cost is similar to EKS; the apparent "free control plane" win is small in absolute terms.
+- Azure Blob is not S3-compatible at the API layer — abstraction layer needed if both AWS and Azure cells run in parallel.
+- Microsoft Limited UK contracting carries CLOUD Act exposure equivalent to AWS.
+- Microsoft brand alignment may sit awkwardly with non-Microsoft buyer-side architects (counter-argument: ops IdP already on Microsoft per ADR-003).
+
+## Projects Referenced In
+
+- ArcKit as a Service Project 001 (managed SaaS) — secondary platform / cross-vendor abstraction validation; primary candidate for ADR-004 second AI provider via Azure OpenAI; primary candidate for Sentinel SIEM and Entra External ID.
+
+## External References
+
+### Document Register
+
+| Doc ID | Filename | Type | Source Location | Description |
+|--------|----------|------|-----------------|-------------|
+| *None provided* | — | — | — | — |
+
+### Citations
+
+| Citation ID | Doc ID | Page/Section | Category | Quoted Passage |
+|-------------|--------|--------------|----------|----------------|
+| — | — | — | — | — |
+
+### Unreferenced Documents
+
+| Filename | Source Location | Reason |
+|----------|-----------------|--------|
+| — | — | — |
+
+---
+
+**Generated by**: ArcKit `/arckit:research` agent
+**Generated on**: 2026-05-03
+**ArcKit Version**: 4.13.1
+**Project**: ArcKit as a Service (Project 001)
+**AI Model**: Claude Opus 4.7 (1M context)

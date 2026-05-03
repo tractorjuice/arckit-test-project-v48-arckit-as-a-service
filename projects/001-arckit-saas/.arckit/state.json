@@ -397,28 +397,72 @@
       "via": "/arckit-build harness — final wave",
       "wall_clock_minutes": 9,
       "note": "1 agent. 759 lines. Full traceability matrix; all 17 risks covered; 3 orphans + 3 gaps identified for follow-up."
+    },
+    {
+      "n": 9,
+      "targets": ["ORG_RESEARCH"],
+      "status": "complete",
+      "completed_at": "2026-05-03T21:36:50Z",
+      "via": "/arckit-build harness — research wave 1 (resume run)",
+      "wall_clock_minutes": 7,
+      "note": "1 agent. 604 lines. Target-organisation research output to projects/000-global/research/ — shared across all projects in repo per recipe."
+    },
+    {
+      "n": 10,
+      "targets": ["RESEARCH", "AWS_RESEARCH", "AZURE_RESEARCH", "GCP_RESEARCH", "GOV_REUSE"],
+      "status": "complete",
+      "completed_at": "2026-05-03T21:54:03Z",
+      "via": "/arckit-build harness — research wave 2 (5 agents parallel)",
+      "wall_clock_minutes": 14,
+      "longest_agent_minutes": 14,
+      "shortest_agent_minutes": 7,
+      "note": "5 parallel research agents. Total content: 4,643 lines. RESEARCH agent additionally produced side-effect content (vendors/aws-profile.md, vendors/microsoft-azure-profile.md, vendors/grafana-labs-profile.md, tech-notes/multi-tenant-isolation-pool-with-cells.md, tech-notes/ai-provider-abstraction.md, tech-notes/opentelemetry-observability.md) — captured in commit but not in the recipe DAG."
     }
   ],
   "post_build": {
-    "status": "complete",
-    "completed_at": "2026-05-03T18:10:00Z",
-    "via": "/arckit-build harness — post-build hooks",
+    "status": "complete (refresh)",
+    "completed_at": "2026-05-03T22:03:38Z",
+    "via": "/arckit-build harness — post-build hooks (research-wave refresh)",
+    "previous_runs": [
+      {
+        "completed_at": "2026-05-03T18:10:00Z",
+        "manifest_count": 47,
+        "health_summary": "0 HIGH / 2 MEDIUM (ORPHAN-REQ): proj-001 13/70, proj-002 63/63 (early-stage)"
+      }
+    ],
     "hooks": [
       {
         "name": "arckit:health",
         "status": "complete",
-        "agent_id": "a66c939b1e0bea410",
-        "headline": "0 HIGH / 2 MEDIUM / 0 LOW. 2 ORPHAN-REQ findings (project 001: 13 of 70 REQs unreferenced by any ADR; project 002: all 63 REQs unreferenced — early-stage)."
+        "agent_id": "a6fed5c7ea89a6992",
+        "output": "docs/health.json (51 lines)",
+        "headline": "0 HIGH / 2 MEDIUM / 0 LOW (was 0/2/0). ORPHAN-REQ counts improved: proj-001 8/70 (was 13); proj-002 3/63 (was 63 — TRACE wave fixed most). 59 artefacts scanned across 3 projects (was 53/2)."
       },
       {
         "name": "arckit:pages",
-        "status": "complete",
-        "agent_id": "ad58d9cc7ed1ff407",
-        "headline": "47 artefacts in manifest (27 project-001 + 5 global + 15 project-002 / ADRs / diagrams). docs/index.html, manifest.json, llms.txt regenerated."
+        "status": "DEFERRED",
+        "agent_id": "aefbb01a6aab4c145",
+        "headline": "Sub-agent reported success but tool_uses=1 indicates hook didn't actually run; docs/manifest.json mtime stayed at 20:12 pre-research-wave. Direct re-invocation via Skill tool also failed to refresh files (no Document Stats injected by sync-guides hook). Dashboard remains at the 47-artefact pre-research snapshot. Follow-up: re-run /arckit:pages in a fresh session where the sync-guides hook fires correctly."
       }
     ]
   },
   "build_summary": {
+    "research_resume_session": {
+      "started_at": "2026-05-03T21:29:47Z",
+      "completed_at": "2026-05-03T22:03:38Z",
+      "wall_clock_minutes": 34,
+      "targets_built": 6,
+      "waves": 2,
+      "lines_generated": 5247,
+      "session_artefacts": [
+        {"target": "ORG_RESEARCH", "wave": 9, "lines": 604},
+        {"target": "RESEARCH", "wave": 10, "lines": 1337},
+        {"target": "AWS_RESEARCH", "wave": 10, "lines": 718},
+        {"target": "AZURE_RESEARCH", "wave": 10, "lines": 809},
+        {"target": "GCP_RESEARCH", "wave": 10, "lines": 1025},
+        {"target": "GOV_REUSE", "wave": 10, "lines": 754}
+      ]
+    },
     "total_targets_built_this_session": 10,
     "total_waves_this_session": 4,
     "total_lines_generated_this_session": 11371,
@@ -442,10 +486,12 @@
       {"target": "TRACE", "wave": 8, "lines": 759}
     ],
     "follow_up_actions": [
-      "Address 13 unreferenced REQs in project 001 (ARC-001-REQ-v1.0.md) — link each BR/FR/NFR to at least one ADR",
-      "Project 002 sovereign-route artefact set needs full harness run (currently only REQ + STKE)",
-      "TRACE flagged 3 orphans + 3 gaps for follow-up: C14 FinOps component, performance load-test plan, accessibility CI green-required gate",
-      "10 pre-GA must-lands per RISK §H Priority-1 still open (pen test, DPIA approval, CE Plus, ROPA, runbook, PAM, EDR, VMS, VDP, ATRS)"
+      "Address 8 (was 13) unreferenced REQs in project 001 (ARC-001-REQ-v1.0.md) — link each BR/FR/NFR to at least one ADR. Improvement vs prior scan likely due to research-wave references (BR-003, FR-013, FR-015, INT-008, NFR-C-003, NFR-C-006, NFR-U-001, NFR-U-002 still orphaned).",
+      "Project 002 sovereign-route artefact set needs full harness run with --recipe uk-mod-sovereign (currently only REQ + STKE). Health scan now shows 3 (was 63) ORPHAN-REQs — improvement reflects added ADRs, but 60 reqs still need linking.",
+      "TRACE flagged 3 orphans + 3 gaps for follow-up: C14 FinOps component, performance load-test plan, accessibility CI green-required gate.",
+      "10 pre-GA must-lands per RISK §H Priority-1 still open (pen test, DPIA approval, CE Plus, ROPA, runbook, PAM, EDR, VMS, VDP, ATRS).",
+      "Re-run /arckit:pages in a fresh session — current attempt did not regenerate docs/index.html|manifest.json|llms.txt (sync-guides hook didn't fire). Dashboard still at 47-doc pre-research snapshot.",
+      "Vendor profiles (vendors/{aws,microsoft-azure,grafana-labs}-profile.md) and tech-notes ({multi-tenant-isolation-pool-with-cells,ai-provider-abstraction,opentelemetry-observability}.md) were created as side-effects of the RESEARCH agent — review and align with recipe expectations or add as first-class targets in a project-override .arckit/recipes/uk-saas.yaml."
     ]
   }
 }
