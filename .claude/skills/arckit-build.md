@@ -28,11 +28,24 @@ You are running the ArcKit build harness. Your job is **orchestration only** —
 | `--no-commit` | Skip the per-wave git commit. |
 | `--recipe NAME` | Override recipe (default: auto-detect; UK-SaaS for now). |
 
-## Recipe: UK-SaaS (v0.1, hardcoded)
+## Recipe: UK-SaaS (v0.2, hardcoded)
 
 Required artefacts. `{P}` = project ID, `{V}` = version (default `1.0`), `{N}` = sequence, `{NAME}` = project slug.
 
-Output paths use `bash scripts/bash/generate-document-id.sh --filename {TYPE} {P} {V}` rather than hardcoded strings — the helper is the source of truth for ArcKit naming and subfolder conventions (e.g. ADRs in `decisions/`, diagrams in `diagrams/`). The "Output path" column below is the *expected* result for validation only; the harness itself never constructs these strings by hand.
+Output paths use `bash scripts/bash/generate-document-id.sh` rather than hardcoded strings — the helper is the source of truth for ArcKit naming. Argument order is **positional**: `PROJECT_ID DOC_TYPE [VERSION]` followed by flags. Multi-instance types (ADR, DIAG, DFD, WARD, DMC, RSCH, AWRS, AZRS, GCRS, DSCT, WGAM, WCLM, WVCH, GOVR, GCSR, GLND) **require** `--next-num DIR` to allocate the sequence number.
+
+```bash
+# Single-instance (REQ, STKE, RISK, HLD, ...):
+bash scripts/bash/generate-document-id.sh {P} {TYPE} {V} --filename
+#   → ARC-{P}-{TYPE}-v{V}.md
+
+# Multi-instance (ADR, DIAG, ...):
+bash scripts/bash/generate-document-id.sh {P} {TYPE} {V} --filename \
+  --next-num projects/{P}-{NAME}/{decisions|diagrams}
+#   → ARC-{P}-{TYPE}-{NNN}-v{V}.md  (NNN auto-incremented)
+```
+
+The helper returns only the *filename* (e.g. `ARC-001-REQ-v1.0.md`), not the full path — the harness composes `projects/{P}-{NAME}/[subfolder/]{filename}` using the subfolder convention from the recipe table below. The "Expected output path" column is the result for validation only; the harness itself never hand-constructs these strings outside the helper + recipe-defined subfolder.
 
 | Target | Skill | Skill args | Expected output path | Depends on |
 |--------|-------|------------|----------------------|------------|
@@ -143,9 +156,12 @@ Inputs you may read (only these):
 Steps:
 1. Use the Skill tool to invoke `{SKILL}` with the args above verbatim. Do not ask interactive
    questions — if the skill calls AskUserQuestion, supply sensible defaults and continue.
-2. Follow the skill's instructions exactly. The skill itself derives its output filename via
-   `bash scripts/bash/generate-document-id.sh --filename {TYPE} {PROJECT_ID} {VERSION}` — do not
-   hardcode the path. The expected path above is for validation only.
+2. Follow the skill's instructions exactly. Resolve the output filename via the ArcKit helper —
+   **positional args first, flags last**:
+     - Single-instance: `bash scripts/bash/generate-document-id.sh {PROJECT_ID} {TYPE} {VERSION} --filename`
+     - Multi-instance (ADR/DIAG/...): `bash scripts/bash/generate-document-id.sh {PROJECT_ID} {TYPE} {VERSION} --filename --next-num projects/{PROJECT_ID}-{NAME}/{decisions|diagrams}`
+   The helper returns only the bare filename; compose the full path against the recipe-defined
+   subfolder. Do not hardcode. The expected path above is for validation only.
 3. Sanity check via Bash:
    - `test -f "$ACTUAL_PATH"` returns success
    - `wc -l < "$ACTUAL_PATH"` returns > 100
