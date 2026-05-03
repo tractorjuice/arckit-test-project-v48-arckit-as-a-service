@@ -4,8 +4,8 @@
   "project_name": "001-arckit-saas",
   "recipe": "uk-saas",
   "started_at": "2026-05-03T16:00:00Z",
-  "last_wave_completed": 6,
-  "current_wave": 7,
+  "last_wave_completed": 7,
+  "current_wave": 8,
   "targets": {
     "PRIN": {
       "status": "complete",
@@ -219,7 +219,16 @@
       "agent_id": "ab1c380d30e3694cc",
       "headline": "GA target 2027-04-30. Critical path: AI abstraction (R-006/R-017), tenant isolation (R-008/R-014), pilot recruitment (R-003)."
     },
-    "ROADMAP": {"status": "pending", "skill": "arckit:roadmap"},
+    "ROADMAP": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-ROAD-v1.0.md",
+      "wave": 7,
+      "skill": "arckit:roadmap",
+      "built_at": "2026-05-03T17:50:00Z",
+      "line_count": 1289,
+      "agent_id": "a3d8fd3f74469d216",
+      "headline": "3-year horizon. Y1 GA + 10 must-lands. Y2 Live + ≥200 SMEs. Y3 cross-subsidy break-even + ISO 27001 + sovereign productisation."
+    },
     "DIAG-C4": {
       "status": "complete",
       "path": "projects/001-arckit-saas/diagrams/ARC-001-DIAG-001-v1.0.md",
@@ -292,13 +301,22 @@
       "longest_agent_minutes": 11,
       "shortest_agent_minutes": 4,
       "note": "5 agents in parallel. Total content generated: 4,077 lines including 12 Mermaid diagrams (4 C4 + 5 sequence + 3 deployment)."
+    },
+    {
+      "n": 7,
+      "targets": ["ROADMAP"],
+      "status": "complete",
+      "completed_at": "2026-05-03T17:50:00Z",
+      "via": "/arckit-build harness — single-target wave",
+      "wall_clock_minutes": 10,
+      "note": "1 agent. 1,289 lines. 3-year capability + governance roadmap."
     }
   ],
   "next_wave_plan": {
-    "n": 7,
-    "targets": ["ROADMAP"],
-    "rationale": "ROADMAP needs PLAN (now done). Single artefact wave.",
+    "n": 8,
+    "targets": ["TRACE"],
+    "rationale": "TRACE needs everything. All upstream artefacts now complete. Final wave.",
     "estimated_agents": 1,
-    "estimated_duration_min": "5 wall-clock"
+    "estimated_duration_min": "5-10 wall-clock"
   }
 }
