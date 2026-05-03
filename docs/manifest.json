@@ -1,9 +1,9 @@
 {
-  "generated": "2026-05-03T12:32:15.362Z",
+  "generated": "2026-05-03T13:23:10.920533Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
-  "defaultDocument": "projects/000-global/ARC-000-PRIN-v1.0.md",
+  "defaultDocument": "projects/000-global/ARC-000-PRIN-v2.0.md",
   "guides": [
     {
       "path": "docs/guides/adr.md",
@@ -73,7 +73,7 @@
     },
     {
       "path": "docs/guides/codes-of-practice.md",
-      "title": "UK Government Codes of Practice — ArcKit Reference Guide",
+      "title": "UK Government Codes of Practice \u2014 ArcKit Reference Guide",
       "category": "Compliance",
       "status": "beta"
     },
@@ -109,7 +109,7 @@
     },
     {
       "path": "docs/guides/data-quality-framework.md",
-      "title": "UK Government Data Quality Framework — ArcKit Reference Guide",
+      "title": "UK Government Data Quality Framework \u2014 ArcKit Reference Guide",
       "category": "Governance",
       "status": "beta"
     },
@@ -265,7 +265,7 @@
     },
     {
       "path": "docs/guides/fr-irn.md",
-      "title": "IRN — Indice de Résilience Numérique Playbook",
+      "title": "IRN \u2014 Indice de R\u00e9silience Num\u00e9rique Playbook",
       "category": "Other",
       "status": "beta"
     },
@@ -343,7 +343,7 @@
     },
     {
       "path": "docs/guides/govs-007-security.md",
-      "title": "GovS 007: Security — ArcKit Reference Guide",
+      "title": "GovS 007: Security \u2014 ArcKit Reference Guide",
       "category": "Compliance",
       "status": "beta"
     },
@@ -355,7 +355,7 @@
     },
     {
       "path": "docs/guides/graph-report.md",
-      "title": "`/arckit:graph-report` — governance metrics dashboard",
+      "title": "`/arckit:graph-report` \u2014 governance metrics dashboard",
       "category": "Other",
       "status": "beta"
     },
@@ -433,13 +433,13 @@
     },
     {
       "path": "docs/guides/national-data-strategy.md",
-      "title": "UK National Data Strategy — ArcKit Reference Guide",
+      "title": "UK National Data Strategy \u2014 ArcKit Reference Guide",
       "category": "Compliance",
       "status": "beta"
     },
     {
       "path": "docs/guides/navigator.md",
-      "title": "`/arckit:navigator` — what should I do next?",
+      "title": "`/arckit:navigator` \u2014 what should I do next?",
       "category": "Other",
       "status": "beta"
     },
@@ -796,19 +796,44 @@
   ],
   "global": [
     {
+      "path": "projects/000-global/ARC-000-GLOSS-v1.0.md",
+      "title": "Glossary",
+      "category": "Discovery",
+      "documentId": "ARC-000-GLOSS-v1.0",
+      "extension": ".md",
+      "isDefault": false
+    },
+    {
       "path": "projects/000-global/ARC-000-PRIN-v1.0.md",
       "title": "Architecture Principles",
       "category": "Architecture",
       "documentId": "ARC-000-PRIN-v1.0",
       "extension": ".md",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "path": "projects/000-global/ARC-000-PRIN-v2.0.md",
       "title": "Architecture Principles",
       "category": "Architecture",
       "documentId": "ARC-000-PRIN-v2.0",
-      "extension": ".md"
+      "extension": ".md",
+      "isDefault": true
+    },
+    {
+      "path": "projects/000-global/ARC-000-STRATEGY-v1.0.md",
+      "title": "Architecture Strategy",
+      "category": "Planning",
+      "documentId": "ARC-000-STRATEGY-v1.0",
+      "extension": ".md",
+      "isDefault": false
+    },
+    {
+      "path": "projects/000-global/ARC-000-WARDLEY-v1.0.md",
+      "title": "Wardley Map",
+      "category": "Architecture",
+      "documentId": "ARC-000-WARDLEY-v1.0",
+      "extension": ".md",
+      "isDefault": false
     }
   ],
   "typeCategories": {
@@ -903,13 +928,72 @@
     "NPRA": "Governance",
     "AICH": "Compliance",
     "AUTI": "Architecture",
-    "FPRO": "Procurement"
+    "FPRO": "Procurement",
+    "AIP": "Compliance",
+    "SECURE": "Compliance",
+    "MODSEC": "Compliance",
+    "HLD": "Design",
+    "DLD": "Design",
+    "ROADMAP": "Planning",
+    "STRATEGY": "Planning",
+    "WARDLEY": "Architecture",
+    "GLOSS": "Discovery",
+    "TRACE": "Compliance"
   },
   "projects": [
     {
       "id": "001-arckit-saas",
       "name": "Arckit Saas",
       "documents": [
+        {
+          "path": "projects/001-arckit-saas/ARC-001-AIP-v1.0.md",
+          "title": "AI Playbook Conformance",
+          "category": "Compliance",
+          "documentId": "ARC-001-AIP-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/ARC-001-DEVOPS-v1.0.md",
+          "title": "DevOps Strategy",
+          "category": "Operations",
+          "documentId": "ARC-001-DEVOPS-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/ARC-001-DPIA-v1.0.md",
+          "title": "Data Protection Impact Assessment",
+          "category": "Compliance",
+          "documentId": "ARC-001-DPIA-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/ARC-001-FINOPS-v1.0.md",
+          "title": "FinOps Strategy",
+          "category": "Operations",
+          "documentId": "ARC-001-FINOPS-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/ARC-001-HLD-v1.0.md",
+          "title": "High-Level Design",
+          "category": "Design",
+          "documentId": "ARC-001-HLD-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/ARC-001-OPS-v1.0.md",
+          "title": "Operational Readiness Pack",
+          "category": "Operations",
+          "documentId": "ARC-001-OPS-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/ARC-001-PLAN-v1.0.md",
+          "title": "Project Plan",
+          "category": "Planning",
+          "documentId": "ARC-001-PLAN-v1.0",
+          "extension": ".md"
+        },
         {
           "path": "projects/001-arckit-saas/ARC-001-REQ-v1.0.md",
           "title": "Requirements",
@@ -918,18 +1002,140 @@
           "extension": ".md"
         },
         {
+          "path": "projects/001-arckit-saas/ARC-001-RISK-v1.0.md",
+          "title": "Risk Register",
+          "category": "Governance",
+          "documentId": "ARC-001-RISK-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/ARC-001-ROADMAP-v1.0.md",
+          "title": "Strategic Roadmap",
+          "category": "Planning",
+          "documentId": "ARC-001-ROADMAP-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/ARC-001-SECURE-v1.0.md",
+          "title": "Secure by Design Assessment",
+          "category": "Compliance",
+          "documentId": "ARC-001-SECURE-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/ARC-001-SOBC-v1.0.md",
+          "title": "Strategic Outline Business Case",
+          "category": "Planning",
+          "documentId": "ARC-001-SOBC-v1.0",
+          "extension": ".md"
+        },
+        {
           "path": "projects/001-arckit-saas/ARC-001-STKE-v1.0.md",
           "title": "Stakeholder Analysis",
           "category": "Discovery",
           "documentId": "ARC-001-STKE-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/ARC-001-SVCASS-v1.0.md",
+          "title": "GDS Service Standard Readiness",
+          "category": "Compliance",
+          "documentId": "ARC-001-SVCASS-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/ARC-001-TCOP-v1.0.md",
+          "title": "Technology Code of Practice Assessment",
+          "category": "Compliance",
+          "documentId": "ARC-001-TCOP-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/ARC-001-TRACE-v1.0.md",
+          "title": "Requirements Traceability Matrix",
+          "category": "Compliance",
+          "documentId": "ARC-001-TRACE-v1.0",
           "extension": ".md"
         }
       ],
       "decisions": [
         {
           "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-001-v1.0.md",
-          "title": "ADR-001 — Tenant Isolation Model",
+          "title": "ADR-001 \u2014 Tenant Isolation Model",
+          "category": "Architecture",
           "documentId": "ARC-001-ADR-001-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-002-v1.0.md",
+          "title": "ADR-002 \u2014 Cloud Region and Storage Selection",
+          "category": "Architecture",
+          "documentId": "ARC-001-ADR-002-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-003-v1.0.md",
+          "title": "ADR-003 \u2014 Identity Provider Integration and SSO",
+          "category": "Architecture",
+          "documentId": "ARC-001-ADR-003-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-004-v1.0.md",
+          "title": "ADR-004 \u2014 AI Provider Abstraction and Model Strategy",
+          "category": "Architecture",
+          "documentId": "ARC-001-ADR-004-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-005-v1.0.md",
+          "title": "ADR-005 \u2014 Observability Stack (Logging, Metrics, Tracing, SIEM)",
+          "category": "Architecture",
+          "documentId": "ARC-001-ADR-005-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-006-v1.0.md",
+          "title": "ADR-006 \u2014 Deployment Topology and Runtime Platform",
+          "category": "Architecture",
+          "documentId": "ARC-001-ADR-006-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-007-v1.0.md",
+          "title": "ADR-007 \u2014 Data Portability and Export Format",
+          "category": "Architecture",
+          "documentId": "ARC-001-ADR-007-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-008-v1.0.md",
+          "title": "ADR-008 \u2014 Per-Tenant Quotas, Rate Limits, and Fair Use",
+          "category": "Architecture",
+          "documentId": "ARC-001-ADR-008-v1.0",
+          "extension": ".md"
+        }
+      ],
+      "diagrams": [
+        {
+          "path": "projects/001-arckit-saas/diagrams/ARC-001-DIAG-001-v1.0.md",
+          "title": "ARC-001-DIAG-001 \u2014 System Context (C4 L1) and Container View (C4 L2)",
+          "category": "Architecture",
+          "documentId": "ARC-001-DIAG-001-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/diagrams/ARC-001-DIAG-002-v1.0.md",
+          "title": "ARC-001-DIAG-002 \u2014 Deployment View and Cell Topology",
+          "category": "Architecture",
+          "documentId": "ARC-001-DIAG-002-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/diagrams/ARC-001-DIAG-003-v1.0.md",
+          "title": "ARC-001-DIAG-003 \u2014 Key Sequence Diagrams",
+          "category": "Architecture",
+          "documentId": "ARC-001-DIAG-003-v1.0",
           "extension": ".md"
         }
       ]
@@ -939,6 +1145,41 @@
       "name": "Arckit Sovereign",
       "documents": [
         {
+          "path": "projects/002-arckit-sovereign/ARC-002-DPIA-v1.0.md",
+          "title": "Data Protection Impact Assessment",
+          "category": "Compliance",
+          "documentId": "ARC-002-DPIA-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/ARC-002-HLD-v1.0.md",
+          "title": "High-Level Design",
+          "category": "Design",
+          "documentId": "ARC-002-HLD-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/ARC-002-MODSEC-v1.0.md",
+          "title": "MOD Secure by Design Assessment",
+          "category": "Compliance",
+          "documentId": "ARC-002-MODSEC-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/ARC-002-OPS-v1.0.md",
+          "title": "Operational Readiness Pack",
+          "category": "Operations",
+          "documentId": "ARC-002-OPS-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/ARC-002-PLAN-v1.0.md",
+          "title": "Project Plan",
+          "category": "Planning",
+          "documentId": "ARC-002-PLAN-v1.0",
+          "extension": ".md"
+        },
+        {
           "path": "projects/002-arckit-sovereign/ARC-002-REQ-v1.0.md",
           "title": "Requirements",
           "category": "Discovery",
@@ -946,10 +1187,70 @@
           "extension": ".md"
         },
         {
+          "path": "projects/002-arckit-sovereign/ARC-002-RISK-v1.0.md",
+          "title": "Risk Register",
+          "category": "Governance",
+          "documentId": "ARC-002-RISK-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/ARC-002-SOBC-v1.0.md",
+          "title": "Strategic Outline Business Case",
+          "category": "Planning",
+          "documentId": "ARC-002-SOBC-v1.0",
+          "extension": ".md"
+        },
+        {
           "path": "projects/002-arckit-sovereign/ARC-002-STKE-v1.0.md",
           "title": "Stakeholder Analysis",
           "category": "Discovery",
           "documentId": "ARC-002-STKE-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/ARC-002-TRACE-v1.0.md",
+          "title": "Requirements Traceability Matrix",
+          "category": "Compliance",
+          "documentId": "ARC-002-TRACE-v1.0",
+          "extension": ".md"
+        }
+      ],
+      "decisions": [
+        {
+          "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-001-v1.0.md",
+          "title": "ADR-001 \u2014 Sovereign Packaging, Signing and Distribution",
+          "category": "Architecture",
+          "documentId": "ARC-002-ADR-001-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-002-v1.0.md",
+          "title": "ADR-002 \u2014 Air-Gapped Update / Patch Mechanism",
+          "category": "Architecture",
+          "documentId": "ARC-002-ADR-002-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-003-v1.0.md",
+          "title": "ADR-003 \u2014 Sovereign Identity Integration (Customer IdP Only)",
+          "category": "Architecture",
+          "documentId": "ARC-002-ADR-003-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/decisions/ARC-002-ADR-004-v1.0.md",
+          "title": "ADR-004 \u2014 Sovereign AI Inference Model",
+          "category": "Architecture",
+          "documentId": "ARC-002-ADR-004-v1.0",
+          "extension": ".md"
+        }
+      ],
+      "diagrams": [
+        {
+          "path": "projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-001-v1.0.md",
+          "title": "ARC-002-DIAG-001 \u2014 Sovereign Deployment Diagrams",
+          "category": "Architecture",
+          "documentId": "ARC-002-DIAG-001-v1.0",
           "extension": ".md"
         }
       ]
@@ -961,7 +1262,7 @@
         "type": "PRIN",
         "project": "000-global",
         "path": "projects/000-global/ARC-000-PRIN-v1.0.md",
-        "title": "ArcKit as a Service — Enterprise Architecture Principles",
+        "title": "ArcKit as a Service \u2014 Enterprise Architecture Principles",
         "status": "DRAFT",
         "severity": "MEDIUM",
         "createdDate": "2026-05-03",
@@ -999,7 +1300,7 @@
         "type": "PRIN",
         "project": "000-global",
         "path": "projects/000-global/ARC-000-PRIN-v2.0.md",
-        "title": "ArcKit as a Service — Enterprise Architecture Principles",
+        "title": "ArcKit as a Service \u2014 Enterprise Architecture Principles",
         "status": "DRAFT",
         "severity": "MEDIUM",
         "createdDate": "2026-05-03",
@@ -1197,13 +1498,13 @@
         "type": "ADR",
         "project": "001-arckit-saas",
         "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-001-v1.0.md",
-        "title": "ADR-001 — Tenant Isolation Model",
+        "title": "ADR-001 \u2014 Tenant Isolation Model",
         "status": "Proposed",
         "severity": "MEDIUM",
         "createdDate": "2026-05-03",
         "lastModified": "2026-05-03",
         "version": "1.0",
-        "owner": "Mark Craddock (Service Owner — pending appointment of Lead Architect)",
+        "owner": "Mark Craddock (Service Owner \u2014 pending appointment of Lead Architect)",
         "classification": "OFFICIAL",
         "vendor": null,
         "subdir": "decisions",
@@ -1217,7 +1518,7 @@
           "Created Date": "2026-05-03",
           "Last Modified": "2026-05-03",
           "Review Date": "2026-08-03",
-          "Owner": "Mark Craddock (Service Owner — pending appointment of Lead Architect)",
+          "Owner": "Mark Craddock (Service Owner \u2014 pending appointment of Lead Architect)",
           "Reviewed By": "[PENDING]",
           "Approved By": "[PENDING]",
           "Distribution": "Project Team, Architecture Team, Security Lead, DPO, Crown Commercial Service liaison",
@@ -1492,7 +1793,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-03T12:32:15.371Z",
+    "baseline": "2026-05-03T13:23:10.920533Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -1814,6 +2115,18 @@
           }
         ]
       }
-    ]
+    ],
+    "byProject": {
+      "001-arckit-saas": {
+        "essentialCoveragePct": 62,
+        "drafts": 0,
+        "next": ""
+      },
+      "002-arckit-sovereign": {
+        "essentialCoveragePct": 62,
+        "drafts": 0,
+        "next": ""
+      }
+    }
   }
 }
