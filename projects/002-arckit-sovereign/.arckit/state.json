@@ -10,8 +10,9 @@
     "rationale": "Sovereign / air-gapped route per Principle 21. SBD swapped for MOD Secure by Design (JSP 440 / 604, Security Aspects Letter). SVCASS skipped — not a public-facing GDS service; assurance gates flow through MOD accreditation pathway, not GDS Service Standard. AIP retained because AI is pluggable per ADR-004 (sovereign customer can point at on-premise model)."
   },
   "started_at": "2026-05-03T18:20:00Z",
-  "current_wave": "post-build",
-  "build_status": "RECIPE COMPLETE — pending post-build hooks",
+  "current_wave": "complete",
+  "build_status": "BUILD COMPLETE — recipe + post-build hooks both successful",
+  "build_completed_at": "2026-05-03T19:50:00Z",
   "targets": {
     "PRIN": {
       "status": "complete",
@@ -147,9 +148,13 @@
     "total_targets_built_this_session": 23,
     "total_waves_this_session": 6,
     "total_lines_generated_this_session": 23253,
+    "post_build_hooks": {
+      "arckit:health": {"status": "complete", "headline": "0 HIGH / 2 MEDIUM / 0 LOW. ORPHAN-REQ counts: project 001 13/70, project 002 6/63 — substantially reduced from baseline 63/63 pre-build."},
+      "arckit:pages": {"status": "complete", "headline": "47 artefacts in manifest (27 project-001 + 15 project-002 + 5 global). docs/index.html, manifest.json, llms.txt regenerated."}
+    },
     "follow_up_actions": [
-      "Run post-build hooks: arckit:health and arckit:pages",
-      "TRACE flagged 3 orphans + 3 gaps for follow-up: HLD blocking items still open, customer-side runbook bundle missing, threat model artefact missing",
+      "Address 6 ORPHAN-REQs in project 002 — link NFR-P-003, NFR-A-002, NFR-S-001, DR-003, DR-004 (+1 more) to ADRs",
+      "TRACE flagged 3 orphans + 3 gaps: HLD blocking items still open, customer-side runbook bundle missing, threat model artefact missing",
       "Pre-deployment must-lands per MOD-SBD §pre-deployment: HSM signing operational, network-deny CI green, accreditator-in-loop alpha review",
       "Pilot ATO target: 2027-07-25; GA (LTS-1) target: 2027-10-31"
     ]
