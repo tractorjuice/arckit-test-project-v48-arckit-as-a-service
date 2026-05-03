@@ -1,0 +1,245 @@
+{
+  "version": "0.1",
+  "project_id": "001",
+  "project_name": "001-arckit-saas",
+  "recipe": "uk-saas",
+  "started_at": "2026-05-03T16:00:00Z",
+  "last_wave_completed": 5,
+  "current_wave": 6,
+  "targets": {
+    "PRIN": {
+      "status": "complete",
+      "path": "projects/000-global/ARC-000-PRIN-v2.0.md",
+      "wave": 0,
+      "source": "pre-existing",
+      "skill": "arckit:principles",
+      "note": "v1.0 + v2.0 with sovereign principle 21"
+    },
+    "GLOSSARY": {
+      "status": "complete",
+      "path": "projects/000-global/ARC-000-GLO-v1.0.md",
+      "wave": 0,
+      "source": "pre-existing",
+      "skill": "arckit:glossary"
+    },
+    "STRATEGY": {
+      "status": "complete",
+      "path": "projects/000-global/ARC-000-STRAT-v1.0.md",
+      "wave": 0,
+      "source": "pre-existing",
+      "skill": "arckit:strategy"
+    },
+    "WARDLEY": {
+      "status": "complete",
+      "path": "projects/000-global/ARC-000-WARD-v1.0.md",
+      "wave": 0,
+      "source": "pre-existing",
+      "skill": "arckit:wardley"
+    },
+    "REQ": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-REQ-v1.0.md",
+      "wave": 0,
+      "source": "pre-existing",
+      "skill": "arckit:requirements"
+    },
+    "STKE": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-STKE-v1.0.md",
+      "wave": 0,
+      "source": "pre-existing",
+      "skill": "arckit:stakeholders"
+    },
+    "ADR-001": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-001-v1.0.md",
+      "wave": 1,
+      "source": "pre-existing",
+      "skill": "arckit:adr",
+      "note": "Tenant Isolation Model"
+    },
+    "ADR-002": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-002-v1.0.md",
+      "wave": 1,
+      "source": "pre-existing",
+      "skill": "arckit:adr",
+      "note": "Cloud Region & Storage"
+    },
+    "ADR-003": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-003-v1.0.md",
+      "wave": 1,
+      "source": "pre-existing",
+      "skill": "arckit:adr",
+      "note": "Identity Provider & SSO"
+    },
+    "ADR-004": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-004-v1.0.md",
+      "wave": 1,
+      "source": "pre-existing",
+      "skill": "arckit:adr",
+      "note": "AI Provider Abstraction"
+    },
+    "ADR-005": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-005-v1.0.md",
+      "wave": 1,
+      "source": "pre-existing",
+      "skill": "arckit:adr",
+      "note": "Observability Stack"
+    },
+    "ADR-006": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-006-v1.0.md",
+      "wave": 1,
+      "source": "pre-existing",
+      "skill": "arckit:adr",
+      "note": "Deployment Topology"
+    },
+    "ADR-007": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-007-v1.0.md",
+      "wave": 1,
+      "source": "pre-existing",
+      "skill": "arckit:adr",
+      "note": "Data Portability & Export Format"
+    },
+    "ADR-008": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/decisions/ARC-001-ADR-008-v1.0.md",
+      "wave": 1,
+      "source": "pre-existing",
+      "skill": "arckit:adr",
+      "note": "Per-Tenant Quotas, Rate Limits, Fair Use"
+    },
+    "RISK": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-RISK-v1.0.md",
+      "wave": 2,
+      "skill": "arckit:risk",
+      "built_at": "2026-05-03T15:30:00Z",
+      "line_count": 1435,
+      "note": "17 risks, 4 COMPLIANCE residuals exceed appetite"
+    },
+    "TCOP": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-TCOP-v1.0.md",
+      "wave": 3,
+      "skill": "arckit:tcop",
+      "built_at": "2026-05-03T15:45:00Z",
+      "line_count": 796,
+      "note": "5/13 Compliant + 7/13 Partially; pre-GA"
+    },
+    "SBD": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-SBD-v1.0.md",
+      "wave": 4,
+      "skill": "arckit:secure",
+      "built_at": "2026-05-03T16:00:00Z",
+      "line_count": 843,
+      "note": "CAF 9/14 Achieved; §10 acceptance vehicle"
+    },
+    "DPIA": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-DPIA-v1.0.md",
+      "wave": 4,
+      "skill": "arckit:dpia",
+      "built_at": "2026-05-03T16:15:00Z",
+      "line_count": 553,
+      "note": "15 risks all Low residual; ICO Art. 36 NOT REQUIRED"
+    },
+    "AIP": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-AIP-v1.0.md",
+      "wave": 4,
+      "skill": "arckit:ai-playbook",
+      "built_at": "2026-05-03T16:30:00Z",
+      "line_count": 589,
+      "note": "LOW-RISK; 126/160 = 78.75%; GO subject to ATRS"
+    },
+    "SVCASS": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-SVCASS-v1.0.md",
+      "wave": 5,
+      "skill": "arckit:service-assessment",
+      "built_at": "2026-05-03T17:00:00Z",
+      "line_count": 1689,
+      "agent_id": "a320769a2c4ddb0e3",
+      "headline": "Beta-target RAG: 4 Green / 6 Amber / 4 Red of 14. Top critical gaps: Point 5 (a11y audit), Point 9 (pen test), Point 12 (OSS)."
+    },
+    "SOBC": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-SOBC-v1.0.md",
+      "wave": 5,
+      "skill": "arckit:sobc",
+      "built_at": "2026-05-03T17:00:00Z",
+      "line_count": 1214,
+      "agent_id": "a0234eae46b756d05",
+      "headline": "Option 2 recommended (Balanced + cross-subsidy + G-Cloud). NPV +£6.9M, BCR ~2.7, payback ~22 months. Break-even GA + 18m."
+    },
+    "HLD": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-HLD-v1.0.md",
+      "wave": 5,
+      "skill": "arckit:hld-review",
+      "built_at": "2026-05-03T17:00:00Z",
+      "line_count": 718,
+      "agent_id": "a032dbd5b5376c08d",
+      "headline": "APPROVED WITH CONDITIONS — 4 blocking items: threat model + CAF, SLO/error-budget, Cell Management component, FinOps component."
+    },
+    "DEVOPS": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-DEVOPS-v1.0.md",
+      "wave": 5,
+      "skill": "arckit:devops",
+      "built_at": "2026-05-03T17:00:00Z",
+      "line_count": 867,
+      "agent_id": "aa6efcec85f0a5d80",
+      "headline": "5-stage pipeline (source/build/test/security/deploy) + hermetic signed sovereign bundle. 3 release-blocking gates: tenant-iso tests, reproducible-build digest, sovereign no-egress smoke."
+    },
+    "FINOPS": {
+      "status": "complete",
+      "path": "projects/001-arckit-saas/ARC-001-FINOPS-v1.0.md",
+      "wave": 5,
+      "skill": "arckit:finops",
+      "built_at": "2026-05-03T17:00:00Z",
+      "line_count": 757,
+      "agent_id": "a74a8fb181d23f563",
+      "headline": "Break-even GA + 18m. Top 3 levers: AI provider substitution (-20–35%), per-tenant quotas (-15–25%), commitment purchases (-15–35%). 3 KRIs to RISK §J."
+    },
+    "PLAN": {"status": "pending", "skill": "arckit:plan"},
+    "ROADMAP": {"status": "pending", "skill": "arckit:roadmap"},
+    "DIAG-C4": {"status": "pending", "skill": "arckit:diagram"},
+    "DIAG-SEQ": {"status": "pending", "skill": "arckit:diagram"},
+    "DIAG-DEP": {"status": "pending", "skill": "arckit:diagram"},
+    "OPS": {"status": "pending", "skill": "arckit:operationalize"},
+    "TRACE": {"status": "pending", "skill": "arckit:traceability"}
+  },
+  "waves": [
+    {"n": 0, "targets": ["PRIN", "GLOSSARY", "STRATEGY", "WARDLEY", "REQ", "STKE"], "status": "complete", "source": "pre-existing"},
+    {"n": 1, "targets": ["ADR-001", "ADR-002", "ADR-003", "ADR-004", "ADR-005", "ADR-006", "ADR-007", "ADR-008"], "status": "complete", "source": "pre-existing"},
+    {"n": 2, "targets": ["RISK"], "status": "complete", "completed_at": "2026-05-03T15:30:00Z", "via": "skill"},
+    {"n": 3, "targets": ["TCOP"], "status": "complete", "completed_at": "2026-05-03T15:45:00Z", "via": "skill"},
+    {"n": 4, "targets": ["SBD", "DPIA", "AIP"], "status": "complete", "completed_at": "2026-05-03T16:30:00Z", "via": "skill", "note": "Sequential at the time, but dependency-wise SBD/DPIA/AIP are a chain (SBD→DPIA→AIP)"},
+    {
+      "n": 5,
+      "targets": ["SVCASS", "SOBC", "HLD", "DEVOPS", "FINOPS"],
+      "status": "complete",
+      "completed_at": "2026-05-03T17:00:00Z",
+      "via": "/arckit-build harness — first parallel wave",
+      "wall_clock_minutes": 11,
+      "longest_agent_minutes": 11,
+      "shortest_agent_minutes": 5,
+      "note": "First production run of the harness. 5 agents in parallel. Each invoked its /arckit:* skill in isolation. Total content generated: 5,245 lines. Sequential equivalent would have been ~30-45 minutes."
+    }
+  ],
+  "next_wave_plan": {
+    "n": 6,
+    "targets": ["PLAN", "DIAG-C4", "DIAG-SEQ", "DIAG-DEP", "OPS"],
+    "rationale": "PLAN deps satisfied (SOBC, RISK done). All three DIAGs need HLD (now done). OPS needs HLD + DEVOPS + RISK (all done). Parallel-safe: 5 agents.",
+    "estimated_agents": 5,
+    "estimated_duration_min": "5-15 wall-clock"
+  }
+}
