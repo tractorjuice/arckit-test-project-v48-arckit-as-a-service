@@ -25,7 +25,7 @@
 
 | Version | Date | Author | Changes | Approved By | Approval Date |
 |---------|------|--------|---------|-------------|---------------|
-| 1.0 | 2026-05-03 | ArcKit AI | Initial creation from `/arckit:roadmap` command. 3-year horizon (FY 2026/27 → FY 2028/29) with 5-year outlook. Anchored on Principle 21 (single codebase, sovereign overlay) and Principle 17 (cross-subsidy contribution). Aligned to ARC-002-PLAN (Pilot ATO 2027-07-25, GA 2027-10-31), ARC-002-SOBC Option C, ARC-002-RISK (R-001 strategic accreditation, R-006 operator-team turnover at customer), ARC-002-MOD-SBD (annual through-life re-attestation per LTS line). | [PENDING] | [PENDING] |
+| 1.0 | 2026-05-03 | ArcKit AI | Initial creation from `/arckit:roadmap` command. 3-year horizon (FY 2026/27 → FY 2028/29) with 5-year outlook. Anchored on Principle 21 (single codebase, sovereign overlay) and Principle 17 (cross-subsidy contribution). Aligned to ARC-002-PLAN (Pilot ATO 2027-07-25, GA 2027-10-31), ARC-002-SOBC Option C, ARC-002-RISK (R-001 strategic accreditation, R-006 operator-team turnover at customer), ARC-002-SECD-MOD (annual through-life re-attestation per LTS line). | [PENDING] | [PENDING] |
 
 ---
 
@@ -101,7 +101,7 @@ Make ArcKit the default enterprise-architecture-governance toolkit for the **ins
 
 #### Technology Landscape
 
-ArcKit today exists as the project-001 SaaS pre-GA codebase. The sovereign track has no production deployment as of this roadmap baseline (2026-05-03); Discovery and HLD are complete (`ARC-002-HLD-v1.0.md`), Alpha is in flight per `ARC-002-PLAN-v1.0.md`. The customer-side estate at the pilot site is mature (JSP 604 accreditation regime in place) but currently has no equivalent toolkit — architects use bespoke spreadsheets, OneNote, and air-gapped Confluence instances.
+ArcKit today exists as the project-001 SaaS pre-GA codebase. The sovereign track has no production deployment as of this roadmap baseline (2026-05-03); Discovery and HLD are complete (`ARC-002-HLDR-v1.0.md`), Alpha is in flight per `ARC-002-PLAN-v1.0.md`. The customer-side estate at the pilot site is mature (JSP 604 accreditation regime in place) but currently has no equivalent toolkit — architects use bespoke spreadsheets, OneNote, and air-gapped Confluence instances.
 
 **Key Systems** (vendor-side):
 
@@ -119,7 +119,7 @@ ArcKit today exists as the project-001 SaaS pre-GA codebase. The sovereign track
 | Pluggable Abstractions (AI, telemetry, time, CA, mirror, IdP) | L2 (Repeatable) | HLD-defined interfaces; partial implementation |
 | Accreditation Evidence Pack | L1 (Initial) | Prototype generator; not standardised across accreditators |
 | Supply-Chain Attestation (SLSA) | L2 (Repeatable) | SBOM produced; attestation chain not L3-complete |
-| MOD Secure by Design Conformance | L2 (Repeatable) | First MOD SbD assessment drafted (`ARC-002-MOD-SBD-v1.0.md`); not yet attested |
+| MOD Secure by Design Conformance | L2 (Repeatable) | First MOD SbD assessment drafted (`ARC-002-SECD-MOD-v1.0.md`); not yet attested |
 | LTS Branch & Backport Operations | L0 (Absent) | No LTS line exists pre-GA |
 | Cleared-Personnel Operating Model | L1 (Initial) | Vendor cleared pool is single-figure FTE |
 | Cross-Site Customer Onboarding | L0 (Absent) | No customer onboarded yet |
@@ -494,7 +494,7 @@ Operationalise the MOD Secure by Design 7-principle through-life requirement so 
 
 **FY 2026/27**:
 
-- Initiative 5.1: Initial MOD SbD assessment published (`ARC-002-MOD-SBD-v1.0.md`)
+- Initiative 5.1: Initial MOD SbD assessment published (`ARC-002-SECD-MOD-v1.0.md`)
 - Initiative 5.2: MOD SbD continuous-assurance instrumentation embedded in CI
 - **Milestones**: First MOD SbD attestation aligned to Pilot ATO submission
 - **Investment**: £0.25M
@@ -1083,7 +1083,7 @@ flowchart TD
 | ARC-002-PLAN | `ARC-002-PLAN-v1.0.md` | Project Plan | `projects/002-arckit-sovereign/` | Pilot ATO 2027-07-25, GA LTS-1 2027-10-31, LTS cadence |
 | ARC-002-SOBC | `ARC-002-SOBC-v1.0.md` | SOBC | `projects/002-arckit-sovereign/` | Option C single codebase + sovereign overlay; cross-subsidy contribution |
 | ARC-002-RISK | `ARC-002-RISK-v1.0.md` | Risk Register | `projects/002-arckit-sovereign/` | R-001 strategic accreditation; R-006 operator-team turnover (single-customer dependency) |
-| ARC-002-MOD-SBD | `ARC-002-MOD-SBD-v1.0.md` | MOD SbD | `projects/002-arckit-sovereign/` | 7-principle through-life; annual re-attestation per LTS line |
+| ARC-002-SECD-MOD | `ARC-002-SECD-MOD-v1.0.md` | MOD SbD | `projects/002-arckit-sovereign/` | 7-principle through-life; annual re-attestation per LTS line |
 | ARC-000-PRIN | `ARC-000-PRIN-v2.0.md` | Principles | `projects/000-global/` | Principle 21 single codebase; Principle 17 cross-subsidy |
 | ARC-000-WARD | `ARC-000-WARD-v1.0.md` | Wardley Map | `projects/000-global/` | Cross-project Wardley positioning |
 
@@ -1106,4 +1106,4 @@ flowchart TD
 **ArcKit Version**: 4.12.3
 **Project**: ArcKit as a Service (Sovereign Deployment) (Project 002)
 **AI Model**: claude-opus-4-7[1m]
-**Generation Context**: Generated as wave-6 sovereign-track artefact for /arckit-build orchestration. Inputs read: ARC-002-PLAN-v1.0.md, ARC-002-SOBC-v1.0.md, ARC-002-RISK-v1.0.md, ARC-002-MOD-SBD-v1.0.md, ARC-000-PRIN-v2.0.md (referenced), ARC-000-WARD-v1.0.md (referenced). 3-year horizon FY 2026/27 → FY 2028/29 with 5-year outlook to FY 2029/30. Mermaid Gantt + capability heatmap (flowchart) included.
+**Generation Context**: Generated as wave-6 sovereign-track artefact for /arckit-build orchestration. Inputs read: ARC-002-PLAN-v1.0.md, ARC-002-SOBC-v1.0.md, ARC-002-RISK-v1.0.md, ARC-002-SECD-MOD-v1.0.md, ARC-000-PRIN-v2.0.md (referenced), ARC-000-WARD-v1.0.md (referenced). 3-year horizon FY 2026/27 → FY 2028/29 with 5-year outlook to FY 2029/30. Mermaid Gantt + capability heatmap (flowchart) included.

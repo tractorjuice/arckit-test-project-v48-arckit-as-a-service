@@ -94,7 +94,7 @@ The deploying authority performs their own ICO 9-criteria screening as part of *
 
 The vendor provides — per release — the following inputs to support the deploying authority's own DPIA:
 
-- Architecture diagrams (`ARC-002-HLD-v1.0.md` and successors).
+- Architecture diagrams (`ARC-002-HLDR-v1.0.md` and successors).
 - Data-flow documentation (this document, Section 2.5).
 - Threat model (in MOD SbD evidence pack, `/arckit:mod-secure`).
 - Signed SBOM (CycloneDX or SPDX) and manifest hashes.

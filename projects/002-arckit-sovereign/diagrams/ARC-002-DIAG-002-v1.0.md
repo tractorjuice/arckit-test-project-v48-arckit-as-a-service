@@ -25,7 +25,7 @@
 
 | Version | Date | Author | Changes | Approved By | Approval Date |
 |---------|------|--------|---------|-------------|---------------|
-| 1.0 | 2026-05-03 | ArcKit AI | Initial creation from `/arckit:diagram` command. Five sovereign-specific Mermaid sequence diagrams covering bundle-issue-and-verification, JIT elevation, on-prem AI flow, on-site break-glass, and Critical-CVE hotfix flow. Anchored on `ARC-002-HLD-v1.0.md` and ADR-002 / -003 / -004 / -007 / -008. | [PENDING] | [PENDING] |
+| 1.0 | 2026-05-03 | ArcKit AI | Initial creation from `/arckit:diagram` command. Five sovereign-specific Mermaid sequence diagrams covering bundle-issue-and-verification, JIT elevation, on-prem AI flow, on-site break-glass, and Critical-CVE hotfix flow. Anchored on `ARC-002-HLDR-v1.0.md` and ADR-002 / -003 / -004 / -007 / -008. | [PENDING] | [PENDING] |
 
 ---
 
@@ -597,7 +597,7 @@ Principle anchors: **Principle 5 (sovereign block)**, **Principle 7**, **Princip
 
 | Doc ID | Filename | Type | Source Location | Description |
 |--------|----------|------|-----------------|-------------|
-| HLDR-002-v1.0 | ARC-002-HLD-v1.0.md | Internal — HLD Review | projects/002-arckit-sovereign/ | Anchoring HLD review |
+| HLDR-002-v1.0 | ARC-002-HLDR-v1.0.md | Internal — HLD Review | projects/002-arckit-sovereign/ | Anchoring HLD review |
 | ADR-002-002 | ARC-002-ADR-002-v1.0.md | Internal — ADR | projects/002-arckit-sovereign/decisions/ | Signed Release Bundle + OVM |
 | ADR-002-003 | ARC-002-ADR-003-v1.0.md | Internal — ADR | projects/002-arckit-sovereign/decisions/ | Cleared-Personnel Access Model |
 | ADR-002-004 | ARC-002-ADR-004-v1.0.md | Internal — ADR | projects/002-arckit-sovereign/decisions/ | On-Premise AI Integration |
@@ -627,4 +627,4 @@ Principle anchors: **Principle 5 (sovereign block)**, **Principle 7**, **Princip
 **ArcKit Version**: 4.12.3
 **Project**: ArcKit as a Service (Sovereign Deployment) (Project 002)
 **AI Model**: claude-opus-4-7[1m]
-**Generation Context**: Five sovereign-specific Mermaid sequence diagrams (bundle ceremony, JIT elevation, on-prem AI flow, break-glass, Critical-CVE hotfix) anchored on `ARC-002-HLD-v1.0.md` and ADR-002 / -003 / -004 / -007 / -008. Intended as wave-5 input to BLOCKING-01 of the HLD review. Sibling DIAGs (DIAG-001 C4 + DIAG-003 deployment) authored in parallel.
+**Generation Context**: Five sovereign-specific Mermaid sequence diagrams (bundle ceremony, JIT elevation, on-prem AI flow, break-glass, Critical-CVE hotfix) anchored on `ARC-002-HLDR-v1.0.md` and ADR-002 / -003 / -004 / -007 / -008. Intended as wave-5 input to BLOCKING-01 of the HLD review. Sibling DIAGs (DIAG-001 C4 + DIAG-003 deployment) authored in parallel.

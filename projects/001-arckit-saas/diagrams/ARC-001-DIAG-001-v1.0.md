@@ -29,7 +29,7 @@
 
 ## Document Purpose
 
-This document captures the C4-model architecture diagrams for the ArcKit as a Service platform at three levels of abstraction: System Context (L1), Container (L2), and Component (L3). The diagrams visualise the architecture model already specified textually in `ARC-001-HLD-v1.0.md` §3 and anchor to the eight Architecture Decision Records (in particular ADR-001 Tenant Isolation, ADR-003 Identity, ADR-004 AI Provider, ADR-005 Observability, ADR-006 Deployment Topology). Sequence diagrams and deployment topology diagrams are out of scope for this artefact and produced separately as `ARC-001-DIAG-002` and `ARC-001-DIAG-003`.
+This document captures the C4-model architecture diagrams for the ArcKit as a Service platform at three levels of abstraction: System Context (L1), Container (L2), and Component (L3). The diagrams visualise the architecture model already specified textually in `ARC-001-HLDR-v1.0.md` §3 and anchor to the eight Architecture Decision Records (in particular ADR-001 Tenant Isolation, ADR-003 Identity, ADR-004 AI Provider, ADR-005 Observability, ADR-006 Deployment Topology). Sequence diagrams and deployment topology diagrams are out of scope for this artefact and produced separately as `ARC-001-DIAG-002` and `ARC-001-DIAG-003`.
 
 The diagrams are normative renderings of the same model captured in the HLD; where any text and diagram diverge, the HLD text is authoritative until both are reconciled at the next ARB review.
 
@@ -497,7 +497,7 @@ C4Component
 
 | Artefact | Path | Use |
 |----------|------|-----|
-| HLD | `projects/001-arckit-saas/ARC-001-HLD-v1.0.md` | Architecture model these diagrams render |
+| HLD | `projects/001-arckit-saas/ARC-001-HLDR-v1.0.md` | Architecture model these diagrams render |
 | REQ | `projects/001-arckit-saas/ARC-001-REQ-v1.0.md` | Personas, INTs, BR/FR/NFR/DR coverage |
 | ADR-001 Tenant Isolation | `projects/001-arckit-saas/decisions/ARC-001-ADR-001-v1.0.md` | Pool-with-tenant_id; cell-based growth |
 | ADR-003 Identity & SSO | `projects/001-arckit-saas/decisions/ARC-001-ADR-003-v1.0.md` | Three-IdP topology; claim-based tenant_id |
@@ -518,7 +518,7 @@ C4Component
 
 | Doc ID | Filename | Type | Source Location | Description |
 |--------|----------|------|-----------------|-------------|
-| INT-HLD | ARC-001-HLD-v1.0.md | Internal | projects/001-arckit-saas/ | High-Level Design — architecture overview, containers, integrations |
+| INT-HLD | ARC-001-HLDR-v1.0.md | Internal | projects/001-arckit-saas/ | High-Level Design — architecture overview, containers, integrations |
 | INT-REQ | ARC-001-REQ-v1.0.md | Internal | projects/001-arckit-saas/ | Requirements (BR/FR/NFR/INT/DR) |
 | INT-ADR-001 | ARC-001-ADR-001-v1.0.md | Internal | projects/001-arckit-saas/decisions/ | Tenant Isolation |
 | INT-ADR-003 | ARC-001-ADR-003-v1.0.md | Internal | projects/001-arckit-saas/decisions/ | Identity & SSO |
@@ -554,4 +554,4 @@ C4Component
 **ArcKit Version**: 4.12.3
 **Project**: ArcKit as a Service (Project 001)
 **AI Model**: claude-opus-4-7[1m]
-**Generation Context**: Synthesised from ARC-001-HLD-v1.0.md §3 (architecture overview, all containers, components for C1 + C5), ARC-001-REQ-v1.0.md (personas, INT-001..009 external boundary, FR/NFR/DR coverage), and ADR-001 / ADR-003 / ADR-004 / ADR-005 / ADR-006. Rendered as three Mermaid C4 blocks (C4Context for L1, C4Container for L2, two C4Component diagrams for L3). Sequence and deployment diagrams are out of scope (DIAG-002 and DIAG-003 in Wave 6).
+**Generation Context**: Synthesised from ARC-001-HLDR-v1.0.md §3 (architecture overview, all containers, components for C1 + C5), ARC-001-REQ-v1.0.md (personas, INT-001..009 external boundary, FR/NFR/DR coverage), and ADR-001 / ADR-003 / ADR-004 / ADR-005 / ADR-006. Rendered as three Mermaid C4 blocks (C4Context for L1, C4Container for L2, two C4Component diagrams for L3). Sequence and deployment diagrams are out of scope (DIAG-002 and DIAG-003 in Wave 6).

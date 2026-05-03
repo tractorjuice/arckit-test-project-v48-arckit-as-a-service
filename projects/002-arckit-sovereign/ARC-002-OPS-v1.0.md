@@ -842,7 +842,7 @@ Customer-side handover checklist (Section 14.2) is repeated **per customer engag
 | Doc ID | Filename | Type | Source Location | Description |
 |--------|----------|------|-----------------|-------------|
 | PRIN-v2.0 | ARC-000-PRIN-v2.0.md | Internal — Architecture Principles | projects/000-global/ | Principle 21 (non-negotiable) anchor |
-| HLD-002 | ARC-002-HLD-v1.0.md | Internal — HLD | projects/002-arckit-sovereign/ | Architecture under operationalisation |
+| HLD-002 | ARC-002-HLDR-v1.0.md | Internal — HLD | projects/002-arckit-sovereign/ | Architecture under operationalisation |
 | DEVOPS-002 | ARC-002-DEVOPS-v1.0.md | Internal — DevOps | projects/002-arckit-sovereign/ | 5-stage pipeline; LTS branching |
 | RISK-002 | ARC-002-RISK-v1.0.md | Internal — Risk register | projects/002-arckit-sovereign/ | Operational risk inputs |
 | DPIA-002 | ARC-002-DPIA-v1.0.md | Internal — DPIA | projects/002-arckit-sovereign/ | Vendor-narrow incident scope |

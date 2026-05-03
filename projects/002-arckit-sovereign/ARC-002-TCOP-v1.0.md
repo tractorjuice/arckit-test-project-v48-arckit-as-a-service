@@ -783,7 +783,7 @@ The sovereign deployment treats AI generation as **strictly pluggable** and **di
 | `projects/002-arckit-sovereign/ARC-002-REQ-v1.0.md` | All 13 points |
 | `projects/002-arckit-sovereign/ARC-002-STKE-v1.0.md` | Point 1 |
 | `projects/002-arckit-sovereign/ARC-002-RISK-v1.0.md` | Point 6 |
-| `projects/002-arckit-sovereign/ARC-002-HLD-v1.0.md` | Points 6, 9, 10 |
+| `projects/002-arckit-sovereign/ARC-002-HLDR-v1.0.md` | Points 6, 9, 10 |
 | `projects/002-arckit-sovereign/decisions/ARC-002-ADR-001-v1.0.md` | Points 5, 6 (air-gapped) |
 | `projects/002-arckit-sovereign/decisions/ARC-002-ADR-002-v1.0.md` | Points 3, 4, 6 (signed bundle, SBOM) |
 | `projects/002-arckit-sovereign/decisions/ARC-002-ADR-004-v1.0.md` | AI Annex |
@@ -797,4 +797,4 @@ The sovereign deployment treats AI generation as **strictly pluggable** and **di
 **ArcKit Version**: 4.12.3
 **Project**: ArcKit as a Service (Sovereign Deployment) (Project 002)
 **AI Model**: Claude Opus 4.7 (1M context)
-**Generation Context**: Derived from `ARC-000-PRIN-v2.0.md` (Principle 21), `ARC-002-REQ-v1.0.md`, `ARC-002-RISK-v1.0.md`, `ARC-002-HLD-v1.0.md`, ADR-001 / 002 / 004 / 005 / 006. Sovereign-specific deviations applied: Point 13 N/A (MOD accreditation pathway substitute), Point 5 N/A justified (JSP 440 / 604 override), Point 8 emphasising single-codebase reuse per Principle 21, Point 12 framing on-premise hardware lifecycle. AI annex covers ADR-004 on-premise model integration. Sister to project 001 (managed SaaS) TCoP review.
+**Generation Context**: Derived from `ARC-000-PRIN-v2.0.md` (Principle 21), `ARC-002-REQ-v1.0.md`, `ARC-002-RISK-v1.0.md`, `ARC-002-HLDR-v1.0.md`, ADR-001 / 002 / 004 / 005 / 006. Sovereign-specific deviations applied: Point 13 N/A (MOD accreditation pathway substitute), Point 5 N/A justified (JSP 440 / 604 override), Point 8 emphasising single-codebase reuse per Principle 21, Point 12 framing on-premise hardware lifecycle. AI annex covers ADR-004 on-premise model integration. Sister to project 001 (managed SaaS) TCoP review.

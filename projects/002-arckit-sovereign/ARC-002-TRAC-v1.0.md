@@ -6,7 +6,7 @@
 
 | Field | Value |
 |-------|-------|
-| **Document ID** | ARC-002-TRACE-v1.0 |
+| **Document ID** | ARC-002-TRAC-v1.0 |
 | **Document Type** | Requirements Traceability Matrix |
 | **Project** | ArcKit as a Service (Sovereign Deployment) (Project 002) |
 | **Classification** | OFFICIAL |
@@ -92,13 +92,13 @@ flowchart TD
 | ADR-008 LTS release line | 1.0 | 2026-05-03 | `decisions/ARC-002-ADR-008-v1.0.md` |
 | Risk Register (RISK) | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-RISK-v1.0.md` |
 | TCoP Compliance | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-TCOP-v1.0.md` |
-| MOD Secure by Design | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-MOD-SBD-v1.0.md` |
+| MOD Secure by Design | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-SECD-MOD-v1.0.md` |
 | DPIA | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-DPIA-v1.0.md` |
-| AI Playbook (AIP) | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-AIP-v1.0.md` |
+| AI Playbook (AIP) | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-AIPB-v1.0.md` |
 | SOBC | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-SOBC-v1.0.md` |
 | Plan | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-PLAN-v1.0.md` |
 | Roadmap | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-ROAD-v1.0.md` |
-| HLD Review | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-HLD-v1.0.md` |
+| HLD Review | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-HLDR-v1.0.md` |
 | DevOps | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-DEVOPS-v1.0.md` |
 | FinOps | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-FINOPS-v1.0.md` |
 | Operations (OPS) | 1.0 | 2026-05-03 | `projects/002-arckit-sovereign/ARC-002-OPS-v1.0.md` |
@@ -319,7 +319,7 @@ For every artefact in project 002, this section verifies that it traces back to 
 | ARC-002-DIAG-001 (C4 Context) | REQ §Stakeholders + ADR-001 boundary statement | ✅ |
 | ARC-002-DIAG-002 (C4 Container) | HLD §5.2 + ADR-001..008 | ✅ |
 | ARC-002-DIAG-003 (Network DFD / sequence) | UC-1, UC-2, UC-3, ADR-001 zero-egress claim | ✅ |
-| ARC-002-HLD (review) | Reviews against REQ + Principle 21 explicit checklist + all 8 ADRs | ✅ |
+| ARC-002-HLDR (review) | Reviews against REQ + Principle 21 explicit checklist + all 8 ADRs | ✅ |
 
 ### 3.4 Build / Run Layer
 
@@ -334,9 +334,9 @@ For every artefact in project 002, this section verifies that it traces back to 
 | Artefact | Backward Trace | Verdict |
 |----------|-----------------|---------|
 | ARC-002-TCOP | Each of 13 TCoP points scored against REQ + ADR set | ✅ |
-| ARC-002-MOD-SBD | Each of 7 MOD principles scored against REQ + ADR + RISK | ✅ |
+| ARC-002-SECD-MOD | Each of 7 MOD principles scored against REQ + ADR + RISK | ✅ |
 | ARC-002-DPIA | Vendor scope only; ICO 9-criteria screened; 5 DPIA risks linked to ADR-001/003/004/005 | ✅ |
-| ARC-002-AIP | 10 core principles + 6 ethical themes scored against ADR-004 + AI-related FRs | ✅ |
+| ARC-002-AIPB | 10 core principles + 6 ethical themes scored against ADR-004 + AI-related FRs | ✅ |
 | ARC-002-RISK | 13 risks each linked to BR/FR/NFR/ADR + control set | ✅ |
 
 **Verdict**: All 21 project-002 artefacts trace backward to ≥ 1 upstream requirement or principle. **0 orphan artefacts.**
@@ -597,7 +597,7 @@ See `projects/002-arckit-sovereign/ARC-002-REQ-v1.0.md`.
 
 ### Appendix B: Design Documents
 
-- `projects/002-arckit-sovereign/ARC-002-HLD-v1.0.md` (HLD review)
+- `projects/002-arckit-sovereign/ARC-002-HLDR-v1.0.md` (HLD review)
 - `projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-001-v1.0.md` (C4 Context)
 - `projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-002-v1.0.md` (C4 Container)
 - `projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-003-v1.0.md` (Network DFD / Sequence)

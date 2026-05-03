@@ -186,7 +186,7 @@ This SOBC justifies the strategic, economic, commercial, financial, and manageme
 
 **Dependencies**:
 
-- **Internal**: Architecture principle base (`ARC-000-PRIN-v2.0.md`), risk register (`ARC-001-RISK-v1.0.md`), DPIA (`ARC-001-DPIA-v1.0.md`), Secure by Design (`ARC-001-SBD-v1.0.md`), TCoP review (`ARC-001-TCOP-v1.0.md`), AI Playbook (`ARC-001-AIP-v1.0.md`).
+- **Internal**: Architecture principle base (`ARC-000-PRIN-v2.0.md`), risk register (`ARC-001-RISK-v1.0.md`), DPIA (`ARC-001-DPIA-v1.0.md`), Secure by Design (`ARC-001-SECD-v1.0.md`), TCoP review (`ARC-001-TCOP-v1.0.md`), AI Playbook (`ARC-001-AIPB-v1.0.md`).
 - **External**: G-Cloud framework iteration calendar (CCS); Companies House API stability; AI provider commercial terms; NCSC / ICO / GDS standards velocity.
 
 ### A1.5 Why Now?
@@ -1130,7 +1130,7 @@ Steering Committee:
 | Procurement Act 2023 | UK Act driving SME spend share in public procurement |
 | ROM | Rough Order of Magnitude |
 | ROPA | Record of Processing Activities (UK GDPR) |
-| SBD | Secure by Design — see `ARC-001-SBD-v1.0.md` |
+| SBD | Secure by Design — see `ARC-001-SECD-v1.0.md` |
 | SME | Small and Medium Enterprise |
 | SOBC | Strategic Outline Business Case (this document) |
 | SRO | Senior Responsible Owner |
@@ -1183,9 +1183,9 @@ Steering Committee:
 | INT-RISK | ARC-001-RISK-v1.0.md | Internal artefact | `projects/001-arckit-saas/` | Risk Register (incorporated by reference into Part E) |
 | INT-PRIN | ARC-000-PRIN-v2.0.md | Internal artefact | `projects/000-global/` | Architecture Principles (Principle 1 SME affordability; 17 FinOps; 21 sovereign-ready) |
 | INT-DPIA | ARC-001-DPIA-v1.0.md | Internal artefact | `projects/001-arckit-saas/` | UK GDPR Article 35 DPIA |
-| INT-SBD | ARC-001-SBD-v1.0.md | Internal artefact | `projects/001-arckit-saas/` | Secure by Design assessment |
+| INT-SBD | ARC-001-SECD-v1.0.md | Internal artefact | `projects/001-arckit-saas/` | Secure by Design assessment |
 | INT-TCOP | ARC-001-TCOP-v1.0.md | Internal artefact | `projects/001-arckit-saas/` | Technology Code of Practice review |
-| INT-AIP | ARC-001-AIP-v1.0.md | Internal artefact | `projects/001-arckit-saas/` | UK Government AI Playbook compliance |
+| INT-AIP | ARC-001-AIPB-v1.0.md | Internal artefact | `projects/001-arckit-saas/` | UK Government AI Playbook compliance |
 
 ### Citations
 

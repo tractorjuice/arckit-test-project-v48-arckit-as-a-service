@@ -28,7 +28,7 @@
 
 ## Document Purpose
 
-Provides the Technology Code of Practice (TCoP) self-assessment for the **managed SaaS** route of ArcKit as a Service (Project 001) prior to UK Government Digital Spend Control submission and G-Cloud listing. This document evidences compliance against all 13 TCoP points and the AI-related obligations of the UK Government AI Playbook (covered in detail in `ARC-001-AIP-v1.0.md`). The sovereign deployment route is covered separately in `projects/002-arckit-sovereign/`.
+Provides the Technology Code of Practice (TCoP) self-assessment for the **managed SaaS** route of ArcKit as a Service (Project 001) prior to UK Government Digital Spend Control submission and G-Cloud listing. This document evidences compliance against all 13 TCoP points and the AI-related obligations of the UK Government AI Playbook (covered in detail in `ARC-001-AIPB-v1.0.md`). The sovereign deployment route is covered separately in `projects/002-arckit-sovereign/`.
 
 This document is a **pre-GA Alpha-stage assessment**. Live-stage compliance evidence (independent pen-test report, accessibility audit, Service Standard Beta/Live assessments, G-Cloud listing) is gated on the Priority-1 actions in the §Next Steps and in `ARC-001-RISK-v1.0.md` §H.
 
@@ -577,7 +577,7 @@ This document is a **pre-GA Alpha-stage assessment**. Live-stage compliance evid
 
 ## AI Annex: AI Playbook Considerations
 
-> The platform uses AI for assistive artefact generation (FR-004, ADR-004). This annex captures the AI-specific TCoP / AI-Playbook obligations that overlay the general assessment above. The full AI Playbook compliance assessment is in `ARC-001-AIP-v1.0.md` (pending generation via `/arckit:ai-playbook`).
+> The platform uses AI for assistive artefact generation (FR-004, ADR-004). This annex captures the AI-specific TCoP / AI-Playbook obligations that overlay the general assessment above. The full AI Playbook compliance assessment is in `ARC-001-AIPB-v1.0.md` (pending generation via `/arckit:ai-playbook`).
 
 ### AI Use Case in Scope
 
@@ -595,11 +595,11 @@ ArcKit AI generation produces draft artefacts (principles, requirements, ADRs, e
 | No-training-on-customer-data assurance | ✅ Compliant (contractual) | ADR-004; provider-DPA-mandated, RISK R-011 control |
 | Feature scope: drafting vs recommendation boundary defined | ⚠️ Partial | RISK R-010 Priority-2 action (DPO + Lead Architect, due 2026-07-31) |
 | Article 46 transfer mechanism for non-UK AI processing where applicable | ✅ Committed | Principle 7; Standard Contractual Clauses |
-| AI Playbook compliance self-assessment | ⚠️ Pending | `ARC-001-AIP-v1.0.md` to be generated via `/arckit:ai-playbook` |
+| AI Playbook compliance self-assessment | ⚠️ Pending | `ARC-001-AIPB-v1.0.md` to be generated via `/arckit:ai-playbook` |
 
 ### AI-Specific Gaps / Actions
 
-- **HIGH PRIORITY** — Generate `ARC-001-AIP-v1.0.md` via `/arckit:ai-playbook` before GA. Owner: DPO + Lead Architect.
+- **HIGH PRIORITY** — Generate `ARC-001-AIPB-v1.0.md` via `/arckit:ai-playbook` before GA. Owner: DPO + Lead Architect.
 - **HIGH PRIORITY** — Publish ATRS record at GA. Owner: DPO.
 - **HIGH PRIORITY** — Define drafting-vs-recommendation feature-scope boundary (RISK R-010 P2 action). Owner: DPO + Lead Architect, due 2026-07-31.
 - **MEDIUM PRIORITY** — Quarterly DPO review of AI feature surface area against scope boundary.
@@ -635,7 +635,7 @@ ArcKit AI generation produces draft artefacts (principles, requirements, ADRs, e
 2. **Point 6 (Security)** — Independent tenant-isolation pen test outstanding. **BLOCKING for GA.** Action: procure and execute by GA – 60 days. Cost £40k–£60k. Owner: Security Lead. Cross-reference RISK R-008 / R-014.
 3. **Point 13 (Service Standard)** — No Beta assessment booked. **BLOCKING for G-Cloud listing.** Action: pre-assessment walkthrough at GA – 60 days; formal Beta assessment at GA – 30 days. Owner: Product Manager + CCS liaison. Cross-reference RISK R-009.
 4. **Point 2 (Accessibility)** — Manual AT audit outstanding; Accessibility Statement unpublished. **BLOCKING for PSBAR 2018 compliance.** Action: audit by GA – 30 days; statement at GA. Owner: Accessibility Lead.
-5. **AI Annex** — `ARC-001-AIP-v1.0.md` not generated; ATRS record not published. **BLOCKING for AI Playbook compliance.** Action: `/arckit:ai-playbook` + ATRS publication before GA. Owner: DPO + Lead Architect.
+5. **AI Annex** — `ARC-001-AIPB-v1.0.md` not generated; ATRS record not published. **BLOCKING for AI Playbook compliance.** Action: `/arckit:ai-playbook` + ATRS publication before GA. Owner: DPO + Lead Architect.
 
 ### Recommendations
 
@@ -647,7 +647,7 @@ ArcKit AI generation produces draft artefacts (principles, requirements, ADRs, e
 - Publish ROPA, privacy notice, sub-processor list — DPO, GA.
 - Manual AT audit — Accessibility Lead, GA – 30 days.
 - Publish Accessibility Statement — Accessibility Lead, GA.
-- Generate `ARC-001-AIP-v1.0.md` and publish ATRS record — DPO, GA.
+- Generate `ARC-001-AIPB-v1.0.md` and publish ATRS record — DPO, GA.
 - Generate `ARC-001-SbD-v1.0.md` and `ARC-001-SVCASS-v1.0.md` — Security Lead and Product Manager respectively.
 - Complete G-Cloud listing — Service Owner with CCS liaison, GA – 30 days.
 - AI feature-scope boundary defined and accepted — DPO + Lead Architect, due 2026-07-31.
@@ -709,7 +709,7 @@ ArcKit AI generation produces draft artefacts (principles, requirements, ADRs, e
 - [ ] Procure independent pen test targeting tenant isolation (Security Lead) — RISK R-008 / R-014
 - [ ] Initiate `/arckit:dpia` to generate `ARC-001-DPIA-v1.0.md` (DPO)
 - [ ] Initiate `/arckit:secure` to generate `ARC-001-SbD-v1.0.md` (Security Lead)
-- [ ] Initiate `/arckit:ai-playbook` to generate `ARC-001-AIP-v1.0.md` (DPO + Lead Architect)
+- [ ] Initiate `/arckit:ai-playbook` to generate `ARC-001-AIPB-v1.0.md` (DPO + Lead Architect)
 - [ ] Initiate `/arckit:service-assessment` to generate `ARC-001-SVCASS-v1.0.md` (Product Manager)
 - [ ] Pre-Service-Assessment walkthrough scheduled — RISK R-009
 
@@ -776,7 +776,7 @@ ArcKit AI generation produces draft artefacts (principles, requirements, ADRs, e
 | `ARC-001-ADR-001..008-v1.0.md` | Architecture Decision Records | All 8 ADRs cover specific TCoP technology choices |
 | `ARC-001-DPIA-v1.0.md` | DPIA | Point 7 — to be generated |
 | `ARC-001-SbD-v1.0.md` | Secure by Design | Point 6 — to be generated |
-| `ARC-001-AIP-v1.0.md` | AI Playbook | AI Annex — to be generated |
+| `ARC-001-AIPB-v1.0.md` | AI Playbook | AI Annex — to be generated |
 | `ARC-001-SVCASS-v1.0.md` | Service Assessment | Point 13 — to be generated |
 | `projects/002-arckit-sovereign/` | Sovereign route | Principle 21; out of scope of this TCoP review |
 

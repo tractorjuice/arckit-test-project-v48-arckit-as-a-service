@@ -1258,11 +1258,11 @@ These are deferred from the binding 3-year envelope and would re-enter via a roa
 | REQ | `ARC-001-REQ-v1.0.md` | BR-001..BR-008; FR-001, FR-004; NFR-SEC-002 |
 | PRIN | `projects/000-global/ARC-000-PRIN-v2.0.md` | Principle 1 (SME affordability NON-NEGOTIABLE); Principle 5 (Security by Design); Principle 7 (UK data sovereignty); Principle 12 (Accessibility); Principle 17 (FinOps); Principle 21 (Sovereign Deployment Capability) |
 | TCOP | `ARC-001-TCOP-v1.0.md` | 13-point self-assessment; pre-GA critical actions (Points 1, 2, 6, 7, 13) |
-| SBD | `ARC-001-SBD-v1.0.md` | NCSC CAF self-assessment; CE+ critical actions; §3.4 critical gaps |
+| SBD | `ARC-001-SECD-v1.0.md` | NCSC CAF self-assessment; CE+ critical actions; §3.4 critical gaps |
 | DPIA | `ARC-001-DPIA-v1.0.md` | UK GDPR Article 35; pre-GA approval gating GA |
-| AIP | `ARC-001-AIP-v1.0.md` | UK Government AI Playbook conformance; AI scope boundary |
+| AIP | `ARC-001-AIPB-v1.0.md` | UK Government AI Playbook conformance; AI scope boundary |
 | SVCASS | `ARC-001-SVCASS-v1.0.md` | GDS Service Standard 14-point readiness for Alpha + Beta + Live |
-| HLD | `ARC-001-HLD-v1.0.md` | Multi-tenant SaaS HLD; ADR-001..006 |
+| HLD | `ARC-001-HLDR-v1.0.md` | Multi-tenant SaaS HLD; ADR-001..006 |
 | FINOPS | `ARC-001-FINOPS-v1.0.md` | Per-tenant cost-to-serve; affordability review process |
 | DEVOPS | `ARC-001-DEVOPS-v1.0.md` | Sovereign-profile CI smoke pipeline; quarterly drill cadence |
 | OPS | `ARC-001-OPS-v1.0.md` | Hypercare 24/7 SRE on-call model; runbooks |

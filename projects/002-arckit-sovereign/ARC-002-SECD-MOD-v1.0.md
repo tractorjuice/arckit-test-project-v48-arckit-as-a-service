@@ -6,7 +6,7 @@
 
 | Field | Value |
 |-------|-------|
-| **Document ID** | ARC-002-MOD-SBD-v1.0 |
+| **Document ID** | ARC-002-SECD-MOD-v1.0 |
 | **Document Type** | MOD Secure by Design Assessment |
 | **Project** | ArcKit as a Service (Sovereign Deployment) (Project 002) |
 | **Classification** | OFFICIAL |
@@ -968,7 +968,7 @@ This section makes explicit what the orchestrator brief asked for: this document
 | ARC-002-REQ-v1.0 | ARC-002-REQ-v1.0.md | Requirements | projects/002-arckit-sovereign/ | Sovereign deployment business / functional / non-functional requirements |
 | ARC-002-STKE-v1.0 | ARC-002-STKE-v1.0.md | Stakeholder Analysis | projects/002-arckit-sovereign/ | Sovereign-track stakeholder model |
 | ARC-002-RISK-v1.0 | ARC-002-RISK-v1.0.md | Risk Register | projects/002-arckit-sovereign/ | 13-risk sovereign register; sovereign appetite override; R-002/R-005 residual position fed by this assessment |
-| ARC-002-HLD-v1.0 | ARC-002-HLD-v1.0.md | High-Level Design | projects/002-arckit-sovereign/ | Sovereign packaging design |
+| ARC-002-HLDR-v1.0 | ARC-002-HLDR-v1.0.md | High-Level Design | projects/002-arckit-sovereign/ | Sovereign packaging design |
 | ARC-002-ADR-001 | ARC-002-ADR-001-v1.0.md | ADR | projects/002-arckit-sovereign/decisions/ | Air-Gapped Operation Model |
 | ARC-002-ADR-002 | ARC-002-ADR-002-v1.0.md | ADR | projects/002-arckit-sovereign/decisions/ | Signed Release Bundle (cosign + CycloneDX + SLSA L3) |
 | ARC-002-ADR-003 | ARC-002-ADR-003-v1.0.md | ADR | projects/002-arckit-sovereign/decisions/ | Cleared-Personnel Access Model |
@@ -1010,4 +1010,4 @@ This section makes explicit what the orchestrator brief asked for: this document
 **ArcKit Version**: 4.12.3
 **Project**: ArcKit as a Service (Sovereign Deployment) (Project 002)
 **AI Model**: Claude Opus 4.7 (1M context)
-**Generation Context**: Derived from ARC-000-PRIN-v2.0 (Principle 5 §I.5 sovereign mandatory controls + Principle 21), ARC-002-REQ-v1.0 (NFR-SEC-001..008), ARC-002-STKE-v1.0, ARC-002-RISK-v1.0 (R-001..R-013, sovereign appetite override), ARC-002-HLD-v1.0, ARC-002-ADR-001..008, ARC-002-DEVOPS-v1.0. Continuous Assurance Assessment Tool (CAAT) framework applied. Per ADR-002 + ADR-006: vendor delivers per-release evidence pack; deploying authority owns accreditation/SAL/ATO. Principal acceptance vehicle for residual position on RISK R-002 and R-005.
+**Generation Context**: Derived from ARC-000-PRIN-v2.0 (Principle 5 §I.5 sovereign mandatory controls + Principle 21), ARC-002-REQ-v1.0 (NFR-SEC-001..008), ARC-002-STKE-v1.0, ARC-002-RISK-v1.0 (R-001..R-013, sovereign appetite override), ARC-002-HLDR-v1.0, ARC-002-ADR-001..008, ARC-002-DEVOPS-v1.0. Continuous Assurance Assessment Tool (CAAT) framework applied. Per ADR-002 + ADR-006: vendor delivers per-release evidence pack; deploying authority owns accreditation/SAL/ATO. Principal acceptance vehicle for residual position on RISK R-002 and R-005.

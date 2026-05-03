@@ -414,7 +414,7 @@ PII handling: minimal-by-design. The deployment processes only identifiers the c
 | Principle 21 (non-negotiable) | Visual proof: no outbound edge, all foundational services inside boundary, single-codebase containers, pluggable AI fail-closed, opt-in audited support |
 | TCoP | Compatible (architectural; specific TCoP review per ARC-002-TCOP-v1.0) |
 | MOD Secure by Design / JSP 440 / 604 | Diagrams discharge ADR-006 evidence-pack input requirement (BLOCKING-01) |
-| NCSC CAF | Network segmentation and supply-chain integrity visible; mapping per ARC-002-MOD-SBD-v1.0 |
+| NCSC CAF | Network segmentation and supply-chain integrity visible; mapping per ARC-002-SECD-MOD-v1.0 |
 | HMG Government Security Classifications Policy | Classification ceiling enforced at L3 |
 
 ---
@@ -461,7 +461,7 @@ A full Wardley map for the sovereign supply chain is INFO-01 of the HLD review (
 
 - `projects/000-global/ARC-000-PRIN-v2.0.md` — Architecture Principles (esp. P-21)
 - `projects/002-arckit-sovereign/ARC-002-REQ-v1.0.md` — Requirements
-- `projects/002-arckit-sovereign/ARC-002-HLD-v1.0.md` — HLD review (BLOCKING-01 discharged here)
+- `projects/002-arckit-sovereign/ARC-002-HLDR-v1.0.md` — HLD review (BLOCKING-01 discharged here)
 - `projects/002-arckit-sovereign/decisions/ARC-002-ADR-001-v1.0.md` — Air-Gap
 - `projects/002-arckit-sovereign/decisions/ARC-002-ADR-003-v1.0.md` — Cleared-Personnel
 - `projects/002-arckit-sovereign/decisions/ARC-002-ADR-004-v1.0.md` — On-Prem AI
@@ -477,7 +477,7 @@ A full Wardley map for the sovereign supply chain is INFO-01 of the HLD review (
 
 | Doc ID | Filename | Type | Source Location | Description |
 |--------|----------|------|-----------------|-------------|
-| HLD-002-v1.0 | ARC-002-HLD-v1.0.md | Internal — HLD Review | projects/002-arckit-sovereign/ | Anchor for diagram scope (BLOCKING-01) |
+| HLD-002-v1.0 | ARC-002-HLDR-v1.0.md | Internal — HLD Review | projects/002-arckit-sovereign/ | Anchor for diagram scope (BLOCKING-01) |
 | REQ-002-v1.0 | ARC-002-REQ-v1.0.md | Internal — Requirements | projects/002-arckit-sovereign/ | INT integration sources |
 | ADR-002-001 | ARC-002-ADR-001-v1.0.md | Internal — ADR | projects/002-arckit-sovereign/decisions/ | Air-gap topology |
 | ADR-002-003 | ARC-002-ADR-003-v1.0.md | Internal — ADR | projects/002-arckit-sovereign/decisions/ | Cleared-personnel access |

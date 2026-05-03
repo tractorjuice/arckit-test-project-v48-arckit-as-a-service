@@ -64,8 +64,8 @@ This DPIA is the controlling artefact for:
 ### 1.2 Why This DPIA Now
 
 - Pre-GA Alpha-stage; no live processing yet — DPIA produced *before* processing begins, in line with UK GDPR Article 35(10).
-- Identified as critical pre-GA blocker by `ARC-001-TCOP-v1.0.md` (Point 7) and `ARC-001-SBD-v1.0.md` (§3 + §9.1 #2).
-- Enables RISK R-008/R-010/R-011 acceptance position (`ARC-001-SBD-v1.0.md` §10).
+- Identified as critical pre-GA blocker by `ARC-001-TCOP-v1.0.md` (Point 7) and `ARC-001-SECD-v1.0.md` (§3 + §9.1 #2).
+- Enables RISK R-008/R-010/R-011 acceptance position (`ARC-001-SECD-v1.0.md` §10).
 
 ---
 
@@ -250,7 +250,7 @@ The processing is proportionate. A less-intrusive design (e.g., no audit log) is
 
 | ID | Risk to Individuals | Likelihood | Severity | Inherent | Mitigated By | Residual | Linked Org Risk |
 |----|---------------------|------------|----------|----------|--------------|----------|-----------------|
-| **DPIA-001** | Cross-tenant exposure of one tenant's user list / artefact metadata to another tenant | Probable (without controls) | Severe (loss of confidentiality of professional identity + project intent) | 🔴 High | ADR-001 namespace per tenant + tenant-ID enforcement + CI iso tests + audit log + bulkhead (`ARC-001-SBD-v1.0.md` §1 B3 + §10 R-008) | 🟢 Low (likelihood Remote; severity unchanged at Severe — defence-in-depth working as designed) | RISK R-008, R-014 |
+| **DPIA-001** | Cross-tenant exposure of one tenant's user list / artefact metadata to another tenant | Probable (without controls) | Severe (loss of confidentiality of professional identity + project intent) | 🔴 High | ADR-001 namespace per tenant + tenant-ID enforcement + CI iso tests + audit log + bulkhead (`ARC-001-SECD-v1.0.md` §1 B3 + §10 R-008) | 🟢 Low (likelihood Remote; severity unchanged at Severe — defence-in-depth working as designed) | RISK R-008, R-014 |
 | **DPIA-002** | AI sub-processor uses user-supplied prompt (which may incidentally include user names) for model training, against tenant DPA | Possible (without controls) | Significant | 🟠 Medium | Contractual no-training-on-customer-data clause (ADR-004); pluggable abstraction enabling ≤ 5-day switch; quarterly DPO review (RISK R-011 control) | 🟢 Low | RISK R-011 |
 | **DPIA-003** | Personal data sent to AI sub-processor in non-UK jurisdiction without adequate safeguards | Possible | Significant | 🟠 Medium | Article 46 Standard Contractual Clauses + Transfer Risk Assessment (TRA) where non-UK; tenant transparency + sub-processor list + 30-day notice | 🟢 Low | RISK R-011 |
 | **DPIA-004** | Audit log retention exceeds purpose — long-term accumulation of user-identifying activity | Possible | Significant | 🟠 Medium | 12-month minimum, no maximum imposed by default; explicit retention policy with automated purge after policy period; tenant configurability for short retention | 🟢 Low | — |
@@ -272,9 +272,9 @@ The processing is proportionate. A less-intrusive design (e.g., no audit log) is
 
 ## 6. Mitigations
 
-Mitigations below are extracted from `ARC-001-SBD-v1.0.md`, `ARC-000-PRIN-v2.0.md`, and ADR-001/003/004/005 — this DPIA inherits them rather than restating in detail. Where a control has not yet been deployed, it is listed as a Priority-1 pre-GA action.
+Mitigations below are extracted from `ARC-001-SECD-v1.0.md`, `ARC-000-PRIN-v2.0.md`, and ADR-001/003/004/005 — this DPIA inherits them rather than restating in detail. Where a control has not yet been deployed, it is listed as a Priority-1 pre-GA action.
 
-### 6.1 Technical Mitigations (Inherited from `ARC-001-SBD-v1.0.md`)
+### 6.1 Technical Mitigations (Inherited from `ARC-001-SECD-v1.0.md`)
 
 | Mitigation | DPIA Risks Addressed | Status | Reference |
 |------------|----------------------|--------|-----------|
@@ -300,7 +300,7 @@ Mitigations below are extracted from `ARC-001-SBD-v1.0.md`, `ARC-000-PRIN-v2.0.m
 | Quarterly access review | DPIA-013 | Pre-GA – 30 days | SbD §1 B2 |
 | Annual phishing-awareness training | DPIA-013 | Pre-GA – 30 days | SbD §1 B6 |
 | Vulnerability disclosure programme | DPIA-001, DPIA-008 | Pre-GA – 30 days | SbD §1 B6 |
-| AI Playbook / ATRS scope-boundary gate | DPIA-012 | Pre-GA per RISK R-010 P2 action | `ARC-001-AIP-v1.0.md` (pending) |
+| AI Playbook / ATRS scope-boundary gate | DPIA-012 | Pre-GA per RISK R-010 P2 action | `ARC-001-AIPB-v1.0.md` (pending) |
 | Privacy notice review cadence | DPIA-010 | Annual + on-change | This DPIA |
 
 ### 6.3 Procedural Mitigations
@@ -378,12 +378,12 @@ Mitigations below are extracted from `ARC-001-SBD-v1.0.md`, `ARC-000-PRIN-v2.0.m
 | `ARC-001-STKE-v1.0.md` | SD-11 (DPO driver), SD-12 (ICO regulator), Goal G-5 (UK GDPR posture); Conflict C-2 / C-3 |
 | `ARC-001-RISK-v1.0.md` | R-008 / R-010 / R-011 / R-014 / R-017 cross-referenced; this DPIA is the privacy-impact lens on the same controls |
 | `ARC-001-TCOP-v1.0.md` | Point 7 (Privacy Integral) — DPIA closes the principal Point-7 gap |
-| `ARC-001-SBD-v1.0.md` | §3 UK GDPR; §10 acceptance vehicle for R-010 / R-011 — this DPIA grounds the §10 position |
+| `ARC-001-SECD-v1.0.md` | §3 UK GDPR; §10 acceptance vehicle for R-010 / R-011 — this DPIA grounds the §10 position |
 | `ARC-001-ADR-001-v1.0.md` | Tenant Isolation — DPIA-001 control |
 | `ARC-001-ADR-003-v1.0.md` | Identity & SSO — auth metadata processing |
 | `ARC-001-ADR-004-v1.0.md` | AI Provider Abstraction — DPIA-002, DPIA-003, DPIA-008, DPIA-012 |
 | `ARC-001-ADR-005-v1.0.md` | Observability + audit log — DPIA-001, DPIA-004, DPIA-005, DPIA-013 |
-| `ARC-001-AIP-v1.0.md` | (Pending generation) AI Playbook — DPIA-012 cross-reference |
+| `ARC-001-AIPB-v1.0.md` | (Pending generation) AI Playbook — DPIA-012 cross-reference |
 | `ARC-001-DM-v1.0.md` | (Pending generation) Data Model — formalises the inventory at §2.5 |
 
 ---
@@ -439,7 +439,7 @@ Tenants may opt out of non-UK processing (Principle 7 commitment); on such opt-o
 
 ## 14. AI / Algorithmic Processing
 
-> Cross-references: `ARC-001-AIP-v1.0.md` (pending generation via `/arckit:ai-playbook`); `ARC-001-RISK-v1.0.md` R-010 (AI Playbook scope drift); ADR-004 (AI Provider Abstraction).
+> Cross-references: `ARC-001-AIPB-v1.0.md` (pending generation via `/arckit:ai-playbook`); `ARC-001-RISK-v1.0.md` R-010 (AI Playbook scope drift); ADR-004 (AI Provider Abstraction).
 
 ### 14.1 AI Use Case in Scope
 
@@ -460,7 +460,7 @@ This places the AI use squarely outside Article 22 (no solely-automated decision
 ### 14.3 Algorithmic Transparency
 
 - Lineage metadata flags AI-generated content vs human content (FR-004).
-- ATRS (Algorithmic Transparency Recording Standard) record published before any recommendation-class AI surface ships (RISK R-010 control + `ARC-001-AIP-v1.0.md`).
+- ATRS (Algorithmic Transparency Recording Standard) record published before any recommendation-class AI surface ships (RISK R-010 control + `ARC-001-AIPB-v1.0.md`).
 - Tenant-facing documentation explains AI use in plain English.
 - Quarterly DPO review of AI feature surface area (RISK R-010 P2 action).
 
@@ -487,7 +487,7 @@ Every AI output is reviewed and edited by a human author before any external use
 | International transfers | AI sub-processor (Article 46 SCCs + TRA); cloud is UK-only by default |
 | Total privacy risks identified | 15 |
 | Risk distribution (residual) | 0 High / 0 Medium / 15 Low |
-| Mitigations | 12 technical + 7 organisational + 5 procedural — most inherited from `ARC-001-SBD-v1.0.md` |
+| Mitigations | 12 technical + 7 organisational + 5 procedural — most inherited from `ARC-001-SECD-v1.0.md` |
 | ICO prior consultation | ❌ NOT REQUIRED |
 | Data subject rights | 7 implemented + 1 N/A (Art. 22) + 1 (privacy notice) pending pre-GA |
 | Children's data | N/A (B2B professional service) |
@@ -502,7 +502,7 @@ Every AI output is reviewed and edited by a human author before any external use
 | 1 | Publish privacy notice + sub-processor list | DPO | CRITICAL | GA |
 | 2 | Document SAR / erasure / restriction / objection runbooks with SLA monitors | DPO | HIGH | GA – 30 days |
 | 3 | Finalise ROPA | DPO | CRITICAL | GA |
-| 4 | Generate `ARC-001-AIP-v1.0.md` and publish ATRS record | DPO + Lead Architect | CRITICAL | GA |
+| 4 | Generate `ARC-001-AIPB-v1.0.md` and publish ATRS record | DPO + Lead Architect | CRITICAL | GA |
 | 5 | Define AI feature-scope boundary (drafting / recommendation) — RISK R-010 P2 | DPO + Lead Architect | HIGH | 2026-07-31 |
 | 6 | Procure cyber liability insurance (RISK §H action 6) | Service Owner + Finance | HIGH | GA – 30 days |
 | 7 | Generate `ARC-001-DM-v1.0.md` to formalise §2.5 inventory | Lead Architect | MEDIUM | GA + 60 days |
@@ -535,7 +535,7 @@ Every AI output is reviewed and edited by a human author before any external use
 - ICO DPIA Guidance: <https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/what-is-a-dpia/>
 - ICO Article 46 Transfer Tool / SCCs: <https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/international-transfers/international-data-transfer-agreement-and-guidance/>
 - ICO Algorithmic Transparency Recording Standard: <https://www.gov.uk/government/publications/algorithmic-transparency-recording-standard-hub>
-- UK Government AI Playbook: cross-referenced in `ARC-001-AIP-v1.0.md` (pending)
+- UK Government AI Playbook: cross-referenced in `ARC-001-AIPB-v1.0.md` (pending)
 
 ### Unreferenced Documents
 
@@ -550,4 +550,4 @@ Every AI output is reviewed and edited by a human author before any external use
 **ArcKit Version**: 4.12.3
 **Project**: ArcKit as a Service (Managed SaaS) (Project 001)
 **AI Model**: Claude Opus 4.7 (1M context)
-**Generation Context**: Sourced from ARC-000-PRIN-v2.0, ARC-001-REQ-v1.0, ARC-001-STKE-v1.0, ARC-001-RISK-v1.0, ARC-001-TCOP-v1.0, ARC-001-SBD-v1.0, ADR-001/003/004/005, and the user-supplied personal-data scope. Pre-GA Alpha-stage assessment. Refresh on `ARC-001-DM-v1.0.md` issuance and on AI feature-scope boundary review.
+**Generation Context**: Sourced from ARC-000-PRIN-v2.0, ARC-001-REQ-v1.0, ARC-001-STKE-v1.0, ARC-001-RISK-v1.0, ARC-001-TCOP-v1.0, ARC-001-SECD-v1.0, ADR-001/003/004/005, and the user-supplied personal-data scope. Pre-GA Alpha-stage assessment. Refresh on `ARC-001-DM-v1.0.md` issuance and on AI feature-scope boundary review.

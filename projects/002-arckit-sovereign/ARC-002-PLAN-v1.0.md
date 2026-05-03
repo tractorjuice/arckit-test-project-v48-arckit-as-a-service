@@ -39,7 +39,7 @@
 
 **Objective**: Deliver a Principle-21-compliant single-codebase sovereign overlay of ArcKit, accredited at one pilot MOD/sensitive-site customer under JSP 604, then issued as the LTS-1 GA bundle to 2-3 cleared sites — sustaining the cross-subsidy contribution to the SaaS SME tier (Principle 17).
 
-**Success Criteria** (from SOBC §A1.3 goals and `ARC-002-MOD-SBD-v1.0.md` §2.8):
+**Success Criteria** (from SOBC §A1.3 goals and `ARC-002-SECD-MOD-v1.0.md` §2.8):
 
 - **G-1 / G-7** First sovereign customer reaches accreditation on first attempt within 18 months of GA bundle issue.
 - **G-3** Air-gap install / upgrade / backup / restore validated in CI representative environment 100% per release before bundle issue.
@@ -176,7 +176,7 @@ graph TB
 
 The single critical path runs through:
 
-1. **Pre-deployment must-lands** (per `ARC-002-MOD-SBD-v1.0.md` §Executive-Summary §pre-deployment) — three items that **gate first bundle issue**:
+1. **Pre-deployment must-lands** (per `ARC-002-SECD-MOD-v1.0.md` §Executive-Summary §pre-deployment) — three items that **gate first bundle issue**:
    - **HSM signing infrastructure operational** (mitigates R-004; reduces inherent 15 → residual 2). On the path because no signed bundle can leave engineering until HSM is live, and signed bundle is the only artefact pilot will install.
    - **Network-deny CI profile green** (NFR-SEC-004; mitigates R-007). Without a green network-deny attestation, the pilot air-gap install assumption is unattested and the accreditator will reject the evidence pack.
    - **Accreditator-in-the-loop alpha review** completed (mitigates R-002 and R-012, and is the principal control on R-001). Without this review the evidence-pack format is unvalidated and first-attempt accreditation failure (R-001) reverts to inherent 20.
@@ -240,7 +240,7 @@ Float of ≤ 4 weeks exists in HLD ↔ OBC sequencing and in public-beta-site-2 
 
 ### Gate: Pre-deployment Must-Lands Check (continuous, hard-gate at Week 18)
 
-**Approval Criteria** — per `ARC-002-MOD-SBD-v1.0.md` Executive-Summary §pre-deployment, **all three must be green before any bundle leaves engineering**:
+**Approval Criteria** — per `ARC-002-SECD-MOD-v1.0.md` Executive-Summary §pre-deployment, **all three must be green before any bundle leaves engineering**:
 
 - [ ] HSM signing infrastructure operational and key custody policy approved
 - [ ] Network-deny CI profile green for last three consecutive bundle candidates
@@ -506,7 +506,7 @@ Anchored to `ARC-002-SOBC-v1.0.md` §B2 Option C: capital £5.08M, three-year be
 |--------|----------|------|-----------------|-------------|
 | ARC-002-SOBC | `ARC-002-SOBC-v1.0.md` | SOBC | projects/002-arckit-sovereign | Option C, gates, NPV/BCR/payback |
 | ARC-002-RISK | `ARC-002-RISK-v1.0.md` | RISK | projects/002-arckit-sovereign | R-001 principal scheduling risk |
-| ARC-002-MOD-SBD | `ARC-002-MOD-SBD-v1.0.md` | MOD SbD | projects/002-arckit-sovereign | Pre-deployment must-lands |
+| ARC-002-SECD-MOD | `ARC-002-SECD-MOD-v1.0.md` | MOD SbD | projects/002-arckit-sovereign | Pre-deployment must-lands |
 | ARC-002-TCOP | `ARC-002-TCOP-v1.0.md` | TCoP | projects/002-arckit-sovereign | Critical pre-deployment actions |
 | ARC-002-STKE | `ARC-002-STKE-v1.0.md` | STKE | projects/002-arckit-sovereign | Engagement plan |
 | ARC-002-REQ | `ARC-002-REQ-v1.0.md` | REQ | projects/002-arckit-sovereign | Requirements |
@@ -519,7 +519,7 @@ Anchored to `ARC-002-SOBC-v1.0.md` §B2 Option C: capital £5.08M, three-year be
 | SOBC-B2-C | ARC-002-SOBC | §B2 Option C | Recommendation | "Single Codebase + Sovereign Overlay (RECOMMENDED)" |
 | SOBC-NPV | ARC-002-SOBC | §A1.3 / §B3 | Financial | "NPV (3 years, 3.5% discount, post-optimism-bias): £+0.62M; BCR 1.13; Payback Month 30" |
 | RISK-R001 | ARC-002-RISK | §C R-001 | Scheduling | "First customer accreditation failure — Residual 16 (High) → exceeds strategic appetite ≤ 12" |
-| MOD-SBD-PRE | ARC-002-MOD-SBD | Exec Summary §pre-deployment | Pre-deployment | "(i) HSM signing infrastructure operational (ii) network-deny CI test green (iii) accreditator-in-the-loop alpha review of evidence-pack format completed" |
+| MOD-SBD-PRE | ARC-002-SECD-MOD | Exec Summary §pre-deployment | Pre-deployment | "(i) HSM signing infrastructure operational (ii) network-deny CI test green (iii) accreditator-in-the-loop alpha review of evidence-pack format completed" |
 | SOBC-WIN | ARC-002-SOBC | §A1.5 | Window | "2026 H2 - 2027 H1 alpha; 2027 H2 private beta; 2027 Q4 GA" |
 
 ### Unreferenced Documents

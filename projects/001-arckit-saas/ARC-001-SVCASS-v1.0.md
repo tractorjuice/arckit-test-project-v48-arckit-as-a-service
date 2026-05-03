@@ -680,11 +680,11 @@ The pre-assessment walkthrough is **the right tool to use now**: it surfaces for
 
 **Evidence Found in ArcKit Artefacts**:
 
-✅ **`ARC-001-SBD-v1.0.md`** — Comprehensive Secure by Design assessment covering NCSC CAF (all four objectives A/B/C/D), Cyber Essentials, NCSC Cloud Security Principles (14), threat model, and the UK Government Cyber Security Standard (Cabinet Office July 2025).
+✅ **`ARC-001-SECD-v1.0.md`** — Comprehensive Secure by Design assessment covering NCSC CAF (all four objectives A/B/C/D), Cyber Essentials, NCSC Cloud Security Principles (14), threat model, and the UK Government Cyber Security Standard (Cabinet Office July 2025).
 
 ✅ **`ARC-001-DPIA-v1.0.md`** — DPIA produced for AI processing (FR-004) with ICO 9-criteria screening, data inventory, lawful-basis register, retention table, sub-processor inventory, transfer assessment, and Article 22 statement (no solely-automated decisions).
 
-✅ **`ARC-001-AIP-v1.0.md`** — UK Government AI Playbook compliance assessment (10 principles + 6 ethical themes scored).
+✅ **`ARC-001-AIPB-v1.0.md`** — UK Government AI Playbook compliance assessment (10 principles + 6 ethical themes scored).
 
 ✅ **`ARC-001-RISK-v1.0.md`** R-008 (cross-tenant data leakage, residual 5/25) and R-014 (isolation defect, residual 8/20) — defence-in-depth controls articulated; appetite-acceptance position documented in §H action 8.
 
@@ -748,7 +748,7 @@ The pre-assessment walkthrough is **the right tool to use now**: it surfaces for
 - **Prepare**: Pen-test executive summary; DPIA extract (data inventory + lawful basis); incident-runbook walk-through; ADR-001 (tenant isolation); SBD §1 CAF scorecard.
 - **Show**: Tenant-isolation CI test running (NFR-SEC-002); audit-log integrity demo (ADR-005).
 - **Bring**: Security Lead (mandatory); DPO (mandatory); Lead Architect.
-- **Materials**: `ARC-001-SBD-v1.0.md`, `ARC-001-DPIA-v1.0.md`, `ARC-001-AIP-v1.0.md`, `ARC-001-ADR-001-v1.0.md`, `ARC-001-ADR-005-v1.0.md`, NFR-SEC-001..009, RISK R-008 / R-014.
+- **Materials**: `ARC-001-SECD-v1.0.md`, `ARC-001-DPIA-v1.0.md`, `ARC-001-AIPB-v1.0.md`, `ARC-001-ADR-001-v1.0.md`, `ARC-001-ADR-005-v1.0.md`, NFR-SEC-001..009, RISK R-008 / R-014.
 - **Likely Questions**:
   - "Walk me through how a defect in your AI provider would surface in a tenant-data leak."
   - "Show me your CAF self-assessment."
@@ -1173,7 +1173,7 @@ The pre-assessment walkthrough is **the right tool to use now**: it surfaces for
 | 6. Multidisciplinary team | `ARC-001-STKE-v1.0.md` (internal stakeholders + RACI matrix) | 🟡 Amber | Most roles [PENDING]; no User Researcher; no Content Designer |
 | 7. Agile ways of working | `ARC-000-PRIN-v2.0.md` Principle 20; `ARC-001-RISK-v1.0.md` §H phased actions; ADR-001..008 | 🟢 Green | None (PLAN missing but not blocking) |
 | 8. Iterate frequently | `ARC-000-PRIN-v2.0.md` Principle 20; `ARC-001-STKE-v1.0.md` Goal G-1 pilot programme; ADR-001..008 | 🟢 Green | DEVOPS artefact not yet generated |
-| 9. Secure and private | `ARC-001-SBD-v1.0.md`; `ARC-001-DPIA-v1.0.md`; `ARC-001-AIP-v1.0.md`; `ARC-001-RISK-v1.0.md` R-008/R-014; ADR-001, ADR-005; NFR-SEC-001..009 + NFR-C-001..007 | 🔴 Red | Independent pen test; privacy notice; CAF + CSP baseline; incident runbook |
+| 9. Secure and private | `ARC-001-SECD-v1.0.md`; `ARC-001-DPIA-v1.0.md`; `ARC-001-AIPB-v1.0.md`; `ARC-001-RISK-v1.0.md` R-008/R-014; ADR-001, ADR-005; NFR-SEC-001..009 + NFR-C-001..007 | 🔴 Red | Independent pen test; privacy notice; CAF + CSP baseline; incident runbook |
 | 10. Success metrics | `ARC-001-STKE-v1.0.md` Goals G-1..G-8 + Outcomes O-1..O-7; `ARC-001-REQ-v1.0.md` NFR-A-001, NFR-P-001..003, FR-009 | 🔴 Red | No live data; no dashboard; no public status page |
 | 11. Right tools | ADR-001..008; `ARC-001-RISK-v1.0.md` R-015, R-017; `ARC-001-STKE-v1.0.md` Goal G-8; `ARC-001-TCOP-v1.0.md` Point 5, 11 | 🟡 Amber | No SOBC (TCO); no RSCH; portability rehearsal pending |
 | 12. Open source | `ARC-000-PRIN-v2.0.md` Principle 16; ADR-006 (Kubernetes/OCI); ADR-007 (open formats); `ARC-001-TCOP-v1.0.md` Point 3 | 🔴 Red | Service-side OSS publication ADR; public repo; SBOM evidence |
@@ -1400,9 +1400,9 @@ The pre-assessment walkthrough is **the right tool to use now**: it surfaces for
 - [ ] `ARC-001-REQ-v1.0.md` — Requirements (BR-001..008, FR-001..015, NFRs)
 - [ ] `ARC-001-RISK-v1.0.md` — Risk register (especially R-008, R-009, R-014; §H action plan)
 - [ ] `ARC-001-TCOP-v1.0.md` — TCoP review (especially Point 13 mapping table)
-- [ ] `ARC-001-SBD-v1.0.md` — Secure by Design (CAF, threat model, Cloud Security Principles)
+- [ ] `ARC-001-SECD-v1.0.md` — Secure by Design (CAF, threat model, Cloud Security Principles)
 - [ ] `ARC-001-DPIA-v1.0.md` — DPIA (data inventory, AI processing, transfers)
-- [ ] `ARC-001-AIP-v1.0.md` — AI Playbook compliance
+- [ ] `ARC-001-AIPB-v1.0.md` — AI Playbook compliance
 - [ ] `ARC-000-PRIN-v2.0.md` — Architecture Principles (especially 1, 5, 7, 12, 16)
 - [ ] `decisions/ARC-001-ADR-001-v1.0.md` through `008` — ADRs
 
@@ -1632,9 +1632,9 @@ The pre-assessment walkthrough is **the right tool to use now**: it surfaces for
 - `/arckit:analyze` — Comprehensive governance quality analysis
 - `/arckit:traceability` — Requirements traceability matrix (Action 26)
 - `/arckit:tcop` — TCoP self-assessment (already complete: `ARC-001-TCOP-v1.0.md`)
-- `/arckit:secure` — Secure by Design assessment (already complete: `ARC-001-SBD-v1.0.md`)
+- `/arckit:secure` — Secure by Design assessment (already complete: `ARC-001-SECD-v1.0.md`)
 - `/arckit:dpia` — DPIA (already complete: `ARC-001-DPIA-v1.0.md`)
-- `/arckit:ai-playbook` — AI Playbook compliance (already complete: `ARC-001-AIP-v1.0.md`)
+- `/arckit:ai-playbook` — AI Playbook compliance (already complete: `ARC-001-AIPB-v1.0.md`)
 
 **Generate missing evidence**:
 

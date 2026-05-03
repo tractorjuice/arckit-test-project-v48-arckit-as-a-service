@@ -667,8 +667,8 @@ To be attached after the formal ARB review session scheduled for 2026-05-25.
 |----------|------|-----|
 | DPIA | `projects/001-arckit-saas/ARC-001-DPIA-v1.0.md` | UK GDPR / NFR-C-001 evidence |
 | TCoP review | `projects/001-arckit-saas/ARC-001-TCOP-v1.0.md` | TCoP / NFR-C-004 evidence |
-| Secure by Design | `projects/001-arckit-saas/ARC-001-SBD-v1.0.md` | NCSC SbD posture |
-| AI Playbook | `projects/001-arckit-saas/ARC-001-AIP-v1.0.md` | ADR-004 evidence |
+| Secure by Design | `projects/001-arckit-saas/ARC-001-SECD-v1.0.md` | NCSC SbD posture |
+| AI Playbook | `projects/001-arckit-saas/ARC-001-AIPB-v1.0.md` | ADR-004 evidence |
 | Stakeholders | `projects/001-arckit-saas/ARC-001-STKE-v1.0.md` | Persona + RACI inputs |
 
 ---
@@ -704,8 +704,8 @@ To be attached after the formal ARB review session scheduled for 2026-05-25.
 |----------|-----------------|--------|
 | ARC-001-DPIA-v1.0.md | projects/001-arckit-saas/ | Cross-referenced in Appendix E only |
 | ARC-001-TCOP-v1.0.md | projects/001-arckit-saas/ | Cross-referenced in Appendix E only |
-| ARC-001-SBD-v1.0.md | projects/001-arckit-saas/ | Cross-referenced in Appendix E only |
-| ARC-001-AIP-v1.0.md | projects/001-arckit-saas/ | Cross-referenced in Appendix E only |
+| ARC-001-SECD-v1.0.md | projects/001-arckit-saas/ | Cross-referenced in Appendix E only |
+| ARC-001-AIPB-v1.0.md | projects/001-arckit-saas/ | Cross-referenced in Appendix E only |
 | ARC-000-PRIN-v1.0.md | projects/000-global/ | Superseded by v2.0 |
 
 ---

@@ -518,11 +518,11 @@ No conflicts with existing ADRs identified.
 ## 10. Linked Artefacts
 
 - **Architecture principles**: `projects/000-global/ARC-000-PRIN-v2.0.md` (Principles 1, 2, 4, 5, 7, 8, 14, 17, 21).
-- **HLD**: `projects/001-arckit-saas/ARC-001-HLD-v1.0.md` (§4 Deployment View).
+- **HLD**: `projects/001-arckit-saas/ARC-001-HLDR-v1.0.md` (§4 Deployment View).
 - **ADRs**: `projects/001-arckit-saas/decisions/ARC-001-ADR-001-v1.0.md`, `ARC-001-ADR-002-v1.0.md`, `ARC-001-ADR-005-v1.0.md`, `ARC-001-ADR-006-v1.0.md`.
 - **DPIA**: `projects/001-arckit-saas/ARC-001-DPIA-v1.0.md` (Article 46 transfer assessment for Zone 4b sub-processors).
 - **Risk register**: `projects/001-arckit-saas/ARC-001-RISK-v1.0.md` (R-3 cross-tenant defect; sovereign packaging risk).
-- **Secure by Design**: `projects/001-arckit-saas/ARC-001-SBD-v1.0.md` (network-policy + admission-control evidence).
+- **Secure by Design**: `projects/001-arckit-saas/ARC-001-SECD-v1.0.md` (network-policy + admission-control evidence).
 
 ---
 

@@ -1590,7 +1590,7 @@ PIR outcomes feed:
 
 - [x] Logging and monitoring per NCSC guidelines (ADR-005, this §4)
 - [x] Incident response aligned with NCSC framework (this §6, particularly §6.1, §6.5, §6.13)
-- [x] Secure by Design principles in operations (per `ARC-001-SBD-v1.0.md`)
+- [x] Secure by Design principles in operations (per `ARC-001-SECD-v1.0.md`)
 - [ ] **NCSC VMS enrolled with all internet-facing assets registered** (pre-GA must-land — §11.3)
 - [x] VMS remediation benchmarks adopted (8-day domain, 32-day general — §11.4)
 - [x] CIS Kubernetes baseline + NCSC Kubernetes hardening (DEVOPS §9.1)
@@ -1705,4 +1705,4 @@ Per `ARC-001-TCOP-v1.0.md` — full mapping in DEVOPS §15 and SbD. This OPS pac
 **ArcKit Version**: 4.12.3
 **Project**: ArcKit as a Service (Managed SaaS) (Project 001)
 **AI Model**: Claude Opus 4.7 (1M context)
-**Generation Context**: Derived from `ARC-001-HLD-v1.0.md` (component model, BLOCKING-02/03 SLO + cell-management gaps), `ARC-001-DEVOPS-v1.0.md` (CI/CD + GitOps + DORA targets + dual-output release pipeline), `ARC-001-RISK-v1.0.md` (R-005 / R-008 / R-011 / R-014 / R-016 plus §H Priority-1 actions 1, 6, 7), `ARC-001-SBD-v1.0.md` (§1 D1 incident response; §10 acceptance vehicle), `ARC-001-DPIA-v1.0.md` (§3.3 breach notification; §11 rights runbooks), `ARC-001-ADR-005-v1.0.md` (OTel + tamper-evident audit log), `ARC-001-ADR-006-v1.0.md` (managed K8s + GitOps + cell topology), and `ARC-000-PRIN-v2.0.md` (Principle 6 Observability + Principle 14 Availability ≥99.9% / RTO <4h / RPO <15m). Pre-GA Alpha-stage; binding handover at GA + 30 days subject to ORR sign-off.
+**Generation Context**: Derived from `ARC-001-HLDR-v1.0.md` (component model, BLOCKING-02/03 SLO + cell-management gaps), `ARC-001-DEVOPS-v1.0.md` (CI/CD + GitOps + DORA targets + dual-output release pipeline), `ARC-001-RISK-v1.0.md` (R-005 / R-008 / R-011 / R-014 / R-016 plus §H Priority-1 actions 1, 6, 7), `ARC-001-SECD-v1.0.md` (§1 D1 incident response; §10 acceptance vehicle), `ARC-001-DPIA-v1.0.md` (§3.3 breach notification; §11 rights runbooks), `ARC-001-ADR-005-v1.0.md` (OTel + tamper-evident audit log), `ARC-001-ADR-006-v1.0.md` (managed K8s + GitOps + cell topology), and `ARC-000-PRIN-v2.0.md` (Principle 6 Observability + Principle 14 Availability ≥99.9% / RTO <4h / RPO <15m). Pre-GA Alpha-stage; binding handover at GA + 30 days subject to ORR sign-off.

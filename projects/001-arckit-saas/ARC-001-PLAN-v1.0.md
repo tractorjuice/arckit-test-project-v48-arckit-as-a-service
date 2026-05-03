@@ -219,11 +219,11 @@ The critical path runs through five interlocking workstreams. Slip in any one de
 | Requirements | ARC-001-REQ-v1.0 | BR / FR / NFR / INT / DR set with BR-008 anchor |
 | Risk register | ARC-001-RISK-v1.0 | Orange Book; §H Priority-1 list anchors this plan |
 | DPIA | ARC-001-DPIA-v1.0 | UK GDPR Article 35; pre-GA approval needed |
-| Secure by Design | ARC-001-SBD-v1.0 | NCSC CAF self-assessment; pre-GA gaps flagged |
+| Secure by Design | ARC-001-SECD-v1.0 | NCSC CAF self-assessment; pre-GA gaps flagged |
 | TCoP | ARC-001-TCOP-v1.0 | 13-point self-assessment; pre-GA gaps flagged |
-| AI Playbook | ARC-001-AIP-v1.0 | UK Government AI Playbook conformance |
+| AI Playbook | ARC-001-AIPB-v1.0 | UK Government AI Playbook conformance |
 | Service Assessment readiness | ARC-001-SVCASS-v1.0 | GDS Service Standard 14-point readiness |
-| HLD | ARC-001-HLD-v1.0 | Multi-tenant SaaS HLD |
+| HLD | ARC-001-HLDR-v1.0 | Multi-tenant SaaS HLD |
 | FinOps + DevOps + SOBC | ARC-001-FINOPS / DEVOPS / SOBC v1.0 | Cost, pipelines, business case |
 
 ### Gate 0: SOBC Approval (target 2026-06-30)
@@ -628,8 +628,8 @@ Anchored on `ARC-001-RISK-v1.0.md` §H Priority-1 (8 actions) plus TCoP §1.4 / 
 | STKE | `ARC-001-STKE-v1.0.md` | DDaT pilot user group; CCS liaison; quarterly user group cadence |
 | REQ | `ARC-001-REQ-v1.0.md` | BR-002 / BR-008 anchors; NFR success criteria |
 | TCOP | `ARC-001-TCOP-v1.0.md` | Pre-GA critical actions (Points 1, 2, 6, 7, 13); accessibility audit; G-Cloud listing |
-| SBD | `ARC-001-SBD-v1.0.md` | §3.4 critical gaps (DPIA / ICO / breach process); §2.3 Cyber Essentials Plus; §1 CAF actions |
-| AIP | `ARC-001-AIP-v1.0.md` | AI Playbook scope boundary action (Priority-2 #9) |
+| SBD | `ARC-001-SECD-v1.0.md` | §3.4 critical gaps (DPIA / ICO / breach process); §2.3 Cyber Essentials Plus; §1 CAF actions |
+| AIP | `ARC-001-AIPB-v1.0.md` | AI Playbook scope boundary action (Priority-2 #9) |
 | PRIN | `projects/000-global/ARC-000-PRIN-v2.0.md` | Principle 1 (SME affordability NON-NEGOTIABLE); Principle 21 (single-codebase sovereign portability) |
 
 ### Citations

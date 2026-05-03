@@ -74,7 +74,7 @@ To present the strategic, economic, commercial, financial, and management case f
 **Next Steps if Approved**:
 
 1. Service Owner formal acknowledgement of above-appetite risks (R-001, R-002, R-003, R-004, R-005, R-007) — by 2026-06-30
-2. HLD complete — `/arckit:hld` already issued (`ARC-002-HLD-v1.0.md`); refresh against any post-SOBC scope changes
+2. HLD complete — `/arckit:hld` already issued (`ARC-002-HLDR-v1.0.md`); refresh against any post-SOBC scope changes
 3. MOD Secure by Design assessment — `/arckit:mod-secure` — by 2026-09-30
 4. Pilot customer engagement (≥ 1 MOD or sensitive-site authority for accreditator-in-the-loop alpha) — by 2027-02-28
 5. OBC (Outline Business Case) once HLD + pilot commercial terms are firm — Q3 2027
@@ -562,7 +562,7 @@ Four options evaluated, plus a fifth dismissed early (off-the-shelf re-sale of a
 2. **Stakeholder satisfaction**: Meets ~85% of goals (10/10 met with G-1, G-7 at 80-85% confidence subject to risk mitigation execution); compares against 0% (A), ~40% (B), ~60% (D).
 3. **Acceptable risk profile with declared above-appetite acceptances**: Five risks above sovereign-specific appetite at residual; acceptances declared in `ARC-002-RISK-v1.0.md` §G; Service Owner formal acknowledgement is a condition of approval.
 4. **Affordability**: 3-year vendor TCO £5.08M (pre-bias) within self-funded service envelope. Cross-subsidy contribution to SaaS SME tier visibly positive from Year 2.
-5. **Deliverability**: 24-month timeline (alpha 2027 H1 → private beta H2 → GA Q4 2027) realistic given HLD complete (`ARC-002-HLD-v1.0.md`) and ADR-008 LTS policy formally adopted; pluggable abstractions joint-funded with project 001.
+5. **Deliverability**: 24-month timeline (alpha 2027 H1 → private beta H2 → GA Q4 2027) realistic given HLD complete (`ARC-002-HLDR-v1.0.md`) and ADR-008 LTS policy formally adopted; pluggable abstractions joint-funded with project 001.
 6. **Value for money for HMG**: Single-codebase produces sovereign customers same artefacts at same quality as civilian-department colleagues — cross-government governance coherence achieved at materially lower system-wide cost than fragmented bespoke alternatives (~£4.5M-£15M avoided customer-side cost across 3-5 customers per Option A baseline analysis).
 
 **Sensitivity Analysis (pre-optimism-bias)**:
@@ -923,7 +923,7 @@ Derived from `ARC-002-STKE-v1.0.md` Decision Authority Matrix:
 | Gate | Criteria | Approving Body | Target Date |
 |------|----------|----------------|-------------|
 | **Gate 0: SOBC Approval** | This document approved; funding secured; above-appetite risk acknowledgement signed | ArcKit Architecture Review Board + Service Owner | 2026-06-30 |
-| **Gate 1: HLD Refresh** | `ARC-002-HLD-v1.0.md` (issued 2026-05-03) refreshed against any post-SOBC scope changes | Lead Architect | 2026-08-31 |
+| **Gate 1: HLD Refresh** | `ARC-002-HLDR-v1.0.md` (issued 2026-05-03) refreshed against any post-SOBC scope changes | Lead Architect | 2026-08-31 |
 | **Gate 2: MOD SbD Assessment** | `/arckit:mod-secure` first cycle complete; pack issuable | Security Lead + Service Owner | 2026-09-30 |
 | **Gate 3: Pilot Customer Engagement** | ≥ 1 MOD or sensitive-site customer signed for accreditator-in-the-loop alpha | Sovereign Delivery Lead + Service Owner | 2027-02-28 |
 | **Gate 4: Alpha Complete** | Bundle install validated in CI representative environment; 100% disconnected-mode pass | Lead Architect + Security Lead | 2027-04-30 |

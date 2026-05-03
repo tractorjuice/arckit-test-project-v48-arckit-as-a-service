@@ -6,7 +6,7 @@
 
 | Field | Value |
 |-------|-------|
-| **Document ID** | ARC-001-AIP-v1.0 |
+| **Document ID** | ARC-001-AIPB-v1.0 |
 | **Document Type** | UK Government AI Playbook Compliance Assessment |
 | **Project** | ArcKit as a Service (Managed SaaS) (Project 001) |
 | **Classification** | OFFICIAL |
@@ -124,7 +124,7 @@ Rationale:
 
 **Evidence**:
 
-- `ARC-001-SBD-v1.0.md` §5 threat model addresses AI-specific threats:
+- `ARC-001-SECD-v1.0.md` §5 threat model addresses AI-specific threats:
   - **T4** — AI sub-processor exfiltration / training-on-customer-data → no-training-on-customer-data DPA clause + provider abstraction + quarterly DPO review (RISK R-011).
   - Prompt injection — mitigated by short, scoped prompts + structured-output validation + lineage flagging of suspicious outputs.
   - Data poisoning — N/A (no fine-tuning on customer data; provider serves stock model).
@@ -338,7 +338,7 @@ Rationale:
 - Safety testing: AI output is reviewed by human author before any external use — the principal safety control.
 - Robustness: AI feature degrades gracefully (UC-2 Alt 3a) — if AI engine throttled or unavailable, manual authoring is unaffected.
 - Fail-safe: tenant continues to function with AI disabled.
-- Incident response plan: `ARC-001-SBD-v1.0.md` §1 D1 + RISK §H action 7 — incident runbook with ICO 72-h notification template.
+- Incident response plan: `ARC-001-SECD-v1.0.md` §1 D1 + RISK §H action 7 — incident runbook with ICO 72-h notification template.
 - Pre-GA pen test scope includes prompt-injection / jailbreak testing (Principle 3 action).
 
 **Gaps**: red-team prompt-injection testing pending (covered in Principle 3 action).
@@ -396,7 +396,7 @@ Rationale:
 - DPO + Lead Architect joint owner of this document.
 - Decision-making process documented: AI ADRs subject to review board (`ARC-000-PRIN-v2.0.md` §VI).
 - Audit trail of AI decisions: every AI generation is logged (FR-004 + ADR-005 audit log) with command, model, prompt-version, user, tenant ID.
-- Incident response procedures: `ARC-001-SBD-v1.0.md` §1 D1.
+- Incident response procedures: `ARC-001-SECD-v1.0.md` §1 D1.
 - Accountability for errors: the user is the artefact author; the vendor is accountable for the AI feature operating within scope (drafting-only) and for sub-processor controls; the AI provider is accountable for service availability and security per DPA.
 
 **Gaps**: minor — formal RACI for an AI-specific decision (e.g., who authorises a model upgrade) embedded in §10 Principle 10 evidence but not separately tabulated. Not a meaningful gap at vendor scale.
@@ -475,7 +475,7 @@ Rationale:
 | **DPIA** | Yes (UK GDPR Art. 35) | ✅ Done — `ARC-001-DPIA-v1.0.md` | §15 action 4 closed at this commit |
 | **EqIA (Equality Impact Assessment)** | Inline (proportionate for LOW-RISK drafting-only B2B SaaS) | ✅ Inlined in §3 Theme 3; refreshes if scope changes | Theme 3 evidence |
 | **Human Rights Assessment** | Inline (proportionate) | ✅ Inlined in Principle 2; no rights-affecting decisions made | Principle 2 evidence |
-| **Security Risk Assessment** | Yes | ✅ `ARC-001-SBD-v1.0.md` + `ARC-001-RISK-v1.0.md` | SbD §5 threat model |
+| **Security Risk Assessment** | Yes | ✅ `ARC-001-SECD-v1.0.md` + `ARC-001-RISK-v1.0.md` | SbD §5 threat model |
 | **Bias Audit Report** | N/A for drafting-only mode | ✅ N/A justified; reactivated if scope expands | Theme 3 action |
 | **User Research Report** | Yes | ⚠️ Pilot DDaT user group ongoing; written report at GA + 30 days | STKE Goal G-1 |
 
@@ -490,7 +490,7 @@ Rationale:
 | `ARC-001-STKE-v1.0.md` | SD-9 (Lead Architect — pluggability); SD-11 (DPO); Goal G-8 (pluggable AI for sovereign reuse); Outcome O-7 (AI architecture validated) |
 | `ARC-001-RISK-v1.0.md` | R-010 (AI Playbook scope drift), R-011 (sub-processor breach), R-017 (provider lock-in) — this assessment is a load-bearing control on each |
 | `ARC-001-TCOP-v1.0.md` | AI Annex (cross-references Principle 7, Point 6 / Point 7) — this assessment is the principal evidence for the AI Annex |
-| `ARC-001-SBD-v1.0.md` | §5 threat model (T4 AI-specific); §10 acceptance vehicle for R-010 |
+| `ARC-001-SECD-v1.0.md` | §5 threat model (T4 AI-specific); §10 acceptance vehicle for R-010 |
 | `ARC-001-DPIA-v1.0.md` | §14 (AI / Algorithmic Processing); DPIA-008 (AI sub-processor incident); DPIA-012 (hallucination) |
 | `ARC-001-ADR-004-v1.0.md` | AI Provider Abstraction — the architectural foundation for all AI Playbook controls |
 
@@ -586,4 +586,4 @@ Rationale:
 **ArcKit Version**: 4.12.3
 **Project**: ArcKit as a Service (Managed SaaS) (Project 001)
 **AI Model**: Claude Opus 4.7 (1M context)
-**Generation Context**: Sourced from ARC-000-PRIN-v2.0, ARC-001-REQ-v1.0, ARC-001-STKE-v1.0, ARC-001-RISK-v1.0 (R-010/R-011/R-017), ARC-001-TCOP-v1.0, ARC-001-SBD-v1.0, ARC-001-DPIA-v1.0, and ARC-001-ADR-004-v1.0. AI use case scoped to drafting-only assistance per FR-004 and ADR-004. Risk classification: LOW.
+**Generation Context**: Sourced from ARC-000-PRIN-v2.0, ARC-001-REQ-v1.0, ARC-001-STKE-v1.0, ARC-001-RISK-v1.0 (R-010/R-011/R-017), ARC-001-TCOP-v1.0, ARC-001-SECD-v1.0, ARC-001-DPIA-v1.0, and ARC-001-ADR-004-v1.0. AI use case scoped to drafting-only assistance per FR-004 and ADR-004. Risk classification: LOW.

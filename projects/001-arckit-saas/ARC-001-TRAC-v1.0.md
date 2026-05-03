@@ -6,7 +6,7 @@
 
 | Field | Value |
 |-------|-------|
-| **Document ID** | ARC-001-TRACE-v1.0 |
+| **Document ID** | ARC-001-TRAC-v1.0 |
 | **Document Type** | Requirements Traceability Matrix |
 | **Project** | ArcKit as a Service (Managed SaaS) (Project 001) |
 | **Classification** | OFFICIAL |
@@ -89,11 +89,11 @@ flowchart LR
 | ADR-008 Per-Tenant Quotas / Rate Limits | 1.0 | 2026-05-03 | `decisions/ARC-001-ADR-008-v1.0.md` |
 | Risk Register | 1.0 | 2026-05-03 | `ARC-001-RISK-v1.0.md` |
 | TCoP Review | 1.0 | 2026-05-03 | `ARC-001-TCOP-v1.0.md` |
-| Secure by Design | 1.0 | 2026-05-03 | `ARC-001-SBD-v1.0.md` |
+| Secure by Design | 1.0 | 2026-05-03 | `ARC-001-SECD-v1.0.md` |
 | DPIA | 1.0 | 2026-05-03 | `ARC-001-DPIA-v1.0.md` |
-| AI Playbook Compliance | 1.0 | 2026-05-03 | `ARC-001-AIP-v1.0.md` |
+| AI Playbook Compliance | 1.0 | 2026-05-03 | `ARC-001-AIPB-v1.0.md` |
 | Service Assessment | 1.0 | 2026-05-03 | `ARC-001-SVCASS-v1.0.md` |
-| HLD Review | 1.0 | 2026-05-03 | `ARC-001-HLD-v1.0.md` |
+| HLD Review | 1.0 | 2026-05-03 | `ARC-001-HLDR-v1.0.md` |
 | DevOps Strategy | 1.0 | 2026-05-03 | `ARC-001-DEVOPS-v1.0.md` |
 | Operational Readiness | 1.0 | 2026-05-03 | `ARC-001-OPS-v1.0.md` |
 | FinOps Strategy | 1.0 | 2026-05-03 | `ARC-001-FINOPS-v1.0.md` |
@@ -141,7 +141,7 @@ flowchart LR
 
 ### 2.3 Functional Requirement -> HLD Container -> ADR -> CI Test -> Runbook
 
-> **HLD Containers** sourced from `ARC-001-HLD-v1.0.md` §3.2 (C1..C14). **CI Tests** from `ARC-001-DEVOPS-v1.0.md` §4. **Runbooks** from `ARC-001-OPS-v1.0.md` §6.
+> **HLD Containers** sourced from `ARC-001-HLDR-v1.0.md` §3.2 (C1..C14). **CI Tests** from `ARC-001-DEVOPS-v1.0.md` §4. **Runbooks** from `ARC-001-OPS-v1.0.md` §6.
 
 | FR ID | Functional Requirement | HLD Container | ADR | CI Test Stage | Runbook / OPS Section | Status |
 |-------|------------------------|---------------|-----|---------------|------------------------|--------|
@@ -343,7 +343,7 @@ flowchart LR
 
 ### 5.2 NCSC CAF (14 Outcomes) -> Evidence
 
-> Source: `ARC-001-SBD-v1.0.md` §1.
+> Source: `ARC-001-SECD-v1.0.md` §1.
 
 | CAF Objective | Outcome | Evidence | Status |
 |---------------|---------|----------|--------|
@@ -366,7 +366,7 @@ flowchart LR
 
 ### 5.3 NCSC Cloud Security Principles (14) -> Evidence
 
-> Source: `ARC-001-SBD-v1.0.md` §4. **Score: 9/14 ✅, 5/14 ⚠️.**
+> Source: `ARC-001-SECD-v1.0.md` §4. **Score: 9/14 ✅, 5/14 ⚠️.**
 
 | # | Principle | Status | Evidence |
 |---|-----------|--------|----------|
@@ -434,7 +434,7 @@ flowchart LR
 
 ### 5.6 UK Government AI Playbook (10 Principles + 6 Themes) -> Evidence
 
-> Source: `ARC-001-AIP-v1.0.md`.
+> Source: `ARC-001-AIPB-v1.0.md`.
 
 | Item | Status | Evidence Artefact(s) |
 |------|--------|------------------------|
@@ -528,7 +528,7 @@ flowchart LR
 |----|----------|------|-------|--------------------|
 | ORP-001 | C14 FinOps / Cost-to-Serve | HLD Container | Component is named in HLD but does not exist yet — sits behind BLOCKING-04. It traces to BR-005 + Principle 17 + R-001 (so technically not an orphan), but it has no DLD module and no current implementation. | Promote to BLOCKING-04 close-out before GA gate. Owner: Lead Architect. |
 | ORP-002 | OPS §6.6/§6.7/§6.8 (generic operational runbooks) | OPS Runbook | These trace to NFR-A-003 / NFR-P-001..003 / FR-009 broadly but do not anchor to a specific FR/NFR ID. | Add explicit "Anchored to" header in each generic runbook in next OPS revision (Owner: SRE Lead). |
-| ORP-003 | Diagrams `ARC-001-DIAG-001/002/003` | Diagram artefacts | Cited in `ARC-001-HLD-v1.0.md` Appendix A; not individually traced to FRs in this matrix. | Add diagram → requirement back-reference table in next DIAG revision. |
+| ORP-003 | Diagrams `ARC-001-DIAG-001/002/003` | Diagram artefacts | Cited in `ARC-001-HLDR-v1.0.md` Appendix A; not individually traced to FRs in this matrix. | Add diagram → requirement back-reference table in next DIAG revision. |
 
 **Orphan tests**: None found. Every CI test stage in DEVOPS §4–§5 anchors to at least one NFR/ADR/risk.
 
@@ -710,7 +710,7 @@ See `ARC-001-REQ-v1.0.md` (BR-001..008, FR-001..015, NFR-P/A/S/SEC/C/U/M/I-*, IN
 
 ### Appendix B: Design Documents
 
-- `ARC-001-HLD-v1.0.md` (HLD review)
+- `ARC-001-HLDR-v1.0.md` (HLD review)
 - `ARC-001-DEVOPS-v1.0.md` (CI/CD pipelines + test stages)
 - `ARC-001-OPS-v1.0.md` (runbooks + SLOs + DR)
 - `ARC-001-FINOPS-v1.0.md` (cost-to-serve telemetry plan)

@@ -6,7 +6,7 @@
 
 | Field | Value |
 |-------|-------|
-| **Document ID** | ARC-002-AIP-v1.0 |
+| **Document ID** | ARC-002-AIPB-v1.0 |
 | **Document Type** | UK Government AI Playbook Compliance Assessment |
 | **Project** | ArcKit as a Service (Sovereign Deployment) (Project 002) |
 | **Classification** | OFFICIAL |
@@ -35,7 +35,7 @@ The UK Government AI Playbook compliance assessment for the AI feature surface o
 2. **An evidence pack the deploying authority can inherit** when running its own `/arckit:ai-playbook` for its specific deployment instance — provenance schema, audit fields, and architectural controls are vendor-supplied; the customer adds its own model card, EqIA, and ATRS record on top.
 3. **The artefact that gates AI scope evolution in sovereign mode** — any new AI feature beyond drafting (e.g., scoring, ranking, routing) triggers a refresh of this assessment, of `ARC-002-ADR-004-v1.0`, and of any deploying-authority assessments that depend on it.
 
-This assessment is **scoped to the sovereign deployment route**. The managed SaaS AI assessment is `projects/001-arckit-saas/ARC-001-AIP-v1.0.md`; the abstraction is shared, but sovereign and SaaS are accountable parties for different things — see §1.5 (Responsibility Matrix).
+This assessment is **scoped to the sovereign deployment route**. The managed SaaS AI assessment is `projects/001-arckit-saas/ARC-001-AIPB-v1.0.md`; the abstraction is shared, but sovereign and SaaS are accountable parties for different things — see §1.5 (Responsibility Matrix).
 
 ---
 
@@ -178,7 +178,7 @@ Rationale (when enabled):
 - Equality Act 2010: AI feature is identity-blind; not used to select / rank / triage individuals; bias risk minimal in drafting-only mode (see Theme 3).
 - Human Rights Act 1998: no AI decision-making affects rights; no surveillance / profiling.
 - Data Ethics Framework: applied via Principles 5 (Security by Design — incl. MOD SbD), 7 (UK Sovereignty), 9 (Data Quality / Lineage / Portability), 21 (Sovereign and Air-Gapped Deployment) in `ARC-000-PRIN-v2.0.md`.
-- MOD Secure by Design / JSP 440 / JSP 604 alignment at `ARC-002-MOD-SBD-v1.0.md` covers the AI surface explicitly as a discrete component.
+- MOD Secure by Design / JSP 440 / JSP 604 alignment at `ARC-002-SECD-MOD-v1.0.md` covers the AI surface explicitly as a discrete component.
 
 **Legal and Ethical Checks** (vendor abstraction):
 
@@ -193,7 +193,7 @@ Rationale (when enabled):
 | UK GDPR — vendor-narrow | ✅ | None — vendor is not a controller for tenant content | DPIA-SOVEREIGN §3 |
 | UK GDPR — tenant content | 🔄 | Customer is controller | Customer's ROPA / DPIA |
 | Equality Act — abstraction | ✅ | None — drafting-only | Inline analysis in Theme 3 |
-| MOD SbD / JSP 440 | 🔄 | Per release evidence pack | `ARC-002-MOD-SBD-v1.0.md`; per-deployment authorisation by customer accreditor |
+| MOD SbD / JSP 440 | 🔄 | Per release evidence pack | `ARC-002-SECD-MOD-v1.0.md`; per-deployment authorisation by customer accreditor |
 | NCSC CAF (non-MOD sites) | 🔄 | Per release CAF mapping | Per release; per deployment |
 
 **Data Protection** (vendor-narrow scope):
@@ -209,7 +209,7 @@ Rationale (when enabled):
 
 - Standalone Equality Impact Assessment (vendor side) not produced — for LOW-RISK B2B platform with identity-blind drafting this is proportionate; gap noted if AI feature scope ever expands.
 - Standalone Human Rights Assessment (vendor side) not produced — same proportionality reasoning.
-- MOD SbD evidence pack (`ARC-002-MOD-SBD-v1.0`) needs a dedicated AI-surface section — addressed in plan for §10.2 Phase 8 of ADR-004.
+- MOD SbD evidence pack (`ARC-002-SECD-MOD-v1.0`) needs a dedicated AI-surface section — addressed in plan for §10.2 Phase 8 of ADR-004.
 
 **Action**: No vendor-side blocking gaps. Customer-side obligations called out clearly so deploying authorities cannot inadvertently rely on the vendor for what only they can do.
 
@@ -219,7 +219,7 @@ Rationale (when enabled):
 
 **Evidence**:
 
-- AI surface treated as a discrete component in `ARC-002-MOD-SBD-v1.0.md` (Secure by Design assessment for sovereign — MOD context).
+- AI surface treated as a discrete component in `ARC-002-SECD-MOD-v1.0.md` (Secure by Design assessment for sovereign — MOD context).
 - ADR-004 §5.1, §7.1, §8.1 enumerate the AI-specific security controls:
   - **Fail-closed default**: `ai.provider = none` — AI features are off until explicit configuration; deployments accredit with AI off then make a separate decision to enable.
   - **Install-time validator**: refuses public-resolvable hostnames; integration test against a known public hostname must reject; configuration linted.
@@ -670,7 +670,7 @@ Rationale (when enabled):
 - ADR-004 publicly documented (the abstraction-level transparency artefact).
 - Provenance metadata schema documented (ADR-004 Appendix D) — every AI output carries `model.deployment = "customer-endpoint"`, `model.name`, `model.version`, `template_id`, `human_reviewer`, `approved_for_publication`.
 - AI-content lineage badging in UI — every AI-generated artefact visibly distinguishable.
-- This document (ARC-002-AIP-v1.0) is the AI Playbook abstraction-level transparency artefact for sovereign mode.
+- This document (ARC-002-AIPB-v1.0) is the AI Playbook abstraction-level transparency artefact for sovereign mode.
 - Operator runbook (FR-011) includes a "publish your ATRS" walkthrough for the deploying authority — scaffolded by the same `/arckit:atrs` command at the customer's end.
 - `/arckit:atrs` command in the ArcKit toolkit produces a deployment-specific ATRS record using the provenance schema as input — same template both vendor and customer can run.
 
@@ -964,7 +964,7 @@ These are not vendor-blocking; they are customer-side conditions clearly delinea
 2. **Plain-language transparency statement** for non-technical readers — covering what the AIAdaptor does and does not do. Theme 2.
 3. **AI Standards Hub formal engagement** — Service Owner + Lead Architect. Principle 7.
 4. **Operator runbook tightening**: golden-prompt re-run schedule per LTS release; "drift-watch" event in audit log for customer dashboards. Principle 5.
-5. **MOD SbD evidence pack AI-surface section** — Vendor Security Lead, in `ARC-002-MOD-SBD-v1.0`. Principle 2.
+5. **MOD SbD evidence pack AI-surface section** — Vendor Security Lead, in `ARC-002-SECD-MOD-v1.0`. Principle 2.
 
 #### Low Priority (P3 — continuous improvement)
 
@@ -986,7 +986,7 @@ These are not vendor-blocking; they are customer-side conditions clearly delinea
 | Plain-language transparency statement | Theme 2 | Service Owner + Vendor DPO | Within 3 months of GA | ⏳ |
 | AI Standards Hub formal engagement | Principle 7 | Service Owner | Before GA | ⏳ |
 | Operator runbook tightening (drift-watch, model-card checklist, customer SRO template) | Principles 5, 10; Themes 3, 4 | Documentation Lead | Within 3 months of GA | ⏳ |
-| MOD SbD AI-surface section in `ARC-002-MOD-SBD-v1.0` | Principle 2 | Vendor Security Lead | Per release | 🔄 |
+| MOD SbD AI-surface section in `ARC-002-SECD-MOD-v1.0` | Principle 2 | Vendor Security Lead | Per release | 🔄 |
 | Cross-government forum presentation | Principle 7 | Service Owner | Within 6 months of GA | ⏳ |
 | AI Ethics Reviewer engagement schedule formalised | Principle 9 | Service Owner | Before GA | ⏳ |
 
@@ -1001,7 +1001,7 @@ These are not vendor-blocking; they are customer-side conditions clearly delinea
 - [x] **DPIA — vendor-narrow**: `ARC-002-DPIA-v1.0.md`
 - [x] **EqIA — abstraction-level**: inline in §3 Theme 3 (proportionate; standalone gap noted)
 - [x] **Human Rights — abstraction-level**: inline in §2 Principle 2 (proportionate)
-- [x] **Security Risk Assessment — AI surface**: `ARC-002-MOD-SBD-v1.0.md` (AI section pending tightening — P2); RISK R-007, R-008
+- [x] **Security Risk Assessment — AI surface**: `ARC-002-SECD-MOD-v1.0.md` (AI section pending tightening — P2); RISK R-007, R-008
 - [x] **Bias Audit — abstraction-level**: inline in §3 Theme 3 (drafting-only is identity-blind)
 - [x] **User Research Report — vendor-side representative testing**: at vendor; deploying-authority instance is customer's
 
@@ -1089,12 +1089,12 @@ Vendor scaffolds via: operator runbook decision template; `/arckit:atrs` and `/a
 - `ARC-002-RISK-v1.0.md` — R-007 (egress), R-008 (AI integration brittleness), R-002 (MOD SbD fail), R-004 (signed-bundle compromise)
 - `ARC-002-DPIA-v1.0.md` — vendor-narrow scope; deploying authority is the data controller for tenant content; no vendor data flow through AI surface
 - `ARC-002-ADR-004-v1.0.md` — On-premise AI model integration (sovereign mode); the architectural source of truth for this assessment
-- `ARC-002-MOD-SBD-v1.0.md` — MOD Secure by Design assessment; AI surface treated as discrete component (P2 tightening recommended)
+- `ARC-002-SECD-MOD-v1.0.md` — MOD Secure by Design assessment; AI surface treated as discrete component (P2 tightening recommended)
 - `ARC-002-TCOP-v1.0.md` — TCoP review; Point 13 (AI ethics) aligns with this document
 
 ### Cross-Project References
 
-- `projects/001-arckit-saas/ARC-001-AIP-v1.0.md` — SaaS AI Playbook assessment. **Different scope** (SaaS-specific deployment context); the AIAdaptor abstraction is shared, but this sovereign assessment is the *vendor-narrow* counterpart for the sovereign route.
+- `projects/001-arckit-saas/ARC-001-AIPB-v1.0.md` — SaaS AI Playbook assessment. **Different scope** (SaaS-specific deployment context); the AIAdaptor abstraction is shared, but this sovereign assessment is the *vendor-narrow* counterpart for the sovereign route.
 - `projects/001-arckit-saas/decisions/ARC-001-ADR-004-v1.0.md` — Parent ADR. Defines the AIAdaptor interface and provenance schema reused unchanged by sovereign mode.
 
 ### Public Sources Cited By Name
@@ -1175,4 +1175,4 @@ Per deployment — recorded in customer's accreditation forum minutes.
 **ArcKit Version**: 4.12.3
 **Project**: ArcKit as a Service (Sovereign Deployment) (Project 002)
 **AI Model**: claude-opus-4-7
-**Generation Context**: Inputs: PRIN v2.0 (Principles 4, 5, 7, 8, 16, 21 — sovereign anchor); ARC-002-REQ-v1.0 (BR-001/002/003/004/005, FR-004 primary, FR-005/006/008/010/011/012/014, INT-003/004/005/007, NFR-P-002/A-003/SEC-003/004/005/006/I-001, UC-1/2, Conflict C-4); ARC-002-RISK-v1.0 (R-007 egress, R-008 AI integration brittleness, R-002 MOD SbD, R-004 supply-chain); ARC-002-DPIA-v1.0 (vendor-narrow scope confirms 0/9 ICO criteria, no vendor data flow through AI surface); ARC-002-ADR-004-v1.0 (architectural source of truth — AIAdaptor reuse, customer-endpoint provider profile, OpenAI-compatible wire contract, fail-closed default, minimum model spec, network-deny CI test, classification ceiling); ARC-002-MOD-SBD-v1.0 (security framing). Reference (NOT copied): ARC-001-AIP-v1.0 (SaaS-side AIP — distinct scope). User input: ai-mode = opt-in-per-deployment-on-premise (override of default auto-detect-from-REQ-FRs because sovereign-specific). Risk classification: LOW (when AI enabled — drafting-only) / N/A (when AI disabled — many sovereign sites). Sovereign-specific framings: Principle 4 trivially satisfied (architectural human-in-the-loop); Principle 8 INVERTED (customer owns the model, not vendor); Theme 2 ATRS responsibility shifts (vendor publishes for the AIAdaptor abstraction; deploying authority publishes for the deployed instance); Theme 6 sovereign route enables MOD/regulated-OES use cases otherwise excluded.
+**Generation Context**: Inputs: PRIN v2.0 (Principles 4, 5, 7, 8, 16, 21 — sovereign anchor); ARC-002-REQ-v1.0 (BR-001/002/003/004/005, FR-004 primary, FR-005/006/008/010/011/012/014, INT-003/004/005/007, NFR-P-002/A-003/SEC-003/004/005/006/I-001, UC-1/2, Conflict C-4); ARC-002-RISK-v1.0 (R-007 egress, R-008 AI integration brittleness, R-002 MOD SbD, R-004 supply-chain); ARC-002-DPIA-v1.0 (vendor-narrow scope confirms 0/9 ICO criteria, no vendor data flow through AI surface); ARC-002-ADR-004-v1.0 (architectural source of truth — AIAdaptor reuse, customer-endpoint provider profile, OpenAI-compatible wire contract, fail-closed default, minimum model spec, network-deny CI test, classification ceiling); ARC-002-SECD-MOD-v1.0 (security framing). Reference (NOT copied): ARC-001-AIPB-v1.0 (SaaS-side AIP — distinct scope). User input: ai-mode = opt-in-per-deployment-on-premise (override of default auto-detect-from-REQ-FRs because sovereign-specific). Risk classification: LOW (when AI enabled — drafting-only) / N/A (when AI disabled — many sovereign sites). Sovereign-specific framings: Principle 4 trivially satisfied (architectural human-in-the-loop); Principle 8 INVERTED (customer owns the model, not vendor); Theme 2 ATRS responsibility shifts (vendor publishes for the AIAdaptor abstraction; deploying authority publishes for the deployed instance); Theme 6 sovereign route enables MOD/regulated-OES use cases otherwise excluded.

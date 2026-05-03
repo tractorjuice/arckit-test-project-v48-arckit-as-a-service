@@ -932,10 +932,10 @@
       "name": "Arckit Saas",
       "documents": [
         {
-          "path": "projects/001-arckit-saas/ARC-001-AIP-v1.0.md",
+          "path": "projects/001-arckit-saas/ARC-001-AIPB-v1.0.md",
           "title": "AIP",
           "category": "Other",
-          "documentId": "ARC-001-AIP-v1.0",
+          "documentId": "ARC-001-AIPB-v1.0",
           "extension": ".md"
         },
         {
@@ -960,10 +960,10 @@
           "extension": ".md"
         },
         {
-          "path": "projects/001-arckit-saas/ARC-001-HLD-v1.0.md",
+          "path": "projects/001-arckit-saas/ARC-001-HLDR-v1.0.md",
           "title": "HLD",
           "category": "Other",
-          "documentId": "ARC-001-HLD-v1.0",
+          "documentId": "ARC-001-HLDR-v1.0",
           "extension": ".md"
         },
         {
@@ -1037,10 +1037,10 @@
           "extension": ".md"
         },
         {
-          "path": "projects/001-arckit-saas/ARC-001-TRACE-v1.0.md",
+          "path": "projects/001-arckit-saas/ARC-001-TRAC-v1.0.md",
           "title": "TRACE",
           "category": "Other",
-          "documentId": "ARC-001-TRACE-v1.0",
+          "documentId": "ARC-001-TRAC-v1.0",
           "extension": ".md"
         }
       ],
@@ -1127,10 +1127,10 @@
           "extension": ".md"
         },
         {
-          "path": "projects/002-arckit-sovereign/ARC-002-HLD-v1.0.md",
+          "path": "projects/002-arckit-sovereign/ARC-002-HLDR-v1.0.md",
           "title": "HLD",
           "category": "Other",
-          "documentId": "ARC-002-HLD-v1.0",
+          "documentId": "ARC-002-HLDR-v1.0",
           "extension": ".md"
         },
         {
@@ -1183,10 +1183,10 @@
           "extension": ".md"
         },
         {
-          "path": "projects/002-arckit-sovereign/ARC-002-TRACE-v1.0.md",
+          "path": "projects/002-arckit-sovereign/ARC-002-TRAC-v1.0.md",
           "title": "TRACE",
           "category": "Other",
-          "documentId": "ARC-002-TRACE-v1.0",
+          "documentId": "ARC-002-TRAC-v1.0",
           "extension": ".md"
         }
       ],
@@ -1420,10 +1420,10 @@
           "ageDays": 0
         }
       },
-      "ARC-001-AIP-v1.0": {
+      "ARC-001-AIPB-v1.0": {
         "type": "AIP",
         "project": "001-arckit-saas",
-        "path": "projects/001-arckit-saas/ARC-001-AIP-v1.0.md",
+        "path": "projects/001-arckit-saas/ARC-001-AIPB-v1.0.md",
         "title": "ArcKit as a Service (Managed SaaS) — UK Government AI Playbook Conformance",
         "status": "DRAFT",
         "severity": "LOW",
@@ -1435,7 +1435,7 @@
         "vendor": null,
         "subdir": null,
         "controlFields": {
-          "Document ID": "ARC-001-AIP-v1.0",
+          "Document ID": "ARC-001-AIPB-v1.0",
           "Document Type": "UK Government AI Playbook Conformance Assessment",
           "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
           "Classification": "OFFICIAL",
@@ -1597,10 +1597,10 @@
           "ageDays": 0
         }
       },
-      "ARC-001-HLD-v1.0": {
+      "ARC-001-HLDR-v1.0": {
         "type": "HLD",
         "project": "001-arckit-saas",
-        "path": "projects/001-arckit-saas/ARC-001-HLD-v1.0.md",
+        "path": "projects/001-arckit-saas/ARC-001-HLDR-v1.0.md",
         "title": "ArcKit as a Service (Managed SaaS) — High-Level Design (HLD)",
         "status": "DRAFT",
         "severity": "LOW",
@@ -1612,7 +1612,7 @@
         "vendor": null,
         "subdir": null,
         "controlFields": {
-          "Document ID": "ARC-001-HLD-v1.0",
+          "Document ID": "ARC-001-HLDR-v1.0",
           "Document Type": "High-Level Design",
           "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
           "Classification": "OFFICIAL",
@@ -2171,10 +2171,10 @@
           "ageDays": 0
         }
       },
-      "ARC-001-TRACE-v1.0": {
+      "ARC-001-TRAC-v1.0": {
         "type": "TRACE",
         "project": "001-arckit-saas",
-        "path": "projects/001-arckit-saas/ARC-001-TRACE-v1.0.md",
+        "path": "projects/001-arckit-saas/ARC-001-TRAC-v1.0.md",
         "title": "ArcKit as a Service (Managed SaaS) — Requirements Traceability Matrix",
         "status": "DRAFT",
         "severity": "LOW",
@@ -2186,7 +2186,7 @@
         "vendor": null,
         "subdir": null,
         "controlFields": {
-          "Document ID": "ARC-001-TRACE-v1.0",
+          "Document ID": "ARC-001-TRAC-v1.0",
           "Document Type": "Requirements Traceability Matrix",
           "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
           "Classification": "OFFICIAL",
@@ -2890,10 +2890,10 @@
           "ageDays": 0
         }
       },
-      "ARC-002-HLD-v1.0": {
+      "ARC-002-HLDR-v1.0": {
         "type": "HLD",
         "project": "002-arckit-sovereign",
-        "path": "projects/002-arckit-sovereign/ARC-002-HLD-v1.0.md",
+        "path": "projects/002-arckit-sovereign/ARC-002-HLDR-v1.0.md",
         "title": "ArcKit as a Service (Sovereign Deployment) — High-Level Design",
         "status": "DRAFT",
         "severity": "LOW",
@@ -2905,7 +2905,7 @@
         "vendor": null,
         "subdir": null,
         "controlFields": {
-          "Document ID": "ARC-002-HLD-v1.0",
+          "Document ID": "ARC-002-HLDR-v1.0",
           "Document Type": "High-Level Design",
           "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
           "Classification": "OFFICIAL",
@@ -3303,10 +3303,10 @@
           "ageDays": 0
         }
       },
-      "ARC-002-TRACE-v1.0": {
+      "ARC-002-TRAC-v1.0": {
         "type": "TRACE",
         "project": "002-arckit-sovereign",
-        "path": "projects/002-arckit-sovereign/ARC-002-TRACE-v1.0.md",
+        "path": "projects/002-arckit-sovereign/ARC-002-TRAC-v1.0.md",
         "title": "ArcKit as a Service (Sovereign Deployment) — Requirements Traceability Matrix",
         "status": "DRAFT",
         "severity": "LOW",
@@ -3318,7 +3318,7 @@
         "vendor": null,
         "subdir": null,
         "controlFields": {
-          "Document ID": "ARC-002-TRACE-v1.0",
+          "Document ID": "ARC-002-TRAC-v1.0",
           "Document Type": "Requirements Traceability Matrix",
           "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
           "Status": "DRAFT",
@@ -3614,12 +3614,12 @@
         "type": "references"
       },
       {
-        "from": "ARC-001-AIP-v1.0",
+        "from": "ARC-001-AIPB-v1.0",
         "to": "ARC-001-DPIA",
         "type": "references"
       },
       {
-        "from": "ARC-001-AIP-v1.0",
+        "from": "ARC-001-AIPB-v1.0",
         "to": "ARC-001-RISK",
         "type": "references"
       },
@@ -3650,7 +3650,7 @@
       },
       {
         "from": "ARC-001-DPIA-v1.0",
-        "to": "ARC-001-AIP",
+        "to": "ARC-001-AIPB",
         "type": "references"
       },
       {
@@ -3659,18 +3659,18 @@
         "type": "references"
       },
       {
-        "from": "ARC-001-HLD-v1.0",
+        "from": "ARC-001-HLDR-v1.0",
         "to": "ARC-001-REQ",
         "type": "references"
       },
       {
-        "from": "ARC-001-HLD-v1.0",
+        "from": "ARC-001-HLDR-v1.0",
         "to": "ARC-001-DIAG",
         "type": "references"
       },
       {
-        "from": "ARC-001-HLD-v1.0",
-        "to": "ARC-001-TRACE",
+        "from": "ARC-001-HLDR-v1.0",
+        "to": "ARC-001-TRAC",
         "type": "references"
       },
       {
@@ -3710,12 +3710,12 @@
       },
       {
         "from": "ARC-001-PLAN-v1.0",
-        "to": "ARC-001-AIP",
+        "to": "ARC-001-AIPB",
         "type": "references"
       },
       {
         "from": "ARC-001-PLAN-v1.0",
-        "to": "ARC-001-HLD",
+        "to": "ARC-001-HLDR",
         "type": "references"
       },
       {
@@ -3760,7 +3760,7 @@
       },
       {
         "from": "ARC-001-ROADMAP-v1.0",
-        "to": "ARC-001-AIP",
+        "to": "ARC-001-AIPB",
         "type": "references"
       },
       {
@@ -3800,7 +3800,7 @@
       },
       {
         "from": "ARC-001-SECURE-v1.0",
-        "to": "ARC-001-AIP",
+        "to": "ARC-001-AIPB",
         "type": "references"
       },
       {
@@ -3875,7 +3875,7 @@
       },
       {
         "from": "ARC-001-TCOP-v1.0",
-        "to": "ARC-001-AIP",
+        "to": "ARC-001-AIPB",
         "type": "references"
       },
       {
@@ -3884,7 +3884,7 @@
         "type": "references"
       },
       {
-        "from": "ARC-001-TRACE-v1.0",
+        "from": "ARC-001-TRAC-v1.0",
         "to": "ARC-001-RISK",
         "type": "references"
       },
@@ -3924,13 +3924,13 @@
         "type": "references"
       },
       {
-        "from": "ARC-002-HLD-v1.0",
+        "from": "ARC-002-HLDR-v1.0",
         "to": "ARC-002-DIAG",
         "type": "references"
       },
       {
-        "from": "ARC-002-HLD-v1.0",
-        "to": "ARC-002-TRACE",
+        "from": "ARC-002-HLDR-v1.0",
+        "to": "ARC-002-TRAC",
         "type": "references"
       },
       {

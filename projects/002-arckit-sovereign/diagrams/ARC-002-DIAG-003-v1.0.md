@@ -427,7 +427,7 @@ flowchart LR
 
 - `projects/000-global/ARC-000-PRIN-v2.0.md` (Principle 21 — non-negotiable anchor)
 - `projects/002-arckit-sovereign/ARC-002-REQ-v1.0.md`
-- `projects/002-arckit-sovereign/ARC-002-HLD-v1.0.md`
+- `projects/002-arckit-sovereign/ARC-002-HLDR-v1.0.md`
 - `projects/002-arckit-sovereign/decisions/ARC-002-ADR-001-v1.0.md` (Air-Gapped Operation Model)
 - `projects/002-arckit-sovereign/decisions/ARC-002-ADR-002-v1.0.md` (Signed Release Bundle)
 - `projects/002-arckit-sovereign/decisions/ARC-002-ADR-003-v1.0.md` (Cleared-Personnel Access Model — referenced)
@@ -443,4 +443,4 @@ flowchart LR
 **ArcKit Version**: 4.12.3
 **Project**: ArcKit as a Service (Sovereign Deployment) (Project 002)
 **AI Model**: claude-opus-4-7[1m]
-**Generation Context**: Generated as project-002 wave-5 deployment-topology diagram — three views (single-tenant accredited boundary; bundle issue + distribution path; trust zones) anchored to ADR-001/002/005/006/007 and Principle 21. Inputs: ARC-002-HLD-v1.0.md, ADR-001/002/005/006/007, ARC-000-PRIN-v2.0.md.
+**Generation Context**: Generated as project-002 wave-5 deployment-topology diagram — three views (single-tenant accredited boundary; bundle issue + distribution path; trust zones) anchored to ADR-001/002/005/006/007 and Principle 21. Inputs: ARC-002-HLDR-v1.0.md, ADR-001/002/005/006/007, ARC-000-PRIN-v2.0.md.

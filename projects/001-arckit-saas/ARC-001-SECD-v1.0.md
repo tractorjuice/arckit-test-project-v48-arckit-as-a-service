@@ -6,7 +6,7 @@
 
 | Field | Value |
 |-------|-------|
-| **Document ID** | ARC-001-SBD-v1.0 |
+| **Document ID** | ARC-001-SECD-v1.0 |
 | **Document Type** | Secure by Design Assessment (NCSC CAF + UK Gov Cyber Security Standard) |
 | **Project** | ArcKit as a Service (Managed SaaS) (Project 001) |
 | **Classification** | OFFICIAL |
@@ -824,7 +824,7 @@ This section is the **formal acceptance vehicle** for the four COMPLIANCE-catego
 | `ARC-001-ADR-006-v1.0.md` | Deployment Topology |
 | `ARC-001-ADR-008-v1.0.md` | Per-Tenant Quotas, Rate Limits, Fair Use |
 | `ARC-001-DPIA-v1.0.md` | UK GDPR DPIA — pending generation, blocking GA |
-| `ARC-001-AIP-v1.0.md` | AI Playbook compliance — pending generation, blocking GA |
+| `ARC-001-AIPB-v1.0.md` | AI Playbook compliance — pending generation, blocking GA |
 | `ARC-001-SVCASS-v1.0.md` | Service Assessment readiness — pending generation, blocking GA |
 
 ### Unreferenced Documents

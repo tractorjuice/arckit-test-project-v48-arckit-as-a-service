@@ -568,7 +568,7 @@ The five sequences share three load-bearing themes that make this architecture d
 ## 16. Linked Artefacts
 
 - **Requirements**: `projects/001-arckit-saas/ARC-001-REQ-v1.0.md` (UC-1, UC-2, UC-3, FR-001..015, NFR-*).
-- **HLD**: `projects/001-arckit-saas/ARC-001-HLD-v1.0.md` (Section 3.2 container layer; Section 3.3 component layer).
+- **HLD**: `projects/001-arckit-saas/ARC-001-HLDR-v1.0.md` (Section 3.2 container layer; Section 3.3 component layer).
 - **ADR-001**: `projects/001-arckit-saas/decisions/ARC-001-ADR-001-v1.0.md` (Tenant isolation, tenant_id propagation).
 - **ADR-002**: `projects/001-arckit-saas/decisions/ARC-001-ADR-002-v1.0.md` (UK residency).
 - **ADR-003**: `projects/001-arckit-saas/decisions/ARC-001-ADR-003-v1.0.md` (Identity & SSO).
@@ -597,4 +597,4 @@ The five sequences share three load-bearing themes that make this architecture d
 **ArcKit Version**: 4.12.3
 **Project**: ArcKit as a Service (Project 001)
 **AI Model**: claude-opus-4-7 (1M context)
-**Generation Context**: Synthesised from ARC-001-HLD-v1.0 (Section 3.2/3.3 container + component), ARC-001-REQ-v1.0 (UC-1/2/3, FR-001/004/006/007/011/012, NFR-SEC/C/I/P/A), and ADR-001/002/003/004/005/006/007/008. Five Mermaid sequence diagrams covering the load-bearing interaction flows of the ArcKit SaaS pre-GA Alpha.
+**Generation Context**: Synthesised from ARC-001-HLDR-v1.0 (Section 3.2/3.3 container + component), ARC-001-REQ-v1.0 (UC-1/2/3, FR-001/004/006/007/011/012, NFR-SEC/C/I/P/A), and ADR-001/002/003/004/005/006/007/008. Five Mermaid sequence diagrams covering the load-bearing interaction flows of the ArcKit SaaS pre-GA Alpha.
