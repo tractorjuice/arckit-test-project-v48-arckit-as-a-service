@@ -1,0 +1,137 @@
+# ArcKit as a Service (Managed SaaS) — GDS Service Standard Readiness
+
+> **Template Origin**: Official | **ArcKit Version**: 4.12.3 | **Command**: `/arckit:service-assessment`
+
+## Document Control
+
+| Field | Value |
+|-------|-------|
+| **Document ID** | ARC-001-SVCASS-v1.0 |
+| **Document Type** | GDS Service Standard 14-Point Readiness Assessment |
+| **Project** | ArcKit as a Service (Managed SaaS) (Project 001) |
+| **Classification** | OFFICIAL |
+| **Status** | DRAFT |
+| **Version** | 1.0 |
+| **Created Date** | 2026-05-03 |
+| **Owner** | Mark Craddock (Service Owner) |
+| **Distribution** | ARB; CDDO Service Assessor (when booked); buying-authority assessors (SD-14) |
+
+## Revision History
+
+| Version | Date | Author | Changes |
+|---------|------|--------|---------|
+| 1.0 | 2026-05-03 | ArcKit AI | Initial 14-point readiness review. Identifies evidence per point and gaps to close before alpha / beta assessments. |
+
+---
+
+## Summary readiness
+
+| Point | Status |
+|-------|--------|
+| 1 | Compliant |
+| 2 | Compliant with Conditions (continuous research plan) |
+| 3 | Compliant with Conditions (analytics + UR cadence pre-public-beta) |
+| 4 | Compliant with Conditions (multidisciplinary team — hiring) |
+| 5 | Compliant |
+| 6 | Compliant with Conditions (multidisciplinary — hiring) |
+| 7 | Compliant |
+| 8 | Compliant |
+| 9 | Compliant with Conditions (CI isolation + first pen test) |
+| 10 | Compliant |
+| 11 | Compliant |
+| 12 | Compliant |
+| 13 | Compliant |
+| 14 | Compliant with Conditions (first DR rehearsal) |
+
+---
+
+## Per-Point Evidence
+
+### 1. Understand users and their needs
+
+User research: STKE; pilot SME tenant interviews planned for alpha. Personas in REQ. UC-1/UC-2/UC-3.
+
+### 2. Solve a whole problem for users
+
+End-to-end coverage: principles → onboarding → authoring → AI assist → traceability → export → exit. ArcKit eats its own dog-food; this very project is a worked example.
+
+### 3. Provide a joined up experience across all channels
+
+Web UI + API + export + status page; same identity (ADR-003); same tenant_id semantics. Service runs in SaaS mode and degrades to CLI / sovereign with the same artefact format (ADR-007).
+
+### 4. Make the service simple to use
+
+GOV.UK Design System (FR-013); UC-1 self-service onboarding; UC-2 streaming generation with progress; UC-3 self-service export.
+
+### 5. Make sure everyone can use the service
+
+WCAG 2.2 AA / PSBAR (NFR-C-003); axe + pa11y in CI; manual a11y audit.
+
+### 6. Have a multidisciplinary team
+
+Service Owner; Lead Architect (PENDING); Security Lead (PENDING); DPO (PENDING); SRE Lead (PENDING); Engineering; UR (PENDING); Content (PENDING). Conditions to close.
+
+### 7. Use agile ways of working
+
+Trunk-based; PR-by-PR; cell-by-cell rollout; quarterly assurance; ARB cadence.
+
+### 8. Iterate and improve frequently
+
+Continuous deployment; release cadence per DevOps; post-incident reviews; ADR superseding chain.
+
+### 9. Create a secure service which protects users' privacy
+
+ADR-001 isolation; ADR-002 region/KMS; ADR-003 identity; ADR-005 observability; SbD; DPIA. CI isolation suite; pen test; CAF mapping.
+
+### 10. Define what success looks like and publish performance data
+
+SLOs published per service; status page (FR-009); cross-subsidy KPI; affordability review (Principle 1 validation).
+
+### 11. Choose the right tools and technology
+
+Open-standards bias (Principle 4); ADRs document choices; sovereign reuse pattern enforced.
+
+### 12. Make new source code open
+
+ArcKit core open-source; sovereign deployment relies on the open codebase. Publication policy review pending (TCoP §3 action).
+
+### 13. Use and contribute to open standards, common components and patterns
+
+Open standards: OpenTelemetry, OIDC/SAML, OpenAPI, Markdown/JSON/SBOM (CycloneDX), Sigstore. Common components: GOV.UK Design System; GOV.UK One Login (one option); Companies House.
+
+### 14. Operate a reliable service
+
+NFR-A-001/002/003; cell-based blast-radius cap; SRE on-call; runbooks; DR rehearsals; status page; transparent post-mortems.
+
+---
+
+## Conditions / Action Register (alpha → public beta → GA)
+
+| ID | Action | Owner | Target |
+|----|--------|-------|--------|
+| S-1 | Continuous user research plan in place | Service Owner | Alpha |
+| S-2 | Analytics + UR cadence pre-public-beta | Service Owner | Public beta |
+| S-3 | Lead Architect, Security Lead, DPO, SRE Lead appointed | Service Owner | Pre-alpha |
+| S-4 | UR + Content roles named | Service Owner | Pre-public-beta |
+| S-5 | First DR rehearsal pass | SRE | Pre-alpha |
+| S-6 | First pen test green | Security Lead | Alpha |
+| S-7 | Performance dashboard published | SRE | Public beta |
+| S-8 | Source-code publication policy ratified | Service Owner | Pre-public-beta |
+| S-9 | Service Standard alpha assessment booked | Service Owner | Alpha |
+| S-10 | Service Standard beta assessment booked | Service Owner | Public beta |
+
+---
+
+## Linked Artefacts
+
+- All project 001 documents.
+- TCoP §13.
+- SbD; AI Playbook.
+- Plan; Roadmap.
+
+---
+
+**Generated by**: ArcKit `/arckit:service-assessment` command
+**Generated on**: 2026-05-03
+**ArcKit Version**: 4.12.3
+**AI Model**: Claude Opus 4.7 (1M context)
