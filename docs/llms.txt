@@ -12,7 +12,7 @@ ArcKit maintains a traceability chain: Stakeholders → Goals → Requirements (
 
 ## Project status
 
-- 001-arckit-saas: 13% essential coverage · 0% compliance readiness · 1 drafts · next: /arckit:stakeholders
+- 001-arckit-saas: 25% essential coverage · 0% compliance readiness · 2 drafts · next: /arckit:risk
 
 ## Global artifacts
 
@@ -24,6 +24,7 @@ ArcKit maintains a traceability chain: Stakeholders → Goals → Requirements (
 ### Arckit Saas
 
 - [Requirements](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-REQ-v1.0.md): Discovery · `ARC-001-REQ-v1.0`.
+- [Stakeholder Analysis](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/001-arckit-saas/ARC-001-STKE-v1.0.md): Discovery · `ARC-001-STKE-v1.0`.
 
 ## ArcKit guides
 

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-03T08:18:27.576Z",
+  "generated": "2026-05-03T08:28:35.875Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -916,6 +916,13 @@
           "category": "Discovery",
           "documentId": "ARC-001-REQ-v1.0",
           "extension": ".md"
+        },
+        {
+          "path": "projects/001-arckit-saas/ARC-001-STKE-v1.0.md",
+          "title": "Stakeholder Analysis",
+          "category": "Discovery",
+          "documentId": "ARC-001-STKE-v1.0",
+          "extension": ".md"
         }
       ]
     }
@@ -1106,6 +1113,57 @@
           "orphan": false,
           "ageDays": 0
         }
+      },
+      "ARC-001-STKE-v1.0": {
+        "type": "STKE",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-STKE-v1.0.md",
+        "title": "Stakeholder Drivers & Goals Analysis: ArcKit as a Service (Managed SaaS)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit as a Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-STKE-v1.0",
+          "Document Type": "Stakeholder Drivers & Goals Analysis",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Cycle": "Quarterly",
+          "Next Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (ArcKit as a Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture Team, CCS liaison, GDS, CDDO"
+        },
+        "reqIds": [
+          "INT-005",
+          "INT-006",
+          "INT-002",
+          "INT-003",
+          "BR-001",
+          "FR-004",
+          "BR-002",
+          "BR-004",
+          "BR-005",
+          "NFR-SEC-002",
+          "NFR-C-001",
+          "BR-008"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
       }
     },
     "edges": [
@@ -1113,11 +1171,21 @@
         "from": "ARC-001-REQ-v1.0",
         "to": "ARC-000-PRIN",
         "type": "references"
+      },
+      {
+        "from": "ARC-001-STKE-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-STKE-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
       }
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-03T08:18:27.580Z",
+    "baseline": "2026-05-03T08:28:35.881Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -1187,20 +1255,15 @@
       {
         "project": "001-arckit-saas",
         "projectId": "001",
-        "artifactCount": 1,
-        "edgeCount": 1,
-        "density": 1,
+        "artifactCount": 2,
+        "edgeCount": 3,
+        "density": 1.5,
         "coverage": {
           "essentialPresent": [
-            "REQ"
+            "REQ",
+            "STKE"
           ],
           "essentialMissing": [
-            {
-              "type": "STKE",
-              "command": "/arckit:stakeholders",
-              "label": "Stakeholder Analysis",
-              "tier": 1
-            },
             {
               "type": "RISK",
               "command": "/arckit:risk",
@@ -1238,12 +1301,13 @@
               "tier": 4
             }
           ],
-          "essentialPct": 13,
+          "essentialPct": 25,
           "presentTypes": [
-            "REQ"
+            "REQ",
+            "STKE"
           ],
           "presentByCategory": {
-            "Discovery": 1
+            "Discovery": 2
           }
         },
         "compliance": {
@@ -1267,7 +1331,7 @@
         },
         "health": {
           "stale": 0,
-          "draft": 1,
+          "draft": 2,
           "orphan": 0
         },
         "contextualSuggestions": [
@@ -1295,13 +1359,6 @@
         "hasGlobalPrin": true,
         "recommendations": [
           {
-            "command": "/arckit:stakeholders",
-            "label": "Stakeholder Analysis",
-            "type": "STKE",
-            "tier": 1,
-            "reason": "Tier 1 essential missing"
-          },
-          {
             "command": "/arckit:risk",
             "label": "Risk Register",
             "type": "RISK",
@@ -1314,6 +1371,13 @@
             "type": "SOBC",
             "tier": 2,
             "reason": "Tier 2 essential missing"
+          },
+          {
+            "command": "/arckit:adr",
+            "label": "Architecture Decision Record",
+            "type": "ADR",
+            "tier": 3,
+            "reason": "Tier 3 essential missing"
           }
         ]
       }
