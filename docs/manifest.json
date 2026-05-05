@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-05T10:18:42.831Z",
+  "generated": "2026-05-05T10:46:39.348Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -69,6 +69,78 @@
       "path": "docs/guides/c4-layout-science.md",
       "title": "C4 Layout Science Guide",
       "category": "Architecture",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/ca-aia.md",
+      "title": "Canada Algorithmic Impact Assessment Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/ca-atip.md",
+      "title": "Canada ATIP Reconciliation Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/ca-charter.md",
+      "title": "Canada Charter Rights Design Review Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/ca-cloud-residency.md",
+      "title": "Canada Sovereign Cloud Residency Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/ca-fitaa.md",
+      "title": "Canada FITAA Compliance Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/ca-gc-digital-standards.md",
+      "title": "Canada GC Digital Standards Conformance Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/ca-itsg-33.md",
+      "title": "Canada ITSG-33 Statement of Applicability Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/ca-ocap.md",
+      "title": "Canada First Nations OCAP® Sovereignty Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/ca-ola.md",
+      "title": "Canada Official Languages Act Review Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/ca-pia.md",
+      "title": "Canada Privacy Impact Assessment Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/ca-pspc.md",
+      "title": "Canada Federal Procurement Strategy Playbook",
+      "category": "Other",
+      "status": "beta"
+    },
+    {
+      "path": "docs/guides/ca-soia.md",
+      "title": "Canada Security of Information Act Handling Playbook",
+      "category": "Other",
       "status": "beta"
     },
     {
@@ -910,7 +982,19 @@
     "NPRA": "Governance",
     "AICH": "Compliance",
     "AUTI": "Architecture",
-    "FPRO": "Procurement"
+    "FPRO": "Procurement",
+    "FITAA": "Compliance",
+    "PIA": "Compliance",
+    "ATIP": "Compliance",
+    "AIA": "Compliance",
+    "CHRT": "Governance",
+    "ITSG": "Architecture",
+    "SOIA": "Compliance",
+    "CACR": "Architecture",
+    "DIGSTD": "Governance",
+    "OLA": "Compliance",
+    "PROC": "Procurement",
+    "OCAP": "Governance"
   },
   "projects": [
     {
@@ -9332,7 +9416,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-05T10:18:42.938Z",
+    "baseline": "2026-05-05T10:46:39.498Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
