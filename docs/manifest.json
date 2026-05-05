@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-03T22:12:55.679Z",
+  "generated": "2026-05-05T10:18:42.831Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -925,6 +925,13 @@
           "extension": ".md"
         },
         {
+          "path": "projects/001-arckit-saas/ARC-001-DATA-v1.0.md",
+          "title": "Data Model",
+          "category": "Architecture",
+          "documentId": "ARC-001-DATA-v1.0",
+          "extension": ".md"
+        },
+        {
           "path": "projects/001-arckit-saas/ARC-001-DEVOPS-v1.0.md",
           "title": "DevOps Strategy",
           "category": "Operations",
@@ -1201,6 +1208,13 @@
           "extension": ".md"
         },
         {
+          "path": "projects/002-arckit-sovereign/ARC-002-JSP936-v1.0.md",
+          "title": "JSP 936 Assessment",
+          "category": "Compliance",
+          "documentId": "ARC-002-JSP936-v1.0",
+          "extension": ".md"
+        },
+        {
           "path": "projects/002-arckit-sovereign/ARC-002-OPS-v1.0.md",
           "title": "Operational Readiness",
           "category": "Operations",
@@ -1289,6 +1303,12 @@
           "title": "Architecture Diagram: ArcKit Sovereign Deployment Topology — Single-Tenant Accredited Boundary, Bundle Distribution Path, and Trust Zones",
           "documentId": "ARC-002-DIAG-003-v1.0",
           "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-004-v1.0.md",
+          "title": "Architecture Diagram: Air-Gap Boundary — Accredited Boundary, Zero Outbound, Sealed-Media Ingress",
+          "documentId": "ARC-002-DIAG-004-v1.0",
+          "extension": ".md"
         }
       ],
       "decisions": [
@@ -1340,6 +1360,32 @@
           "documentId": "ARC-002-ADR-008-v1.0",
           "extension": ".md"
         }
+      ],
+      "research": [
+        {
+          "path": "projects/002-arckit-sovereign/research/ARC-002-AWRS-v1.0.md",
+          "title": "AWS Technology Research: ArcKit as a Service (Sovereign Deployment)",
+          "documentId": "ARC-002-AWRS-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/research/ARC-002-AZRS-v1.0.md",
+          "title": "Azure Technology Research: ArcKit as a Service (Sovereign Deployment)",
+          "documentId": "ARC-002-AZRS-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/research/ARC-002-GCRS-v1.0.md",
+          "title": "Google Cloud Technology Research: ArcKit as a Service (Sovereign Deployment)",
+          "documentId": "ARC-002-GCRS-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/research/ARC-002-RSCH-v1.0.md",
+          "title": "Technology and Service Research: ArcKit as a Service (Sovereign / Air-Gapped Deployment)",
+          "documentId": "ARC-002-RSCH-v1.0",
+          "extension": ".md"
+        }
       ]
     }
   ],
@@ -1380,7 +1426,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-000-PRIN-v2.0": {
@@ -1418,7 +1464,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-000-RSCH-v1.0": {
@@ -1491,7 +1537,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-AIPB-v1.0": {
@@ -1537,6 +1583,85 @@
           "BR-008",
           "BR-006",
           "INT-005"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 2
+        }
+      },
+      "ARC-001-DATA-v1.0": {
+        "type": "DATA",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/ARC-001-DATA-v1.0.md",
+        "title": "Data Model: ArcKit as a Service (Managed SaaS)",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-05",
+        "lastModified": "2026-05-05",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit as a Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-DATA-v1.0",
+          "Document Type": "Data Model",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-05",
+          "Last Modified": "2026-05-05",
+          "Review Cycle": "Quarterly",
+          "Next Review Date": "2026-08-05",
+          "Owner": "Mark Craddock (ArcKit as a Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture Team, DPO, Security Lead, CCS liaison"
+        },
+        "reqIds": [
+          "FR-008",
+          "NFR-SEC-002",
+          "FR-002",
+          "NFR-C-001",
+          "FR-004",
+          "FR-005",
+          "BR-007",
+          "FR-006",
+          "BR-003",
+          "FR-010",
+          "INT-005",
+          "NFR-C-007",
+          "BR-001",
+          "BR-005",
+          "FR-001",
+          "NFR-S-001",
+          "NFR-C-002",
+          "BR-002",
+          "NFR-SEC-004",
+          "FR-011",
+          "FR-007",
+          "FR-012",
+          "FR-009",
+          "FR-014",
+          "INT-003",
+          "NFR-SEC-001",
+          "NFR-SEC-003",
+          "FR-003",
+          "NFR-S-002",
+          "BR-004",
+          "NFR-SEC-005",
+          "NFR-P-003",
+          "INT-001",
+          "INT-002",
+          "INT-007",
+          "BR-006",
+          "BR-008",
+          "FR-013",
+          "FR-015",
+          "NFR-A-002"
         ],
         "health": {
           "stale": false,
@@ -1624,7 +1749,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-DPIA-v1.0": {
@@ -1711,7 +1836,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-FINOPS-v1.0": {
@@ -1760,7 +1885,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-HLDR-v1.0": {
@@ -2016,7 +2141,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-PLAN-v1.0": {
@@ -2058,7 +2183,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-REQ-v1.0": {
@@ -2167,7 +2292,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-RISK-v1.0": {
@@ -2240,7 +2365,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-ROAD-v1.0": {
@@ -2327,7 +2452,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-SECD-v1.0": {
@@ -2384,7 +2509,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-SOBC-v1.0": {
@@ -2459,7 +2584,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-STKE-v1.0": {
@@ -2510,7 +2635,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-SVCASS-v1.0": {
@@ -2572,7 +2697,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-TCOP-v1.0": {
@@ -2631,7 +2756,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-TRAC-v1.0": {
@@ -2735,7 +2860,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-ADR-001-v1.0": {
@@ -2804,7 +2929,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-ADR-002-v1.0": {
@@ -2880,7 +3005,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-ADR-003-v1.0": {
@@ -2944,7 +3069,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-ADR-004-v1.0": {
@@ -3010,7 +3135,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-ADR-005-v1.0": {
@@ -3079,7 +3204,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-ADR-006-v1.0": {
@@ -3147,7 +3272,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-ADR-007-v1.0": {
@@ -3212,7 +3337,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-ADR-008-v1.0": {
@@ -3284,7 +3409,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-DIAG-001-v1.0": {
@@ -3457,7 +3582,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-AWRS-v1.0": {
@@ -3553,7 +3678,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-AZRS-v1.0": {
@@ -3661,7 +3786,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-GCRS-v1.0": {
@@ -3888,7 +4013,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-001-RSCH-v1.0": {
@@ -3982,7 +4107,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-AIPB-v1.0": {
@@ -4047,7 +4172,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-DEVOPS-v1.0": {
@@ -4119,7 +4244,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-DPIA-v1.0": {
@@ -4176,7 +4301,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-FINOPS-v1.0": {
@@ -4245,7 +4370,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-HLDR-v1.0": {
@@ -4344,7 +4469,82 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
+        }
+      },
+      "ARC-002-JSP936-v1.0": {
+        "type": "JSP936",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/ARC-002-JSP936-v1.0.md",
+        "title": "JSP 936 AI Assurance Documentation",
+        "status": "DRAFT",
+        "severity": "HIGH",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner) — joint with Vendor Lead Architect, Vendor Security Lead, Vendor AI Ethics Reviewer",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-002-JSP936-v1.0",
+          "Document Type": "JSP 936 Dependable AI in Defence Assurance Assessment",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Cycle": "Per release; per MOD deploying-authority accreditation event when AI is enabled",
+          "Next Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (Service Owner) — joint with Vendor Lead Architect, Vendor Security Lead, Vendor AI Ethics Reviewer",
+          "Reviewed By": "[PENDING] AI Ethics Reviewer; Vendor Security Lead; MOD Defence Digital liaison; pilot MOD deploying authority RAISO (when engaged)",
+          "Approved By": "[PENDING] Service Owner (vendor scope); pilot MOD deploying authority RAISO + accreditation forum (per deployment when AI enabled)",
+          "Distribution": "Project Team, Architecture, Security, DPO, AI Ethics Reviewer, MOD Defence Digital liaison, NCSC liaison, pilot MOD sovereign customer (RAISO, Accreditor, SIRO when engaged)",
+          "Overall Impact Score": "**4 (Major)**",
+          "Overall Likelihood Score": "**3 (Possible)**",
+          "Five Ethical Principles": "|",
+          "Risk Classification": "|",
+          "Governance": "|",
+          "Eight Lifecycle Phases": "|",
+          "Approval Pathway": "|",
+          "Continuous Monitoring": "|",
+          "Service Owner / SRO (vendor)": "Mark Craddock",
+          "Lead Architect (vendor)": "[PENDING]",
+          "Vendor Security Lead": "[PENDING]",
+          "AI Ethics Reviewer (vendor)": "[PENDING]",
+          "ArcKit ARB": "ARB",
+          "MOD Defence Digital liaison": "[PENDING]",
+          "Deploying Authority RAISO (per deployment)": "[PENDING per customer]",
+          "Deploying Authority IAC / JROC (per deployment, when AI enabled)": "[PENDING per customer]"
+        },
+        "reqIds": [
+          "FR-012",
+          "NFR-A-003",
+          "NFR-SEC-004",
+          "NFR-P-002",
+          "FR-011",
+          "FR-006",
+          "NFR-SEC-006",
+          "NFR-SEC-005",
+          "FR-004",
+          "FR-005",
+          "FR-008",
+          "FR-010",
+          "NFR-I-001",
+          "INT-004",
+          "NFR-M-002",
+          "FR-014",
+          "NFR-SEC-003",
+          "INT-003",
+          "BR-001",
+          "INT-005"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 2
         }
       },
       "ARC-002-OPS-v1.0": {
@@ -4420,7 +4620,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-PLAN-v1.0": {
@@ -4551,7 +4751,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-RISK-v1.0": {
@@ -4624,7 +4824,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-ROAD-v1.0": {
@@ -4680,7 +4880,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-SECD-MOD-v1.0": {
@@ -4748,7 +4948,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-SOBC-v1.0": {
@@ -4826,7 +5026,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-STKE-v1.0": {
@@ -4879,7 +5079,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-TCOP-v1.0": {
@@ -4964,7 +5164,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-TRAC-v1.0": {
@@ -5054,7 +5254,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-ADR-001-v1.0": {
@@ -5151,7 +5351,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-ADR-002-v1.0": {
@@ -5209,7 +5409,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-ADR-003-v1.0": {
@@ -5291,7 +5491,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-ADR-004-v1.0": {
@@ -5372,7 +5572,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-ADR-005-v1.0": {
@@ -5449,7 +5649,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-ADR-006-v1.0": {
@@ -5498,7 +5698,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-ADR-007-v1.0": {
@@ -5571,7 +5771,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-ADR-008-v1.0": {
@@ -5628,7 +5828,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-DIAG-001-v1.0": {
@@ -5688,7 +5888,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-DIAG-002-v1.0": {
@@ -5754,7 +5954,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
         }
       },
       "ARC-002-DIAG-003-v1.0": {
@@ -5816,7 +6016,490 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 2
+        }
+      },
+      "ARC-002-DIAG-004-v1.0": {
+        "type": "DIAG",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/diagrams/ARC-002-DIAG-004-v1.0.md",
+        "title": "Architecture Diagram: Air-Gap Boundary — Accredited Boundary, Zero Outbound, Sealed-Media Ingress",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit as a Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "diagrams",
+        "controlFields": {
+          "Document ID": "ARC-002-DIAG-004-v1.0",
+          "Document Type": "Architecture Diagram (Air-Gap Boundary / Trust-Zone view)",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Cycle": "On material ADR change; per LTS release",
+          "Next Review Date": "2026-06-02",
+          "Owner": "Mark Craddock (ArcKit as a Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture Team, Vendor Security Lead, Sovereign Delivery Lead, Pilot Customer Accreditor (when engaged), MOD Defence Digital liaison, NCSC liaison"
+        },
+        "reqIds": [
+          "NFR-SEC-004",
+          "BR-001",
+          "FR-013",
+          "BR-004",
+          "NFR-SEC-005",
+          "NFR-SEC-003",
+          "FR-001",
+          "INT-003",
+          "FR-007",
+          "INT-001",
+          "FR-004",
+          "INT-005",
+          "FR-010",
+          "INT-004",
+          "INT-007",
+          "FR-005",
+          "BR-002",
+          "BR-003",
+          "BR-005",
+          "BR-007",
+          "BR-008",
+          "FR-002",
+          "FR-003",
+          "FR-014",
+          "NFR-SEC-001",
+          "NFR-SEC-002",
+          "NFR-A-003",
+          "NFR-C-001",
+          "INT-002",
+          "INT-009"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 2
+        }
+      },
+      "ARC-002-AWRS-v1.0": {
+        "type": "AWRS",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/research/ARC-002-AWRS-v1.0.md",
+        "title": "AWS Technology Research: ArcKit as a Service (Sovereign Deployment)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock, ArcKit as a Service Owner",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-002-AWRS-v1.0",
+          "Document Type": "AWS Technology Research",
+          "Project": "ArcKit as a Service — Sovereign Deployment (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Owner": "Mark Craddock, ArcKit as a Service Owner",
+          "Reviewed By": "PENDING",
+          "Approved By": "PENDING",
+          "Distribution": "Project Team, Architecture Team, MOD Defence Digital liaison, NCSC liaison",
+          "AWS Outposts (rack / 1U/2U server)": "LOW–MEDIUM (constrained)",
+          "AWS Snowball Edge / Snowblade": "MEDIUM (DDIL-suitable)",
+          "EKS Anywhere on Snow": "MEDIUM",
+          "AWS European Sovereign Cloud (Brandenburg, DE)": "NOT SUITABLE",
+          "AWS GovCloud (US)": "NOT SUITABLE",
+          "AWS Secret / Top Secret / Secret-West Regions": "NOT SUITABLE",
+          "Customer-controlled commodity hardware (recommended)": "HIGH",
+          "UK Region Availability": "N/A for runtime",
+          "G-Cloud Listing": "Procurement only",
+          "Data Classification": "Up to OFFICIAL-SENSITIVE on commercial AWS; SECRET requires customer-side accreditation on isolated substrate (UK has no AWS Secret region)",
+          "NCSC Cloud Security Principles": "14/14 (commercial AWS only)",
+          "MOD Secure by Design / JSP 440 / JSP 604": "Customer-led",
+          "Total": "|",
+          "Operational Excellence": "⭐⭐⭐",
+          "Security": "⭐⭐⭐⭐",
+          "Reliability": "⭐⭐⭐",
+          "Performance Efficiency": "⭐⭐⭐",
+          "Cost Optimization": "⭐⭐",
+          "Sustainability": "⭐⭐⭐",
+          "MOD Secure by Design": "Vendor evidence pack per release (BR-004)",
+          "JSP 440 (Defence Manual of Security)": "Mapping per release",
+          "JSP 604 (Authorisation of Information Systems)": "Customer-led",
+          "NCSC CAF": "Mapping per release (non-MOD sites)",
+          "HMG Government Security Classifications Policy": "Configurable max classification (FR-012)",
+          "Total (vendor cost)": "|"
+        },
+        "reqIds": [
+          "FR-001",
+          "FR-002",
+          "NFR-SEC-004",
+          "BR-004",
+          "FR-003",
+          "NFR-A-003",
+          "INT-002",
+          "BR-005",
+          "FR-005",
+          "NFR-C-001",
+          "DR-001",
+          "BR-007",
+          "FR-007",
+          "NFR-M-002",
+          "INT-007",
+          "FR-004",
+          "FR-006",
+          "FR-011",
+          "NFR-SEC-007",
+          "NFR-SEC-005",
+          "FR-013",
+          "FR-010",
+          "FR-012",
+          "BR-001",
+          "BR-008"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 2
+        }
+      },
+      "ARC-002-AZRS-v1.0": {
+        "type": "AZRS",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/research/ARC-002-AZRS-v1.0.md",
+        "title": "Azure Technology Research: ArcKit as a Service (Sovereign Deployment)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-002-AZRS-v1.0",
+          "Document Type": "Azure Technology Research (Sovereign / Disconnected)",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture, Security, MOD Defence Digital liaison, NCSC liaison, Sovereign Delivery Lead",
+          "Sovereign compute platform": "**Azure Local** with disconnected operations (preferred for new MOD builds)",
+          "Alternate compute platform": "**Azure Stack Hub** integrated systems (existing MOD estates / \"submarine\" deployments)",
+          "Container orchestration": "**AKS enabled by Azure Arc on Azure Local** (or AKS Engine on Azure Stack Hub for legacy estates)",
+          "Container registry (in-boundary)": "**Azure Container Registry on Azure Local disconnected operations**",
+          "Customer-managed keys": "**Azure Key Vault** on Azure Local disconnected operations + customer on-prem HSM for root of trust",
+          "On-premise AI (FR-004 / ADR-004)": "**Foundry Local on Azure Local** (preview) or customer-stood TGI/vLLM/Triton on Azure Local AKS Arc",
+          "Identity (AD FS — disconnected)": "Customer **AD FS** + on-prem Microsoft Entra ID Federated Services (mandatory when fully disconnected)",
+          "GitOps / declarative deployment": "**Flux v2** as Azure Arc Kubernetes extension (works in disconnected operations preview)",
+          "Procurement route": "**G-Cloud 14** (RM1557.14) — Microsoft Limited as supplier; ArcKit listing call-off",
+          "Where SECRET is required": "**Azure Stack Hub air-gapped** (\"submarine\" model) — no managed-Azure region is suitable above OFFICIAL",
+          "UK Region Availability": "Not directly relevant",
+          "G-Cloud Listing": "Yes — RM1557.14 (G-Cloud 14)",
+          "Data Classification": "OFFICIAL / OFFICIAL-SENSITIVE on Azure Local disconnected; SECRET via Azure Stack Hub air-gapped (\"submarine\"); TOP SECRET only with bespoke MOD accreditation",
+          "NCSC Cloud Security Principles": "Customer-led mapping using vendor evidence",
+          "MOD Secure by Design / JSP 440 / JSP 604": "Customer-led; vendor provides evidence pack per release",
+          "DTA21 MOU": "Available to eligible UK public-sector buyers",
+          "Reliability": "Multi-node clusters, disconnected operations supports availability targets within customer envelope (NFR-A-001)",
+          "Security": "Disconnected by design; customer-managed keys via Azure Key Vault on Azure Local; Arc-enabled RBAC; satisfies NFR-SEC-004 zero-egress",
+          "Cost Optimization": "Per-physical-core pricing predictable; no inadvertent egress charges",
+          "Operational Excellence": "Same Azure portal/CLI/ARM tooling as connected Azure — reduces customer operator learning curve (FR-011 runbook value)",
+          "Performance Efficiency": "Scales horizontally within customer-provisioned envelope (NFR-S-001)",
+          "NS Network Security": "Customer-implemented",
+          "IM Identity Management": "AD FS",
+          "PA Privileged Access": "Customer-controlled",
+          "DP Data Protection": "CMK + HSM root",
+          "AM Asset Management": "Azure Policy disconnected",
+          "LT Logging & Threat Detection": "Customer SIEM",
+          "IR Incident Response": "Customer-led; vendor advisory",
+          "PV Posture & Vulnerability": "Customer + vendor SBOM",
+          "ES Endpoint Security": "Defender on Azure Local",
+          "BR Backup & Recovery": "Customer-controlled",
+          "DS DevOps Security": "Vendor-side",
+          "GS Governance & Strategy": "ArcKit ARB + customer accreditor",
+          "MOD Secure by Design": "Customer-led; vendor evidence pack per release",
+          "JSP 440 / JSP 604": "Customer-led",
+          "NCSC CAF": "Mapped per release",
+          "NCSC Cloud Security Principles (14)": "Apply primarily to managed-SaaS shape",
+          "HMG Government Security Classifications Policy": "Configurable max-classification per deployment",
+          "DCPP Cyber Risk Profile": "Identified at engagement",
+          "OFFICIAL": "Suitable",
+          "OFFICIAL-SENSITIVE": "Suitable subject to procedural / personnel controls",
+          "SECRET": "Azure Stack Hub air-gapped; Tactical Stack Hub for field",
+          "TOP SECRET": "Bespoke MOD accreditation",
+          "Indicative customer monthly total": "| **£11k–£30k**"
+        },
+        "reqIds": [
+          "FR-004",
+          "BR-004",
+          "NFR-SEC-001",
+          "BR-001",
+          "BR-002",
+          "BR-003",
+          "FR-001",
+          "FR-002",
+          "FR-003",
+          "FR-005",
+          "NFR-A-003",
+          "NFR-SEC-004",
+          "INT-002",
+          "INT-003",
+          "BR-006",
+          "NFR-A-001",
+          "FR-011",
+          "NFR-S-001",
+          "INT-007",
+          "FR-010",
+          "NFR-M-002",
+          "BR-1",
+          "FR-012",
+          "FR-006",
+          "NFR-SEC-008",
+          "FR-014",
+          "NFR-M-001",
+          "NFR-SEC-005",
+          "NFR-SEC-003",
+          "DR-006",
+          "FR-007",
+          "INT-001",
+          "NFR-SEC-007",
+          "NFR-C-004",
+          "BR-007",
+          "INT-008",
+          "FR-013",
+          "NFR-A-002",
+          "BR-005"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 2
+        }
+      },
+      "ARC-002-GCRS-v1.0": {
+        "type": "GCRS",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/research/ARC-002-GCRS-v1.0.md",
+        "title": "Google Cloud Technology Research: ArcKit as a Service (Sovereign Deployment)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit as a Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-002-GCRS-v1.0",
+          "Document Type": "Google Cloud Technology Research",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Date": "2026-08-03",
+          "Owner": "Mark Craddock (ArcKit as a Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture Team, MOD Defence Digital liaison, NCSC liaison",
+          "Vendor-side total (monthly)": "—",
+          "UK Region Availability (vendor side)": "europe-west2 (London)",
+          "Sovereign Cloud Option (customer side)": "GDC Air-Gapped",
+          "G-Cloud Listing": "G-Cloud 14",
+          "Data Classification — OFFICIAL": "Suitable",
+          "Data Classification — OFFICIAL-SENSITIVE": "Suitable subject to deploying-authority accreditation",
+          "Data Classification — SECRET": "Subject to MOD-specific accreditation programme",
+          "NCSC Cloud Security Principles": "14/14 (Google attested)",
+          "MOD Secure by Design / JSP 440 / JSP 604": "n/a (vendor side)",
+          "Hyperscaler vs sovereign tension": "Resolved by GDC Air-Gapped",
+          "Total (v1)": "| **£820**",
+          "Sustainability": "Constrained",
+          "Operational Excellence": "Strong",
+          "Security, Privacy and Compliance": "Strong",
+          "Reliability": "Strong",
+          "Cost Optimization": "Trade-off",
+          "Performance Optimization": "Strong",
+          "Subtotal": "| **£180**",
+          "Vulnerability Findings": "Local Container Analysis + customer's own scanner integrated into sealed-media gating",
+          "Misconfiguration Findings": "Policy Controller (Gatekeeper) + customer policy library",
+          "Threat Findings": "Customer SIEM (Chronicle on-prem where licensed; Splunk; ELK) consuming GDC log streams",
+          "Compliance Findings": "Vendor SbD pack (BR-004) + customer-led JSP 604 / NCSC CAF mapping",
+          "Identity & Access": "Anthos Identity Service federated to customer IdP; cleared-personnel claim enforced (NFR-SEC-007)",
+          "Data Protection": "Customer-managed keys via in-rack KMS/HSM (INT-007)",
+          "Network Security": "Physical air-gap + customer VLAN isolation + in-rack network policies",
+          "Cyber Essentials Plus": "Inherited from Google + vendor configuration",
+          "UK GDPR": "Compliant (vendor doesn't process customer artefact data)",
+          "Government Security Classifications Policy — OFFICIAL": "Suitable",
+          "OFFICIAL-SENSITIVE": "Suitable with VPC SC + CMEK",
+          "SECRET": "Not used (vendor doesn't host customer SECRET data)",
+          "Vendor total": "|",
+          "Total": "|",
+          "Per-site 3-year indicative total": "**£550k–£1.5m**"
+        },
+        "reqIds": [
+          "FR-004",
+          "NFR-SEC-004",
+          "BR-004",
+          "NFR-SEC-001",
+          "BR-002",
+          "BR-003",
+          "FR-001",
+          "FR-002",
+          "FR-003",
+          "FR-005",
+          "NFR-SEC-002",
+          "NFR-SEC-006",
+          "NFR-A-003",
+          "INT-002",
+          "INT-003",
+          "INT-004",
+          "INT-007",
+          "BR-001",
+          "INT-001",
+          "FR-007",
+          "NFR-M-002",
+          "NFR-SEC-003",
+          "FR-011",
+          "BR-006",
+          "BR-005",
+          "NFR-A-002",
+          "NFR-P-002",
+          "INT-005",
+          "NFR-SEC-005",
+          "FR-014",
+          "NFR-C-005",
+          "NFR-SEC-008",
+          "INT-010",
+          "BR-007",
+          "BR-008",
+          "NFR-SEC-007",
+          "NFR-C-002",
+          "NFR-C-004"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 2
+        }
+      },
+      "ARC-002-RSCH-v1.0": {
+        "type": "RSCH",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/research/ARC-002-RSCH-v1.0.md",
+        "title": "Technology and Service Research: ArcKit as a Service (Sovereign / Air-Gapped Deployment)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-03",
+        "lastModified": "2026-05-03",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit as a Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-002-RSCH-v1.0",
+          "Document Type": "Research Findings (Technology and Vendor Market)",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-03",
+          "Last Modified": "2026-05-03",
+          "Review Cycle": "Annual (refresh each year of the SOBC outlook)",
+          "Next Review Date": "2027-05-03",
+          "Owner": "Mark Craddock (ArcKit as a Service Owner)",
+          "Reviewed By": "PENDING",
+          "Approved By": "PENDING",
+          "Distribution": "Project 002 team, MOD Defence Digital liaison, NCSC liaison, Vendor Security Lead, Customer Accreditator (pilot), CCS liaison",
+          "GOV.UK Platforms / UK Government code": "1 (gov-reuse of MOD / Defence Digital and GDS open-source patterns; integrate where appropriate)",
+          "TOTAL": "9 categories",
+          "Total": "**£710K**",
+          "3-Year TCO": "|",
+          "Total vendor-side": "**£1.6M over 3 years**",
+          "Per-customer 3-year cost-to-serve": "|"
+        },
+        "reqIds": [
+          "BR-001",
+          "BR-008",
+          "FR-001",
+          "FR-014",
+          "NFR-P-001",
+          "NFR-P-003",
+          "NFR-A-001",
+          "NFR-A-003",
+          "NFR-S-001",
+          "NFR-SEC-001",
+          "NFR-SEC-008",
+          "NFR-C-001",
+          "NFR-C-005",
+          "NFR-M-001",
+          "NFR-M-002",
+          "NFR-I-001",
+          "NFR-I-002",
+          "INT-001",
+          "INT-010",
+          "FR-004",
+          "NFR-SEC-005",
+          "NFR-SEC-003",
+          "FR-007",
+          "NFR-SEC-007",
+          "BR-007",
+          "FR-002",
+          "FR-013",
+          "BR-002",
+          "BR-005",
+          "INT-002",
+          "NFR-A-002",
+          "INT-005",
+          "FR-005",
+          "INT-004",
+          "FR-010",
+          "NFR-C-004",
+          "FR-006",
+          "NFR-SEC-006",
+          "INT-008",
+          "BR-006",
+          "BR-003",
+          "NFR-P-002",
+          "FR-008",
+          "BR-004",
+          "FR-003",
+          "FR-009",
+          "FR-011",
+          "FR-012",
+          "NFR-SEC-002",
+          "NFR-SEC-004",
+          "NFR-C-002",
+          "NFR-C-003"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 2
         }
       }
     },
@@ -5894,6 +6577,56 @@
       {
         "from": "ARC-001-AIPB-v1.0",
         "to": "ARC-001-TCOP",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DATA-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DATA-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DATA-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DATA-v1.0",
+        "to": "ARC-001-DPIA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DATA-v1.0",
+        "to": "ARC-001-HLDR",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DATA-v1.0",
+        "to": "ARC-001-OPS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DATA-v1.0",
+        "to": "ARC-001-TCOP",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DATA-v1.0",
+        "to": "ARC-001-ADR-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DATA-v1.0",
+        "to": "ARC-001-ADR-002",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DATA-v1.0",
+        "to": "ARC-001-ADR-006",
         "type": "references"
       },
       {
@@ -7607,6 +8340,46 @@
         "type": "references"
       },
       {
+        "from": "ARC-002-JSP936-v1.0",
+        "to": "ARC-002-SECD",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-JSP936-v1.0",
+        "to": "ARC-002-DPIA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-JSP936-v1.0",
+        "to": "ARC-002-ADR-004",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-JSP936-v1.0",
+        "to": "ARC-001-ADR-004",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-JSP936-v1.0",
+        "to": "ARC-002-AIPB",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-JSP936-v1.0",
+        "to": "ARC-002-RISK",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-JSP936-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-JSP936-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
         "from": "ARC-002-OPS-v1.0",
         "to": "ARC-002-DEVOPS",
         "type": "references"
@@ -8400,11 +9173,166 @@
         "from": "ARC-002-DIAG-003-v1.0",
         "to": "ARC-002-DIAG-002",
         "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-004-v1.0",
+        "to": "ARC-002-DIAG-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-004-v1.0",
+        "to": "ARC-002-HLDR",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-004-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-004-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-004-v1.0",
+        "to": "ARC-002-ADR-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-004-v1.0",
+        "to": "ARC-002-ADR-005",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-004-v1.0",
+        "to": "ARC-002-ADR-007",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-004-v1.0",
+        "to": "ARC-002-DIAG-002",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-004-v1.0",
+        "to": "ARC-002-DIAG-003",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-AWRS-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-AWRS-v1.0",
+        "to": "ARC-002-ADR-007",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-AWRS-v1.0",
+        "to": "ARC-002-ADR-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-AZRS-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-AZRS-v1.0",
+        "to": "ARC-002-ADR-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-AZRS-v1.0",
+        "to": "ARC-002-ADR-004",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-AZRS-v1.0",
+        "to": "ARC-002-PLAN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-AZRS-v1.0",
+        "to": "ARC-002-OPS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-AZRS-v1.0",
+        "to": "ARC-002-SOBC",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-AZRS-v1.0",
+        "to": "ARC-002-ROAD",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-AZRS-v1.0",
+        "to": "ARC-002-DEVOPS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-AZRS-v1.0",
+        "to": "ARC-002-FINOPS",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-GCRS-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-GCRS-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-GCRS-v1.0",
+        "to": "ARC-002-ADR-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-GCRS-v1.0",
+        "to": "ARC-002-ADR-007",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-GCRS-v1.0",
+        "to": "ARC-000-RSCH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-RSCH-v1.0",
+        "to": "ARC-000-RSCH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-RSCH-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-RSCH-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-RSCH-v1.0",
+        "to": "ARC-001-RSCH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-RSCH-v1.0",
+        "to": "ARC-002-STKE",
+        "type": "references"
       }
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-03T22:12:55.744Z",
+    "baseline": "2026-05-05T10:18:42.938Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -8474,9 +9402,107 @@
       {
         "project": "001-arckit-saas",
         "projectId": "001",
+        "artifactCount": 33,
+        "edgeCount": 313,
+        "density": 9.48,
+        "coverage": {
+          "essentialPresent": [
+            "REQ",
+            "STKE",
+            "RISK",
+            "SOBC",
+            "ADR",
+            "HLDR",
+            "TRAC"
+          ],
+          "essentialMissing": [
+            {
+              "type": "CONF",
+              "command": "/arckit:conformance",
+              "label": "Conformance Assessment",
+              "tier": 4
+            }
+          ],
+          "essentialPct": 88,
+          "presentTypes": [
+            "ADR",
+            "AIPB",
+            "AWRS",
+            "AZRS",
+            "DATA",
+            "DEVOPS",
+            "DIAG",
+            "DPIA",
+            "FINOPS",
+            "GCRS",
+            "GOVR",
+            "HLDR",
+            "OPS",
+            "PLAN",
+            "REQ",
+            "RISK",
+            "ROAD",
+            "RSCH",
+            "SECD",
+            "SOBC",
+            "STKE",
+            "SVCASS",
+            "TCOP",
+            "TRAC"
+          ],
+          "presentByCategory": {
+            "Compliance": 5,
+            "Architecture": 4,
+            "Operations": 3,
+            "Planning": 3,
+            "Discovery": 3,
+            "Governance": 2,
+            "Research": 4
+          }
+        },
+        "compliance": {
+          "presentHigh": [
+            "TCOP",
+            "SECD",
+            "DPIA",
+            "SVCASS",
+            "RISK",
+            "TRAC",
+            "AIPB"
+          ],
+          "missingHigh": [
+            "SECD-MOD",
+            "CONF",
+            "PRIN-COMP",
+            "ATRS",
+            "JSP936"
+          ],
+          "pct": 58,
+          "total": 12
+        },
+        "health": {
+          "stale": 0,
+          "draft": 28,
+          "orphan": 0
+        },
+        "contextualSuggestions": [],
+        "hasGlobalPrin": true,
+        "recommendations": [
+          {
+            "command": "/arckit:conformance",
+            "label": "Conformance Assessment",
+            "type": "CONF",
+            "tier": 4,
+            "reason": "Tier 4 essential missing"
+          }
+        ]
+      },
+      {
+        "project": "002-arckit-sovereign",
+        "projectId": "002",
         "artifactCount": 32,
-        "edgeCount": 303,
-        "density": 9.47,
+        "edgeCount": 247,
+        "density": 7.72,
         "coverage": {
           "essentialPresent": [
             "REQ",
@@ -8506,18 +9532,17 @@
             "DPIA",
             "FINOPS",
             "GCRS",
-            "GOVR",
             "HLDR",
+            "JSP936",
             "OPS",
             "PLAN",
             "REQ",
             "RISK",
             "ROAD",
             "RSCH",
-            "SECD",
+            "SECD-MOD",
             "SOBC",
             "STKE",
-            "SVCASS",
             "TCOP",
             "TRAC"
           ],
@@ -8528,25 +9553,25 @@
             "Planning": 3,
             "Discovery": 3,
             "Governance": 2,
-            "Research": 4
+            "Research": 3
           }
         },
         "compliance": {
           "presentHigh": [
             "TCOP",
-            "SECD",
+            "SECD-MOD",
             "DPIA",
-            "SVCASS",
             "RISK",
             "TRAC",
-            "AIPB"
+            "AIPB",
+            "JSP936"
           ],
           "missingHigh": [
-            "SECD-MOD",
+            "SECD",
+            "SVCASS",
             "CONF",
             "PRIN-COMP",
-            "ATRS",
-            "JSP936"
+            "ATRS"
           ],
           "pct": 58,
           "total": 12
@@ -8554,102 +9579,6 @@
         "health": {
           "stale": 0,
           "draft": 27,
-          "orphan": 0
-        },
-        "contextualSuggestions": [
-          {
-            "command": "/arckit:data-model",
-            "type": "DATA",
-            "trigger": "DR-* requirements present"
-          }
-        ],
-        "hasGlobalPrin": true,
-        "recommendations": [
-          {
-            "command": "/arckit:conformance",
-            "label": "Conformance Assessment",
-            "type": "CONF",
-            "tier": 4,
-            "reason": "Tier 4 essential missing"
-          }
-        ]
-      },
-      {
-        "project": "002-arckit-sovereign",
-        "projectId": "002",
-        "artifactCount": 26,
-        "edgeCount": 208,
-        "density": 8,
-        "coverage": {
-          "essentialPresent": [
-            "REQ",
-            "STKE",
-            "RISK",
-            "SOBC",
-            "ADR",
-            "HLDR",
-            "TRAC"
-          ],
-          "essentialMissing": [
-            {
-              "type": "CONF",
-              "command": "/arckit:conformance",
-              "label": "Conformance Assessment",
-              "tier": 4
-            }
-          ],
-          "essentialPct": 88,
-          "presentTypes": [
-            "ADR",
-            "AIPB",
-            "DEVOPS",
-            "DIAG",
-            "DPIA",
-            "FINOPS",
-            "HLDR",
-            "OPS",
-            "PLAN",
-            "REQ",
-            "RISK",
-            "ROAD",
-            "SECD-MOD",
-            "SOBC",
-            "STKE",
-            "TCOP",
-            "TRAC"
-          ],
-          "presentByCategory": {
-            "Compliance": 4,
-            "Operations": 3,
-            "Architecture": 3,
-            "Planning": 3,
-            "Discovery": 2,
-            "Governance": 2
-          }
-        },
-        "compliance": {
-          "presentHigh": [
-            "TCOP",
-            "SECD-MOD",
-            "DPIA",
-            "RISK",
-            "TRAC",
-            "AIPB"
-          ],
-          "missingHigh": [
-            "SECD",
-            "SVCASS",
-            "CONF",
-            "PRIN-COMP",
-            "ATRS",
-            "JSP936"
-          ],
-          "pct": 50,
-          "total": 12
-        },
-        "health": {
-          "stale": 0,
-          "draft": 21,
           "orphan": 0
         },
         "contextualSuggestions": [
