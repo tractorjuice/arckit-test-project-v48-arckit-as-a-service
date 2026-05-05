@@ -221,7 +221,7 @@ erDiagram
     }
     CELL_ASSIGNMENT {
         uuid assignment_id PK
-        uuid tenant_id FK UK "One assignment per tenant"
+        uuid tenant_id FK "One assignment per tenant (unique)"
         string cell_id "e.g., uk-cell-01"
         string aws_region "Always uk-* default"
         timestamp assigned_at
