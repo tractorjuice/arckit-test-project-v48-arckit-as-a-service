@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-05T10:46:39.348Z",
+  "generated": "2026-05-06T15:26:54.114Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -1459,6 +1459,12 @@
           "extension": ".md"
         },
         {
+          "path": "projects/002-arckit-sovereign/research/ARC-002-DSCT-v1.0.md",
+          "title": "Data Source Discovery: ArcKit as a Service (Sovereign Deployment)",
+          "documentId": "ARC-002-DSCT-v1.0",
+          "extension": ".md"
+        },
+        {
           "path": "projects/002-arckit-sovereign/research/ARC-002-GCRS-v1.0.md",
           "title": "Google Cloud Technology Research: ArcKit as a Service (Sovereign Deployment)",
           "documentId": "ARC-002-GCRS-v1.0",
@@ -1510,7 +1516,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-000-PRIN-v2.0": {
@@ -1548,7 +1554,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-000-RSCH-v1.0": {
@@ -1621,7 +1627,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-AIPB-v1.0": {
@@ -1672,7 +1678,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-DATA-v1.0": {
@@ -1751,7 +1757,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 1
         }
       },
       "ARC-001-DEVOPS-v1.0": {
@@ -1833,7 +1839,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-DPIA-v1.0": {
@@ -1920,7 +1926,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-FINOPS-v1.0": {
@@ -1969,7 +1975,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-HLDR-v1.0": {
@@ -2225,7 +2231,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-PLAN-v1.0": {
@@ -2267,7 +2273,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-REQ-v1.0": {
@@ -2376,7 +2382,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-RISK-v1.0": {
@@ -2449,7 +2455,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-ROAD-v1.0": {
@@ -2536,7 +2542,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-SECD-v1.0": {
@@ -2593,7 +2599,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-SOBC-v1.0": {
@@ -2668,7 +2674,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-STKE-v1.0": {
@@ -2719,7 +2725,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-SVCASS-v1.0": {
@@ -2781,7 +2787,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-TCOP-v1.0": {
@@ -2840,7 +2846,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-TRAC-v1.0": {
@@ -2944,7 +2950,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-ADR-001-v1.0": {
@@ -3013,7 +3019,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-ADR-002-v1.0": {
@@ -3089,7 +3095,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-ADR-003-v1.0": {
@@ -3153,7 +3159,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-ADR-004-v1.0": {
@@ -3219,7 +3225,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-ADR-005-v1.0": {
@@ -3288,7 +3294,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-ADR-006-v1.0": {
@@ -3356,7 +3362,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-ADR-007-v1.0": {
@@ -3421,7 +3427,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-ADR-008-v1.0": {
@@ -3493,7 +3499,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-DIAG-001-v1.0": {
@@ -3666,7 +3672,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-AWRS-v1.0": {
@@ -3762,7 +3768,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-AZRS-v1.0": {
@@ -3870,7 +3876,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-GCRS-v1.0": {
@@ -4097,7 +4103,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-001-RSCH-v1.0": {
@@ -4191,7 +4197,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-AIPB-v1.0": {
@@ -4256,7 +4262,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-DEVOPS-v1.0": {
@@ -4328,7 +4334,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-DPIA-v1.0": {
@@ -4385,7 +4391,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-FINOPS-v1.0": {
@@ -4454,7 +4460,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-HLDR-v1.0": {
@@ -4553,7 +4559,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-JSP936-v1.0": {
@@ -4628,7 +4634,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-OPS-v1.0": {
@@ -4704,7 +4710,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-PLAN-v1.0": {
@@ -4835,7 +4841,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-RISK-v1.0": {
@@ -4908,7 +4914,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-ROAD-v1.0": {
@@ -4964,7 +4970,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-SECD-MOD-v1.0": {
@@ -5032,7 +5038,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-SOBC-v1.0": {
@@ -5110,7 +5116,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-STKE-v1.0": {
@@ -5163,7 +5169,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-TCOP-v1.0": {
@@ -5248,7 +5254,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-TRAC-v1.0": {
@@ -5338,7 +5344,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-ADR-001-v1.0": {
@@ -5435,7 +5441,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-ADR-002-v1.0": {
@@ -5493,7 +5499,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-ADR-003-v1.0": {
@@ -5575,7 +5581,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-ADR-004-v1.0": {
@@ -5656,7 +5662,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-ADR-005-v1.0": {
@@ -5733,7 +5739,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-ADR-006-v1.0": {
@@ -5782,7 +5788,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-ADR-007-v1.0": {
@@ -5855,7 +5861,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-ADR-008-v1.0": {
@@ -5912,7 +5918,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-DIAG-001-v1.0": {
@@ -5972,7 +5978,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-DIAG-002-v1.0": {
@@ -6038,7 +6044,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-DIAG-003-v1.0": {
@@ -6100,7 +6106,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-DIAG-004-v1.0": {
@@ -6169,7 +6175,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-AWRS-v1.0": {
@@ -6256,7 +6262,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-AZRS-v1.0": {
@@ -6377,7 +6383,110 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
+        }
+      },
+      "ARC-002-DSCT-v1.0": {
+        "type": "DSCT",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/research/ARC-002-DSCT-v1.0.md",
+        "title": "Data Source Discovery: ArcKit as a Service (Sovereign Deployment)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-06",
+        "lastModified": "2026-05-06",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit as a Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-002-DSCT-v1.0",
+          "Document Type": "Data Source Discovery",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-06",
+          "Last Modified": "2026-05-06",
+          "Review Cycle": "Quarterly",
+          "Next Review Date": "2026-08-06",
+          "Owner": "Mark Craddock (ArcKit as a Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture Team, MOD Defence Digital liaison, NCSC liaison",
+          "UK Government Open Data": "10",
+          "Commercial APIs": "0",
+          "Free/Freemium APIs": "5",
+          "Open Source Datasets / Rulesets": "1",
+          "TOTAL": "|",
+          "License": "OGL-v3",
+          "Pricing": "Free",
+          "Format": "JSON / XML notices",
+          "API Endpoint": "bulk via data.gov.uk; search via web UI",
+          "Authentication": "None (read) / API key (downloads)",
+          "Rate Limits": "n/a (bulk)",
+          "Update Frequency": "Daily",
+          "Coverage": "UK-wide",
+          "Temporal Coverage": "Live + historical filings",
+          "Data Quality": "20%",
+          "Documentation": "Excellent — `developer-specs.company-information.service.gov.uk`",
+          "SLA": "Best-effort; not contractual",
+          "GDPR Status": "No personal data",
+          "UK Data Residency": "Yes",
+          "Total": "**100%**",
+          "Provider": "Companies House",
+          "Cost (Annual)": "£0",
+          "Freshness": "Daily",
+          "API Quality": "15%",
+          "Requirements Fit": "25%",
+          "License & Cost": "15%",
+          "Compliance": "15%",
+          "Reliability": "10%",
+          "TOTAL SCORE": "**85.5**",
+          "Proxy Indicator": "EPSS",
+          "Cross-Domain Enrichment": "Companies House",
+          "Trend Detection": "GHSA + OSV",
+          "Predictive Feature": "EPSS"
+        },
+        "reqIds": [
+          "DR-001",
+          "FR-007",
+          "FR-012",
+          "FR-014",
+          "INT-001",
+          "NFR-SEC-001",
+          "NFR-C-001",
+          "BR-002",
+          "NFR-SEC-004",
+          "BR-006",
+          "BR-005",
+          "NFR-SEC-005",
+          "NFR-SEC-008",
+          "BR-007",
+          "NFR-SEC-003",
+          "NFR-C-003",
+          "INT-002",
+          "BR-004",
+          "INT-007",
+          "INT-008",
+          "INT-010",
+          "NFR-SEC-002",
+          "DR-007",
+          "DR-002",
+          "NFR-SEC-007",
+          "BR-008",
+          "INT-003",
+          "INT-004",
+          "INT-005",
+          "INT-006",
+          "INT-009"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
         }
       },
       "ARC-002-GCRS-v1.0": {
@@ -6486,7 +6595,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       },
       "ARC-002-RSCH-v1.0": {
@@ -6583,7 +6692,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 2
+          "ageDays": 3
         }
       }
     },
@@ -9364,6 +9473,26 @@
         "type": "references"
       },
       {
+        "from": "ARC-002-DSCT-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DSCT-v1.0",
+        "to": "ARC-002-DATA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DSCT-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DSCT-v1.0",
+        "to": "ARC-001-DSCT",
+        "type": "references"
+      },
+      {
         "from": "ARC-002-GCRS-v1.0",
         "to": "ARC-000-PRIN",
         "type": "references"
@@ -9416,7 +9545,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-05T10:46:39.498Z",
+    "baseline": "2026-05-06T15:26:54.160Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -9584,9 +9713,9 @@
       {
         "project": "002-arckit-sovereign",
         "projectId": "002",
-        "artifactCount": 32,
-        "edgeCount": 247,
-        "density": 7.72,
+        "artifactCount": 33,
+        "edgeCount": 251,
+        "density": 7.61,
         "coverage": {
           "essentialPresent": [
             "REQ",
@@ -9614,6 +9743,7 @@
             "DEVOPS",
             "DIAG",
             "DPIA",
+            "DSCT",
             "FINOPS",
             "GCRS",
             "HLDR",
@@ -9635,7 +9765,7 @@
             "Operations": 3,
             "Architecture": 3,
             "Planning": 3,
-            "Discovery": 3,
+            "Discovery": 4,
             "Governance": 2,
             "Research": 3
           }
@@ -9662,7 +9792,7 @@
         },
         "health": {
           "stale": 0,
-          "draft": 27,
+          "draft": 28,
           "orphan": 0
         },
         "contextualSuggestions": [

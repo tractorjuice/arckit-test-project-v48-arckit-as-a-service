@@ -10,5 +10,6 @@
   },
   "enabledPlugins": {
     "arckit@arc-kit": true
-  }
+  },
+  "skillListingBudgetFraction": 0.2
 }
