@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-06T15:26:54.114Z",
+  "generated": "2026-05-06T16:46:30.505Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -1205,6 +1205,12 @@
           "extension": ".md"
         },
         {
+          "path": "projects/001-arckit-saas/research/ARC-001-DSCT-v1.0.md",
+          "title": "Data Source Discovery: ArcKit as a Service",
+          "documentId": "ARC-001-DSCT-v1.0",
+          "extension": ".md"
+        },
+        {
           "path": "projects/001-arckit-saas/research/ARC-001-GCRS-v1.0.md",
           "title": "Google Cloud Technology Research: ArcKit as a Service",
           "documentId": "ARC-001-GCRS-v1.0",
@@ -1462,6 +1468,12 @@
           "path": "projects/002-arckit-sovereign/research/ARC-002-DSCT-v1.0.md",
           "title": "Data Source Discovery: ArcKit as a Service (Sovereign Deployment)",
           "documentId": "ARC-002-DSCT-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/research/ARC-002-DSCT-v1.1.md",
+          "title": "Data Source Discovery: ArcKit as a Service (Sovereign Deployment)",
+          "documentId": "ARC-002-DSCT-v1.1",
           "extension": ".md"
         },
         {
@@ -3877,6 +3889,101 @@
           "draft": true,
           "orphan": false,
           "ageDays": 3
+        }
+      },
+      "ARC-001-DSCT-v1.0": {
+        "type": "DSCT",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/research/ARC-001-DSCT-v1.0.md",
+        "title": "Data Source Discovery: ArcKit as a Service",
+        "status": "",
+        "severity": "LOW",
+        "createdDate": null,
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock, ArcKit as a Service Owner",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-001-DSCT-v1.0",
+          "Project": "ArcKit as a Service (001)",
+          "Classification": "OFFICIAL",
+          "Version": "1.0",
+          "Date": "2026-05-06",
+          "Owner": "Mark Craddock, ArcKit as a Service Owner",
+          "Rubric Used": "uk-gov",
+          "AI Model": "Claude Opus 4.7 (1M context)",
+          "UK Government Open Data": "12",
+          "Commercial APIs": "9",
+          "Free/Freemium APIs": "5",
+          "Open Source Datasets": "0",
+          "TOTAL": "|",
+          "License": "OGL-v3",
+          "Pricing": "open-data",
+          "Format": "JSON event stream",
+          "API Endpoint": "https://developer-specs.company-information.service.gov.uk/",
+          "Authentication": "None",
+          "Rate Limits": "180/min",
+          "Update Frequency": "quarterly",
+          "Coverage": "UK",
+          "Temporal Coverage": "Live register",
+          "Data Quality": "20%",
+          "Documentation": "Excellent (developer-specs portal)",
+          "SLA": "Best-effort (no contractual SLA on free tier)",
+          "GDPR Status": "Public register; officer PII is publicly published per statute",
+          "UK Data Residency": "Yes (GB)",
+          "Total": "**100%**",
+          "Provider": "Companies House",
+          "Cost (Annual)": "£0",
+          "Freshness": "Monthly",
+          "Requirements Fit": "25%",
+          "License & Cost": "15%",
+          "API Quality": "15%",
+          "Compliance": "15%",
+          "Reliability": "10%",
+          "TOTAL SCORE": "**52.8**",
+          "Certifications": "ISO 27001, SOC 2 Type 2, GDPR-compliant-asserted, G-Cloud-listed",
+          "Cost": "Freemium",
+          "Proxy Indicator": "Companies House Streaming",
+          "Cross-Domain Enrichment": "SIC Codes + Companies House",
+          "Trend Detection": "ONS CPI",
+          "Predictive Feature": "postcodes.io / ONSPD"
+        },
+        "reqIds": [
+          "FR-001",
+          "BR-003",
+          "INT-003",
+          "FR-011",
+          "FR-007",
+          "INT-001",
+          "NFR-SEC-001",
+          "DR-001",
+          "DR-007",
+          "FR-013",
+          "NFR-SEC-007",
+          "DR-002",
+          "BR-002",
+          "BR-005",
+          "DR-005",
+          "NFR-C-001",
+          "DR-006",
+          "BR-006",
+          "INT-002",
+          "INT-004",
+          "INT-005",
+          "INT-006",
+          "INT-007",
+          "INT-008",
+          "INT-009",
+          "DR-003",
+          "DR-004"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": false,
+          "ageDays": null
         }
       },
       "ARC-001-GCRS-v1.0": {
@@ -6489,6 +6596,102 @@
           "ageDays": 0
         }
       },
+      "ARC-002-DSCT-v1.1": {
+        "type": "DSCT",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/research/ARC-002-DSCT-v1.1.md",
+        "title": "Data Source Discovery: ArcKit as a Service (Sovereign Deployment)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-06",
+        "lastModified": "2026-05-06",
+        "version": "1.1",
+        "owner": "Mark Craddock (ArcKit as a Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-002-DSCT-v1.1",
+          "Document Type": "Data Source Discovery",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.1",
+          "Created Date": "2026-05-06",
+          "Last Modified": "2026-05-06",
+          "Review Cycle": "Quarterly",
+          "Next Review Date": "2026-08-06",
+          "Owner": "Mark Craddock (ArcKit as a Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture Team, MOD Defence Digital liaison, NCSC liaison",
+          "UK Government Open Data": "16",
+          "Commercial APIs": "0",
+          "Free/Freemium APIs": "4",
+          "Open Source Datasets / Rulesets": "6",
+          "TOTAL": "|",
+          "Hosted In": "GB",
+          "Licence Type": "OGL-v3",
+          "Pricing Model": "open-data",
+          "Rate Limit": "1000 req / minute",
+          "Refresh Cadence": "annual",
+          "Authentication Required": "false",
+          "Authentication Method": "none",
+          "Data Categories Supported": "security-classification, official, secret, top-secret, handling-rules",
+          "Total": "**100%**",
+          "Contract Vehicles": "G-Cloud-14, G-Cloud-13, DOS-6, Crown-Commercial",
+          "Certifications": "OGL-v3",
+          "Requirements Fit": "25%",
+          "Data Quality": "20%",
+          "Licence & Cost": "15%",
+          "API Quality": "15%",
+          "Compliance": "15%",
+          "Reliability": "10%",
+          "Proxy Indicator": "EPSS",
+          "Cross-Domain Enrichment": "Companies House",
+          "Trend Detection": "GHSA + OSV",
+          "Predictive Feature": "EPSS"
+        },
+        "reqIds": [
+          "DR-001",
+          "FR-007",
+          "FR-012",
+          "FR-014",
+          "INT-001",
+          "NFR-SEC-001",
+          "NFR-C-001",
+          "NFR-C-003",
+          "BR-002",
+          "NFR-SEC-004",
+          "BR-006",
+          "NFR-SEC-005",
+          "NFR-SEC-008",
+          "DR-007",
+          "INT-010",
+          "BR-007",
+          "NFR-SEC-003",
+          "INT-007",
+          "INT-002",
+          "BR-004",
+          "BR-005",
+          "INT-008",
+          "NFR-SEC-002",
+          "NFR-SEC-007",
+          "DR-002",
+          "BR-008",
+          "INT-003",
+          "INT-004",
+          "INT-005",
+          "INT-006",
+          "INT-009"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
       "ARC-002-GCRS-v1.0": {
         "type": "GCRS",
         "project": "002-arckit-sovereign",
@@ -8193,6 +8396,11 @@
         "type": "references"
       },
       {
+        "from": "ARC-001-DSCT-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
         "from": "ARC-001-GCRS-v1.0",
         "to": "ARC-001-DPIA",
         "type": "references"
@@ -9493,6 +9701,21 @@
         "type": "references"
       },
       {
+        "from": "ARC-002-DSCT-v1.1",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DSCT-v1.1",
+        "to": "ARC-002-DATA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DSCT-v1.1",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
         "from": "ARC-002-GCRS-v1.0",
         "to": "ARC-000-PRIN",
         "type": "references"
@@ -9545,7 +9768,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-06T15:26:54.160Z",
+    "baseline": "2026-05-06T16:46:30.552Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -9615,9 +9838,9 @@
       {
         "project": "001-arckit-saas",
         "projectId": "001",
-        "artifactCount": 33,
-        "edgeCount": 313,
-        "density": 9.48,
+        "artifactCount": 34,
+        "edgeCount": 314,
+        "density": 9.24,
         "coverage": {
           "essentialPresent": [
             "REQ",
@@ -9646,6 +9869,7 @@
             "DEVOPS",
             "DIAG",
             "DPIA",
+            "DSCT",
             "FINOPS",
             "GCRS",
             "GOVR",
@@ -9668,7 +9892,7 @@
             "Architecture": 4,
             "Operations": 3,
             "Planning": 3,
-            "Discovery": 3,
+            "Discovery": 4,
             "Governance": 2,
             "Research": 4
           }
@@ -9713,9 +9937,9 @@
       {
         "project": "002-arckit-sovereign",
         "projectId": "002",
-        "artifactCount": 33,
-        "edgeCount": 251,
-        "density": 7.61,
+        "artifactCount": 34,
+        "edgeCount": 254,
+        "density": 7.47,
         "coverage": {
           "essentialPresent": [
             "REQ",
@@ -9792,7 +10016,7 @@
         },
         "health": {
           "stale": 0,
-          "draft": 28,
+          "draft": 29,
           "orphan": 0
         },
         "contextualSuggestions": [

@@ -1,8 +1,8 @@
 {
-  "generated": "2026-05-05T10:18:58.747Z",
+  "generated": "2026-05-06T16:46:43.912Z",
   "scanned": {
     "projects": 2,
-    "artifacts": 65
+    "artifacts": 68
   },
   "summary": {
     "HIGH": 0,
@@ -22,12 +22,12 @@
   "projects": [
     {
       "id": "001-arckit-saas",
-      "artifacts": 33,
+      "artifacts": 34,
       "findings": []
     },
     {
       "id": "002-arckit-sovereign",
-      "artifacts": 32,
+      "artifacts": 34,
       "findings": []
     }
   ]
