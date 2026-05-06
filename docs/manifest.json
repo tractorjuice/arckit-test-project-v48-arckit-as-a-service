@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-06T16:46:30.505Z",
+  "generated": "2026-05-06T17:09:14.431Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -1474,6 +1474,12 @@
           "path": "projects/002-arckit-sovereign/research/ARC-002-DSCT-v1.1.md",
           "title": "Data Source Discovery: ArcKit as a Service (Sovereign Deployment)",
           "documentId": "ARC-002-DSCT-v1.1",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/research/ARC-002-DSCT-v1.2.md",
+          "title": "Data Source Discovery: ArcKit as a Service (Sovereign Deployment)",
+          "documentId": "ARC-002-DSCT-v1.2",
           "extension": ".md"
         },
         {
@@ -6692,6 +6698,100 @@
           "ageDays": 0
         }
       },
+      "ARC-002-DSCT-v1.2": {
+        "type": "DSCT",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/research/ARC-002-DSCT-v1.2.md",
+        "title": "Data Source Discovery: ArcKit as a Service (Sovereign Deployment)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-06",
+        "lastModified": "2026-05-06",
+        "version": "1.2",
+        "owner": "Mark Craddock (ArcKit as a Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-002-DSCT-v1.2",
+          "Document Type": "Data Source Discovery",
+          "Project": "ArcKit as a Service (Sovereign Deployment) (Project 002)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.2",
+          "Created Date": "2026-05-06",
+          "Last Modified": "2026-05-06",
+          "Review Cycle": "Quarterly",
+          "Next Review Date": "2026-08-06",
+          "Owner": "Mark Craddock (ArcKit as a Service Owner)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "Project Team, Architecture Team, MOD Defence Digital liaison, NCSC liaison",
+          "UK Government Open Data": "16",
+          "Commercial APIs": "0",
+          "Free/Freemium APIs": "4",
+          "Open Source Datasets / Rulesets": "6",
+          "TOTAL": "(26 sources)",
+          "License": "CC0-1.0",
+          "Pricing": "Free",
+          "Format": "JSON / REST",
+          "API Endpoint": "https://developer-specs.company-information.service.gov.uk/guides/rateLimiting",
+          "Authentication": "None",
+          "Rate Limits": "120 req/min",
+          "Update Frequency": "Daily",
+          "Coverage": "UK-wide",
+          "GDPR Status": "Public register; some fields PII (officers, PSC)",
+          "UK Data Residency": "No (US-hosted, −5 penalty applied)",
+          "Total": "**100%**",
+          "Cost (Annual)": "£0",
+          "Freshness": "Ad-hoc",
+          "Auth": "None",
+          "Requirements Fit": "25%",
+          "Data Quality": "20%",
+          "License & Cost": "15%",
+          "API Quality": "15%",
+          "Compliance": "15%",
+          "Reliability": "10%",
+          "TOTAL SCORE": "**62.50**",
+          "URL": "https://api.first.org/",
+          "Rate Limit": "83/min",
+          "Hosted in": "US"
+        },
+        "reqIds": [
+          "DR-001",
+          "FR-007",
+          "FR-012",
+          "FR-014",
+          "INT-001",
+          "NFR-SEC-001",
+          "NFR-C-001",
+          "NFR-C-003",
+          "BR-002",
+          "NFR-SEC-004",
+          "BR-006",
+          "NFR-SEC-005",
+          "NFR-SEC-008",
+          "DR-007",
+          "INT-010",
+          "BR-007",
+          "NFR-SEC-003",
+          "INT-007",
+          "INT-002",
+          "BR-004",
+          "BR-005",
+          "INT-008",
+          "NFR-SEC-002",
+          "NFR-SEC-007",
+          "INT-009",
+          "NFR-SEC-006"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
       "ARC-002-GCRS-v1.0": {
         "type": "GCRS",
         "project": "002-arckit-sovereign",
@@ -9716,6 +9816,21 @@
         "type": "references"
       },
       {
+        "from": "ARC-002-DSCT-v1.2",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DSCT-v1.2",
+        "to": "ARC-002-DATA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DSCT-v1.2",
+        "to": "ARC-002-PRIN",
+        "type": "references"
+      },
+      {
         "from": "ARC-002-GCRS-v1.0",
         "to": "ARC-000-PRIN",
         "type": "references"
@@ -9768,7 +9883,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-06T16:46:30.552Z",
+    "baseline": "2026-05-06T17:09:14.533Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -9937,9 +10052,9 @@
       {
         "project": "002-arckit-sovereign",
         "projectId": "002",
-        "artifactCount": 34,
-        "edgeCount": 254,
-        "density": 7.47,
+        "artifactCount": 35,
+        "edgeCount": 257,
+        "density": 7.34,
         "coverage": {
           "essentialPresent": [
             "REQ",
@@ -10016,7 +10131,7 @@
         },
         "health": {
           "stale": 0,
-          "draft": 29,
+          "draft": 30,
           "orphan": 0
         },
         "contextualSuggestions": [
