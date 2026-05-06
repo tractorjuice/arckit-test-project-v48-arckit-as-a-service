@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-06T17:09:14.431Z",
+  "generated": "2026-05-06T17:14:26.764Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -1493,6 +1493,72 @@
           "title": "Technology and Service Research: ArcKit as a Service (Sovereign / Air-Gapped Deployment)",
           "documentId": "ARC-002-RSCH-v1.0",
           "extension": ".md"
+        }
+      ],
+      "dataSourceProfiles": [
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/cabinet-office-crown-commercial-service-profile.md",
+          "title": "Data Source Profile: Cabinet Office / Crown Commercial Service — Find a Tender Service REST API (OCDS)"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/cabinet-office-profile.md",
+          "title": "Data Source Profile: Cabinet Office — HMG Government Security Classifications Policy"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/companies-house-profile.md",
+          "title": "Data Source Profile: Companies House — Companies House Developer Hub"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/crown-commercial-service-government-digital-service-profile.md",
+          "title": "Data Source Profile: Crown Commercial Service / Government Digital Service — Digital Marketplace G-Cloud Catalogue"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/crown-commercial-service-profile.md",
+          "title": "Data Source Profile: Crown Commercial Service — Contracts Finder API (OCDS)"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/deque-labs-profile.md",
+          "title": "Data Source Profile: Deque Labs — axe-core accessibility testing engine"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/first-org-profile.md",
+          "title": "Data Source Profile: FIRST.org — FIRST EPSS (Exploit Prediction Scoring System) API"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/github-profile.md",
+          "title": "Data Source Profile: GitHub — GitHub Security Advisories (GHSA) Global Advisories REST API"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/google-profile.md",
+          "title": "Data Source Profile: Google — OSV.dev Open Source Vulnerabilities API"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/govuk-cabinet-office-profile.md",
+          "title": "Data Source Profile: GOV.UK / Cabinet Office — data.gov.uk Open Contracting Datasets"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/iana-profile.md",
+          "title": "Data Source Profile: IANA — OAuth Parameters Registry (and Licensing Terms)"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/ministry-of-defence-profile.md",
+          "title": "Data Source Profile: Ministry of Defence — Secure by Design (and JSP control catalogues)"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/ncsc-profile.md",
+          "title": "Data Source Profile: NCSC — Cyber Assessment Framework (CAF) (and related collections)"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/nist-profile.md",
+          "title": "Data Source Profile: NIST — NVD National Vulnerability Database API 2.0"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/openid-foundation-profile.md",
+          "title": "Data Source Profile: OpenID Foundation — OpenID Connect Core 1.0 (and Discovery 1.0)"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/data-sources/w3c-profile.md",
+          "title": "Data Source Profile: W3C — Web Content Accessibility Guidelines (WCAG) 2.2"
         }
       ]
     }
@@ -9883,7 +9949,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-06T17:09:14.533Z",
+    "baseline": "2026-05-06T17:14:26.820Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
