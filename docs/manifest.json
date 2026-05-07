@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-07T13:45:02.260Z",
+  "generated": "2026-05-07T14:36:47.605Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -2215,6 +2215,12 @@
           "path": "projects/003-arckit-consulting/wardley-maps/ARC-003-WARD-001-v1.0.md",
           "title": "Wardley Map: ArcKit Consulting — Commercial Model and Delivery Stack (Current → 24-month)",
           "documentId": "ARC-003-WARD-001-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/003-arckit-consulting/wardley-maps/ARC-003-WARD-002-v1.0.md",
+          "title": "Wardley Map: ArcKit Consulting — Future State (24-month target, end of Y2)",
+          "documentId": "ARC-003-WARD-002-v1.0",
           "extension": ".md"
         }
       ],
@@ -8446,6 +8452,96 @@
           "ageDays": 0
         }
       },
+      "ARC-003-WARD-002-v1.0": {
+        "type": "WARD",
+        "project": "003-arckit-consulting",
+        "path": "projects/003-arckit-consulting/wardley-maps/ARC-003-WARD-002-v1.0.md",
+        "title": "Wardley Map: ArcKit Consulting — Future State (24-month target, end of Y2)",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-07",
+        "lastModified": "2026-05-07",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit Consulting Practice Lead / SRO)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "wardley-maps",
+        "controlFields": {
+          "Document ID": "ARC-003-WARD-002-v1.0",
+          "Document Type": "Wardley Map",
+          "Project": "ArcKit Consulting (Project 003)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-07",
+          "Last Modified": "2026-05-07",
+          "Review Cycle": "Quarterly until OBC; thereafter annual by ArcKit ARB",
+          "Next Review Date": "2026-08-07",
+          "Owner": "Mark Craddock (ArcKit Consulting Practice Lead / SRO)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "ArcKit Consulting leadership; ArcKit Architecture Review Board; SOBC reviewers",
+          "MCF Lot direct entry vs continued sub-contracting": "At MCF5 refresh window (assumed late Y2 / early Y3)",
+          "AI-augmented delivery as a separate productised offering": "If AI-augmented delivery component reaches Product (≥ 0.70)",
+          "ArcKit toolkit accreditation programme externalisation": "If accreditation programme reaches Custom-Product (~0.55-0.65) at Y2-3",
+          "EOT (Employee Ownership Trust) path": "Y3-5 per RSCH-003",
+          "Communication": "Common language; situational awareness; transparency",
+          "Development": "Focus on user needs; use right methods; remove duplication",
+          "Operation": "Manage failure; embrace inertia; do better with less",
+          "Learning": "Use trends; have a systems-thinking approach; learn from each other",
+          "Leading": "Strategy is iterative; commit to direction; provide purpose, mastery, autonomy",
+          "Ecosystem play": "Established",
+          "Standards game": "Established",
+          "AI-augmented delivery commoditisation": "If AI-augmented delivery commoditises faster than the practice expects, the differentiator collapses — must move differentiation up the value chain (judgement, regulatory navigation)",
+          "Pattern library bureaucracy": "As patterns mature, risk of rigid templates replacing living patterns — ARB watching brief",
+          "Accreditation programme rent-seeking": "If externalised as training, risk of optimising for training revenue rather than for the practice's own quality discipline",
+          "Everything evolves": "ArcKit toolkit will commoditise within 24m",
+          "Co-evolution of practice with technology": "New technologies → new practices → new norms",
+          "Efficiency enables innovation": "Commoditised back-office releases capacity for differentiated front-office",
+          "Inertia from past success": "Successful patterns calcify",
+          "Technology waves": "AI in EA work resets positioning",
+          "R-pattern-library bootstrap": "Library reached 0.50 (Custom-Product) per evolve target; 24+ closed engagements seeded patterns",
+          "R-accreditation programme not formalised": "Programme reached 0.55 per evolve target; curriculum + assessment formalised",
+          "R-8 ArcKit Project 001 / 002 GA timing": "Both projects reached evolve targets; inertia cleared on map",
+          "R-1 Internal commercial drift": "Permanent ARB watching brief; flagged on map with `(inertia)` on Cross-subsidy node",
+          "R-talent retention": "Senior EA market still scarce; principled-environment + NPS-evidenced employer brand mitigates but does not close",
+          "R-SC clearance queue": "HMG queue still 3–9 months; cleared-bench reservation discipline mitigates",
+          "R-AI-delivery-commoditisation": "AI-augmented delivery may reach Product faster than 12m",
+          "R-pattern-library-bureaucracy": "Mature library may calcify into rigid templates",
+          "R-accreditation-tension": "Programme externalisation could undermine practice differentiation",
+          "R-MCF-lot-decision": "MCF5 refresh forces yes/no",
+          "Microsoft": "M365 + Entra ID + Intune",
+          "CCS frameworks": "G-Cloud + DOS + MCF",
+          "AI-augmented delivery as separate productised offering": "Custom-Product 0.55 → 0.65 over Y2-3",
+          "Pattern library cross-engagement reuse pattern": "Custom-Product 0.50 → 0.60 over Y2-3",
+          "Accreditation programme externalisation": "Custom-Product 0.55 → 0.65 over Y2-3",
+          "EOT path": "Y3-5 per RSCH-003",
+          "MCF Lot direct entry at MCF5 refresh": "Decision Y2-3"
+        },
+        "reqIds": [
+          "FR-014",
+          "NFR-M-003",
+          "NFR-C-005",
+          "NFR-S-002",
+          "FR-012",
+          "BR-001",
+          "BR-002",
+          "BR-003",
+          "BR-004",
+          "BR-005",
+          "BR-006",
+          "BR-007",
+          "BR-008",
+          "BR-009",
+          "BR-010"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
       "ARC-003-RSCH-v1.0": {
         "type": "RSCH",
         "project": "003-arckit-consulting",
@@ -11568,6 +11664,36 @@
         "type": "references"
       },
       {
+        "from": "ARC-003-WARD-002-v1.0",
+        "to": "ARC-003-WARD-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-WARD-002-v1.0",
+        "to": "ARC-003-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-WARD-002-v1.0",
+        "to": "ARC-003-SOBC",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-WARD-002-v1.0",
+        "to": "ARC-003-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-WARD-002-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-WARD-002-v1.0",
+        "to": "ARC-003-RSCH",
+        "type": "references"
+      },
+      {
         "from": "ARC-003-RSCH-v1.0",
         "to": "ARC-000-PRIN",
         "type": "references"
@@ -11590,7 +11716,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-07T13:45:02.321Z",
+    "baseline": "2026-05-07T14:36:47.703Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -11869,9 +11995,9 @@
       {
         "project": "003-arckit-consulting",
         "projectId": "003",
-        "artifactCount": 5,
-        "edgeCount": 20,
-        "density": 4,
+        "artifactCount": 6,
+        "edgeCount": 26,
+        "density": 4.33,
         "coverage": {
           "essentialPresent": [
             "REQ",
@@ -11945,7 +12071,7 @@
         },
         "health": {
           "stale": 0,
-          "draft": 5,
+          "draft": 6,
           "orphan": 0
         },
         "contextualSuggestions": [

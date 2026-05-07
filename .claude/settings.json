@@ -3,8 +3,7 @@
     "arc-kit": {
       "source": {
         "source": "github",
-        "repo": "tractorjuice/arc-kit",
-        "ref": "feat/442-datascout-reader-split"
+        "repo": "tractorjuice/arc-kit"
       }
     }
   },

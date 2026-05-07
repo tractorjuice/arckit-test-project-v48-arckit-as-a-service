@@ -14,7 +14,7 @@ ArcKit maintains a traceability chain: Stakeholders → Goals → Requirements (
 
 - 001-arckit-saas: 88% essential coverage · 58% compliance readiness · 31 drafts · next: /arckit:conformance
 - 002-arckit-sovereign: 88% essential coverage · 58% compliance readiness · 31 drafts · next: /arckit:conformance
-- 003-arckit-consulting: 38% essential coverage · 0% compliance readiness · 5 drafts · next: /arckit:risk
+- 003-arckit-consulting: 38% essential coverage · 0% compliance readiness · 6 drafts · next: /arckit:risk
 
 ## Global artifacts
 
@@ -280,6 +280,7 @@ ArcKit maintains a traceability chain: Stakeholders → Goals → Requirements (
 - [Strategic Outline Business Case](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/003-arckit-consulting/ARC-003-SOBC-v1.0.md): Planning · `ARC-003-SOBC-v1.0`.
 - [Stakeholder Analysis](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/003-arckit-consulting/ARC-003-STKE-v1.0.md): Discovery · `ARC-003-STKE-v1.0`.
 - [Wardley Map: ArcKit Consulting — Commercial Model and Delivery Stack (Current → 24-month)](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/003-arckit-consulting/wardley-maps/ARC-003-WARD-001-v1.0.md) · `ARC-003-WARD-001-v1.0`.
+- [Wardley Map: ArcKit Consulting — Future State (24-month target, end of Y2)](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/003-arckit-consulting/wardley-maps/ARC-003-WARD-002-v1.0.md) · `ARC-003-WARD-002-v1.0`.
 - [Technology and Service Research: ArcKit Consulting (UK Public Sector Practice) — Commercial Model](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/003-arckit-consulting/research/ARC-003-RSCH-v1.0.md) · `ARC-003-RSCH-v1.0`.
 - [Dxw profile](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/003-arckit-consulting/vendors/dxw-profile.md): Vendor profile.
 - [Equal Experts profile](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v48-arckit-as-a-service/main/projects/003-arckit-consulting/vendors/equal-experts-profile.md): Vendor profile.

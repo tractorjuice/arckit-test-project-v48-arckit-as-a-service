@@ -2,6 +2,15 @@
 
 Automated session summaries captured by the ArcKit session-learner hook.
 
+### 2026-05-07 13:54 — architecture
+
+- **Commits:** 1 | **Files changed:** 5
+- **Artifacts:**
+  - [003] Architecture: Wardley Map
+- **Summary:**
+  - Wardley map: strip blanket Mermaid (build)/(buy) decorators; keep selective (inertia)
+- **Telemetry:** 4 tool calls (p50=44ms, p95=3862ms)
+
 ### 2026-05-07 13:45 — general
 
 - **Commits:** 1 | **Files changed:** 6
@@ -124,6 +133,7 @@ Automated session summaries captured by the ArcKit session-learner hook.
 - **Summary:**
   - Add data source discovery for project 002 (sovereign)
   - chore: pin marketplace ref to feat/442-datascout-reader-split for testing
+
 
 
 
