@@ -2,6 +2,14 @@
 
 Automated session summaries captured by the ArcKit session-learner hook.
 
+### 2026-05-07 13:45 — general
+
+- **Commits:** 1 | **Files changed:** 6
+- **Artifacts:** none detected
+- **Summary:**
+  - Refresh docs site after Wardley map (388 documents indexed; 1 Wardley map)
+- **Telemetry:** 1 tool calls (p50=3841ms, p95=3841ms)
+
 ### 2026-05-07 13:43 — architecture
 
 - **Commits:** 1 | **Files changed:** 5
@@ -116,6 +124,7 @@ Automated session summaries captured by the ArcKit session-learner hook.
 - **Summary:**
   - Add data source discovery for project 002 (sovereign)
   - chore: pin marketplace ref to feat/442-datascout-reader-split for testing
+
 
 
 

@@ -197,53 +197,53 @@ size [1100, 800]
 anchor "Client SRO (gov buyer)" [0.96, 0.40]
 anchor "SME Founder" [0.96, 0.55]
 
-component "Evidence-grade artefact delivery" [0.90, 0.30] (build)
-component "SME-tier engagement" [0.88, 0.30] (build)
-component "Public case study and OSS contribution" [0.84, 0.45] (build)
-component "Co-working delivery model" [0.80, 0.50] (build)
+component "Evidence-grade artefact delivery" [0.90, 0.30]
+component "SME-tier engagement" [0.88, 0.30]
+component "Public case study and OSS contribution" [0.84, 0.45]
+component "Co-working delivery model" [0.80, 0.50]
 
-component "4-stack pricing model" [0.76, 0.35] (build)
-component "Cross-subsidy to SaaS SME tier" [0.74, 0.20] (build)
-component "Pricing-floor governance" [0.72, 0.40] (build)
-component "ArcKit ARB oversight" [0.70, 0.40] (build)
+component "4-stack pricing model" [0.76, 0.35]
+component "Cross-subsidy to SaaS SME tier" [0.74, 0.20]
+component "Pricing-floor governance" [0.72, 0.40]
+component "ArcKit ARB oversight" [0.70, 0.40]
 
-component "Pattern library and anonymised IP" [0.66, 0.35] (build)
-component "Quality checklist discipline" [0.65, 0.45] (build)
-component "ArcKit toolkit accreditation" [0.62, 0.40] (build)
-component "Independent QA reviewer pool" [0.60, 0.42] (build)
+component "Pattern library and anonymised IP" [0.66, 0.35]
+component "Quality checklist discipline" [0.65, 0.45]
+component "ArcKit toolkit accreditation" [0.62, 0.40]
+component "Independent QA reviewer pool" [0.60, 0.42]
 
-component "Consultant cohort (employed)" [0.56, 0.30] (build)
-component "Associate panel" [0.52, 0.45] (build)
-component "BPSS and SC clearances" [0.48, 0.65] (buy)
-component "IR35 status determinations" [0.46, 0.70] (buy)
+component "Consultant cohort (employed)" [0.56, 0.30]
+component "Associate panel" [0.52, 0.45]
+component "BPSS and SC clearances" [0.48, 0.65]
+component "IR35 status determinations" [0.46, 0.70]
 
-component "ArcKit Project 001 SaaS" [0.46, 0.45] (buy) (inertia)
-component "ArcKit Project 002 Sovereign" [0.44, 0.40] (buy) (inertia)
-component "G-Cloud framework" [0.42, 0.85] (buy)
-component "DOS DSP framework" [0.40, 0.80] (buy)
-component "MCF sub-contracting under primes" [0.38, 0.70] (buy)
-component "HubSpot CRM" [0.38, 0.65] (buy)
-component "Public website (Eleventy + GOV.UK Design System)" [0.40, 0.78] (buy)
+component "ArcKit Project 001 SaaS" [0.46, 0.45] (inertia)
+component "ArcKit Project 002 Sovereign" [0.44, 0.40] (inertia)
+component "G-Cloud framework" [0.42, 0.85]
+component "DOS DSP framework" [0.40, 0.80]
+component "MCF sub-contracting under primes" [0.38, 0.70]
+component "HubSpot CRM" [0.38, 0.65]
+component "Public website (Eleventy + GOV.UK Design System)" [0.40, 0.78]
 
-component "Harvest time recording" [0.36, 0.78] (buy)
-component "FreeAgent accounting" [0.35, 0.78] (buy)
-component "Notion knowledge management" [0.34, 0.72] (buy)
-component "Sage HR and payroll" [0.32, 0.78] (buy)
-component "Adobe Sign" [0.30, 0.85] (buy)
+component "Harvest time recording" [0.36, 0.78]
+component "FreeAgent accounting" [0.35, 0.78]
+component "Notion knowledge management" [0.34, 0.72]
+component "Sage HR and payroll" [0.32, 0.78]
+component "Adobe Sign" [0.30, 0.85]
 
-component "Cyber Essentials Plus" [0.28, 0.65] (buy)
-component "B-Corp certification" [0.24, 0.55] (buy)
+component "Cyber Essentials Plus" [0.28, 0.65]
+component "B-Corp certification" [0.24, 0.55]
 
-component "Microsoft Entra ID (SSO)" [0.26, 0.85] (buy)
-component "Microsoft Intune (MDM)" [0.24, 0.82] (buy)
+component "Microsoft Entra ID (SSO)" [0.26, 0.85]
+component "Microsoft Intune (MDM)" [0.24, 0.82]
 
-component "Companies House API" [0.18, 0.95] (buy)
-component "HMRC MTD APIs" [0.16, 0.92] (buy)
-component "ICO registration" [0.14, 0.92] (buy)
-component "Insurance (PI/PL/EL/cyber)" [0.12, 0.80] (buy)
-component "Banking" [0.10, 0.95] (buy)
-component "Microsoft 365 (email + collaboration)" [0.12, 0.92] (buy)
-component "Cloud hosting (commodity)" [0.06, 0.95] (buy)
+component "Companies House API" [0.18, 0.95]
+component "HMRC MTD APIs" [0.16, 0.92]
+component "ICO registration" [0.14, 0.92]
+component "Insurance (PI/PL/EL/cyber)" [0.12, 0.80]
+component "Banking" [0.10, 0.95]
+component "Microsoft 365 (email + collaboration)" [0.12, 0.92]
+component "Cloud hosting (commodity)" [0.06, 0.95]
 
 "Client SRO (gov buyer)" -> "Evidence-grade artefact delivery"
 "Client SRO (gov buyer)" -> "Public case study and OSS contribution"
@@ -344,9 +344,10 @@ annotation 3,[0.62, 0.50] "Inertia: Project 001/002 GA timing"
 
 **Decorator Guide** (Mermaid):
 
-- `(build)` — Custom / strategic differentiator built in-house (24 components)
-- `(buy)` — Product / Commodity components procured from market (20 components)
-- `(inertia)` — Components with resistance to change or external timing dependency (Project 001 / 002 GA)
+Decorators are used **selectively** in this map — only where the sourcing strategy *differs* from what the position implies, or where a non-positional flag (like inertia) carries strategic weight. Blanket-applied decorators add visual noise without information; the position itself communicates build / buy / use intent.
+
+- `(inertia)` — applied to **ArcKit Project 001 SaaS** and **ArcKit Project 002 Sovereign**. The position alone (Custom / Custom-Product) does not communicate the **GA-timing dependency** that constrains practice readiness. Without these flags, a reader could mistake the components for normal Custom-band procurement; with them, the strategic risk (R-8 in STKE) is visible at a glance.
+- `(build)` / `(buy)` / `(outsource)` — **deliberately omitted**. For all other components, the X-axis position tells you whether to build (Genesis / Custom), buy (Product), or use as utility (Commodity). Restating the position as a decorator is redundant.
 
 ---
 
@@ -971,4 +972,4 @@ Cloud hosting (commodity),0.06,0.95,Commodity,buy
 **ArcKit Version**: 4.19.0
 **Project**: ArcKit Consulting (Project 003)
 **AI Model**: claude-opus-4-7[1m]
-**Generation Context**: Generated using the `/arckit:wardley` command for project 003 with user input "003". Anchored on `ARC-003-REQ-v1.0.md`, `ARC-003-STKE-v1.0.md`, `ARC-003-RSCH-v1.0.md`, `ARC-003-SOBC-v1.0.md`, and `ARC-000-PRIN-v2.0.md`. 41 nodes mapped (39 components + 2 anchors); 24 build / 20 buy / 6 inertia decorators. Mathematical strategic metrics (D, K, R) computed and validated against build-vs-buy recommendations — no positioning errors detected.
+**Generation Context**: Generated using the `/arckit:wardley` command for project 003 with user input "003". Anchored on `ARC-003-REQ-v1.0.md`, `ARC-003-STKE-v1.0.md`, `ARC-003-RSCH-v1.0.md`, `ARC-003-SOBC-v1.0.md`, and `ARC-000-PRIN-v2.0.md`. 41 nodes mapped (39 components + 2 anchors). Mermaid `(inertia)` decorators applied selectively to ArcKit Project 001 SaaS and Project 002 Sovereign only — to flag the GA-timing dependency that the position alone does not communicate. Other Mermaid sourcing decorators (`build` / `buy`) deliberately omitted: the X-axis evolution position already communicates build / buy / use intent, and blanket decorators would be redundant noise rather than signal. Mathematical strategic metrics (D, K, R) computed and validated against build-vs-buy recommendations — no positioning errors detected.
