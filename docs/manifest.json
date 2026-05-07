@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-07T08:23:28.708Z",
+  "generated": "2026-05-07T09:02:27.368Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -1229,6 +1229,12 @@
           "extension": ".md"
         },
         {
+          "path": "projects/001-arckit-saas/research/ARC-001-GRNT-001-v1.1.md",
+          "title": "UK Grants Research: arckit-saas",
+          "documentId": "ARC-001-GRNT-001-v1.1",
+          "extension": ".md"
+        },
+        {
           "path": "projects/001-arckit-saas/research/ARC-001-RSCH-v1.0.md",
           "title": "Technology and Service Research: ArcKit as a Service (Managed SaaS) — SaaS Control Plane",
           "documentId": "ARC-001-RSCH-v1.0",
@@ -1255,6 +1261,18 @@
           "title": "Tech Note: AI Provider Abstraction (Bedrock / Azure OpenAI / Vertex)"
         },
         {
+          "path": "projects/001-arckit-saas/tech-notes/ai-security-institute-alignment-project.md",
+          "title": "Tech Note: AI Security Institute — AISI Alignment Project"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ai-security-institute-challenge-fund.md",
+          "title": "Tech Note: AI Security Institute — AISI Challenge Fund"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ai-security-institute-systemic-safety-grants.md",
+          "title": "Tech Note: AI Security Institute — AISI Systemic Safety Grants"
+        },
+        {
           "path": "projects/001-arckit-saas/tech-notes/bethnal-green-ventures-tech-for-good-accelerator-autumn-2026.md",
           "title": "Tech Note: BGV Tech for Good Accelerator - Autumn 2026"
         },
@@ -1267,6 +1285,10 @@
           "title": "Tech Note: Carbon13 Venture Launchpad (Cohort 5)"
         },
         {
+          "path": "projects/001-arckit-saas/tech-notes/challenge-works-dsit-manchester-prize-round-2.md",
+          "title": "Tech Note: Challenge Works / DSIT — Manchester Prize Round 2"
+        },
+        {
           "path": "projects/001-arckit-saas/tech-notes/connected-places-catapult-rail-stations-innovation-accelerator.md",
           "title": "Tech Note: Connected Places Catapult Rail Stations Innovation Accelerator"
         },
@@ -1277,6 +1299,10 @@
         {
           "path": "projects/001-arckit-saas/tech-notes/digital-catapult-qtap-nqcc-sparq.md",
           "title": "Tech Note: Digital Catapult QTAP in Partnership with NQCC SparQ"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/dsit-sovereign-ai-fund-strategic-assets-grants-programme.md",
+          "title": "Tech Note: DSIT Sovereign AI Fund — Strategic Assets Grants Programme"
         },
         {
           "path": "projects/001-arckit-saas/tech-notes/esmee-fairbairn-foundation-main-fund.md",
@@ -1299,8 +1325,20 @@
           "title": "Tech Note: Indigo Trust Grants"
         },
         {
+          "path": "projects/001-arckit-saas/tech-notes/innovate-uk-advancing-frontier-ai-and-ml-for-uk-smes.md",
+          "title": "Tech Note: Innovate UK — Advancing Frontier AI and ML for UK SMEs"
+        },
+        {
           "path": "projects/001-arckit-saas/tech-notes/innovate-uk-ai-champions-frontier-ai-phase-1.md",
           "title": "Tech Note: Innovate UK AI Champions: Frontier AI Phase 1"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/innovate-uk-bridgeai-innovation-exchange.md",
+          "title": "Tech Note: Innovate UK — BridgeAI Innovation Exchange: Empowering AI Innovation"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/innovate-uk-bridgeai-supply-chain-demonstrator.md",
+          "title": "Tech Note: Innovate UK — BridgeAI Supply Chain Demonstrator"
         },
         {
           "path": "projects/001-arckit-saas/tech-notes/innovate-uk-contracts-for-innovation-cyber-scale-in-critical-sectors.md",
@@ -1329,6 +1367,10 @@
         {
           "path": "projects/001-arckit-saas/tech-notes/innovate-uk-secure-software-for-resilient-growth.md",
           "title": "Tech Note: Innovate UK Secure Software for Resilient Growth"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/innovate-uk-sovereign-ai-proof-of-concept.md",
+          "title": "Tech Note: Innovate UK — Sovereign AI Proof of Concept"
         },
         {
           "path": "projects/001-arckit-saas/tech-notes/joseph-rowntree-reform-trust-democracy-priorities-funding.md",
@@ -1465,6 +1507,10 @@
         {
           "path": "projects/001-arckit-saas/tech-notes/uk-research-and-innovation-future-leaders-fellowships-round-11.md",
           "title": "Tech Note: UKRI Future Leaders Fellowships Round 11"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/uk-sovereign-ai-fund-equity-investment-vehicle.md",
+          "title": "Tech Note: UK Sovereign AI Fund — Equity Investment Vehicle"
         },
         {
           "path": "projects/001-arckit-saas/tech-notes/wayra-uk-telefonica-open-innovation-programme.md",
@@ -4556,6 +4602,62 @@
           "draft": true,
           "orphan": false,
           "ageDays": null
+        }
+      },
+      "ARC-001-GRNT-001-v1.1": {
+        "type": "GRNT",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/research/ARC-001-GRNT-001-v1.1.md",
+        "title": "UK Grants Research: arckit-saas",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": null,
+        "lastModified": "2026-05-07",
+        "version": "1.1",
+        "owner": "Mark Craddock",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-001-GRNT-001-v1.1",
+          "Document Type": "Grants Research (GRNT)",
+          "Project": "001-arckit-saas",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.1",
+          "Date Issued": "2026-05-07",
+          "Last Modified": "2026-05-07",
+          "Next Review": "2026-08-07",
+          "Owner": "Mark Craddock",
+          "Distribution": "ArcKit team, Service Owner, CCS liaison, GDS, CDDO",
+          "Rubric Used": "grants-uk-gov",
+          "Total programmes assessed": "**63**",
+          "Sector (primary)": "digital",
+          "Sectors (full)": "digital, ai, cross-sector",
+          "Organisation Type": "sme",
+          "TRL Level": "5",
+          "TRL Estimation Note": "TRL 5 estimated from project maturity signals — multi-tenant SaaS in build through Alpha/Beta with GA target 2027-04-30 per ARC-001-SOBC. Technology validated in relevant environment (private alpha + planned pilot with 3 buying authorities pre-GA).",
+          "Funding Sought": "£100,000 — £600,000",
+          "Budget Basis": "Capital build £1.65M (per SOBC Option 2). Single-grant ask sized for typical Innovate UK Smart-class window £100k — £600k. Stacking multiple grants envisaged.",
+          "Project Start": "2026-09-30",
+          "Key Objectives": "Multi-tenant UK-resident SaaS for SME architecture governance (BR-001, BR-007); Free tier for verified UK SMEs supplying government — Procurement Act 2023 SME-spend support (Principle 1, BR-001); AI-assisted artefact generation with pluggable provider abstraction (FR-004, ADR pluggable AI); G-Cloud listing and TCoP/GDS Service Standard / NCSC CAF / UK GDPR / WCAG 2.2 AA evidence pack (BR-004, BR-006); Cross-subsidy unit economics — large-enterprise tier funds SME tier (BR-005); Sovereign-ready single codebase shared with Project 002 (Principle 21)."
+        },
+        "reqIds": [
+          "BR-001",
+          "BR-007",
+          "FR-004",
+          "BR-004",
+          "BR-006",
+          "BR-005",
+          "NFR-SEC-002",
+          "BR-003",
+          "BR-008"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
         }
       },
       "ARC-001-RSCH-v1.0": {
@@ -8895,6 +8997,11 @@
         "type": "references"
       },
       {
+        "from": "ARC-001-GRNT-001-v1.1",
+        "to": "ARC-001-SOBC",
+        "type": "references"
+      },
+      {
         "from": "ARC-001-RSCH-v1.0",
         "to": "ARC-000-RSCH",
         "type": "references"
@@ -10227,7 +10334,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-07T08:23:28.770Z",
+    "baseline": "2026-05-07T09:02:27.540Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -10297,9 +10404,9 @@
       {
         "project": "001-arckit-saas",
         "projectId": "001",
-        "artifactCount": 35,
-        "edgeCount": 315,
-        "density": 9,
+        "artifactCount": 36,
+        "edgeCount": 316,
+        "density": 8.78,
         "coverage": {
           "essentialPresent": [
             "REQ",
@@ -10379,7 +10486,7 @@
         },
         "health": {
           "stale": 0,
-          "draft": 29,
+          "draft": 30,
           "orphan": 0
         },
         "contextualSuggestions": [],
