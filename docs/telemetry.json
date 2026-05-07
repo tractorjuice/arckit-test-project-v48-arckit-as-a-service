@@ -1,6 +1,28 @@
 {
-  "generated": "2026-05-07T13:20:38.337Z",
+  "generated": "2026-05-07T13:43:53.716Z",
   "sessions": [
+    {
+      "ts": "2026-05-07T13:43:53.716Z",
+      "type": "architecture",
+      "isFailure": false,
+      "commits": 1,
+      "filesChanged": 5,
+      "artifacts": [
+        {
+          "project": "003",
+          "categories": {
+            "Architecture": [
+              "Wardley Map"
+            ]
+          }
+        }
+      ],
+      "telemetry": {
+        "toolCalls": 4,
+        "p50": 1789,
+        "p95": 4011
+      }
+    },
     {
       "ts": "2026-05-07T13:20:38.337Z",
       "type": "planning",

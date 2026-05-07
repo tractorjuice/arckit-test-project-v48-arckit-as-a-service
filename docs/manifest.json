@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-07T13:20:00.025Z",
+  "generated": "2026-05-07T13:45:02.260Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -2207,6 +2207,14 @@
           "title": "Stakeholder Analysis",
           "category": "Discovery",
           "documentId": "ARC-003-STKE-v1.0",
+          "extension": ".md"
+        }
+      ],
+      "wardleyMaps": [
+        {
+          "path": "projects/003-arckit-consulting/wardley-maps/ARC-003-WARD-001-v1.0.md",
+          "title": "Wardley Map: ArcKit Consulting — Commercial Model and Delivery Stack (Current → 24-month)",
+          "documentId": "ARC-003-WARD-001-v1.0",
           "extension": ".md"
         }
       ],
@@ -8346,6 +8354,98 @@
           "ageDays": 0
         }
       },
+      "ARC-003-WARD-001-v1.0": {
+        "type": "WARD",
+        "project": "003-arckit-consulting",
+        "path": "projects/003-arckit-consulting/wardley-maps/ARC-003-WARD-001-v1.0.md",
+        "title": "Wardley Map: ArcKit Consulting — Commercial Model and Delivery Stack (Current → 24-month)",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": "2026-05-07",
+        "lastModified": "2026-05-07",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit Consulting Practice Lead / SRO)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "wardley-maps",
+        "controlFields": {
+          "Document ID": "ARC-003-WARD-001-v1.0",
+          "Document Type": "Wardley Map",
+          "Project": "ArcKit Consulting (Project 003)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-07",
+          "Last Modified": "2026-05-07",
+          "Review Date": "2026-06-07",
+          "Owner": "Mark Craddock (ArcKit Consulting Practice Lead / SRO)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "ArcKit Consulting leadership; ArcKit Architecture Review Board",
+          "Communication": "Common language; situational awareness; transparency",
+          "Development": "Focus on user needs; use right methods; remove duplication",
+          "Operation": "Manage failure; embrace inertia; do better with less",
+          "Learning": "Use trends; have a systems-thinking approach; learn from each other",
+          "Leading": "Strategy is iterative; commit to direction; provide purpose, mastery, autonomy",
+          "Ecosystem play": "Dual-channel reinforcement with Projects 001 / 002. Practice feeds product roadmap; product gives practice differentiated tooling. Compound moat",
+          "Standards game": "Anchor delivery on TCoP / Service Standard / NCSC CAF / GovS 005/007. The practice's quality discipline *is* the standard — competitors have to match it",
+          "Pricing-floor governance": "Prevents below-floor bidding pressure; documented exception path forces conscious choice",
+          "Independent reviewer pool": "Prevents quality drift under deadline pressure",
+          "Capacity reservation (SME-tier)": "Prevents commercial pressure quietly displacing the SME tier",
+          "Building commodity tooling": "Recommended stack (M365 / FreeAgent / HubSpot etc.) is bought, not built",
+          "Lift-and-shift consulting (knowledge hoarding)": "Co-working model + open-format outputs + pattern library reuse explicitly prevents lock-in",
+          "Premature productisation of the SME tier": "SME tier stays Custom (Principle 1 commitment); productising it would erode the moat",
+          "Bespoke build / DevOps service line creep": "Out of scope (REQ-003 §Project Scope) — would dilute the EA mission",
+          "Everything evolves": "Components move from Genesis → Commodity over time",
+          "Co-evolution of practice with technology": "New technologies → new practices → new norms",
+          "Efficiency enables innovation": "Commoditised back-office releases capacity for differentiated front-office",
+          "Inertia from past success": "Successful patterns calcify",
+          "Technology waves": "Discontinuities (e.g., AI in EA work) reset positioning",
+          "Microsoft": "M365 + Entra ID + Intune (collectively visibility 0.12–0.26, evolution 0.82–0.92)",
+          "CCS frameworks": "G-Cloud + DOS + MCF (collectively the procurement layer)",
+          "Pattern library compounding": "Pattern library evolves Custom 0.35 → 0.50 over 24m",
+          "Toolkit accreditation as external programme": "ArcKit toolkit accreditation evolves 0.40 → 0.55 by Y2",
+          "B-Corp peer network": "B-Corp certification 0.55 → 0.65 by Y2",
+          "MCF Lot direct entry at MCF5 refresh": "MCF currently sub-contracting (Product 0.70)",
+          "SaaS SME-tier maturity (Project 001)": "Project 001 SaaS evolves 0.45 → 0.65 over 18m"
+        },
+        "reqIds": [
+          "FR-012",
+          "FR-011",
+          "FR-002",
+          "NFR-Q-001",
+          "FR-008",
+          "FR-013",
+          "BR-003",
+          "FR-006",
+          "FR-010",
+          "NFR-S-002",
+          "NFR-M-003",
+          "FR-014",
+          "FR-001",
+          "FR-019",
+          "NFR-C-009",
+          "NFR-I-001",
+          "BR-008",
+          "NFR-C-001",
+          "FR-017",
+          "NFR-C-005",
+          "BR-009",
+          "BR-001",
+          "BR-002",
+          "BR-004",
+          "BR-005",
+          "BR-006",
+          "BR-007",
+          "BR-010"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
       "ARC-003-RSCH-v1.0": {
         "type": "RSCH",
         "project": "003-arckit-consulting",
@@ -11443,6 +11543,31 @@
         "type": "references"
       },
       {
+        "from": "ARC-003-WARD-001-v1.0",
+        "to": "ARC-003-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-WARD-001-v1.0",
+        "to": "ARC-003-SOBC",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-WARD-001-v1.0",
+        "to": "ARC-003-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-WARD-001-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-WARD-001-v1.0",
+        "to": "ARC-003-RSCH",
+        "type": "references"
+      },
+      {
         "from": "ARC-003-RSCH-v1.0",
         "to": "ARC-000-PRIN",
         "type": "references"
@@ -11465,7 +11590,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-07T13:20:00.102Z",
+    "baseline": "2026-05-07T13:45:02.321Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -11744,9 +11869,9 @@
       {
         "project": "003-arckit-consulting",
         "projectId": "003",
-        "artifactCount": 4,
-        "edgeCount": 15,
-        "density": 3.75,
+        "artifactCount": 5,
+        "edgeCount": 20,
+        "density": 4,
         "coverage": {
           "essentialPresent": [
             "REQ",
@@ -11790,11 +11915,13 @@
             "REQ",
             "RSCH",
             "SOBC",
-            "STKE"
+            "STKE",
+            "WARD"
           ],
           "presentByCategory": {
             "Discovery": 3,
-            "Planning": 1
+            "Planning": 1,
+            "Architecture": 1
           }
         },
         "compliance": {
@@ -11818,7 +11945,7 @@
         },
         "health": {
           "stale": 0,
-          "draft": 4,
+          "draft": 5,
           "orphan": 0
         },
         "contextualSuggestions": [
