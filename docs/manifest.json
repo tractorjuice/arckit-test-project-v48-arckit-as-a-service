@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-06T17:14:26.764Z",
+  "generated": "2026-05-07T08:23:28.708Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -1223,6 +1223,12 @@
           "extension": ".md"
         },
         {
+          "path": "projects/001-arckit-saas/research/ARC-001-GRNT-001-v1.0.md",
+          "title": "UK Grants Research: arckit-saas",
+          "documentId": "ARC-001-GRNT-001-v1.0",
+          "extension": ".md"
+        },
+        {
           "path": "projects/001-arckit-saas/research/ARC-001-RSCH-v1.0.md",
           "title": "Technology and Service Research: ArcKit as a Service (Managed SaaS) — SaaS Control Plane",
           "documentId": "ARC-001-RSCH-v1.0",
@@ -1249,12 +1255,224 @@
           "title": "Tech Note: AI Provider Abstraction (Bedrock / Azure OpenAI / Vertex)"
         },
         {
+          "path": "projects/001-arckit-saas/tech-notes/bethnal-green-ventures-tech-for-good-accelerator-autumn-2026.md",
+          "title": "Tech Note: BGV Tech for Good Accelerator - Autumn 2026"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/better-society-capital-fund-of-funds.md",
+          "title": "Tech Note: Better Society Capital Fund-of-Funds"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/carbon13-venture-launchpad-cohort-5.md",
+          "title": "Tech Note: Carbon13 Venture Launchpad (Cohort 5)"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/connected-places-catapult-rail-stations-innovation-accelerator.md",
+          "title": "Tech Note: Connected Places Catapult Rail Stations Innovation Accelerator"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/digital-catapult-future-networks-lab-accelerator.md",
+          "title": "Tech Note: Digital Catapult Future Networks Lab Accelerator"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/digital-catapult-qtap-nqcc-sparq.md",
+          "title": "Tech Note: Digital Catapult QTAP in Partnership with NQCC SparQ"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/esmee-fairbairn-foundation-main-fund.md",
+          "title": "Tech Note: Esmee Fairbairn Main Fund"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/esmee-fairbairn-foundation-main-grants-and-funding-plus.md",
+          "title": "Tech Note: Esmee Fairbairn Main Grants and Funding Plus"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/european-innovation-council-eic-accelerator-2026.md",
+          "title": "Tech Note: EIC Accelerator 2026 (Grant-only for UK applicants)"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/fair-by-design-venture-fund.md",
+          "title": "Tech Note: Fair By Design Venture Fund"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/indigo-trust-grants.md",
+          "title": "Tech Note: Indigo Trust Grants"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/innovate-uk-ai-champions-frontier-ai-phase-1.md",
+          "title": "Tech Note: Innovate UK AI Champions: Frontier AI Phase 1"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/innovate-uk-contracts-for-innovation-cyber-scale-in-critical-sectors.md",
+          "title": "Tech Note: Innovate UK Contracts for Innovation: Cyber Scale in Critical Sectors"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/innovate-uk-frontier-ai-benchmarking-datasets.md",
+          "title": "Tech Note: Innovate UK Frontier AI Benchmarking Datasets"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/innovate-uk-frontier-ai-discovery.md",
+          "title": "Tech Note: Innovate UK Frontier AI Discovery"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/innovate-uk-growth-catalyst-investor-partnerships-round-2.md",
+          "title": "Tech Note: Innovate UK Growth Catalyst Investor Partnerships Round 2"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/innovate-uk-innovation-loans-round-25.md",
+          "title": "Tech Note: Innovate UK Innovation Loans Round 25"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/innovate-uk-knowledge-transfer-partnership-2026-2027-round-1.md",
+          "title": "Tech Note: Innovate UK KTP 2026-2027 Round 1"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/innovate-uk-secure-software-for-resilient-growth.md",
+          "title": "Tech Note: Innovate UK Secure Software for Resilient Growth"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/joseph-rowntree-reform-trust-democracy-priorities-funding.md",
+          "title": "Tech Note: JRRT Democracy Priorities Funding"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/lankelly-chase-endowment-redistribution.md",
+          "title": "Tech Note: Lankelly Chase Endowment Redistribution"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/lloyds-bank-foundation-specialist-and-equity-programmes.md",
+          "title": "Tech Note: LBF Specialist and Equity Programmes (2026 strategy)"
+        },
+        {
           "path": "projects/001-arckit-saas/tech-notes/multi-tenant-isolation-pool-with-cells.md",
           "title": "Tech Note: Multi-Tenant Isolation — Pool with Cells Pattern"
         },
         {
+          "path": "projects/001-arckit-saas/tech-notes/national-lottery-community-fund-awards-for-all-england-environment.md",
+          "title": "Tech Note: Awards for All England - Environment"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/national-lottery-community-fund-awards-for-all-england.md",
+          "title": "Tech Note: National Lottery Awards for All England"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/national-lottery-community-fund-fairer-life-chances-scotland.md",
+          "title": "Tech Note: Fairer Life Chances Scotland"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/national-lottery-community-fund-reaching-communities-england.md",
+          "title": "Tech Note: Reaching Communities England"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/nesta-challenge-works-longitude-prize-on-als.md",
+          "title": "Tech Note: Longitude Prize on ALS"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/nesta-challenge-works-metascience-novelty-indicators-challenge.md",
+          "title": "Tech Note: Metascience Novelty Indicators Challenge"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/nesta-challenge-works-water-efficiency-lab-1.md",
+          "title": "Tech Note: Water Efficiency Lab 1"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/nesta-collective-intelligence-grants.md",
+          "title": "Tech Note: Nesta Collective Intelligence Grants"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/nesta-grants-historical-portfolio.md",
+          "title": "Tech Note: Nesta Grants (historical portfolio)"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/nesta-mission-studio.md",
+          "title": "Tech Note: Nesta Mission Studio"
+        },
+        {
           "path": "projects/001-arckit-saas/tech-notes/opentelemetry-observability.md",
           "title": "Tech Note: OpenTelemetry-Native Observability for Multi-Tenant SaaS"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ordnance-survey-geovation-accelerator-autumn-2026.md",
+          "title": "Tech Note: Geovation Accelerator Programme - Autumn 2026"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ordnance-survey-geovation-accelerator-spring-2026.md",
+          "title": "Tech Note: Geovation Accelerator Programme - Spring 2026"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/paul-hamlyn-foundation-open-funds.md",
+          "title": "Tech Note: Paul Hamlyn Foundation Open Funds"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/plexal-dsit-cyber-runway.md",
+          "title": "Tech Note: Cyber Runway"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/plexal-ncsc-for-startups.md",
+          "title": "Tech Note: NCSC for Startups"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/public-aws-defence-accelerator.md",
+          "title": "Tech Note: PUBLIC & AWS Defence Accelerator"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/public-govstart-accelerator.md",
+          "title": "Tech Note: PUBLIC GovStart Accelerator"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/resonance-enterprise-investment-fund.md",
+          "title": "Tech Note: Resonance Enterprise Investment Fund"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/social-investment-business-community-builders-fund.md",
+          "title": "Tech Note: SIB Community Builders Fund"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/social-investment-business-energy-resilience-fund.md",
+          "title": "Tech Note: SIB Energy Resilience Fund"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/social-investment-business-flexible-finance.md",
+          "title": "Tech Note: SIB Flexible Finance"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/social-investment-business-reach-fund.md",
+          "title": "Tech Note: SIB Reach Fund"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/sustainable-ventures-national-climate-tech-accelerator.md",
+          "title": "Tech Note: National Climate Tech Accelerator (NCTA)"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/tech-nation-future-fifty-2026.md",
+          "title": "Tech Note: Tech Nation Future Fifty 2026"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/tech-nation-upscale.md",
+          "title": "Tech Note: Tech Nation Upscale"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ufi-voctech-trust-voctech-activate.md",
+          "title": "Tech Note: VocTech Activate"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ufi-voctech-trust-voctech-challenge.md",
+          "title": "Tech Note: VocTech Challenge"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ufi-voctech-trust-voctech-ignite.md",
+          "title": "Tech Note: VocTech Ignite"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/uk-research-and-innovation-future-leaders-fellowships-round-11.md",
+          "title": "Tech Note: UKRI Future Leaders Fellowships Round 11"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/wayra-uk-telefonica-open-innovation-programme.md",
+          "title": "Tech Note: Wayra UK Open Innovation Programme"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/wcit-charity-it4good-grant-programme.md",
+          "title": "Tech Note: WCIT IT4Good Grant Programme"
         }
       ]
     },
@@ -1600,7 +1818,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-000-PRIN-v2.0": {
@@ -1638,7 +1856,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-000-RSCH-v1.0": {
@@ -1711,7 +1929,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-AIPB-v1.0": {
@@ -1762,7 +1980,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-DATA-v1.0": {
@@ -1841,7 +2059,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 1
+          "ageDays": 2
         }
       },
       "ARC-001-DEVOPS-v1.0": {
@@ -1923,7 +2141,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-DPIA-v1.0": {
@@ -2010,7 +2228,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-FINOPS-v1.0": {
@@ -2059,7 +2277,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-HLDR-v1.0": {
@@ -2315,7 +2533,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-PLAN-v1.0": {
@@ -2357,7 +2575,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-REQ-v1.0": {
@@ -2466,7 +2684,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-RISK-v1.0": {
@@ -2539,7 +2757,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-ROAD-v1.0": {
@@ -2626,7 +2844,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-SECD-v1.0": {
@@ -2683,7 +2901,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-SOBC-v1.0": {
@@ -2758,7 +2976,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-STKE-v1.0": {
@@ -2809,7 +3027,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-SVCASS-v1.0": {
@@ -2871,7 +3089,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-TCOP-v1.0": {
@@ -2930,7 +3148,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-TRAC-v1.0": {
@@ -3034,7 +3252,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-ADR-001-v1.0": {
@@ -3103,7 +3321,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-ADR-002-v1.0": {
@@ -3179,7 +3397,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-ADR-003-v1.0": {
@@ -3243,7 +3461,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-ADR-004-v1.0": {
@@ -3309,7 +3527,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-ADR-005-v1.0": {
@@ -3378,7 +3596,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-ADR-006-v1.0": {
@@ -3446,7 +3664,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-ADR-007-v1.0": {
@@ -3511,7 +3729,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-ADR-008-v1.0": {
@@ -3583,7 +3801,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-DIAG-001-v1.0": {
@@ -3756,7 +3974,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-AWRS-v1.0": {
@@ -3852,7 +4070,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-AZRS-v1.0": {
@@ -3960,7 +4178,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-001-DSCT-v1.0": {
@@ -4282,7 +4500,62 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
+        }
+      },
+      "ARC-001-GRNT-001-v1.0": {
+        "type": "GRNT",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/research/ARC-001-GRNT-001-v1.0.md",
+        "title": "UK Grants Research: arckit-saas",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": null,
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "Mark Craddock",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-001-GRNT-001-v1.0",
+          "Document Type": "Grants Research (GRNT)",
+          "Project": "001-arckit-saas",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Date Issued": "2026-05-07",
+          "Next Review": "2026-08-07",
+          "Owner": "Mark Craddock",
+          "Distribution": "ArcKit team, Service Owner, CCS liaison, GDS, CDDO",
+          "Rubric Used": "grants-uk-gov",
+          "Total programmes assessed": "**53**",
+          "Sector (primary)": "digital",
+          "Sectors (full)": "digital, ai, cross-sector",
+          "Organisation Type": "sme",
+          "TRL Level": "5",
+          "TRL Estimation Note": "TRL 5 estimated from project maturity signals — multi-tenant SaaS in build through Alpha/Beta with GA target 2027-04-30 per ARC-001-SOBC. Technology validated in relevant environment (private alpha + planned pilot with 3 buying authorities pre-GA).",
+          "Funding Sought": "£100,000 — £600,000",
+          "Budget Basis": "Capital build £1.65M (per SOBC Option 2). Single-grant ask sized for typical Innovate UK Smart-class window £100k — £600k. Stacking multiple grants envisaged.",
+          "Project Start": "2026-09-30",
+          "Key Objectives": "Multi-tenant UK-resident SaaS for SME architecture governance (BR-001, BR-007); Free tier for verified UK SMEs supplying government — Procurement Act 2023 SME-spend support (Principle 1, BR-001); AI-assisted artefact generation with pluggable provider abstraction (FR-004, ADR pluggable AI); G-Cloud listing and TCoP/GDS Service Standard / NCSC CAF / UK GDPR / WCAG 2.2 AA evidence pack (BR-004, BR-006); Cross-subsidy unit economics — large-enterprise tier funds SME tier (BR-005); Sovereign-ready single codebase shared with Project 002 (Principle 21)."
+        },
+        "reqIds": [
+          "FR-004",
+          "BR-001",
+          "BR-007",
+          "BR-004",
+          "BR-006",
+          "BR-005",
+          "NFR-SEC-002",
+          "BR-003",
+          "BR-008"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": null
         }
       },
       "ARC-001-RSCH-v1.0": {
@@ -4376,7 +4649,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-AIPB-v1.0": {
@@ -4441,7 +4714,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-DEVOPS-v1.0": {
@@ -4513,7 +4786,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-DPIA-v1.0": {
@@ -4570,7 +4843,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-FINOPS-v1.0": {
@@ -4639,7 +4912,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-HLDR-v1.0": {
@@ -4738,7 +5011,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-JSP936-v1.0": {
@@ -4813,7 +5086,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-OPS-v1.0": {
@@ -4889,7 +5162,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-PLAN-v1.0": {
@@ -5020,7 +5293,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-RISK-v1.0": {
@@ -5093,7 +5366,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-ROAD-v1.0": {
@@ -5149,7 +5422,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-SECD-MOD-v1.0": {
@@ -5217,7 +5490,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-SOBC-v1.0": {
@@ -5295,7 +5568,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-STKE-v1.0": {
@@ -5348,7 +5621,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-TCOP-v1.0": {
@@ -5433,7 +5706,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-TRAC-v1.0": {
@@ -5523,7 +5796,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-ADR-001-v1.0": {
@@ -5620,7 +5893,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-ADR-002-v1.0": {
@@ -5678,7 +5951,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-ADR-003-v1.0": {
@@ -5760,7 +6033,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-ADR-004-v1.0": {
@@ -5841,7 +6114,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-ADR-005-v1.0": {
@@ -5918,7 +6191,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-ADR-006-v1.0": {
@@ -5967,7 +6240,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-ADR-007-v1.0": {
@@ -6040,7 +6313,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-ADR-008-v1.0": {
@@ -6097,7 +6370,7 @@
           "stale": false,
           "draft": false,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-DIAG-001-v1.0": {
@@ -6157,7 +6430,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-DIAG-002-v1.0": {
@@ -6223,7 +6496,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-DIAG-003-v1.0": {
@@ -6285,7 +6558,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-DIAG-004-v1.0": {
@@ -6354,7 +6627,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-AWRS-v1.0": {
@@ -6441,7 +6714,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-AZRS-v1.0": {
@@ -6562,7 +6835,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-DSCT-v1.0": {
@@ -6665,7 +6938,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 1
         }
       },
       "ARC-002-DSCT-v1.1": {
@@ -6761,7 +7034,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 1
         }
       },
       "ARC-002-DSCT-v1.2": {
@@ -6855,7 +7128,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 0
+          "ageDays": 1
         }
       },
       "ARC-002-GCRS-v1.0": {
@@ -6964,7 +7237,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       },
       "ARC-002-RSCH-v1.0": {
@@ -7061,7 +7334,7 @@
           "stale": false,
           "draft": true,
           "orphan": false,
-          "ageDays": 3
+          "ageDays": 4
         }
       }
     },
@@ -8617,6 +8890,11 @@
         "type": "references"
       },
       {
+        "from": "ARC-001-GRNT-001-v1.0",
+        "to": "ARC-001-SOBC",
+        "type": "references"
+      },
+      {
         "from": "ARC-001-RSCH-v1.0",
         "to": "ARC-000-RSCH",
         "type": "references"
@@ -9949,7 +10227,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-06T17:14:26.820Z",
+    "baseline": "2026-05-07T08:23:28.770Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -10019,9 +10297,9 @@
       {
         "project": "001-arckit-saas",
         "projectId": "001",
-        "artifactCount": 34,
-        "edgeCount": 314,
-        "density": 9.24,
+        "artifactCount": 35,
+        "edgeCount": 315,
+        "density": 9,
         "coverage": {
           "essentialPresent": [
             "REQ",
@@ -10054,6 +10332,7 @@
             "FINOPS",
             "GCRS",
             "GOVR",
+            "GRNT",
             "HLDR",
             "OPS",
             "PLAN",
@@ -10075,7 +10354,7 @@
             "Planning": 3,
             "Discovery": 4,
             "Governance": 2,
-            "Research": 4
+            "Research": 5
           }
         },
         "compliance": {
@@ -10100,7 +10379,7 @@
         },
         "health": {
           "stale": 0,
-          "draft": 28,
+          "draft": 29,
           "orphan": 0
         },
         "contextualSuggestions": [],
