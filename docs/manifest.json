@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-07T12:15:42.242Z",
+  "generated": "2026-05-07T13:20:00.025Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -2193,6 +2193,13 @@
           "title": "Requirements",
           "category": "Discovery",
           "documentId": "ARC-003-REQ-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/003-arckit-consulting/ARC-003-SOBC-v1.0.md",
+          "title": "Strategic Outline Business Case",
+          "category": "Planning",
+          "documentId": "ARC-003-SOBC-v1.0",
           "extension": ".md"
         },
         {
@@ -8162,6 +8169,111 @@
           "ageDays": 0
         }
       },
+      "ARC-003-SOBC-v1.0": {
+        "type": "SOBC",
+        "project": "003-arckit-consulting",
+        "path": "projects/003-arckit-consulting/ARC-003-SOBC-v1.0.md",
+        "title": "Strategic Outline Business Case (SOBC)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-07",
+        "lastModified": "2026-05-07",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit Consulting Practice Lead / SRO)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-003-SOBC-v1.0",
+          "Document Type": "Strategic Outline Business Case (SOBC)",
+          "Project": "ArcKit Consulting (Project 003)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-07",
+          "Last Modified": "2026-05-07",
+          "Review Cycle": "At each stage gate",
+          "Next Review Date": "2026-08-07",
+          "Owner": "Mark Craddock (ArcKit Consulting Practice Lead / SRO)",
+          "Reviewed By": "[PENDING — ArcKit Architecture Review Board]",
+          "Approved By": "[PENDING — ArcKit Architecture Review Board]",
+          "Distribution": "ArcKit Consulting leadership, ArcKit Architecture Review Board, prospective Practice investors / co-founders",
+          "Total ROM": "**£1.605m – £2.795m**",
+          "Cohort size (Y1 employed)": "0",
+          "Framework routes": "None",
+          "Pricing models": "n/a",
+          "3-year cost ROM": "£0 direct",
+          "3-year revenue ROM": "£0",
+          "Y1 break-even probability": "n/a",
+          "Cross-subsidy contribution": "£0",
+          "Stakeholder Goals met": "0%",
+          "Critical Success Factors": "0/5 met",
+          "Principle 1 compliance risk": "CRITICAL",
+          "Cohort recruitment risk": "n/a",
+          "Brand differentiation": "n/a",
+          "Diminishing returns vs Option 2": "n/a",
+          "SOBC Recommendation": "REJECT",
+          "Total CapEx": "**£39k – £84k**",
+          "Total OpEx": "**£789k – £1.258m**",
+          "Total TCO (ROM)": "**£828k – £1.342m**",
+          "Plus optimism bias (~+25%)": "**£1.04m – £1.68m**",
+          "Gate 0: SOBC Approval": "This document approved; seed capital allocated; ARB endorsement",
+          "Gate 1: Practice Stand-Up": "Companies House live; ICO live; HMRC live; insurance live; CE+ assessment scheduled",
+          "Gate 2: Cohort Live": "Cohort recruited and onboarded per BR-003 / G-3",
+          "Gate 3: Framework Listings": "G-Cloud + DOS listings live; MCF sub-contracting relationships in place",
+          "Gate 4: First Engagement Sign-Off": "First commercial engagement closed (FR-014) with full QA log + client NPS",
+          "Gate 5: Y1 OBC Refresh": "First profitable FY confirmed; cross-subsidy transferred; ARB Principle-1 review complete",
+          "SOBC Approved (this gate)": "2026-06-30",
+          "Gate 1 — Practice Stand-Up Complete": "2026-09-30",
+          "Gate 4 — First Engagement Sign-Off": "2027-Q1",
+          "Gate 5 — Y1 OBC Refresh": "2027-12-15"
+        },
+        "reqIds": [
+          "BR-003",
+          "BR-005",
+          "BR-007",
+          "NFR-S-002",
+          "BR-009",
+          "NFR-Q-001",
+          "FR-008",
+          "BR-004",
+          "BR-001",
+          "BR-002",
+          "FR-013",
+          "NFR-C-005",
+          "FR-012",
+          "INT-001",
+          "INT-002",
+          "INT-004",
+          "INT-003",
+          "INT-006",
+          "INT-011",
+          "NFR-M-003",
+          "NFR-A-001",
+          "BR-010",
+          "FR-004",
+          "FR-017",
+          "NFR-SEC-007",
+          "FR-002",
+          "FR-003",
+          "NFR-C-001",
+          "FR-019",
+          "FR-007",
+          "FR-014",
+          "FR-006",
+          "FR-001",
+          "NFR-S-001",
+          "FR-011",
+          "FR-009",
+          "NFR-I-001"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
       "ARC-003-STKE-v1.0": {
         "type": "STKE",
         "project": "003-arckit-consulting",
@@ -11291,6 +11403,26 @@
         "type": "references"
       },
       {
+        "from": "ARC-003-SOBC-v1.0",
+        "to": "ARC-003-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-SOBC-v1.0",
+        "to": "ARC-003-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-SOBC-v1.0",
+        "to": "ARC-003-RSCH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-SOBC-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
         "from": "ARC-003-STKE-v1.0",
         "to": "ARC-003-REQ",
         "type": "references"
@@ -11333,7 +11465,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-07T12:15:42.396Z",
+    "baseline": "2026-05-07T13:20:00.102Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -11612,13 +11744,14 @@
       {
         "project": "003-arckit-consulting",
         "projectId": "003",
-        "artifactCount": 3,
-        "edgeCount": 11,
-        "density": 3.67,
+        "artifactCount": 4,
+        "edgeCount": 15,
+        "density": 3.75,
         "coverage": {
           "essentialPresent": [
             "REQ",
-            "STKE"
+            "STKE",
+            "SOBC"
           ],
           "essentialMissing": [
             {
@@ -11626,12 +11759,6 @@
               "command": "/arckit:risk",
               "label": "Risk Register",
               "tier": 1
-            },
-            {
-              "type": "SOBC",
-              "command": "/arckit:sobc",
-              "label": "Strategic Outline Business Case",
-              "tier": 2
             },
             {
               "type": "ADR",
@@ -11658,14 +11785,16 @@
               "tier": 4
             }
           ],
-          "essentialPct": 25,
+          "essentialPct": 38,
           "presentTypes": [
             "REQ",
             "RSCH",
+            "SOBC",
             "STKE"
           ],
           "presentByCategory": {
-            "Discovery": 3
+            "Discovery": 3,
+            "Planning": 1
           }
         },
         "compliance": {
@@ -11689,7 +11818,7 @@
         },
         "health": {
           "stale": 0,
-          "draft": 3,
+          "draft": 4,
           "orphan": 0
         },
         "contextualSuggestions": [
@@ -11724,16 +11853,16 @@
             "reason": "Tier 1 essential missing"
           },
           {
-            "command": "/arckit:sobc",
-            "label": "Strategic Outline Business Case",
-            "type": "SOBC",
-            "tier": 2,
-            "reason": "Tier 2 essential missing"
-          },
-          {
             "command": "/arckit:adr",
             "label": "Architecture Decision Record",
             "type": "ADR",
+            "tier": 3,
+            "reason": "Tier 3 essential missing"
+          },
+          {
+            "command": "/arckit:hld-review",
+            "label": "High-Level Design Review",
+            "type": "HLDR",
             "tier": 3,
             "reason": "Tier 3 essential missing"
           }

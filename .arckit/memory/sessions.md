@@ -2,6 +2,14 @@
 
 Automated session summaries captured by the ArcKit session-learner hook.
 
+### 2026-05-07 12:27 — general
+
+- **Commits:** 1 | **Files changed:** 4
+- **Artifacts:** none detected
+- **Summary:**
+  - Add session telemetry (.arckit/memory + docs/telemetry.json refresh)
+- **Telemetry:** 3 tool calls (p50=1874ms, p95=3212ms)
+
 ### 2026-05-07 12:18 — research
 
 - **Commits:** 1 | **Files changed:** 83
@@ -90,6 +98,7 @@ Automated session summaries captured by the ArcKit session-learner hook.
 - **Summary:**
   - Add data source discovery for project 002 (sovereign)
   - chore: pin marketplace ref to feat/442-datascout-reader-split for testing
+
 
 
 
