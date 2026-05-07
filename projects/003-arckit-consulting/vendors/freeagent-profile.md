@@ -1,0 +1,107 @@
+# Vendor Profile: FreeAgent
+
+> **Template Origin**: Official | **ArcKit Version**: 4.19.0 | **Command**: `/arckit:research`
+
+## Document Control
+
+| Field | Value |
+|-------|-------|
+| **Document ID** | VEN-FREEAGENT-v1.0 |
+| **Document Type** | Vendor Profile |
+| **Project** | ArcKit Consulting (Project 003) |
+| **Classification** | OFFICIAL |
+| **Status** | DRAFT |
+| **Version** | 1.0 |
+| **Created Date** | 2026-05-07 |
+| **Last Modified** | 2026-05-07 |
+| **Review Cycle** | Annual |
+| **Next Review Date** | 2027-05-07 |
+| **Owner** | Mark Craddock (ArcKit Consulting Practice Lead) |
+| **Reviewed By** | PENDING |
+| **Approved By** | PENDING |
+| **Distribution** | ArcKit Consulting leadership |
+| **Confidence** | High (5+ data points: tiered pricing, NatWest banking bundle, MTD compliance, UK SME positioning, multi-source pricing verification) |
+| **Last Researched** | 2026-05-07 |
+
+## Revision History
+
+| Version | Date | Author | Changes | Approved By | Approval Date |
+|---------|------|--------|---------|-------------|---------------|
+| 1.0 | 2026-05-07 | ArcKit AI | Initial creation from `/arckit:research` agent for ArcKit Consulting commercial-model research. | PENDING | PENDING |
+
+---
+
+## Overview
+
+FreeAgent is a UK-built, UK-hosted accounting platform owned by NatWest Group since 2018. The product is positioned at UK SMEs (sole traders, partnerships, limited companies) and is recognised by HMRC for Making Tax Digital. The "free with NatWest / RBS / Ulster Bank business banking" bundle is the key commercial differentiator, making FreeAgent effectively zero-cost for ArcKit Consulting v1 if the practice banks with NatWest Group. Recommended as the v1 accounting platform on this basis; Xero is the recommended fallback if banking elsewhere.
+
+## Products & Services
+
+- **FreeAgent for Sole Traders** — £19/month standalone; bookkeeping, expense tracking, invoicing, MTD VAT submission, Self-Assessment.
+- **FreeAgent for Partnerships** — £29/month standalone; partnership-specific features.
+- **FreeAgent for Limited Companies** — £33/month standalone; company tax / payroll integration, dividend management, Companies House filing.
+- **FreeAgent free with NatWest / RBS / Ulster Bank** — full feature set bundled with eligible business current accounts.
+- **Smart Capture Unlimited** add-on — £5/month, OCR receipt capture.
+
+## Pricing Model
+
+- **Tiered subscription** with published list prices.
+- **Free with eligible business banking** — significant differentiator vs Xero / QuickBooks.
+- All MTD-compliant features included in base tier (not paywalled).
+- Annual billing not standard — monthly billing.
+
+## UK Government Presence
+
+- G-Cloud listed: No (FreeAgent is a software product sold to private SMEs; not directly relevant to public sector procurement).
+- DOS listed: No.
+- UK data centres: Yes — UK-built, UK-hosted; UK GDPR-aligned by default.
+
+## Strengths
+
+- **Free with NatWest / RBS / Ulster Bank business banking** — effectively zero accounting cost for ArcKit Consulting if banking with NatWest Group. Aligns with Principle 1 (affordability for SMEs).
+- **UK-built, UK-hosted** — UK GDPR by design; no transfer impact assessment needed for accounting data.
+- **HMRC-recognised, MTD-compliant** — VAT, Self-Assessment, Corporation Tax all supported within base tier.
+- **Designed for UK SMEs** — feature set matches typical UK Ltd needs (Companies House filing, dividend management, RTI for payroll).
+- **Mature** product (founded 2007; NatWest acquisition 2018).
+- **Excellent for sole traders / partnerships** if practice expands to associate / member structures.
+
+## Weaknesses
+
+- **Less feature-rich than Xero** for complex multi-entity accounting; not the right choice if the practice has multiple subsidiaries / overseas entities.
+- **Smaller integration ecosystem** than Xero — Harvest, Stripe, GoCardless integrate, but the ecosystem is shallower.
+- **UI feels less modern** than Xero (subjective; Xero has invested heavily in UX over the past 5 years).
+- **Tied commercial relationship** with NatWest Group — practice may want to consider this if NatWest banking changes.
+
+## Projects Referenced In
+
+- ArcKit Consulting (Project 003) — primary recommendation for Sub-Category 4.3 (Accounting and Invoicing) in `ARC-003-RSCH-v1.0.md`, conditional on banking with NatWest / RBS / Ulster Bank.
+
+## External References
+
+> No external (non-ArcKit) source documents provided. Citations are to public web sources captured in `ARC-003-RSCH-v1.0.md`.
+
+### Document Register
+
+| Doc ID | Filename | Type | Source Location | Description |
+|--------|----------|------|-----------------|-------------|
+| *None provided* | — | — | — | — |
+
+### Citations
+
+| Citation ID | Doc ID | Page/Section | Category | Quoted Passage |
+|-------------|--------|--------------|----------|----------------|
+| — | — | — | — | — |
+
+### Unreferenced Documents
+
+| Filename | Source Location | Reason |
+|----------|-----------------|--------|
+| — | — | — |
+
+---
+
+**Generated by**: ArcKit `/arckit:research` agent
+**Generated on**: 2026-05-07
+**ArcKit Version**: 4.19.0
+**Project**: ArcKit Consulting (Project 003)
+**Model**: claude-opus-4-7[1m]

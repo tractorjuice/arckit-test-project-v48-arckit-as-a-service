@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-07T10:32:44.796Z",
+  "generated": "2026-05-07T12:15:42.242Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -1223,6 +1223,12 @@
           "extension": ".md"
         },
         {
+          "path": "projects/001-arckit-saas/research/ARC-001-GOVR-v1.1.md",
+          "title": "Government Reuse Assessment: ArcKit as a Service (Managed SaaS)",
+          "documentId": "ARC-001-GOVR-v1.1",
+          "extension": ".md"
+        },
+        {
           "path": "projects/001-arckit-saas/research/ARC-001-GRNT-001-v1.0.md",
           "title": "UK Grants Research: arckit-saas",
           "documentId": "ARC-001-GRNT-001-v1.0",
@@ -1273,6 +1279,114 @@
           "title": "Tech Note: AI Security Institute — AISI Systemic Safety Grants"
         },
         {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-digitalmarketplace-api.md",
+          "title": "Tech Note: alphagov/digitalmarketplace-api"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-digitalmarketplace-buyer-frontend.md",
+          "title": "Tech Note: alphagov/digitalmarketplace-buyer-frontend"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-digitalmarketplace-frameworks.md",
+          "title": "Tech Note: alphagov/digitalmarketplace-frameworks"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-digitalmarketplace-supplier-frontend.md",
+          "title": "Tech Note: alphagov/digitalmarketplace-supplier-frontend"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-digitalmarketplace-utils.md",
+          "title": "Tech Note: alphagov/digitalmarketplace-utils"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-gds-sso.md",
+          "title": "Tech Note: alphagov/gds-sso"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-govuk-app-config.md",
+          "title": "Tech Note: alphagov/govuk_app_config"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-govuk-chat.md",
+          "title": "Tech Note: alphagov/govuk-chat"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-govuk-frontend.md",
+          "title": "Tech Note: alphagov/govuk-frontend"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-govuk-helm-charts.md",
+          "title": "Tech Note: alphagov/govuk-helm-charts"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-govuk-infrastructure.md",
+          "title": "Tech Note: alphagov/govuk-infrastructure"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-govuk-prototype-kit.md",
+          "title": "Tech Note: alphagov/govuk-prototype-kit"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-govuk-publishing-components.md",
+          "title": "Tech Note: alphagov/govuk_publishing_components"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-notifications-api.md",
+          "title": "Tech Note: alphagov/notifications-api"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-notifications-java-client.md",
+          "title": "Tech Note: alphagov/notifications-java-client"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-notifications-node-client.md",
+          "title": "Tech Note: alphagov/notifications-node-client"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-notifications-php-client.md",
+          "title": "Tech Note: alphagov/notifications-php-client"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-notifications-python-client.md",
+          "title": "Tech Note: alphagov/notifications-python-client"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-notifications-ruby-client.md",
+          "title": "Tech Note: alphagov/notifications-ruby-client"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-paas-auditor.md",
+          "title": "Tech Note: alphagov/paas-auditor"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-paas-cf.md",
+          "title": "Tech Note: alphagov/paas-cf"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-pay-adminusers.md",
+          "title": "Tech Note: alphagov/pay-adminusers"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-pay-frontend.md",
+          "title": "Tech Note: alphagov/pay-frontend"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-pay-js-commons.md",
+          "title": "Tech Note: alphagov/pay-js-commons"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-pay-publicapi.md",
+          "title": "Tech Note: alphagov/pay-publicapi"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-pay-selfservice.md",
+          "title": "Tech Note: alphagov/pay-selfservice"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/alphagov-signon.md",
+          "title": "Tech Note: alphagov/signon"
+        },
+        {
           "path": "projects/001-arckit-saas/tech-notes/bethnal-green-ventures-tech-for-good-accelerator-autumn-2026.md",
           "title": "Tech Note: BGV Tech for Good Accelerator - Autumn 2026"
         },
@@ -1289,8 +1403,24 @@
           "title": "Tech Note: Challenge Works / DSIT — Manchester Prize Round 2"
         },
         {
+          "path": "projects/001-arckit-saas/tech-notes/companieshouse-api-sdk-node.md",
+          "title": "Tech Note: companieshouse/api-sdk-node"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/companieshouse-confirmation-statement-web.md",
+          "title": "Tech Note: companieshouse/confirmation-statement-web"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/companieshouse-overseas-entities-web.md",
+          "title": "Tech Note: companieshouse/overseas-entities-web"
+        },
+        {
           "path": "projects/001-arckit-saas/tech-notes/connected-places-catapult-rail-stations-innovation-accelerator.md",
           "title": "Tech Note: Connected Places Catapult Rail Stations Innovation Accelerator"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/dfe-digital-terraform-azurerm-container-apps-hosting.md",
+          "title": "Tech Note: DFE-Digital/terraform-azurerm-container-apps-hosting"
         },
         {
           "path": "projects/001-arckit-saas/tech-notes/digital-catapult-future-networks-lab-accelerator.md",
@@ -1319,6 +1449,50 @@
         {
           "path": "projects/001-arckit-saas/tech-notes/fair-by-design-venture-fund.md",
           "title": "Tech Note: Fair By Design Venture Fund"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/govuk-one-login-authentication-api.md",
+          "title": "Tech Note: govuk-one-login/authentication-api"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/govuk-one-login-authentication-frontend.md",
+          "title": "Tech Note: govuk-one-login/authentication-frontend"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/govuk-one-login-authentication-stubs.md",
+          "title": "Tech Note: govuk-one-login/authentication-stubs"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/govuk-one-login-onboarding-examples.md",
+          "title": "Tech Note: govuk-one-login/onboarding-examples"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/govuk-one-login-simulator.md",
+          "title": "Tech Note: govuk-one-login/simulator"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/hmrc-terraform-aws-vpc.md",
+          "title": "Tech Note: hmrc/terraform-aws-vpc"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/i-dot-ai-caddy-chatbot.md",
+          "title": "Tech Note: i-dot-ai/caddy-chatbot"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/i-dot-ai-consult.md",
+          "title": "Tech Note: i-dot-ai/consult"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/i-dot-ai-i-dot-ai-utilities.md",
+          "title": "Tech Note: i-dot-ai/i-dot-ai-utilities"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/i-dot-ai-lex.md",
+          "title": "Tech Note: i-dot-ai/lex"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/i-dot-ai-redbox.md",
+          "title": "Tech Note: i-dot-ai/redbox"
         },
         {
           "path": "projects/001-arckit-saas/tech-notes/indigo-trust-grants.md",
@@ -1373,8 +1547,16 @@
           "title": "Tech Note: Innovate UK — Sovereign AI Proof of Concept"
         },
         {
+          "path": "projects/001-arckit-saas/tech-notes/jimsmart-chapi.md",
+          "title": "Tech Note: jimsmart/chapi"
+        },
+        {
           "path": "projects/001-arckit-saas/tech-notes/joseph-rowntree-reform-trust-democracy-priorities-funding.md",
           "title": "Tech Note: JRRT Democracy Priorities Funding"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/kevbite-companieshouse-net.md",
+          "title": "Tech Note: kevbite/CompaniesHouse.NET"
         },
         {
           "path": "projects/001-arckit-saas/tech-notes/lankelly-chase-endowment-redistribution.md",
@@ -1383,6 +1565,38 @@
         {
           "path": "projects/001-arckit-saas/tech-notes/lloyds-bank-foundation-specialist-and-equity-programmes.md",
           "title": "Tech Note: LBF Specialist and Equity Programmes (2026 strategy)"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ministryofjustice-cloud-platform-environments.md",
+          "title": "Tech Note: ministryofjustice/cloud-platform-environments"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ministryofjustice-cloud-platform-infrastructure.md",
+          "title": "Tech Note: ministryofjustice/cloud-platform-infrastructure"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ministryofjustice-cloud-platform-terraform-rds-instance.md",
+          "title": "Tech Note: ministryofjustice/cloud-platform-terraform-rds-instance"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ministryofjustice-cloud-platform-terraform-s3-bucket.md",
+          "title": "Tech Note: ministryofjustice/cloud-platform-terraform-s3-bucket"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ministryofjustice-hmpps-audit-api.md",
+          "title": "Tech Note: ministryofjustice/hmpps-audit-api"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ministryofjustice-hmpps-audit-poc-ui.md",
+          "title": "Tech Note: ministryofjustice/hmpps-audit-poc-ui"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ministryofjustice-hmpps-spring-boot-sqs.md",
+          "title": "Tech Note: ministryofjustice/hmpps-spring-boot-sqs"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/ministryofjustice-modernisation-platform.md",
+          "title": "Tech Note: ministryofjustice/modernisation-platform"
         },
         {
           "path": "projects/001-arckit-saas/tech-notes/multi-tenant-isolation-pool-with-cells.md",
@@ -1429,6 +1643,14 @@
           "title": "Tech Note: Nesta Mission Studio"
         },
         {
+          "path": "projects/001-arckit-saas/tech-notes/nhsuk-nhsuk-frontend.md",
+          "title": "Tech Note: nhsuk/nhsuk-frontend"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/nicholasamorim-chuk.md",
+          "title": "Tech Note: nicholasamorim/chuk"
+        },
+        {
           "path": "projects/001-arckit-saas/tech-notes/opentelemetry-observability.md",
           "title": "Tech Note: OpenTelemetry-Native Observability for Multi-Tenant SaaS"
         },
@@ -1443,6 +1665,10 @@
         {
           "path": "projects/001-arckit-saas/tech-notes/paul-hamlyn-foundation-open-funds.md",
           "title": "Tech Note: Paul Hamlyn Foundation Open Funds"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/penx-govuk-react.md",
+          "title": "Tech Note: penx/govuk-react"
         },
         {
           "path": "projects/001-arckit-saas/tech-notes/plexal-dsit-cyber-runway.md",
@@ -1519,6 +1745,10 @@
         {
           "path": "projects/001-arckit-saas/tech-notes/wcit-charity-it4good-grant-programme.md",
           "title": "Tech Note: WCIT IT4Good Grant Programme"
+        },
+        {
+          "path": "projects/001-arckit-saas/tech-notes/x-govuk-govuk-eleventy-plugin.md",
+          "title": "Tech Note: x-govuk/govuk-eleventy-plugin"
         }
       ]
     },
@@ -1951,6 +2181,102 @@
         {
           "path": "projects/002-arckit-sovereign/data-sources/w3c-profile.md",
           "title": "Data Source Profile: W3C — Web Content Accessibility Guidelines (WCAG) 2.2"
+        }
+      ]
+    },
+    {
+      "id": "003-arckit-consulting",
+      "name": "Arckit Consulting",
+      "documents": [
+        {
+          "path": "projects/003-arckit-consulting/ARC-003-REQ-v1.0.md",
+          "title": "Requirements",
+          "category": "Discovery",
+          "documentId": "ARC-003-REQ-v1.0",
+          "extension": ".md"
+        },
+        {
+          "path": "projects/003-arckit-consulting/ARC-003-STKE-v1.0.md",
+          "title": "Stakeholder Analysis",
+          "category": "Discovery",
+          "documentId": "ARC-003-STKE-v1.0",
+          "extension": ".md"
+        }
+      ],
+      "research": [
+        {
+          "path": "projects/003-arckit-consulting/research/ARC-003-RSCH-v1.0.md",
+          "title": "Technology and Service Research: ArcKit Consulting (UK Public Sector Practice) — Commercial Model",
+          "documentId": "ARC-003-RSCH-v1.0",
+          "extension": ".md"
+        }
+      ],
+      "vendorProfiles": [
+        {
+          "path": "projects/003-arckit-consulting/vendors/dxw-profile.md",
+          "title": "Dxw"
+        },
+        {
+          "path": "projects/003-arckit-consulting/vendors/equal-experts-profile.md",
+          "title": "Equal Experts"
+        },
+        {
+          "path": "projects/003-arckit-consulting/vendors/freeagent-profile.md",
+          "title": "Freeagent"
+        },
+        {
+          "path": "projects/003-arckit-consulting/vendors/harvest-profile.md",
+          "title": "Harvest"
+        },
+        {
+          "path": "projects/003-arckit-consulting/vendors/hubspot-profile.md",
+          "title": "Hubspot"
+        },
+        {
+          "path": "projects/003-arckit-consulting/vendors/iasme-profile.md",
+          "title": "Iasme"
+        },
+        {
+          "path": "projects/003-arckit-consulting/vendors/made-tech-profile.md",
+          "title": "Made Tech"
+        },
+        {
+          "path": "projects/003-arckit-consulting/vendors/microsoft-profile.md",
+          "title": "Microsoft"
+        },
+        {
+          "path": "projects/003-arckit-consulting/vendors/notion-profile.md",
+          "title": "Notion"
+        },
+        {
+          "path": "projects/003-arckit-consulting/vendors/sage-profile.md",
+          "title": "Sage"
+        }
+      ],
+      "techNotes": [
+        {
+          "path": "projects/003-arckit-consulting/tech-notes/cyber-essentials-plus-process.md",
+          "title": "Tech Note: Cyber Essentials and Cyber Essentials Plus — Process, Pricing, Lead Times"
+        },
+        {
+          "path": "projects/003-arckit-consulting/tech-notes/govuk-design-system-eleventy.md",
+          "title": "Tech Note: GOV.UK Design System and Eleventy for Non-Government Public Websites"
+        },
+        {
+          "path": "projects/003-arckit-consulting/tech-notes/legal-vehicle-comparison-uk-consulting.md",
+          "title": "Tech Note: UK Legal Vehicle Comparison for Consulting Practices (Ltd / LLP / CIC / B-Corp)"
+        },
+        {
+          "path": "projects/003-arckit-consulting/tech-notes/uk-consulting-pricing-models.md",
+          "title": "Tech Note: UK Consulting Pricing Models (Day-rate, Fixed-price, Retainer, Outcome-based)"
+        },
+        {
+          "path": "projects/003-arckit-consulting/tech-notes/uk-procurement-frameworks-2026.md",
+          "title": "Tech Note: UK Procurement Frameworks 2026 (G-Cloud, DOS, MCF)"
+        },
+        {
+          "path": "projects/003-arckit-consulting/tech-notes/uk-sme-thresholds-2026.md",
+          "title": "Tech Note: UK SME Thresholds 2026 (Companies Act 2006, IR35, ICO Fees)"
         }
       ]
     }
@@ -4675,6 +5001,93 @@
           "draft": true,
           "orphan": false,
           "ageDays": 4
+        }
+      },
+      "ARC-001-GOVR-v1.1": {
+        "type": "GOVR",
+        "project": "001-arckit-saas",
+        "path": "projects/001-arckit-saas/research/ARC-001-GOVR-v1.1.md",
+        "title": "Government Reuse Assessment: ArcKit as a Service (Managed SaaS)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-07",
+        "lastModified": "2026-05-07",
+        "version": "1.1",
+        "owner": "Mark Craddock (ArcKit as a Service Owner)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-001-GOVR-v1.1",
+          "Document Type": "Government Code Reuse Assessment",
+          "Project": "ArcKit as a Service (Managed SaaS) (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.1",
+          "Created Date": "2026-05-07",
+          "Last Modified": "2026-05-07",
+          "Review Cycle": "6-monthly (gov repo landscape changes quickly)",
+          "Next Review Date": "2026-11-07",
+          "Owner": "Mark Craddock (ArcKit as a Service Owner)",
+          "Reviewed By": "PENDING",
+          "Approved By": "PENDING",
+          "Distribution": "Project 001 team, Lead Architect, Service Owner, downstream `/arckit:research` and `/arckit:adr` consumers, CCS liaison",
+          "Organisation": "alphagov",
+          "Repository URL": "https://github.com/alphagov/pay-direct-debit-connector",
+          "Language": "java",
+          "Framework": "dropwizard",
+          "License": "MIT",
+          "Last Commit": "2021-09-29",
+          "Stars / Forks": "5 / 5",
+          "Tests / CI / Docs": "yes / yes / yes",
+          "Archived": "yes",
+          "Install": "maven"
+        },
+        "reqIds": [
+          "BR-003",
+          "FR-001",
+          "INT-003",
+          "INT-001",
+          "NFR-SEC-001",
+          "FR-004",
+          "INT-005",
+          "INT-006",
+          "NFR-A-001",
+          "FR-011",
+          "INT-002",
+          "FR-002",
+          "NFR-SEC-002",
+          "INT-004",
+          "INT-008",
+          "BR-004",
+          "NFR-SEC-003",
+          "BR-001",
+          "BR-006",
+          "BR-007",
+          "FR-003",
+          "FR-005",
+          "FR-006",
+          "FR-007",
+          "FR-008",
+          "FR-009",
+          "FR-010",
+          "FR-012",
+          "FR-013",
+          "FR-014",
+          "FR-015",
+          "NFR-C-002",
+          "NFR-C-003",
+          "NFR-M-001",
+          "NFR-A-002",
+          "NFR-S-001",
+          "INT-007",
+          "INT-009"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
         }
       },
       "ARC-001-GRNT-001-v1.0": {
@@ -7631,6 +8044,324 @@
           "orphan": false,
           "ageDays": 4
         }
+      },
+      "ARC-003-REQ-v1.0": {
+        "type": "REQ",
+        "project": "003-arckit-consulting",
+        "path": "projects/003-arckit-consulting/ARC-003-REQ-v1.0.md",
+        "title": "Project Requirements: ArcKit Consulting (UK Public Sector Practice)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-07",
+        "lastModified": "2026-05-07",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit Consulting Practice Lead)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-003-REQ-v1.0",
+          "Document Type": "Business and Technical Requirements",
+          "Project": "ArcKit Consulting (Project 003)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-07",
+          "Last Modified": "2026-05-07",
+          "Review Cycle": "6-monthly",
+          "Next Review Date": "2026-11-07",
+          "Owner": "Mark Craddock (ArcKit Consulting Practice Lead)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "ArcKit Consulting leadership, Architecture Review Board, Crown Commercial Service liaison, prospective consultants",
+          "Total setup": "**£46k – £111k**",
+          "Indicative ongoing (excl consultants)": "**£34k – £95k**"
+        },
+        "reqIds": [
+          "BR-001",
+          "BR-002",
+          "BR-003",
+          "BR-004",
+          "BR-005",
+          "BR-006",
+          "BR-007",
+          "FR-014",
+          "BR-008",
+          "BR-009",
+          "BR-010",
+          "FR-001",
+          "FR-018",
+          "INT-009",
+          "FR-002",
+          "FR-003",
+          "FR-004",
+          "NFR-SEC-001",
+          "NFR-SEC-002",
+          "FR-005",
+          "INT-007",
+          "FR-006",
+          "FR-007",
+          "NFR-C-001",
+          "INT-005",
+          "INT-006",
+          "FR-008",
+          "NFR-Q-001",
+          "FR-009",
+          "FR-010",
+          "NFR-C-005",
+          "FR-011",
+          "INT-003",
+          "FR-012",
+          "FR-013",
+          "FR-015",
+          "NFR-SEC-003",
+          "FR-016",
+          "NFR-C-008",
+          "FR-017",
+          "NFR-SEC-005",
+          "NFR-A-002",
+          "FR-019",
+          "NFR-U-002",
+          "FR-020",
+          "NFR-P-001",
+          "NFR-P-002",
+          "NFR-P-003",
+          "NFR-SEC-004",
+          "NFR-SEC-006",
+          "NFR-SEC-007",
+          "NFR-A-001",
+          "NFR-A-003",
+          "NFR-S-001",
+          "NFR-S-002",
+          "NFR-C-002",
+          "NFR-C-003",
+          "NFR-C-004",
+          "NFR-C-006",
+          "NFR-C-007",
+          "NFR-C-009",
+          "NFR-C-010",
+          "NFR-Q-002",
+          "NFR-Q-003",
+          "NFR-U-001",
+          "NFR-M-001",
+          "NFR-M-002",
+          "NFR-M-003",
+          "NFR-I-001",
+          "NFR-I-002",
+          "INT-001",
+          "INT-002",
+          "INT-004",
+          "INT-008",
+          "INT-010",
+          "INT-011"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-003-STKE-v1.0": {
+        "type": "STKE",
+        "project": "003-arckit-consulting",
+        "path": "projects/003-arckit-consulting/ARC-003-STKE-v1.0.md",
+        "title": "Stakeholder Drivers & Goals Analysis: ArcKit Consulting (UK Public Sector Practice)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-07",
+        "lastModified": "2026-05-07",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit Consulting Practice Lead)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-003-STKE-v1.0",
+          "Document Type": "Stakeholder Drivers & Goals Analysis",
+          "Project": "ArcKit Consulting (Project 003)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-07",
+          "Last Modified": "2026-05-07",
+          "Review Cycle": "6-monthly",
+          "Next Review Date": "2026-11-07",
+          "Owner": "Mark Craddock (ArcKit Consulting Practice Lead)",
+          "Reviewed By": "[PENDING]",
+          "Approved By": "[PENDING]",
+          "Distribution": "ArcKit Consulting leadership, Architecture Review Board, Crown Commercial Service liaison"
+        },
+        "reqIds": [
+          "BR-004",
+          "FR-008",
+          "NFR-Q-001",
+          "BR-010",
+          "FR-002",
+          "NFR-A-001",
+          "FR-012",
+          "BR-002",
+          "FR-020",
+          "BR-009",
+          "NFR-P-002",
+          "FR-005",
+          "NFR-M-003",
+          "NFR-SEC-003",
+          "FR-010",
+          "NFR-C-002",
+          "NFR-S-002",
+          "NFR-SEC-001",
+          "NFR-SEC-007",
+          "FR-017",
+          "FR-004",
+          "NFR-SEC-006",
+          "FR-013",
+          "NFR-I-001",
+          "FR-007",
+          "BR-005",
+          "FR-011",
+          "BR-007",
+          "FR-006",
+          "NFR-SEC-005",
+          "FR-001",
+          "FR-009",
+          "FR-014"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
+      "ARC-003-RSCH-v1.0": {
+        "type": "RSCH",
+        "project": "003-arckit-consulting",
+        "path": "projects/003-arckit-consulting/research/ARC-003-RSCH-v1.0.md",
+        "title": "Technology and Service Research: ArcKit Consulting (UK Public Sector Practice) — Commercial Model",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-05-07",
+        "lastModified": "2026-05-07",
+        "version": "1.0",
+        "owner": "Mark Craddock (ArcKit Consulting Practice Lead)",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-003-RSCH-v1.0",
+          "Document Type": "Technology and Service Research (Commercial Model Scope)",
+          "Project": "ArcKit Consulting (Project 003)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-05-07",
+          "Last Modified": "2026-05-07",
+          "Review Cycle": "Quarterly through pre-trading; annual post-go-live",
+          "Next Review Date": "2026-08-07",
+          "Owner": "Mark Craddock (ArcKit Consulting Practice Lead)",
+          "Reviewed By": "PENDING",
+          "Approved By": "PENDING",
+          "Distribution": "ArcKit Consulting leadership, Architecture Review Board, Crown Commercial Service liaison, prospective Commercial Lead, Practice Lead's procurement adviser",
+          "GOV.UK Platforms": "0",
+          "DOS 8 / DSP successor": "Pending application window",
+          "MCF4 sub-contracting": "Available now via primes",
+          "MCF5 direct entry": "2027 application window",
+          "Direct award (under threshold)": "Available now",
+          "NHS LPP / sector-specific frameworks": "Future",
+          "HubSpot CRM": "Free (Forever, basic) → Starter £20/user/month → Professional £105/user/month",
+          "Salesforce": "Starter £25/user/month → Pro £125/user/month → Enterprise £165+/user/month",
+          "Pipedrive": "Essential £14/user/month → Advanced £29/user/month → Professional £49/user/month",
+          "Capsule CRM": "Free (up to 2 users) → Starter £15/user/month → Growth £29/user/month",
+          "OnePageCRM": "Professional £14/user/month → Business £29/user/month",
+          "Harvest": "Free → Pro $11/user/month annual ($13.75 monthly) → Teams $9/user/month annual",
+          "Clockify": "Free → Basic $3.99/user/month → Standard $5.49 → Pro $7.99",
+          "Toggl Track": "Free → Starter $9/user/month → Premium $18",
+          "FreeAgent (built-in time)": "Bundled with FreeAgent accounting (£33/month limited co.)",
+          "Xero (built-in time)": "Bundled with Xero Comprehensive (£50/month)",
+          "FreeAgent": "Sole trader £19/m → Partnership £29/m → Limited Company £33/m. **Free with NatWest / RBS / Ulster Bank business banking**.",
+          "Xero": "Ignite £16/m → Grow £37/m → Comprehensive £50/m → Ultimate £65/m",
+          "QuickBooks Online (UK)": "Simple Start £14/m → Essentials £30/m → Plus £42/m → Advanced £85/m",
+          "Sage Accounting": "Accounting Start £15/m → Standard £30/m → Plus £39/m",
+          "DocuSign": "Personal £10/m → Standard £25/m → Business Pro £40/m",
+          "Adobe Acrobat Sign": "Acrobat Standard $12.99/m (individual) → Acrobat Studio for Teams $29.99/user/m (capped 150 transactions/user/year)",
+          "SignNow": "Business £8/user/m → Business Premium £15/user/m → Enterprise £30/user/m",
+          "HelloSign / Dropbox Sign": "Essentials £15/m → Standard £25/m",
+          "BrightHR": "From £2.20/employee/month",
+          "Sage HR": "From £4.60/employee/month",
+          "Personio": "From £4/employee/month",
+          "BambooHR": "$10/employee/month (or $250/month flat for ≤ 25 employees)",
+          "PeopleHR": "£4/user/month (legacy plan ranges)",
+          "Microsoft Entra ID Free": "£0 (bundled with Microsoft 365)",
+          "Microsoft Entra ID P1": "£6.20/user/month (or bundled with M365 Business Premium)",
+          "Microsoft Entra ID P2": "£9/user/month",
+          "Google Workspace Cloud Identity": "Bundled with Workspace; standalone $6/user/month",
+          "Okta": "$2/user/m SSO + $3/user/m MFA + $4/user/m Lifecycle",
+          "JumpCloud": "$9/user/m (device management) → tiered up to enterprise custom",
+          "Microsoft Intune (standalone)": "£6.20/user/month (or bundled with M365 Business Premium)",
+          "Jamf Pro": "$12.50/Mac/month (25-device minimum, billed annually)",
+          "Iru (formerly Kandji)": "Quote-based (100-device minimum reported)",
+          "Hexnode": "From £2/device/month",
+          "Notion": "Free → Plus $8/user/month annual ($10 monthly) → Business $18/user/m → Enterprise custom",
+          "Confluence (Atlassian)": "Standard $5.16/user/m → Premium $9.73/user/m → Enterprise custom (10-user free)",
+          "SharePoint (M365)": "Bundled with M365 Business Premium",
+          "Google Drive / Workspace": "Bundled with Google Workspace ($6/user/m)",
+          "Eleventy + GOV.UK Design System inspired theme": "£4,000–£8,000 (build)",
+          "WordPress (managed)": "£2,000–£6,000 (build)",
+          "Webflow": "£1,500–£4,000 (build)",
+          "Next.js + Vercel": "£4,000–£8,000 (build)",
+          "GOV.UK Design System (used directly)": "n/a",
+          "Total operating tooling": "| **£13,400**",
+          "Total year 1": "**£8,828** + VAT",
+          "Baseline (10 people)": "£13,400",
+          "5-person practice": "£8,000",
+          "20-person practice": "£24,000",
+          "+10% annual SaaS price increases": "£13,400",
+          "Switch to Webflow + WordPress (no Eleventy build)": "£8,000",
+          "Risk-adjusted (10% contingency on year-1 SaaS, 15% on website build)": "£15,000",
+          "Total": "**100%**"
+        },
+        "reqIds": [
+          "BR-001",
+          "BR-010",
+          "FR-001",
+          "FR-002",
+          "FR-007",
+          "FR-010",
+          "FR-011",
+          "FR-018",
+          "FR-019",
+          "FR-020",
+          "NFR-C-001",
+          "NFR-C-002",
+          "NFR-C-005",
+          "NFR-C-008",
+          "NFR-SEC-001",
+          "NFR-SEC-006",
+          "NFR-SEC-007",
+          "NFR-A-001",
+          "BR-005",
+          "BR-004",
+          "BR-006",
+          "FR-008",
+          "BR-009",
+          "BR-007",
+          "BR-002",
+          "FR-005",
+          "FR-016",
+          "BR-008",
+          "FR-006",
+          "BR-003",
+          "FR-017",
+          "FR-012",
+          "FR-004"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
       }
     },
     "edges": [
@@ -9185,6 +9916,16 @@
         "type": "references"
       },
       {
+        "from": "ARC-001-GOVR-v1.1",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-GOVR-v1.1",
+        "to": "ARC-001-ADR",
+        "type": "references"
+      },
+      {
         "from": "ARC-001-GRNT-001-v1.0",
         "to": "ARC-001-SOBC",
         "type": "references"
@@ -10533,11 +11274,66 @@
         "from": "ARC-002-RSCH-v1.0",
         "to": "ARC-002-STKE",
         "type": "references"
+      },
+      {
+        "from": "ARC-003-REQ-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-REQ-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-REQ-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-STKE-v1.0",
+        "to": "ARC-003-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-STKE-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-STKE-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-STKE-v1.0",
+        "to": "ARC-002-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-RSCH-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-RSCH-v1.0",
+        "to": "ARC-003-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-RSCH-v1.0",
+        "to": "ARC-003-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-003-RSCH-v1.0",
+        "to": "ARC-001-RSCH",
+        "type": "references"
       }
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-07T10:32:44.850Z",
+    "baseline": "2026-05-07T12:15:42.396Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -10607,9 +11403,9 @@
       {
         "project": "001-arckit-saas",
         "projectId": "001",
-        "artifactCount": 36,
-        "edgeCount": 316,
-        "density": 8.78,
+        "artifactCount": 37,
+        "edgeCount": 318,
+        "density": 8.59,
         "coverage": {
           "essentialPresent": [
             "REQ",
@@ -10689,7 +11485,7 @@
         },
         "health": {
           "stale": 0,
-          "draft": 30,
+          "draft": 31,
           "orphan": 0
         },
         "contextualSuggestions": [],
@@ -10810,6 +11606,136 @@
             "type": "CONF",
             "tier": 4,
             "reason": "Tier 4 essential missing"
+          }
+        ]
+      },
+      {
+        "project": "003-arckit-consulting",
+        "projectId": "003",
+        "artifactCount": 3,
+        "edgeCount": 11,
+        "density": 3.67,
+        "coverage": {
+          "essentialPresent": [
+            "REQ",
+            "STKE"
+          ],
+          "essentialMissing": [
+            {
+              "type": "RISK",
+              "command": "/arckit:risk",
+              "label": "Risk Register",
+              "tier": 1
+            },
+            {
+              "type": "SOBC",
+              "command": "/arckit:sobc",
+              "label": "Strategic Outline Business Case",
+              "tier": 2
+            },
+            {
+              "type": "ADR",
+              "command": "/arckit:adr",
+              "label": "Architecture Decision Record",
+              "tier": 3
+            },
+            {
+              "type": "HLDR",
+              "command": "/arckit:hld-review",
+              "label": "High-Level Design Review",
+              "tier": 3
+            },
+            {
+              "type": "TRAC",
+              "command": "/arckit:traceability",
+              "label": "Traceability Matrix",
+              "tier": 4
+            },
+            {
+              "type": "CONF",
+              "command": "/arckit:conformance",
+              "label": "Conformance Assessment",
+              "tier": 4
+            }
+          ],
+          "essentialPct": 25,
+          "presentTypes": [
+            "REQ",
+            "RSCH",
+            "STKE"
+          ],
+          "presentByCategory": {
+            "Discovery": 3
+          }
+        },
+        "compliance": {
+          "presentHigh": [],
+          "missingHigh": [
+            "TCOP",
+            "SECD",
+            "SECD-MOD",
+            "DPIA",
+            "SVCASS",
+            "RISK",
+            "TRAC",
+            "CONF",
+            "PRIN-COMP",
+            "AIPB",
+            "ATRS",
+            "JSP936"
+          ],
+          "pct": 0,
+          "total": 12
+        },
+        "health": {
+          "stale": 0,
+          "draft": 3,
+          "orphan": 0
+        },
+        "contextualSuggestions": [
+          {
+            "command": "/arckit:dpia",
+            "type": "DPIA",
+            "trigger": "processing personal data"
+          },
+          {
+            "command": "/arckit:secure",
+            "type": "SECD",
+            "trigger": "security-sensitive system"
+          },
+          {
+            "command": "/arckit:tcop",
+            "type": "TCOP",
+            "trigger": "UK Gov Service Standard"
+          },
+          {
+            "command": "/arckit:data-model",
+            "type": "DATA",
+            "trigger": "DR-* requirements present"
+          }
+        ],
+        "hasGlobalPrin": true,
+        "recommendations": [
+          {
+            "command": "/arckit:risk",
+            "label": "Risk Register",
+            "type": "RISK",
+            "tier": 1,
+            "reason": "Tier 1 essential missing"
+          },
+          {
+            "command": "/arckit:sobc",
+            "label": "Strategic Outline Business Case",
+            "type": "SOBC",
+            "tier": 2,
+            "reason": "Tier 2 essential missing"
+          },
+          {
+            "command": "/arckit:adr",
+            "label": "Architecture Decision Record",
+            "type": "ADR",
+            "tier": 3,
+            "reason": "Tier 3 essential missing"
           }
         ]
       }
