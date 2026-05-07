@@ -2,6 +2,15 @@
 
 Automated session summaries captured by the ArcKit session-learner hook.
 
+### 2026-05-07 13:20 — planning
+
+- **Commits:** 1 | **Files changed:** 7
+- **Artifacts:**
+  - [003] Planning: Strategic Outline Business Case
+- **Summary:**
+  - Add ARC-003-SOBC-v1.0 (Strategic Outline Business Case) for ArcKit Consulting
+- **Telemetry:** 5 tool calls (p50=244ms, p95=3717ms)
+
 ### 2026-05-07 12:27 — general
 
 - **Commits:** 1 | **Files changed:** 4
@@ -98,6 +107,7 @@ Automated session summaries captured by the ArcKit session-learner hook.
 - **Summary:**
   - Add data source discovery for project 002 (sovereign)
   - chore: pin marketplace ref to feat/442-datascout-reader-split for testing
+
 
 
 

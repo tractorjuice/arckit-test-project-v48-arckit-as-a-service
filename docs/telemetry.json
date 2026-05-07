@@ -1,6 +1,28 @@
 {
-  "generated": "2026-05-07T12:27:34.151Z",
+  "generated": "2026-05-07T13:20:38.337Z",
   "sessions": [
+    {
+      "ts": "2026-05-07T13:20:38.337Z",
+      "type": "planning",
+      "isFailure": false,
+      "commits": 1,
+      "filesChanged": 7,
+      "artifacts": [
+        {
+          "project": "003",
+          "categories": {
+            "Planning": [
+              "Strategic Outline Business Case"
+            ]
+          }
+        }
+      ],
+      "telemetry": {
+        "toolCalls": 5,
+        "p50": 244,
+        "p95": 3717
+      }
+    },
     {
       "ts": "2026-05-07T12:27:34.151Z",
       "type": "general",
