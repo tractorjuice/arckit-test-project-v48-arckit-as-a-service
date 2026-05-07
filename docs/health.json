@@ -1,8 +1,8 @@
 {
-  "generated": "2026-05-07T09:40:33.520Z",
+  "generated": "2026-05-07T10:32:58.047Z",
   "scanned": {
     "projects": 2,
-    "artifacts": 71
+    "artifacts": 72
   },
   "summary": {
     "HIGH": 0,
@@ -27,7 +27,7 @@
     },
     {
       "id": "002-arckit-sovereign",
-      "artifacts": 35,
+      "artifacts": 36,
       "findings": []
     }
   ]

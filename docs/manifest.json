@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-07T09:40:15.423Z",
+  "generated": "2026-05-07T10:32:44.796Z",
   "repository": {
     "name": "arckit-test-project-v48-arckit-as-a-service"
   },
@@ -1753,10 +1753,138 @@
           "extension": ".md"
         },
         {
+          "path": "projects/002-arckit-sovereign/research/ARC-002-GRNT-001-v1.0.md",
+          "title": "UK Grants Research: ArcKit as a Service (Sovereign Deployment)",
+          "documentId": "ARC-002-GRNT-001-v1.0",
+          "extension": ".md"
+        },
+        {
           "path": "projects/002-arckit-sovereign/research/ARC-002-RSCH-v1.0.md",
           "title": "Technology and Service Research: ArcKit as a Service (Sovereign / Air-Gapped Deployment)",
           "documentId": "ARC-002-RSCH-v1.0",
           "extension": ".md"
+        }
+      ],
+      "techNotes": [
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/barclays-eagle-labs-scaleup-programme.md",
+          "title": "Tech Note: Barclays Eagle Labs Scaleup Programme"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/dasa-open-call-for-innovation-reopening-2026.md",
+          "title": "Tech Note: DASA Open Call for Innovation (reopening 2026)"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/digital-catapult-smart-nano-industrial-photonics-bootcamp.md",
+          "title": "Tech Note: Digital Catapult Smart Nano Industrial Photonics Bootcamp"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/digital-catapult-sonic-labs-technology-access-programme.md",
+          "title": "Tech Note: Digital Catapult SONIC Labs Technology Access Programme"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/dsit-sovereign-ai-strategic-assets-grants-programme.md",
+          "title": "Tech Note: DSIT Sovereign AI Strategic Assets Grants Programme"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/dstl-sme-searchlight-r-cloud-research-engagement.md",
+          "title": "Tech Note: Dstl SME Searchlight / R-Cloud research engagement"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/epsrc-prosperity-partnerships-2027.md",
+          "title": "Tech Note: EPSRC Prosperity Partnerships 2027"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/innovate-uk-contracts-for-innovation-cyber-scale-in-critical-sectors.md",
+          "title": "Tech Note: Innovate UK CFI Cyber Scale in Critical Sectors"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/innovate-uk-counter-uas-technologies.md",
+          "title": "Tech Note: Innovate UK Counter UAS Technologies"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/innovate-uk-dsit-cyberasap-year-10.md",
+          "title": "Tech Note: Innovate UK / DSIT CyberASAP Year 10"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/innovate-uk-dual-use-aviation-systems-and-autonomy.md",
+          "title": "Tech Note: Innovate UK Dual-use aviation systems and autonomy"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/innovate-uk-eurostars-call-11.md",
+          "title": "Tech Note: Innovate UK Eurostars Call 11"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/innovate-uk-frontier-ai-benchmarking-datasets.md",
+          "title": "Tech Note: Innovate UK Frontier AI Benchmarking Datasets"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/innovate-uk-frontier-ai-discovery.md",
+          "title": "Tech Note: Innovate UK Frontier AI Discovery"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/innovate-uk-horizon-europe-guarantee-extension.md",
+          "title": "Tech Note: Innovate UK Horizon Europe Guarantee Extension"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/innovate-uk-innovation-loans-round-25.md",
+          "title": "Tech Note: Innovate UK Innovation Loans Round 25"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/innovate-uk-knowledge-transfer-partnership-2026-2027-round-2.md",
+          "title": "Tech Note: Innovate UK Knowledge Transfer Partnership (KTP) 2026-2027 Round 2"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/innovate-uk-secure-software-for-resilient-growth.md",
+          "title": "Tech Note: Innovate UK Secure Software for Resilient Growth"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/ministry-of-defence-defence-and-dual-use-technology-showcase-dragons-den.md",
+          "title": "Tech Note: MOD Defence and Dual Use Technology Showcase (Dragons Den)"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/ministry-of-defence-mod-grants-historical-360giving.md",
+          "title": "Tech Note: MOD Grants (historical, published via 360Giving)"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/ministry-of-defence-uk-defence-innovation-20m-defence-unicorn-fund.md",
+          "title": "Tech Note: MOD UK Defence Innovation - 20m Defence Unicorn Fund"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/plexal-ncsc-dsit-ncsc-for-startups.md",
+          "title": "Tech Note: Plexal NCSC for Startups"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/public-aws-defence-accelerator.md",
+          "title": "Tech Note: PUBLIC AWS Defence Accelerator"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/uk-defence-innovation-ukdi-biosecurity-frontiers.md",
+          "title": "Tech Note: UKDI Biosecurity Frontiers"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/uk-defence-innovation-ukdi-defence-innovation-loans-2025-26.md",
+          "title": "Tech Note: UKDI Defence Innovation Loans 2025-26"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/uk-defence-innovation-ukdi-innovation-support-to-operations-phase-3-cycle-7.md",
+          "title": "Tech Note: UKDI Innovation Support to Operations Phase 3 (Cycle 7)"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/uk-defence-innovation-ukdi-map-the-gap-phase-3.md",
+          "title": "Tech Note: UKDI Map the Gap (Phase 3)"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/uk-defence-innovation-ukdi-rapid-transfusion-diagnostics.md",
+          "title": "Tech Note: UKDI Rapid Transfusion Diagnostics"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/ukri-future-leaders-fellowships-round-11.md",
+          "title": "Tech Note: UKRI Future Leaders Fellowships Round 11"
+        },
+        {
+          "path": "projects/002-arckit-sovereign/tech-notes/wayra-uk-open-innovation.md",
+          "title": "Tech Note: Wayra UK Open Innovation"
         }
       ],
       "dataSourceProfiles": [
@@ -7342,6 +7470,71 @@
           "ageDays": 4
         }
       },
+      "ARC-002-GRNT-001-v1.0": {
+        "type": "GRNT",
+        "project": "002-arckit-sovereign",
+        "path": "projects/002-arckit-sovereign/research/ARC-002-GRNT-001-v1.0.md",
+        "title": "UK Grants Research: ArcKit as a Service (Sovereign Deployment)",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": null,
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "PENDING",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": "research",
+        "controlFields": {
+          "Document ID": "ARC-002-GRNT-001-v1.0",
+          "Project ID": "002",
+          "Project Name": "ArcKit as a Service (Sovereign Deployment)",
+          "Version": "1.0",
+          "Status": "DRAFT",
+          "Classification": "OFFICIAL",
+          "Date": "2026-05-07",
+          "Owner": "PENDING",
+          "Reviewed By": "PENDING",
+          "Approved By": "PENDING",
+          "Rubric Used": "grants-uk-gov",
+          "Sector": "Defence (primary), Digital, AI",
+          "Organisation Type": "SME",
+          "TRL Level": "4 (basis: ARC-002-REQ-v1.0 / ARC-002-SOBC-v1.0; alpha 2027-04-30, private beta 2027-08-31, GA 2027-12-31; currently at requirements/HLD with ADRs in place but no production code)",
+          "Funding Sought": "£100,000 — £1,500,000",
+          "Project Timeline": "2026-09-01 — GA 2027-12-31",
+          "Key Objectives": "Deliver sovereign air-gapped deployment for UK MOD and accredited sensitive sites; achieve MOD Secure by Design / JSP 440 / JSP 604 / NCSC CAF accreditation evidence per release; build HSM-backed signed-bundle supply-chain integrity (SBOM, hash inventory, signed manifests); deliver Long-Term Support release line with 24-month security patch SLAs; enable AI-assisted artefact generation via pluggable customer-controlled on-prem model endpoints.",
+          "Funding Body": "Ministry of Defence",
+          "Programme": "MOD Grants (historical, published via 360Giving)",
+          "Funding Range": "£57 — £28,163,251 (3,299 historical grants)",
+          "Deadline": "Status unknown — research signal only",
+          "TRL Requirement": "Not specified",
+          "Eligibility Score": "Medium (60/100)"
+        },
+        "reqIds": [
+          "BR-008",
+          "BR-004",
+          "NFR-SEC-002",
+          "NFR-SEC-005",
+          "NFR-SEC-001",
+          "BR-002",
+          "BR-003",
+          "BR-005",
+          "BR-006",
+          "FR-002",
+          "FR-003",
+          "FR-013",
+          "FR-014",
+          "BR-001",
+          "BR-007",
+          "FR-004",
+          "FR-007"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": null
+        }
+      },
       "ARC-002-RSCH-v1.0": {
         "type": "RSCH",
         "project": "002-arckit-sovereign",
@@ -10307,6 +10500,16 @@
         "type": "references"
       },
       {
+        "from": "ARC-002-GRNT-001-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-GRNT-001-v1.0",
+        "to": "ARC-002-SOBC",
+        "type": "references"
+      },
+      {
         "from": "ARC-002-RSCH-v1.0",
         "to": "ARC-000-RSCH",
         "type": "references"
@@ -10334,7 +10537,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-07T09:40:15.575Z",
+    "baseline": "2026-05-07T10:32:44.850Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -10504,9 +10707,9 @@
       {
         "project": "002-arckit-sovereign",
         "projectId": "002",
-        "artifactCount": 35,
-        "edgeCount": 257,
-        "density": 7.34,
+        "artifactCount": 36,
+        "edgeCount": 259,
+        "density": 7.19,
         "coverage": {
           "essentialPresent": [
             "REQ",
@@ -10537,6 +10740,7 @@
             "DSCT",
             "FINOPS",
             "GCRS",
+            "GRNT",
             "HLDR",
             "JSP936",
             "OPS",
@@ -10558,7 +10762,7 @@
             "Planning": 3,
             "Discovery": 4,
             "Governance": 2,
-            "Research": 3
+            "Research": 4
           }
         },
         "compliance": {
@@ -10583,7 +10787,7 @@
         },
         "health": {
           "stale": 0,
-          "draft": 30,
+          "draft": 31,
           "orphan": 0
         },
         "contextualSuggestions": [
